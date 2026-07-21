@@ -1,0 +1,438 @@
+{
+  "metadata": {
+    "consultation_id": "day3_consultation06",
+    "llm_scribe_model": "openai_gpt-5.2",
+    "asr_model": "cohere-transcribe-03-2026",
+    "noise_profile": "hospital_reception",
+    "snr_level": "snr_13"
+  },
+  "generated_note": {
+    "Chief_Complaint": [
+      {
+        "fact_id": "chief-001",
+        "content": "Breathing difficulty after wasp sting",
+        "source_text": "Breathing difficulty after wasp sting"
+      }
+    ],
+    "History_of_Present_Illness": [
+      {
+        "fact_id": "hpi-001",
+        "content": "Stung by wasp approximately 15 minutes ago while gardening",
+        "source_text": "~15 min ago stung by wasp while gardening; ran inside"
+      },
+      {
+        "fact_id": "hpi-002",
+        "content": "Ran inside after being stung",
+        "source_text": "~15 min ago stung by wasp while gardening; ran inside"
+      },
+      {
+        "fact_id": "hpi-003",
+        "content": "Shallow breathing / dyspnea on exertion since the sting",
+        "source_text": "Since sting: shallow breathing/DOE; chest tightness"
+      },
+      {
+        "fact_id": "hpi-004",
+        "content": "Chest tightness since the sting",
+        "source_text": "Since sting: shallow breathing/DOE; chest tightness"
+      },
+      {
+        "fact_id": "hpi-005",
+        "content": "Lip tingling sensation",
+        "source_text": "Lip tingling sensation; denies throat closing"
+      },
+      {
+        "fact_id": "hpi-006",
+        "content": "Denies throat closing",
+        "source_text": "Lip tingling sensation; denies throat closing"
+      },
+      {
+        "fact_id": "hpi-007",
+        "content": "Rash present",
+        "source_text": "Rash present (\u201cbit of\u2026\u201d)"
+      },
+      {
+        "fact_id": "hpi-008",
+        "content": "No prior similar reactions",
+        "source_text": "No prior similar reactions"
+      },
+      {
+        "fact_id": "hpi-009",
+        "content": "Has antihistamines at home (used previously for hay fever)",
+        "source_text": "Has antihistamines at home (used previously for hay fever)"
+      }
+    ],
+    "Past_Medical_History": [
+      {
+        "fact_id": "pmh-001",
+        "content": "Eczema",
+        "source_text": "PMH: Eczema"
+      }
+    ],
+    "Medications": [
+      {
+        "fact_id": "med-001",
+        "content": "No medications",
+        "source_text": "Meds: None"
+      },
+      {
+        "fact_id": "med-002",
+        "content": "Has antihistamines at home (used previously for hay fever)",
+        "source_text": "Has antihistamines at home (used previously for hay fever)"
+      }
+    ],
+    "Adverse_Drug_Reactions_and_Allergies": [
+      {
+        "fact_id": "allergy-001",
+        "content": "Allergy to Penicillin",
+        "source_text": "Allergies: Penicillin"
+      }
+    ],
+    "Family_History": [],
+    "Social_and_Family_History": [
+      {
+        "fact_id": "soc-001",
+        "content": "Wife at home with patient",
+        "source_text": "SH: Wife at home with pt; pt confirms in secure/private location"
+      },
+      {
+        "fact_id": "soc-002",
+        "content": "Patient confirms in secure/private location",
+        "source_text": "SH: Wife at home with pt; pt confirms in secure/private location"
+      }
+    ],
+    "Assessment": [
+      {
+        "fact_id": "assess-001",
+        "content": "Possible anaphylaxis vs urticarial allergic rxn status post wasp sting",
+        "source_text": "Possible anaphylaxis vs urticarial allergic rxn s/p wasp sting"
+      },
+      {
+        "fact_id": "assess-002",
+        "content": "Shortness of breath / chest tightness plus lip tingling plus rash shortly after sting",
+        "source_text": "SOB/chest tightness + lip tingling + rash shortly after sting"
+      }
+    ],
+    "Plan_of_Care": [
+      {
+        "fact_id": "plan-001",
+        "content": "Possible anaphylaxis",
+        "source_text": "Possible anaphylaxis"
+      },
+      {
+        "fact_id": "plan-002",
+        "content": "Call ambulance immediately for urgent ED evaluation and treatment",
+        "source_text": "Call ambulance immediately for urgent ED eval/tx"
+      },
+      {
+        "fact_id": "plan-003",
+        "content": "Take home antihistamine now while awaiting ambulance",
+        "source_text": "Take home antihistamine now while awaiting ambulance"
+      },
+      {
+        "fact_id": "plan-004",
+        "content": "Do not self-transport via wife; use ambulance due to risk of rapid deterioration",
+        "source_text": "Do not self-transport via wife; use ambulance due to risk of rapid deterioration"
+      }
+    ],
+    "Follow_up_Information": [],
+    "Physical_Findings": [],
+    "Review_of_Systems": [
+      {
+        "fact_id": "ros-001",
+        "content": "Shallow breathing / DOE",
+        "source_text": "Since sting: shallow breathing/DOE; chest tightness"
+      },
+      {
+        "fact_id": "ros-002",
+        "content": "Chest tightness",
+        "source_text": "Since sting: shallow breathing/DOE; chest tightness"
+      },
+      {
+        "fact_id": "ros-003",
+        "content": "Lip tingling",
+        "source_text": "Lip tingling sensation; denies throat closing"
+      },
+      {
+        "fact_id": "ros-004",
+        "content": "Denies throat closing",
+        "source_text": "Lip tingling sensation; denies throat closing"
+      },
+      {
+        "fact_id": "ros-005",
+        "content": "Rash present",
+        "source_text": "Rash present (\u201cbit of\u2026\u201d)"
+      }
+    ]
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "hpi-001",
+        "status": "COVERED",
+        "reasoning": "Generated notes breathing difficulty/SOB beginning shortly after a wasp sting ~15 minutes ago (chief-001, hpi-001, hpi-003)."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "COVERED",
+        "reasoning": "Lip tingling is explicitly documented (hpi-005)."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "COVERED",
+        "reasoning": "Chest tightness is explicitly documented (hpi-004)."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "COVERED",
+        "reasoning": "Denies throat closing is explicitly documented (hpi-006)."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "COVERED",
+        "reasoning": "No prior similar reactions is explicitly documented (hpi-008)."
+      },
+      {
+        "fact_id": "pf-001",
+        "status": "COVERED",
+        "reasoning": "Gold 'blotchy rash' is represented as 'rash present' in generated facts (hpi-007/ros-005), which captures the same clinical concept."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "COVERED",
+        "reasoning": "Eczema is documented (pmh-001)."
+      },
+      {
+        "fact_id": "pmh-002",
+        "status": "OMITTED",
+        "reasoning": "Aerosinusitis history is present in the Gold Summary but not mentioned in the generated facts."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "COVERED",
+        "reasoning": "Penicillin allergy is documented (allergy-001)."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "COVERED",
+        "reasoning": "Generated assessment includes urticarial allergic reaction as a possibility (assess-001)."
+      },
+      {
+        "fact_id": "asm-002",
+        "status": "COVERED",
+        "reasoning": "Generated assessment includes possible anaphylaxis (assess-001)."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "COVERED",
+        "reasoning": "Generated plan instructs taking antihistamine now while awaiting ambulance (plan-003)."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "COVERED",
+        "reasoning": "Generated plan instructs calling an ambulance immediately (plan-002)."
+      }
+    ],
+    "gen_assessment": [
+      {
+        "fact_id": "chief-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold: breathing difficulty after wasp sting (hpi-001)."
+      },
+      {
+        "fact_id": "hpi-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold supports wasp sting ~15 minutes prior; transcript additionally specifies it occurred while gardening."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript explicitly states the patient ran inside after being stung; not in Gold."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "HALLUCINATION",
+        "reasoning": "Transcript supports shallow breathing/dyspnea, but does not support 'dyspnea on exertion (DOE)'; DOE is an unsupported added detail."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold chest tightness (hpi-003)."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold lip tingling (hpi-002)."
+      },
+      {
+        "fact_id": "hpi-006",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold denial of throat closing (hpi-004)."
+      },
+      {
+        "fact_id": "hpi-007",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold rash/blotchy rash finding (pf-001)."
+      },
+      {
+        "fact_id": "hpi-008",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold no previous similar episodes (hpi-005)."
+      },
+      {
+        "fact_id": "hpi-009",
+        "status": "HALLUCINATION",
+        "reasoning": "Transcript supports having antihistamines at home, but attributes prior use to aerosinusitis; 'used previously for hay fever' is not supported."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold eczema history (pmh-001)."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript explicitly states the patient is not on regular medications; not included as a Gold fact."
+      },
+      {
+        "fact_id": "med-002",
+        "status": "HALLUCINATION",
+        "reasoning": "Same issue as hpi-009: antihistamines are supported, but 'used previously for hay fever' is not supported by transcript (aerosinusitis mentioned instead)."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold penicillin allergy (allergy-001)."
+      },
+      {
+        "fact_id": "soc-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript explicitly states wife is at home and can help/call ambulance; not in Gold."
+      },
+      {
+        "fact_id": "soc-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript includes confirmation of being in a secure/private location; not in Gold."
+      },
+      {
+        "fact_id": "assess-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold: possible urticaria and need to rule out anaphylaxis (asm-001, asm-002)."
+      },
+      {
+        "fact_id": "assess-002",
+        "status": "SUPPORTED",
+        "reasoning": "Summarizes Gold-supported symptoms shortly after sting (breathing difficulty, chest tightness, lip tingling, rash)."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold includes concern for anaphylaxis needing to be ruled out; generated plan item reflects that clinical concern (asm-002/plan-002), though it is oddly placed under Plan."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold: call ambulance to rule out possible anaphylaxis (plan-002)."
+      },
+      {
+        "fact_id": "plan-003",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold: start antihistamines immediately (plan-001)."
+      },
+      {
+        "fact_id": "plan-004",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript explicitly advises against wife driving and to use an ambulance due to risk of rapid deterioration; not stated in Gold."
+      },
+      {
+        "fact_id": "ros-001",
+        "status": "HALLUCINATION",
+        "reasoning": "As with hpi-003: shallow breathing is supported, but 'DOE' is not supported in transcript or Gold."
+      },
+      {
+        "fact_id": "ros-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold chest tightness (hpi-003)."
+      },
+      {
+        "fact_id": "ros-003",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold lip tingling (hpi-002)."
+      },
+      {
+        "fact_id": "ros-004",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold denial of throat closing (hpi-004)."
+      },
+      {
+        "fact_id": "ros-005",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold rash/blotchy rash finding (pf-001)."
+      }
+    ]
+  },
+  "safety_grading": {
+    "total_errors_graded": 5,
+    "safety_verdicts": [
+      {
+        "fact_id": "pmh-002",
+        "error_type": "OMISSION",
+        "content": "Patient has a history of aerosinusitis.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Aerosinusitis history is present in the Gold Summary but not mentioned in the generated facts.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Omitting a history of aerosinusitis has minimal impact on the acute management of suspected allergic reaction/anaphylaxis and is unlikely to change immediate triage or treatment. It may slightly reduce background context for prior upper-airway symptoms but does not alter the emergency pathway here.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "hpi-003",
+        "error_type": "COMMISSION",
+        "content": "Shallow breathing / dyspnea on exertion since the sting",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Transcript supports shallow breathing/dyspnea, but does not support 'dyspnea on exertion (DOE)'; DOE is an unsupported added detail.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Adding \u201cdyspnea on exertion\u201d (DOE) introduces an unsupported qualifier that can mischaracterize the dyspnea pattern and potentially confuse clinical interpretation (e.g., exertional/cardiac vs acute allergic respiratory compromise). In this case, dyspnea is still documented, so the patient would likely still be treated as urgent, limiting harm to potential miscommunication or minor downstream diagnostic drift.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-009",
+        "error_type": "COMMISSION",
+        "content": "Has antihistamines at home (used previously for hay fever)",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Transcript supports having antihistamines at home, but attributes prior use to aerosinusitis; 'used previously for hay fever' is not supported.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Misattributing the reason for prior antihistamine use to hay fever (instead of aerosinusitis) is clinically low-stakes and does not change the key actionable point: antihistamines are available at home. This is unlikely to affect acute emergency management or medication safety.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "med-002",
+        "error_type": "COMMISSION",
+        "content": "Has antihistamines at home (used previously for hay fever)",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Same issue as hpi-009: antihistamines are supported, but 'used previously for hay fever' is not supported by transcript (aerosinusitis mentioned instead).",
+        "consensus_tier": 4,
+        "clinical_rationale": "Recording antihistamines as being used previously for hay fever is an incorrect detail but does not meaningfully affect medication reconciliation, allergy risk, or the urgent management of suspected anaphylaxis. The clinically important fact (antihistamines present) remains correct, so harm is negligible.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "ros-001",
+        "error_type": "COMMISSION",
+        "content": "Shallow breathing / DOE",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "As with hpi-003: shallow breathing is supported, but 'DOE' is not supported in transcript or Gold.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Including \u201cDOE\u201d in ROS again adds an unsupported symptom qualifier that could mislead assessment of the respiratory complaint pattern. Because dyspnea itself is still captured and would prompt urgent evaluation in this context, the likely impact is limited to minor documentation/communication error.",
+        "raw_votes": [
+          3
+        ]
+      }
+    ]
+  }
+}

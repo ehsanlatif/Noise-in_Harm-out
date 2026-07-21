@@ -1,0 +1,505 @@
+{
+  "metadata": {
+    "consultation_id": "day1_consultation07",
+    "llm_scribe_model": "google_gemini-3.1-pro-preview",
+    "asr_model": "deepgram-nova3",
+    "noise_profile": "hospital_reception",
+    "snr_level": "snr_-2"
+  },
+  "generated_note": {
+    "Chief_Complaint": [
+      {
+        "fact_id": "chief-001",
+        "content": "Symptoms onset a few days ago",
+        "source_text": "Symptoms onset a few days ago"
+      }
+    ],
+    "History_of_Present_Illness": [
+      {
+        "fact_id": "hpi-001",
+        "content": "Age 50",
+        "source_text": "Age: 50"
+      },
+      {
+        "fact_id": "hpi-002",
+        "content": "Mild blocked ears/dullness",
+        "source_text": "+ Mild blocked ears/dullness"
+      },
+      {
+        "fact_id": "hpi-003",
+        "content": "Mild shortness of breath",
+        "source_text": "+ Mild SOB"
+      },
+      {
+        "fact_id": "hpi-004",
+        "content": "Fever with chills and sweats",
+        "source_text": "+ Fever/chills/sweats"
+      },
+      {
+        "fact_id": "hpi-005",
+        "content": "Joint stiffness in elbows and knees",
+        "source_text": "+ Joint stiffness (elbows, knees)"
+      },
+      {
+        "fact_id": "hpi-006",
+        "content": "Diarrhea on day 1, resolved",
+        "source_text": "+ Diarrhea on day 1 (resolved)"
+      },
+      {
+        "fact_id": "hpi-007",
+        "content": "Appetite: trying to eat",
+        "source_text": "Appetite: Trying to eat"
+      }
+    ],
+    "Past_Medical_History": [],
+    "Medications": [],
+    "Adverse_Drug_Reactions_and_Allergies": [
+      {
+        "fact_id": "allergy-001",
+        "content": "No known allergies",
+        "source_text": "Allergies: None"
+      }
+    ],
+    "Family_History": [],
+    "Social_and_Family_History": [
+      {
+        "fact_id": "social-001",
+        "content": "Lives with wife",
+        "source_text": "SH: Lives with wife."
+      },
+      {
+        "fact_id": "social-002",
+        "content": "Alcohol use approximately 9 pints beer per week",
+        "source_text": "etOH: ~9 pints beer/week."
+      },
+      {
+        "fact_id": "social-003",
+        "content": "Occasional tobacco smoker, cutting down using vape",
+        "source_text": "Tobacco: Occasional smoker, cutting down using vape."
+      }
+    ],
+    "Assessment": [
+      {
+        "fact_id": "assess-001",
+        "content": "Suspected viral illness/flu",
+        "source_text": "1. Suspected viral illness/flu"
+      },
+      {
+        "fact_id": "assess-002",
+        "content": "Mild shortness of breath",
+        "source_text": "2. Mild SOB"
+      }
+    ],
+    "Plan_of_Care": [
+      {
+        "fact_id": "plan-001",
+        "content": "Expectant management for viral illness",
+        "source_text": "Expectant management for viral illness"
+      },
+      {
+        "fact_id": "plan-002",
+        "content": "Provide delayed/back-up antibiotic prescription; chest infection unlikely",
+        "source_text": "Provide delayed/back-up antibiotic prescription (chest infection unlikely)"
+      }
+    ],
+    "Follow_up_Information": [],
+    "Physical_Findings": [],
+    "Review_of_Systems": [
+      {
+        "fact_id": "ros-001",
+        "content": "Mild blocked ears/dullness (positive)",
+        "source_text": "+ Mild blocked ears/dullness"
+      },
+      {
+        "fact_id": "ros-002",
+        "content": "Mild shortness of breath (positive)",
+        "source_text": "+ Mild SOB"
+      },
+      {
+        "fact_id": "ros-003",
+        "content": "Chest pain not present (negative)",
+        "source_text": "- Chest pain"
+      },
+      {
+        "fact_id": "ros-004",
+        "content": "Fever, chills, sweats (positive)",
+        "source_text": "+ Fever/chills/sweats"
+      },
+      {
+        "fact_id": "ros-005",
+        "content": "Joint stiffness in elbows and knees (positive)",
+        "source_text": "+ Joint stiffness (elbows, knees)"
+      },
+      {
+        "fact_id": "ros-006",
+        "content": "Diarrhea on day 1 resolved (positive)",
+        "source_text": "+ Diarrhea on day 1 (resolved)"
+      },
+      {
+        "fact_id": "ros-007",
+        "content": "Nausea, vomiting, abdominal pain not present (negative)",
+        "source_text": "- Nausea, vomiting, abdominal pain"
+      }
+    ]
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "hpi-001",
+        "status": "OMITTED",
+        "reasoning": "Generated notes symptoms onset a few days ago but does not document a 5-day history of generally feeling unwell with cough/cold symptoms."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "OMITTED",
+        "reasoning": "No mention of cough being mainly dry in the generated facts."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "COVERED",
+        "reasoning": "Generated includes mild shortness of breath and explicitly notes chest pain is not present."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "CONTRADICTED",
+        "reasoning": "Gold states hot/cold and sweaty but no fevers; generated states 'Fever with chills and sweats,' which conflicts with the 'no fevers' element."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "OMITTED",
+        "reasoning": "Generated captures blocked ears but does not include sore throat or runny nose as in the gold fact."
+      },
+      {
+        "fact_id": "hpi-006",
+        "status": "COVERED",
+        "reasoning": "Generated documents joint stiffness (elbows and knees), matching myalgia/arthralgia described as stiffness."
+      },
+      {
+        "fact_id": "hpi-007",
+        "status": "COVERED",
+        "reasoning": "Generated includes diarrhea on day 1 with resolution."
+      },
+      {
+        "fact_id": "hpi-008",
+        "status": "OMITTED",
+        "reasoning": "Generated includes denial of nausea/vomiting but does not mention 'no unwell contacts.' The full gold concept is therefore not fully captured."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "OMITTED",
+        "reasoning": "No PMH listed in the generated facts; obesity, type 2 diabetes, and hypertension are absent."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "OMITTED",
+        "reasoning": "No medications are listed in the generated facts; metformin, lisinopril, and aspirin are absent."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "COVERED",
+        "reasoning": "Generated states no known allergies, matching NKDA."
+      },
+      {
+        "fact_id": "sh-001",
+        "status": "OMITTED",
+        "reasoning": "Generated states the patient lives with his wife, but does not include the gold detail that he works in factory/manufacturing."
+      },
+      {
+        "fact_id": "sh-002",
+        "status": "COVERED",
+        "reasoning": "Generated includes social/occasional smoking and alcohol intake (~9 pints/week), consistent with smoking socially and >9 units/week."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "COVERED",
+        "reasoning": "Generated assessment of suspected viral illness/flu aligns with gold impression viral URTI with possible LRTI."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "OMITTED",
+        "reasoning": "Generated says expectant management but does not explicitly include rest, increased fluids, and regular paracetamol."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "COVERED",
+        "reasoning": "Generated documents a delayed/back-up antibiotic prescription, which matches the delayed antibiotic concept, though it omits amoxicillin and the 24\u201348 hour timing/criteria."
+      },
+      {
+        "fact_id": "fu-001",
+        "status": "OMITTED",
+        "reasoning": "No follow-up/review in one week is mentioned in the generated facts."
+      },
+      {
+        "fact_id": "fu-002",
+        "status": "OMITTED",
+        "reasoning": "Generated facts do not include safety-net advice to seek earlier review for worsening symptoms (chest pain, SOB, fevers)."
+      }
+    ],
+    "gen_assessment": [
+      {
+        "fact_id": "chief-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold documents a 5-day history; 'a few days ago' is semantically consistent with this timeframe."
+      },
+      {
+        "fact_id": "hpi-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Age 50 is stated in the transcript ('I'm fifty years old now') but is not present in the gold summary."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "SUPPORTED",
+        "reasoning": "Blocked ears/dullness is present in the gold summary and also in the transcript."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "SUPPORTED",
+        "reasoning": "Shortness of breath is in the gold summary ('Feeling more SOB') and described in the transcript as 'wee bit shortness of breath.'"
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "HALLUCINATION",
+        "reasoning": "Gold explicitly states no fevers, and the transcript supports hot/cold feelings and sweating but does not confirm fever; stating 'fever' conflicts with gold and is not supported by transcript."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "SUPPORTED",
+        "reasoning": "Joint stiffness/arthralgia is in the gold summary and supported by transcript (stiff elbows/knees)."
+      },
+      {
+        "fact_id": "hpi-006",
+        "status": "SUPPORTED",
+        "reasoning": "Diarrhea on day 1 with resolution matches the gold summary and transcript."
+      },
+      {
+        "fact_id": "hpi-007",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Patient appetite/trying to eat is discussed in the transcript ('I'm trying to') but is not included in the gold summary."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "SUPPORTED",
+        "reasoning": "No known allergies matches gold NKDA."
+      },
+      {
+        "fact_id": "social-001",
+        "status": "SUPPORTED",
+        "reasoning": "Lives with wife is included in the gold summary and transcript."
+      },
+      {
+        "fact_id": "social-002",
+        "status": "SUPPORTED",
+        "reasoning": "Transcript states ~9 pints/week; gold indicates alcohol >9 units/week, which is consistent with this report."
+      },
+      {
+        "fact_id": "social-003",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold notes social smoking; transcript adds the detail that he is cutting down and using a vape, which is not in gold but is supported by transcript."
+      },
+      {
+        "fact_id": "assess-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold impression is viral URTI with possible LRTI; generated 'suspected viral illness/flu' aligns with this."
+      },
+      {
+        "fact_id": "assess-002",
+        "status": "SUPPORTED",
+        "reasoning": "Mild SOB is consistent with gold ('Feeling more SOB') and transcript."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold recommends conservative management; 'expectant management' is a semantically similar plan (though less detailed)."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "SUPPORTED",
+        "reasoning": "Gold includes a delayed antibiotic prescription; transcript indicates clinician is hesitant but may provide a script. 'Chest infection unlikely' is consistent with the clinician\u2019s expressed low suspicion."
+      },
+      {
+        "fact_id": "ros-001",
+        "status": "SUPPORTED",
+        "reasoning": "Blocked ears/dullness is in the gold summary and transcript."
+      },
+      {
+        "fact_id": "ros-002",
+        "status": "SUPPORTED",
+        "reasoning": "Shortness of breath is in the gold summary and transcript."
+      },
+      {
+        "fact_id": "ros-003",
+        "status": "SUPPORTED",
+        "reasoning": "Gold states no chest pain; generated records chest pain not present."
+      },
+      {
+        "fact_id": "ros-004",
+        "status": "HALLUCINATION",
+        "reasoning": "Gold says no fevers; transcript supports chills/sweats/hot-cold sensation but not confirmed fever. Listing 'fever' as present conflicts with gold and is not explicitly supported by transcript."
+      },
+      {
+        "fact_id": "ros-005",
+        "status": "SUPPORTED",
+        "reasoning": "Joint stiffness is in gold and supported by transcript."
+      },
+      {
+        "fact_id": "ros-006",
+        "status": "SUPPORTED",
+        "reasoning": "Resolved diarrhea is in gold and supported by transcript."
+      },
+      {
+        "fact_id": "ros-007",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold includes no nausea/vomiting; transcript asks about tummy pain and patient does not endorse it. Including 'no abdominal pain' adds detail beyond gold and is not explicitly stated but is reasonably inferred from the ROS exchange."
+      }
+    ]
+  },
+  "safety_grading": {
+    "total_errors_graded": 12,
+    "safety_verdicts": [
+      {
+        "fact_id": "hpi-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a 5-day history of feeling generally unwell with cough and cold symptoms.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated notes symptoms onset a few days ago but does not document a 5-day history of generally feeling unwell with cough/cold symptoms.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Omitting the specific 5-day duration reduces clarity on illness trajectory, which can affect assessment of whether symptoms are improving or prolonged. However, this is unlikely to directly change immediate management in an otherwise uncomplicated viral-URI presentation.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "hpi-002",
+        "error_type": "OMISSION",
+        "content": "The cough is mainly dry.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of cough being mainly dry in the generated facts.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Not documenting that the cough is mainly dry can slightly alter clinical impression (viral vs productive/LRTI), but typically does not materially change treatment in a mild URI without red flags. Impact is limited to nuance in diagnostic reasoning.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "hpi-005",
+        "error_type": "OMISSION",
+        "content": "Associated symptoms include a sore throat, blocked ears, and a runny nose.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated captures blocked ears but does not include sore throat or runny nose as in the gold fact.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Missing sore throat and runny nose omits supportive features of an upper respiratory viral syndrome, which may affect diagnostic confidence. This is unlikely to cause harm beyond minor loss of documentation completeness.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "hpi-008",
+        "error_type": "OMISSION",
+        "content": "Patient reports no unwell contacts and no nausea or vomiting.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated includes denial of nausea/vomiting but does not mention 'no unwell contacts.' The full gold concept is therefore not fully captured.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Failure to document absence of unwell contacts marginally weakens exposure history and infectious risk assessment. Because nausea/vomiting denial is captured and this detail rarely changes management, clinical impact is minimal.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "pmh-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a history of obesity, type 2 diabetes, and hypertension.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No PMH listed in the generated facts; obesity, type 2 diabetes, and hypertension are absent.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting obesity, type 2 diabetes, and hypertension removes key comorbidities that influence risk stratification for respiratory infections and thresholds for in-person review, investigations, or escalation. It can also affect medication choices and counseling, creating meaningful potential for harm.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "med-001",
+        "error_type": "OMISSION",
+        "content": "Patient takes metformin, lisinopril, and aspirin.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No medications are listed in the generated facts; metformin, lisinopril, and aspirin are absent.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Not listing metformin, lisinopril, and aspirin can lead to unsafe prescribing (drug interactions, renal/hemodynamic considerations, bleeding risk) and missed opportunities for sick-day guidance in intercurrent illness. This omission can materially affect treatment safety.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "sh-001",
+        "error_type": "OMISSION",
+        "content": "Patient lives with his wife and works in a factory/manufacturing.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated states the patient lives with his wife, but does not include the gold detail that he works in factory/manufacturing.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Omitting factory/manufacturing work reduces occupational exposure/context (e.g., infection exposure, respiratory irritants), but typically does not change acute management for an uncomplicated viral illness. The harm is largely administrative/contextual.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "plan-001",
+        "error_type": "OMISSION",
+        "content": "Advised conservative management including rest, increased fluid intake, and regular paracetamol.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated says expectant management but does not explicitly include rest, increased fluids, and regular paracetamol.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not explicitly documenting rest, fluids, and regular paracetamol may reduce clarity of symptomatic care instructions, potentially leading to less effective self-management. This is generally low-risk and unlikely to cause more than minor discomfort or additional follow-up.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "fu-001",
+        "error_type": "OMISSION",
+        "content": "Patient to have a review in one week if not better.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No follow-up/review in one week is mentioned in the generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting the planned 1-week review if not improving can delay reassessment and prolong symptoms or missed evolution into a more significant condition. The likely harm is limited to delayed care and potentially extra visits rather than major injury.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "fu-002",
+        "error_type": "OMISSION",
+        "content": "Advised to seek review earlier for worsening symptoms such as chest pain, shortness of breath, or fevers.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts do not include safety-net advice to seek earlier review for worsening symptoms (chest pain, SOB, fevers).",
+        "consensus_tier": 2,
+        "clinical_rationale": "Missing safety-net instructions for worsening chest pain, shortness of breath, or fevers increases the risk of delayed urgent evaluation for potentially serious complications (e.g., pneumonia, PE, ACS). This can plausibly lead to clinically significant deterioration due to delayed escalation.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-004",
+        "error_type": "COMMISSION",
+        "content": "Fever with chills and sweats",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Gold explicitly states no fevers, and the transcript supports hot/cold feelings and sweating but does not confirm fever; stating 'fever' conflicts with gold and is not supported by transcript.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Documenting fever (with chills/sweats) when fever is not established can increase perceived severity and may prompt unnecessary antibiotics, testing, or escalation. While often not severely harmful, it can lead to inappropriate treatment and additional interventions.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "ros-004",
+        "error_type": "COMMISSION",
+        "content": "Fever, chills, sweats (positive)",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Gold says no fevers; transcript supports chills/sweats/hot-cold sensation but not confirmed fever. Listing 'fever' as present conflicts with gold and is not explicitly supported by transcript.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Marking fever as present in ROS when it is not confirmed can bias clinical decision-making toward bacterial infection or more severe illness, potentially driving unnecessary prescriptions or investigations. Expected harm is usually limited but non-trivial.",
+        "raw_votes": [
+          3
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,475 @@
+{
+  "metadata": {
+    "consultation_id": "day2_consultation07",
+    "llm_scribe_model": "google_gemini-3.1-pro-preview",
+    "asr_model": "parakeet-tdt-0.6b-v3",
+    "noise_profile": "hospital_reception",
+    "snr_level": "snr_-2"
+  },
+  "generated_note": {
+    "Chief_Complaint": [],
+    "History_of_Present_Illness": [],
+    "Past_Medical_History": [],
+    "Medications": [],
+    "Adverse_Drug_Reactions_and_Allergies": [],
+    "Family_History": [],
+    "Social_and_Family_History": [],
+    "Assessment": [],
+    "Plan_of_Care": [],
+    "Follow_up_Information": [],
+    "Physical_Findings": [],
+    "Review_of_Systems": []
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "cc-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts contain no chief complaint information; chest pain is not mentioned."
+      },
+      {
+        "fact_id": "hpi-001",
+        "status": "OMITTED",
+        "reasoning": "No HPI content is present in Generated Facts, so onset during gardening/mild exertion is absent."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "OMITTED",
+        "reasoning": "No symptom localization is documented in Generated Facts."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "OMITTED",
+        "reasoning": "No radiation pattern is documented in Generated Facts."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "OMITTED",
+        "reasoning": "No associated symptoms (nausea) are documented in Generated Facts."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "OMITTED",
+        "reasoning": "No associated symptoms (sweatiness) are documented in Generated Facts."
+      },
+      {
+        "fact_id": "hpi-006",
+        "status": "OMITTED",
+        "reasoning": "No palpitations are documented in Generated Facts."
+      },
+      {
+        "fact_id": "hpi-007",
+        "status": "OMITTED",
+        "reasoning": "No statement about ongoing/present pain at time of assessment appears in Generated Facts."
+      },
+      {
+        "fact_id": "hpi-008",
+        "status": "OMITTED",
+        "reasoning": "No prior-episode history is documented in Generated Facts."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "OMITTED",
+        "reasoning": "No past medical history is captured in Generated Facts; hypertension is not mentioned."
+      },
+      {
+        "fact_id": "pmh-002",
+        "status": "OMITTED",
+        "reasoning": "No past medical history/body habitus information is captured in Generated Facts; overweight status is not mentioned."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "OMITTED",
+        "reasoning": "No allergy information is present in Generated Facts; aspirin allergy is not documented."
+      },
+      {
+        "fact_id": "fh-001",
+        "status": "OMITTED",
+        "reasoning": "No family history is documented in Generated Facts."
+      },
+      {
+        "fact_id": "sh-001",
+        "status": "OMITTED",
+        "reasoning": "No social history is documented in Generated Facts; smoking status is not mentioned."
+      },
+      {
+        "fact_id": "sh-002",
+        "status": "OMITTED",
+        "reasoning": "No alcohol history is documented in Generated Facts."
+      },
+      {
+        "fact_id": "sh-003",
+        "status": "OMITTED",
+        "reasoning": "No living situation is documented in Generated Facts."
+      },
+      {
+        "fact_id": "pf-001",
+        "status": "OMITTED",
+        "reasoning": "No physical findings are documented in Generated Facts; haemodynamic stability is not mentioned."
+      },
+      {
+        "fact_id": "pf-002",
+        "status": "OMITTED",
+        "reasoning": "No exam context (seated at rest) is documented in Generated Facts."
+      },
+      {
+        "fact_id": "pf-003",
+        "status": "OMITTED",
+        "reasoning": "No perfusion/appearance findings are documented in Generated Facts."
+      },
+      {
+        "fact_id": "pf-004",
+        "status": "OMITTED",
+        "reasoning": "No respiratory status statement is documented in Generated Facts."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "OMITTED",
+        "reasoning": "No assessment/impression is documented in Generated Facts."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "OMITTED",
+        "reasoning": "No plan items are documented in Generated Facts; urgent ECG/troponin requirement is not captured."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "OMITTED",
+        "reasoning": "No emergency response/ambulance call is documented in Generated Facts."
+      },
+      {
+        "fact_id": "plan-003",
+        "status": "OMITTED",
+        "reasoning": "No documentation about leaving the front door open for paramedic access is present in Generated Facts."
+      },
+      {
+        "fact_id": "plan-004",
+        "status": "OMITTED",
+        "reasoning": "No documentation about clinician staying on the line and handing over to ambulance staff is present in Generated Facts."
+      },
+      {
+        "fact_id": "plan-005",
+        "status": "OMITTED",
+        "reasoning": "No documentation that other medications were not obtained and require clarification by LAS is present in Generated Facts."
+      }
+    ],
+    "gen_assessment": []
+  },
+  "safety_grading": {
+    "total_errors_graded": 26,
+    "safety_verdicts": [
+      {
+        "fact_id": "cc-001",
+        "error_type": "OMISSION",
+        "content": "Patient presents with chest pain.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts contain no chief complaint information; chest pain is not mentioned.",
+        "consensus_tier": 1,
+        "clinical_rationale": "Omitting the chief complaint of chest pain can lead to failure to recognize a potential acute coronary syndrome presentation and delay emergency evaluation/treatment. This is a high-risk red-flag symptom where documentation omission can directly impact urgency and disposition.",
+        "raw_votes": [
+          1
+        ]
+      },
+      {
+        "fact_id": "hpi-001",
+        "error_type": "OMISSION",
+        "content": "Chest pain began earlier today while gardening, a form of mild physical exertion.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No HPI content is present in Generated Facts, so onset during gardening/mild exertion is absent.",
+        "consensus_tier": 1,
+        "clinical_rationale": "Missing that symptoms started during physical activity (gardening) removes a key ischemic trigger pattern that increases concern for angina/MI. This could reduce clinician risk assessment and delay appropriate escalation (EMS/ED, ECG, troponins).",
+        "raw_votes": [
+          1
+        ]
+      },
+      {
+        "fact_id": "hpi-002",
+        "error_type": "OMISSION",
+        "content": "Chest pain is central in location.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No symptom localization is documented in Generated Facts.",
+        "consensus_tier": 1,
+        "clinical_rationale": "Not documenting central chest pressure omits a classic, higher-risk chest pain feature consistent with cardiac ischemia. This could mislead triage and differential diagnosis, affecting the urgency of workup.",
+        "raw_votes": [
+          1
+        ]
+      },
+      {
+        "fact_id": "hpi-003",
+        "error_type": "OMISSION",
+        "content": "Chest pain radiates to the shoulder and neck.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No radiation pattern is documented in Generated Facts.",
+        "consensus_tier": 1,
+        "clinical_rationale": "Radiation to shoulder/neck/arm is a major red-flag feature for myocardial ischemia; omitting it can substantially lower perceived probability of ACS. That can delay time-sensitive interventions (EMS activation, aspirin alternatives, reperfusion pathways).",
+        "raw_votes": [
+          1
+        ]
+      },
+      {
+        "fact_id": "hpi-004",
+        "error_type": "OMISSION",
+        "content": "Chest pain is associated with nausea.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No associated symptoms (nausea) are documented in Generated Facts.",
+        "consensus_tier": 1,
+        "clinical_rationale": "Nausea is a common associated symptom in ACS; omitting it removes supportive evidence for a cardiac cause. This can adversely affect risk stratification and urgency of evaluation.",
+        "raw_votes": [
+          1
+        ]
+      },
+      {
+        "fact_id": "hpi-005",
+        "error_type": "OMISSION",
+        "content": "Chest pain is associated with sweatiness.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No associated symptoms (sweatiness) are documented in Generated Facts.",
+        "consensus_tier": 1,
+        "clinical_rationale": "Diaphoresis/sweating with chest pressure is a high-risk associated symptom for MI; omission may cause underestimation of severity. This can contribute to delayed emergency response and treatment.",
+        "raw_votes": [
+          1
+        ]
+      },
+      {
+        "fact_id": "hpi-006",
+        "error_type": "OMISSION",
+        "content": "Chest pain is associated with palpitations.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No palpitations are documented in Generated Facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Palpitations can shift the differential toward arrhythmia or hemodynamic instability; omission may reduce consideration of rhythm-related causes and appropriate monitoring. However, it is generally less decisive than the chest pain/ACS features in determining emergent management.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-007",
+        "error_type": "OMISSION",
+        "content": "Pain is still present at the time of assessment.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No statement about ongoing/present pain at time of assessment appears in Generated Facts.",
+        "consensus_tier": 1,
+        "clinical_rationale": "Not documenting that pain is ongoing at assessment removes a critical indicator of active, potentially evolving ischemia requiring immediate action. This omission can directly delay urgent interventions and transport decisions.",
+        "raw_votes": [
+          1
+        ]
+      },
+      {
+        "fact_id": "hpi-008",
+        "error_type": "OMISSION",
+        "content": "Patient reports no previous similar episodes of chest pain.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No prior-episode history is documented in Generated Facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Whether this is a first episode versus recurrent symptoms affects risk stratification (e.g., stable angina history vs new/unstable pattern). Omission may not stop emergent workup but can worsen clinical decision-making and follow-up planning.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "pmh-001",
+        "error_type": "OMISSION",
+        "content": "Patient has hypertension.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No past medical history is captured in Generated Facts; hypertension is not mentioned.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Hypertension is a major cardiovascular risk factor and influences ACS pretest probability and overall management (e.g., hemodynamic considerations, secondary prevention). Omitting it can lead to incomplete risk assessment and suboptimal treatment planning.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "pmh-002",
+        "error_type": "OMISSION",
+        "content": "Patient is overweight.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No past medical history/body habitus information is captured in Generated Facts; overweight status is not mentioned.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Overweight status is a longer-term cardiovascular risk factor and may inform counseling and some medication considerations, but it is less critical than acute red-flag symptom documentation. Omission is unlikely to change immediate emergency management in this encounter.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "allergy-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a mild allergy to aspirin.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No allergy information is present in Generated Facts; aspirin allergy is not documented.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Aspirin allergy is highly clinically relevant in suspected ACS because aspirin is commonly administered early; omission could result in an avoidable allergic reaction (including potential angioedema) or inappropriate medication choice. Even if prior reactions were described as mild, the risk of harm from unintended exposure remains clinically significant.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "fh-001",
+        "error_type": "OMISSION",
+        "content": "There is a family history of ischemic heart disease.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No family history is documented in Generated Facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Family history of ischemic heart disease increases cardiovascular risk and supports higher suspicion for ACS. Its omission can reduce risk stratification accuracy, though it is less time-critical than documenting active symptoms and key associated features.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "sh-001",
+        "error_type": "OMISSION",
+        "content": "Patient is a chronic smoker.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No social history is documented in Generated Facts; smoking status is not mentioned.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Smoking is a major modifiable cardiovascular risk factor and is relevant to ACS probability and secondary prevention planning. Omission can contribute to incomplete risk assessment and missed counseling/interventions, but typically does not singularly determine emergent actions when active chest pain is present.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "sh-002",
+        "error_type": "OMISSION",
+        "content": "Patient consumes alcohol moderately.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No alcohol history is documented in Generated Facts.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Moderate alcohol use is generally less directly relevant to acute chest pain/ACS triage than symptom characteristics, ECG findings, and major risk factors. Omission is unlikely to affect immediate management in this scenario.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "sh-003",
+        "error_type": "OMISSION",
+        "content": "Patient lives alone.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No living situation is documented in Generated Facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting that the patient lives alone can affect safety planning (e.g., need for supervision, ability to unlock/answer door) during a suspected acute coronary syndrome event, but it is unlikely by itself to change definitive medical management. The main impact is loss of situational awareness and home-safety context.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "pf-001",
+        "error_type": "OMISSION",
+        "content": "Patient is haemodynamically stable.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No physical findings are documented in Generated Facts; haemodynamic stability is not mentioned.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting haemodynamic status removes key triage information in an acute chest pain scenario and could contribute to underestimating urgency if later readers assume stability without confirmation. However, it is an absence of documentation rather than documentation of instability, so harm is typically limited to additional assessment/monitoring needs.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "pf-002",
+        "error_type": "OMISSION",
+        "content": "Patient was examined while seated at rest.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No exam context (seated at rest) is documented in Generated Facts.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Whether the patient was seated at rest is minor exam context and rarely alters acute management decisions in suspected ACS. The omission is primarily documentation quality noise with minimal downstream clinical impact.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "pf-003",
+        "error_type": "OMISSION",
+        "content": "Patient appears well perfused on video inspection.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No perfusion/appearance findings are documented in Generated Facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Failure to document video appearance/perfusion removes helpful observational data that can support acuity assessment, but it is not definitive and would be re-assessed by EMS/ED. This omission is unlikely to independently cause harm beyond potentially prompting repeat evaluation.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "pf-004",
+        "error_type": "OMISSION",
+        "content": "Patient is not short of breath.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No respiratory status statement is documented in Generated Facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Respiratory status is clinically important in chest pain presentations because dyspnea increases concern for ACS/heart failure/PE; omitting it can reduce clarity of severity and differential. In practice, EMS/ED will reassess, so the likely impact is limited to additional questioning/monitoring rather than major harm.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "asm-001",
+        "error_type": "OMISSION",
+        "content": "Impression is an acute cardiac event.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No assessment/impression is documented in Generated Facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Not documenting an impression consistent with possible acute cardiac event can materially reduce the conveyed urgency and rationale for emergency escalation, risking delay if the note is relied upon for triage/hand-off. In a chest-pressure-with-diaphoresis/nausea/radiation presentation, this is a high-stakes assessment element.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "plan-001",
+        "error_type": "OMISSION",
+        "content": "Urgent ECG and troponin T are required.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No plan items are documented in Generated Facts; urgent ECG/troponin requirement is not captured.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting the need for urgent ECG and troponin removes core elements of the standard ACS workup and could contribute to delayed diagnostic evaluation if subsequent clinicians rely on the note. This can plausibly worsen outcomes in true MI through delayed recognition and treatment.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "plan-002",
+        "error_type": "OMISSION",
+        "content": "Ambulance (LAS) was called with blue lights.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No emergency response/ambulance call is documented in Generated Facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Failure to document that an emergency ambulance response was initiated could lead others to underestimate immediacy and potentially delay escalation or duplicate/fragment emergency coordination. In suspected MI, delays can translate into clinically meaningful harm.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "plan-003",
+        "error_type": "OMISSION",
+        "content": "Front door left open to allow paramedic access if patient collapses.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No documentation about leaving the front door open for paramedic access is present in Generated Facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting the instruction to leave the front door open primarily affects logistical safety/access for paramedics rather than medical decision-making. While access issues could theoretically delay care in a collapse, the omission itself is more likely to cause minor process risk than direct clinical harm.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "plan-004",
+        "error_type": "OMISSION",
+        "content": "Clinician remained on the line until the ambulance arrived and handed over to them.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No documentation about clinician staying on the line and handing over to ambulance staff is present in Generated Facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting that the clinician stayed on the line and performed a handover reduces continuity-of-care documentation and can obscure what information was communicated to EMS. This usually results in repeat history-taking and minor coordination issues rather than direct injury.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "plan-005",
+        "error_type": "OMISSION",
+        "content": "LAS to clarify patient's other medications, which were not obtained.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No documentation that other medications were not obtained and require clarification by LAS is present in Generated Facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Not documenting that the medication list was not obtained and needs clarification increases the risk of incomplete medication reconciliation, which can lead to inappropriate administration or missed contraindications in an emergency setting. While EMS/ED typically re-collect medications, the omission can still contribute to moderate safety risk.",
+        "raw_votes": [
+          2
+        ]
+      }
+    ]
+  }
+}

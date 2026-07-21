@@ -1,0 +1,781 @@
+{
+  "metadata": {
+    "consultation_id": "day2_consultation10",
+    "llm_scribe_model": "anthropic_claude-sonnet-4.6",
+    "asr_model": "parakeet-tdt-0.6b-v3",
+    "noise_profile": "hospital_maternity_ward",
+    "snr_level": "snr_8"
+  },
+  "generated_note": {
+    "Chief_Complaint": [
+      {
+        "fact_id": "cc-001",
+        "content": "Left-sided headache since early morning (~05:00), waking patient from sleep",
+        "source_text": "CC: Left-sided headache since early morning (~05:00), waking patient from sleep"
+      }
+    ],
+    "History_of_Present_Illness": [
+      {
+        "fact_id": "hpi-001",
+        "content": "Severe left-sided headache, onset ~05:00, woke from sleep; still present at time of consult",
+        "source_text": "- Severe left-sided headache, onset ~05:00, woke from sleep; still present at time of consult"
+      },
+      {
+        "fact_id": "hpi-002",
+        "content": "History of headaches, but none as severe or as lateralised; prior headaches typically frontal/bilateral",
+        "source_text": "- History of headaches, but none as severe or as lateralised; prior headaches typically frontal/bilateral"
+      },
+      {
+        "fact_id": "hpi-003",
+        "content": "Mild photosensitivity \u2014 tolerable",
+        "source_text": "- Mild photosensitivity \u2014 tolerable"
+      },
+      {
+        "fact_id": "hpi-004",
+        "content": "Nausea: mild dizziness on waking, now resolved; no active nausea",
+        "source_text": "- Nausea: mild dizziness on waking, now resolved; no active nausea"
+      },
+      {
+        "fact_id": "hpi-005",
+        "content": "Headache improves on lying down (after initial discomfort)",
+        "source_text": "- Headache improves on lying down (after initial discomfort)"
+      },
+      {
+        "fact_id": "hpi-006",
+        "content": "Paracetamol taken this morning \u2014 limited relief",
+        "source_text": "- Paracetamol taken this morning \u2014 limited relief"
+      },
+      {
+        "fact_id": "hpi-007",
+        "content": "No neck stiffness",
+        "source_text": "- No neck stiffness; no fever"
+      },
+      {
+        "fact_id": "hpi-008",
+        "content": "No fever",
+        "source_text": "- No neck stiffness; no fever"
+      },
+      {
+        "fact_id": "hpi-009",
+        "content": "No vomiting",
+        "source_text": "- No vomiting"
+      },
+      {
+        "fact_id": "hpi-010",
+        "content": "Work stress \u00d7 ~2 weeks; significant backlog, frequent late nights",
+        "source_text": "- Work stress \u00d7 ~2 weeks; significant backlog, frequent late nights"
+      },
+      {
+        "fact_id": "hpi-011",
+        "content": "Mood: frustrated at times, ebbs and flows; no low mood",
+        "source_text": "- Mood: frustrated at times, ebbs and flows; no low mood"
+      },
+      {
+        "fact_id": "hpi-012",
+        "content": "Anxiety Hx \u00d7 2 years; currently on sertraline; anxiety partially controlled (situational work-related anxiety)",
+        "source_text": "- Anxiety Hx \u00d7 2 years; currently on sertraline; anxiety partially controlled (situational work-related anxiety)"
+      },
+      {
+        "fact_id": "hpi-013",
+        "content": "No thoughts of self-harm",
+        "source_text": "- No thoughts of self-harm"
+      }
+    ],
+    "Past_Medical_History": [
+      {
+        "fact_id": "pmh-001",
+        "content": "Anxiety",
+        "source_text": "**PMH:** Anxiety"
+      },
+      {
+        "fact_id": "pmh-002",
+        "content": "Anxiety history duration: 2 years",
+        "source_text": "- Anxiety Hx \u00d7 2 years; currently on sertraline; anxiety partially controlled (situational work-related anxiety)"
+      },
+      {
+        "fact_id": "pmh-003",
+        "content": "PSH: None documented",
+        "source_text": "**PSH:** None documented"
+      }
+    ],
+    "Medications": [
+      {
+        "fact_id": "meds-001",
+        "content": "Sertraline (dose/freq not documented)",
+        "source_text": "- Sertraline (dose/freq not documented)"
+      },
+      {
+        "fact_id": "meds-002",
+        "content": "Paracetamol (taken this morning, PRN)",
+        "source_text": "- Paracetamol (taken this morning, PRN)"
+      }
+    ],
+    "Adverse_Drug_Reactions_and_Allergies": [
+      {
+        "fact_id": "adr-001",
+        "content": "NKDA",
+        "source_text": "**Allergies:** NKDA"
+      }
+    ],
+    "Family_History": [
+      {
+        "fact_id": "fh-001",
+        "content": "Mother: anxiety",
+        "source_text": "**Family Hx:**\n- Mother: anxiety"
+      },
+      {
+        "fact_id": "fh-002",
+        "content": "No family Hx of migraine; no other significant family illness",
+        "source_text": "- No family Hx of migraine; no other significant family illness"
+      }
+    ],
+    "Social_and_Family_History": [
+      {
+        "fact_id": "sfh-001",
+        "content": "Lives with partner",
+        "source_text": "**Social Hx:**\n- Lives with partner"
+      },
+      {
+        "fact_id": "sfh-002",
+        "content": "Non-smoker",
+        "source_text": "- Non-smoker; no pets"
+      },
+      {
+        "fact_id": "sfh-003",
+        "content": "No pets",
+        "source_text": "- Non-smoker; no pets"
+      },
+      {
+        "fact_id": "sfh-004",
+        "content": "Runs \u00d73/week",
+        "source_text": "- Runs \u00d73/week"
+      },
+      {
+        "fact_id": "sfh-005",
+        "content": "Diet: adequate, not particularly healthy",
+        "source_text": "- Diet: adequate, not particularly healthy"
+      },
+      {
+        "fact_id": "sfh-006",
+        "content": "Occupation: not specified; currently high workload",
+        "source_text": "- Occupation: not specified; currently high workload"
+      },
+      {
+        "fact_id": "sfh-007",
+        "content": "Work stress \u00d7 ~2 weeks; significant backlog, frequent late nights",
+        "source_text": "- Work stress \u00d7 ~2 weeks; significant backlog, frequent late nights"
+      }
+    ],
+    "Assessment": [
+      {
+        "fact_id": "assess-001",
+        "content": "New-onset severe unilateral headache \u2014 likely migraine vs. tension-type headache",
+        "source_text": "1. **New-onset severe unilateral headache \u2014 likely migraine vs. tension-type headache**"
+      },
+      {
+        "fact_id": "assess-002",
+        "content": "Unilateral distribution and photosensitivity favour migraine",
+        "source_text": "- Unilateral distribution and photosensitivity favour migraine"
+      },
+      {
+        "fact_id": "assess-003",
+        "content": "Psychosocial stressors, anxiety history, and prior frontal headaches favour tension-type",
+        "source_text": "- Psychosocial stressors, anxiety history, and prior frontal headaches favour tension-type"
+      },
+      {
+        "fact_id": "assess-004",
+        "content": "No red flag features (no neck stiffness, no fever, no neurological symptoms documented)",
+        "source_text": "- No red flag features (no neck stiffness, no fever, no neurological symptoms documented)"
+      },
+      {
+        "fact_id": "assess-005",
+        "content": "Anxiety \u2014 background, partially controlled",
+        "source_text": "2. **Anxiety \u2014 background, partially controlled**"
+      },
+      {
+        "fact_id": "assess-006",
+        "content": "Situational exacerbation in context of work stress",
+        "source_text": "- Situational exacerbation in context of work stress"
+      }
+    ],
+    "Plan_of_Care": [
+      {
+        "fact_id": "plan-001",
+        "content": "Start ibuprofen (higher-than-standard migraine dosing per current guidelines) as first-line analgesia",
+        "source_text": "- Start **ibuprofen** (higher-than-standard migraine dosing per current guidelines) as first-line analgesia"
+      },
+      {
+        "fact_id": "plan-002",
+        "content": "Continue paracetamol PRN alongside if needed",
+        "source_text": "- Continue paracetamol PRN alongside if needed"
+      },
+      {
+        "fact_id": "plan-003",
+        "content": "Ensure minimum 7\u20138 hrs sleep/night",
+        "source_text": "- Ensure minimum **7\u20138 hrs sleep/night**"
+      },
+      {
+        "fact_id": "plan-004",
+        "content": "Minimum 1.5\u20132 L fluid/day (excluding tea/coffee)",
+        "source_text": "- Minimum **1.5\u20132 L fluid/day** (excluding tea/coffee) \u2014 address possible dehydration/fatigue contribution"
+      },
+      {
+        "fact_id": "plan-005",
+        "content": "Link to headache red flag signs/symptoms to be sent in consultation notes for patient review",
+        "source_text": "- Link to headache red flag signs/symptoms to be sent in consultation notes for patient review"
+      },
+      {
+        "fact_id": "plan-006",
+        "content": "Consider 1 week self-certified sick leave from work",
+        "source_text": "- Consider **1 week self-certified sick leave** from work"
+      },
+      {
+        "fact_id": "plan-007",
+        "content": "Self-referral to local counselling service \u2014 link to be provided in notes",
+        "source_text": "- **Self-referral to local counselling service** \u2014 link to be provided in notes"
+      },
+      {
+        "fact_id": "plan-008",
+        "content": "Low threshold to re-contact if symptoms worsen, change in character, or new concerns arise (safety-netting)",
+        "source_text": "**Safety-netting:**\n- Low threshold to re-contact if symptoms worsen, change in character, or new concerns arise"
+      }
+    ],
+    "Follow_up_Information": [
+      {
+        "fact_id": "fup-001",
+        "content": "Follow-up in 1 week (telephone); if no improvement, consider bloods and further investigation",
+        "source_text": "- **Follow-up in 1 week** (telephone); if no improvement, consider bloods and further investigation"
+      }
+    ],
+    "Physical_Findings": [
+      {
+        "fact_id": "pe-001",
+        "content": "Remote telephone consultation \u2014 no examination performed",
+        "source_text": "*Remote telephone consultation \u2014 no examination performed*"
+      }
+    ],
+    "Review_of_Systems": [
+      {
+        "fact_id": "ros-001",
+        "content": "Mild photosensitivity",
+        "source_text": "- Mild photosensitivity \u2014 tolerable"
+      },
+      {
+        "fact_id": "ros-002",
+        "content": "Mild dizziness on waking, now resolved",
+        "source_text": "- Nausea: mild dizziness on waking, now resolved; no active nausea"
+      },
+      {
+        "fact_id": "ros-003",
+        "content": "No active nausea",
+        "source_text": "- Nausea: mild dizziness on waking, now resolved; no active nausea"
+      },
+      {
+        "fact_id": "ros-004",
+        "content": "No neck stiffness",
+        "source_text": "- No neck stiffness; no fever"
+      },
+      {
+        "fact_id": "ros-005",
+        "content": "No fever",
+        "source_text": "- No neck stiffness; no fever"
+      },
+      {
+        "fact_id": "ros-006",
+        "content": "No vomiting",
+        "source_text": "- No vomiting"
+      }
+    ]
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "cc-001",
+        "status": "COVERED",
+        "reasoning": "Generated documents a left-sided headache starting on waking early morning and waking the patient from sleep, matching the gold chief complaint."
+      },
+      {
+        "fact_id": "hpi-001",
+        "status": "COVERED",
+        "reasoning": "Generated states onset ~05:00 and woke from sleep; gold states ~05:30 and woke from sleep. Time is slightly different but same clinical concept."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "COVERED",
+        "reasoning": "Generated states headache is still present at time of consult."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "COVERED",
+        "reasoning": "Generated notes prior headaches typically frontal/bilateral and less severe."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "COVERED",
+        "reasoning": "Generated explicitly documents no neck stiffness."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "COVERED",
+        "reasoning": "Generated explicitly documents no fever."
+      },
+      {
+        "fact_id": "hpi-006",
+        "status": "COVERED",
+        "reasoning": "Generated documents mild photosensitivity, consistent with gold photophobia."
+      },
+      {
+        "fact_id": "hpi-007",
+        "status": "COVERED",
+        "reasoning": "Generated documents no active nausea."
+      },
+      {
+        "fact_id": "hpi-008",
+        "status": "COVERED",
+        "reasoning": "Generated states mild dizziness on waking that resolved, matching gold."
+      },
+      {
+        "fact_id": "hpi-009",
+        "status": "COVERED",
+        "reasoning": "Generated states headache improves on lying down (after initial discomfort), consistent with gold."
+      },
+      {
+        "fact_id": "hpi-010",
+        "status": "COVERED",
+        "reasoning": "Generated indicates paracetamol provided limited relief, aligning with gold that it did not help (both indicate inadequate effect)."
+      },
+      {
+        "fact_id": "hpi-011",
+        "status": "CONTRADICTED",
+        "reasoning": "Gold states work stress/late nights ongoing for a few months; generated states work stress ~2 weeks."
+      },
+      {
+        "fact_id": "hpi-012",
+        "status": "COVERED",
+        "reasoning": "Generated explicitly documents no thoughts of self-harm."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "COVERED",
+        "reasoning": "Generated documents anxiety and also notes 2-year duration."
+      },
+      {
+        "fact_id": "pmh-002",
+        "status": "OMITTED",
+        "reasoning": "Generated does not clearly state there is otherwise no significant past medical history (it lists anxiety but does not explicitly document PMH otherwise nil)."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "COVERED",
+        "reasoning": "Generated lists sertraline."
+      },
+      {
+        "fact_id": "med-002",
+        "status": "COVERED",
+        "reasoning": "Generated documents paracetamol taken this morning for the headache."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "COVERED",
+        "reasoning": "Generated documents NKDA."
+      },
+      {
+        "fact_id": "fh-001",
+        "status": "COVERED",
+        "reasoning": "Generated documents no family history of migraine."
+      },
+      {
+        "fact_id": "fh-002",
+        "status": "COVERED",
+        "reasoning": "Generated documents mother has anxiety."
+      },
+      {
+        "fact_id": "sh-001",
+        "status": "COVERED",
+        "reasoning": "Generated documents living with partner."
+      },
+      {
+        "fact_id": "sh-002",
+        "status": "COVERED",
+        "reasoning": "Generated documents non-smoker."
+      },
+      {
+        "fact_id": "sh-003",
+        "status": "CONTRADICTED",
+        "reasoning": "Gold states patient has a cat at home; generated states no pets."
+      },
+      {
+        "fact_id": "sh-004",
+        "status": "COVERED",
+        "reasoning": "Generated documents running 3x/week and diet adequate/not particularly healthy, consistent with overall 'good exercise' and 'reasonable diet'."
+      },
+      {
+        "fact_id": "sh-005",
+        "status": "CONTRADICTED",
+        "reasoning": "Gold states work stress/late nights over several months; generated states ~2 weeks."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "COVERED",
+        "reasoning": "Generated assessment states likely migraine vs tension-type headache, matching gold."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "COVERED",
+        "reasoning": "Generated plan includes starting ibuprofen as first-line treatment per guidelines (though does not name SIGN 2018 explicitly)."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "COVERED",
+        "reasoning": "Generated advises 1.5\u20132 L fluids/day excluding tea/coffee."
+      },
+      {
+        "fact_id": "plan-003",
+        "status": "COVERED",
+        "reasoning": "Generated recommends 7\u20138 hours sleep per night."
+      },
+      {
+        "fact_id": "plan-004",
+        "status": "COVERED",
+        "reasoning": "Generated recommends self-certified sick leave (states 1 week) which covers the gold concept of taking time off and self-certifying for a few days."
+      },
+      {
+        "fact_id": "plan-005",
+        "status": "COVERED",
+        "reasoning": "Generated recommends self-referral to local counselling service (equivalent to IAPTs self-referral)."
+      },
+      {
+        "fact_id": "fu-001",
+        "status": "COVERED",
+        "reasoning": "Generated documents follow-up in 1 week."
+      },
+      {
+        "fact_id": "fu-002",
+        "status": "COVERED",
+        "reasoning": "Generated includes red-flag link in notes and safety-netting to re-contact if worse/changes, matching gold instruction to ring back sooner if red flags occur."
+      }
+    ],
+    "gen_assessment": [
+      {
+        "fact_id": "cc-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: left-sided headache starting on waking early morning and waking patient from sleep."
+      },
+      {
+        "fact_id": "hpi-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold concepts of severe unilateral headache waking from sleep and persisting at consult; time (~05:00 vs 05:30) is a minor discrepancy."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold history of prior headaches that were less severe and typically frontal rather than unilateral."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: some sensitivity to bright lights."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "SUPPORTED",
+        "reasoning": "Gold includes dizziness this morning now resolved and no nausea at present; generated combines these."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: improves when lying down (generated adds 'after initial discomfort' consistent with transcript)."
+      },
+      {
+        "fact_id": "hpi-006",
+        "status": "SUPPORTED",
+        "reasoning": "Gold states paracetamol did not help; 'limited relief' is consistent with inadequate benefit."
+      },
+      {
+        "fact_id": "hpi-007",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: no neck stiffness."
+      },
+      {
+        "fact_id": "hpi-008",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: no fever."
+      },
+      {
+        "fact_id": "hpi-009",
+        "status": "HALLUCINATION",
+        "reasoning": "Not in gold and not explicitly stated in transcript; absence of vomiting was not assessed/documented."
+      },
+      {
+        "fact_id": "hpi-010",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold says work stress/late nights for a few months, but transcript suggests 'only about half a month' (~2 weeks). Generated reflects transcript despite differing from gold."
+      },
+      {
+        "fact_id": "hpi-011",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Mood details (frustrated/ebb and flow) are supported by transcript but not included in gold."
+      },
+      {
+        "fact_id": "hpi-012",
+        "status": "SUPPORTED",
+        "reasoning": "Gold includes 2-year anxiety history and sertraline; generated adds situational work-related anxiety consistent with transcript."
+      },
+      {
+        "fact_id": "hpi-013",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: denies thoughts of self-harm."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: anxiety."
+      },
+      {
+        "fact_id": "pmh-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: 2-year history of anxiety."
+      },
+      {
+        "fact_id": "pmh-003",
+        "status": "HALLUCINATION",
+        "reasoning": "Past surgical history was not discussed in gold or transcript; 'none documented' is not supported by the provided record."
+      },
+      {
+        "fact_id": "meds-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: taking sertraline."
+      },
+      {
+        "fact_id": "meds-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: took paracetamol for current headache."
+      },
+      {
+        "fact_id": "adr-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: NKDA."
+      },
+      {
+        "fact_id": "fh-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: mother has anxiety."
+      },
+      {
+        "fact_id": "fh-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: no family history of migraines; transcript also indicates no other family illness."
+      },
+      {
+        "fact_id": "sfh-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: lives with partner."
+      },
+      {
+        "fact_id": "sfh-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: non-smoker."
+      },
+      {
+        "fact_id": "sfh-003",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Contradicts gold (cat at home) but is supported by transcript where patient reports no pets."
+      },
+      {
+        "fact_id": "sfh-004",
+        "status": "SUPPORTED",
+        "reasoning": "Consistent with gold 'good exercise' and transcript stating runs ~3 times/week."
+      },
+      {
+        "fact_id": "sfh-005",
+        "status": "SUPPORTED",
+        "reasoning": "Consistent with gold 'reasonable diet' and transcript indicating diet is okay/not especially healthy."
+      },
+      {
+        "fact_id": "sfh-006",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Occupation not being specified is consistent with transcript (not discussed) but not a gold fact."
+      },
+      {
+        "fact_id": "sfh-007",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Work stress duration (~2 weeks) aligns with transcript ('half a month') but differs from gold ('few months')."
+      },
+      {
+        "fact_id": "assess-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: tension-type headache +/- migraine."
+      },
+      {
+        "fact_id": "assess-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Reasoning that unilateral headache + photophobia favours migraine is consistent with transcript explanation, though not stated as a gold fact."
+      },
+      {
+        "fact_id": "assess-003",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Reasoning that stress/anxiety and prior frontal headaches favour tension-type is consistent with transcript explanation."
+      },
+      {
+        "fact_id": "assess-004",
+        "status": "HALLUCINATION",
+        "reasoning": "While no neck stiffness/fever are supported, 'no neurological symptoms documented' and broad 'no red flag features' were not explicitly assessed/documented in gold or transcript."
+      },
+      {
+        "fact_id": "assess-005",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript supports that anxiety is present but not currently severe; 'partially controlled' is a reasonable inference not in gold."
+      },
+      {
+        "fact_id": "assess-006",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript supports situational anxiety related to work stress."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: start ibuprofen first-line; transcript supports discussion of higher doses for migraine per guidelines."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript explicitly states patient can keep taking paracetamol as well; gold does not list this as a separate plan item."
+      },
+      {
+        "fact_id": "plan-003",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: recommend 7\u20138 hours sleep nightly."
+      },
+      {
+        "fact_id": "plan-004",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: hydration 1.5\u20132 L/day excluding tea/coffee."
+      },
+      {
+        "fact_id": "plan-005",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript states a link to danger/red-flag headache signs will be left in notes; gold frames this as ring back sooner if red flags occur."
+      },
+      {
+        "fact_id": "plan-006",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold concept of self-certified time off work (generated specifies 1 week; gold says a few days)."
+      },
+      {
+        "fact_id": "plan-007",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: self-refer to counselling/IAPTs; transcript supports providing a link for self-referral."
+      },
+      {
+        "fact_id": "plan-008",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold safety-netting to ring back sooner if worse/concerns/red flags."
+      },
+      {
+        "fact_id": "fup-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold includes review in a week; transcript also adds that if not improving they may arrange blood tests/further evaluation, which generated includes."
+      },
+      {
+        "fact_id": "pe-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript explicitly states the doctor could not examine the patient and it was a phone consultation."
+      },
+      {
+        "fact_id": "ros-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: sensitivity to bright lights."
+      },
+      {
+        "fact_id": "ros-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: dizzy this morning but not now."
+      },
+      {
+        "fact_id": "ros-003",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: no nausea at present."
+      },
+      {
+        "fact_id": "ros-004",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: no neck stiffness."
+      },
+      {
+        "fact_id": "ros-005",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: no fever."
+      },
+      {
+        "fact_id": "ros-006",
+        "status": "HALLUCINATION",
+        "reasoning": "No vomiting was not documented in gold and not explicitly stated in transcript."
+      }
+    ]
+  },
+  "safety_grading": {
+    "total_errors_graded": 5,
+    "safety_verdicts": [
+      {
+        "fact_id": "pmh-002",
+        "error_type": "OMISSION",
+        "content": "Otherwise patient reports no significant past medical history.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated does not clearly state there is otherwise no significant past medical history (it lists anxiety but does not explicitly document PMH otherwise nil).",
+        "consensus_tier": 4,
+        "clinical_rationale": "Failing to explicitly document that there is otherwise no significant PMH (beyond anxiety) is mainly a completeness issue and is unlikely to change acute headache management in this encounter. It could create minor downstream ambiguity for future clinicians reviewing the record.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "hpi-009",
+        "error_type": "COMMISSION",
+        "content": "No vomiting",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Not in gold and not explicitly stated in transcript; absence of vomiting was not assessed/documented.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Documenting \u201cno vomiting\u201d when it was not assessed can falsely reassure readers during evaluation of an acute severe headache, where vomiting may be relevant to migraine vs. raised intracranial pressure/other secondary causes. This could contribute to under-triage or less thorough safety-netting, though harm is not certain from this record alone.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "pmh-003",
+        "error_type": "COMMISSION",
+        "content": "PSH: None documented",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Past surgical history was not discussed in gold or transcript; 'none documented' is not supported by the provided record.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Stating \u201cPSH: none documented\u201d without any surgical history being elicited is an unsupported documentation claim but typically has minimal impact on short-term headache assessment and treatment. The main risk is administrative/record-accuracy noise.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "assess-004",
+        "error_type": "COMMISSION",
+        "content": "No red flag features (no neck stiffness, no fever, no neurological symptoms documented)",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "While no neck stiffness/fever are supported, 'no neurological symptoms documented' and broad 'no red flag features' were not explicitly assessed/documented in gold or transcript.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Asserting \u201cno red flag features\u201d (including \u201cno neurological symptoms\u201d) when a full neurologic symptom screen/exam was not documented can lead to inappropriate reassurance and potentially delayed escalation for serious secondary headache (e.g., hemorrhage, infection). In a new, severe, wake-from-sleep headache, overcalling \u201cno red flags\u201d meaningfully increases clinical risk.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "ros-006",
+        "error_type": "COMMISSION",
+        "content": "No vomiting",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "No vomiting was not documented in gold and not explicitly stated in transcript.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Repeating \u201cno vomiting\u201d in ROS when it was not assessed can mislead subsequent clinicians about the presence/absence of an important associated symptom in acute headache workup. This is more likely to cause resolution loss or under-triage than direct immediate harm.",
+        "raw_votes": [
+          3
+        ]
+      }
+    ]
+  }
+}

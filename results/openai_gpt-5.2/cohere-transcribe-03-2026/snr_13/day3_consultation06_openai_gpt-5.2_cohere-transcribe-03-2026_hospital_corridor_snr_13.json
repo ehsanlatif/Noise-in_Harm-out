@@ -1,0 +1,308 @@
+{
+  "metadata": {
+    "consultation_id": "day3_consultation06",
+    "llm_scribe_model": "openai_gpt-5.2",
+    "asr_model": "cohere-transcribe-03-2026",
+    "noise_profile": "hospital_corridor",
+    "snr_level": "snr_13"
+  },
+  "generated_note": {
+    "Chief_Complaint": [
+      {
+        "fact_id": "chief-001",
+        "content": "Breathing difficulty after wasp sting",
+        "source_text": "Breathing difficulty after wasp sting"
+      }
+    ],
+    "History_of_Present_Illness": [
+      {
+        "fact_id": "hpi-001",
+        "content": "Wasp sting while gardening approximately 15 minutes prior to call",
+        "source_text": "Wasp sting while gardening ~15 min prior to call"
+      },
+      {
+        "fact_id": "hpi-002",
+        "content": "Since sting: shallow breathing",
+        "source_text": "Since sting: shallow breathing, chest tightness"
+      },
+      {
+        "fact_id": "hpi-003",
+        "content": "Since sting: chest tightness",
+        "source_text": "Since sting: shallow breathing, chest tightness"
+      },
+      {
+        "fact_id": "hpi-004",
+        "content": "Lips: tingling sensation",
+        "source_text": "Lips: tingling sensation; denies throat closing"
+      },
+      {
+        "fact_id": "hpi-005",
+        "content": "Denies throat closing",
+        "source_text": "Lips: tingling sensation; denies throat closing"
+      },
+      {
+        "fact_id": "hpi-006",
+        "content": "Skin: bit of blotching / rash",
+        "source_text": "Skin: \u201cbit of blotching\u201d/rash"
+      },
+      {
+        "fact_id": "hpi-007",
+        "content": "No prior similar episodes",
+        "source_text": "No prior similar episodes"
+      },
+      {
+        "fact_id": "hpi-008",
+        "content": "Has antihistamines at home",
+        "source_text": "Has antihistamines at home"
+      }
+    ],
+    "Past_Medical_History": [
+      {
+        "fact_id": "pmh-001",
+        "content": "Eczema",
+        "source_text": "Eczema"
+      },
+      {
+        "fact_id": "pmh-002",
+        "content": "Allergy described as \"parasitic\" (as stated)",
+        "source_text": "Allergy: \u201cparasitic\u201d (as stated)"
+      }
+    ],
+    "Medications": [
+      {
+        "fact_id": "meds-001",
+        "content": "No regular medications",
+        "source_text": "No regular meds"
+      }
+    ],
+    "Adverse_Drug_Reactions_and_Allergies": [
+      {
+        "fact_id": "allergy-001",
+        "content": "Allergy: \"parasitic\" (as stated)",
+        "source_text": "Allergy: \u201cparasitic\u201d (as stated)"
+      }
+    ],
+    "Family_History": [],
+    "Social_and_Family_History": [],
+    "Assessment": [
+      {
+        "fact_id": "assess-001",
+        "content": "Possible anaphylaxis vs urticarial allergic reaction status post wasp sting",
+        "source_text": "Possible anaphylaxis vs urticarial allergic reaction s/p wasp sting"
+      },
+      {
+        "fact_id": "assess-002",
+        "content": "Symptoms noted: SOB/shallow breathing, chest tightness, lip tingling, rash/blotching",
+        "source_text": "SOB/shallow breathing + chest tightness + lip tingling + rash/blotching"
+      }
+    ],
+    "Plan_of_Care": [
+      {
+        "fact_id": "plan-001",
+        "content": "Possible anaphylaxis/allergic reaction",
+        "source_text": "**Possible anaphylaxis/allergic reaction**"
+      },
+      {
+        "fact_id": "plan-002",
+        "content": "Call ambulance immediately (wife to call)",
+        "source_text": "Call ambulance immediately (wife to call)"
+      },
+      {
+        "fact_id": "plan-003",
+        "content": "Take antihistamine now while awaiting ambulance",
+        "source_text": "Take antihistamine now while awaiting ambulance"
+      },
+      {
+        "fact_id": "plan-004",
+        "content": "Go to hospital for urgent assessment/treatment due to breathing difficulty and risk of rapid worsening/anaphylaxis",
+        "source_text": "Go to hospital for urgent assessment/tx due to breathing difficulty and risk of rapid worsening/anaphylaxis"
+      }
+    ],
+    "Follow_up_Information": [],
+    "Physical_Findings": [],
+    "Review_of_Systems": []
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "hpi-001",
+        "status": "COVERED",
+        "reasoning": "Generated documents wasp sting ~15 minutes prior with subsequent shallow breathing/breathing difficulty, matching timing and symptom onset."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "COVERED",
+        "reasoning": "Generated explicitly states lip tingling."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "COVERED",
+        "reasoning": "Generated explicitly states chest tightness since the sting."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "COVERED",
+        "reasoning": "Generated explicitly documents denial of throat closing."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "COVERED",
+        "reasoning": "Generated explicitly states no prior similar episodes."
+      },
+      {
+        "fact_id": "pf-001",
+        "status": "COVERED",
+        "reasoning": "Generated includes 'bit of blotching/rash' in HPI, which captures the same clinical finding as a blotchy rash."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "COVERED",
+        "reasoning": "Generated lists eczema in PMH."
+      },
+      {
+        "fact_id": "pmh-002",
+        "status": "OMITTED",
+        "reasoning": "Gold PMH includes aerosinusitis; generated does not mention aerosinusitis (instead includes an unrelated/unclear allergy term in PMH)."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "CONTRADICTED",
+        "reasoning": "Gold states penicillin allergy, while generated records allergy as 'parasitic' (as stated), which conflicts with the specific allergen in the Gold Summary."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "COVERED",
+        "reasoning": "Generated assessment includes urticarial allergic reaction as a possibility."
+      },
+      {
+        "fact_id": "asm-002",
+        "status": "COVERED",
+        "reasoning": "Generated assessment includes possible anaphylaxis needing consideration."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "COVERED",
+        "reasoning": "Generated plan includes taking antihistamine now/while awaiting ambulance."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "COVERED",
+        "reasoning": "Generated plan includes calling an ambulance immediately."
+      }
+    ],
+    "gen_assessment": [
+      {
+        "fact_id": "chief-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold HPI: breathing difficulty after wasp sting."
+      },
+      {
+        "fact_id": "hpi-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold HPI timing/context: wasp sting with symptoms starting ~15 minutes prior."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold states breathing difficulty; transcript specifically includes 'shallow' breathing. This is consistent and explicitly supported by the transcript."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold HPI: chest tightness."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold HPI: tingling sensation around the lips."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold HPI: denies throat closing."
+      },
+      {
+        "fact_id": "hpi-006",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold PF finding: blotchy rash/blotching."
+      },
+      {
+        "fact_id": "hpi-007",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold HPI: no previous similar episodes."
+      },
+      {
+        "fact_id": "hpi-008",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not stated in Gold, but transcript explicitly indicates patient has antihistamines at home."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold PMH: eczema."
+      },
+      {
+        "fact_id": "pmh-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in Gold (Gold specifies penicillin), but transcript contains patient statement 'I'm allergic to parasitic' (unclear term). Generated accurately captures the spoken content."
+      },
+      {
+        "fact_id": "meds-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in Gold, but transcript explicitly states no regular medications."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in Gold (Gold specifies penicillin), but transcript supports that the patient said they were allergic to 'parasitic' (as stated)."
+      },
+      {
+        "fact_id": "assess-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold assessment: urticaria possible and anaphylaxis needs to be ruled out."
+      },
+      {
+        "fact_id": "assess-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold supports chest tightness/lip tingling/rash; transcript additionally supports shallow breathing/SOB. The combined symptom list is consistent with transcript and largely overlaps Gold."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold includes concern for/rule out anaphylaxis and possible urticaria; transcript reflects clinician concern for anaphylactic reaction."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold plan: call an ambulance (wife to call is consistent with transcript)."
+      },
+      {
+        "fact_id": "plan-003",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold plan: begin antihistamine immediately; transcript instructs antihistamine while awaiting ambulance."
+      },
+      {
+        "fact_id": "plan-004",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold indicates ambulance/hospital evaluation to rule out anaphylaxis; transcript explicitly emphasizes urgent hospital assessment due to risk of rapid worsening with breathing difficulty."
+      }
+    ]
+  },
+  "safety_grading": {
+    "total_errors_graded": 1,
+    "safety_verdicts": [
+      {
+        "fact_id": "pmh-002",
+        "error_type": "OMISSION",
+        "content": "Patient has a history of aerosinusitis.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold PMH includes aerosinusitis; generated does not mention aerosinusitis (instead includes an unrelated/unclear allergy term in PMH).",
+        "consensus_tier": 4,
+        "clinical_rationale": "Omitting a history of aerosinusitis/chronic sinusitis has little to no impact on the acute assessment and management of suspected anaphylaxis after a wasp sting, where airway/breathing symptoms drive urgent escalation. It is unlikely to change immediate treatment decisions or disposition in this encounter.",
+        "raw_votes": [
+          4
+        ]
+      }
+    ]
+  }
+}

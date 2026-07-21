@@ -1,0 +1,507 @@
+{
+  "metadata": {
+    "consultation_id": "day1_consultation05",
+    "llm_scribe_model": "openai_gpt-5.2",
+    "asr_model": "deepgram-nova3",
+    "noise_profile": "hospital_reception",
+    "snr_level": "snr_-2"
+  },
+  "generated_note": {
+    "Chief_Complaint": [
+      {
+        "fact_id": "Chief_Complaint-001",
+        "content": "Tummy pain x last couple days",
+        "source_text": "\u201cTummy pain\u201d x last couple days"
+      }
+    ],
+    "History_of_Present_Illness": [
+      {
+        "fact_id": "History_of_Present_Illness-001",
+        "content": "Abdominal pain for the last couple of days that has really affected the patient",
+        "source_text": "Abd pain x \u201clast couple of days,\u201d \u201creally affected\u201d pt"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-002",
+        "content": "Urine described as a little pink",
+        "source_text": "Urine \u201ca little pink\u201d"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-003",
+        "content": "No burning with urination (no dysuria)",
+        "source_text": "No burning w/ urination (no dysuria)"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-004",
+        "content": "Urinating more regularly; patient notes drinking a lot and is unsure if related",
+        "source_text": "Urinating \u201cmore regularly\u201d; pt notes drinking a lot, unsure if related"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-005",
+        "content": "Contraception: implant",
+        "source_text": "Contraception: implant (\u201cin Europe\u201d)"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-006",
+        "content": "Still having periods: yes",
+        "source_text": "Still having periods: yes"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-007",
+        "content": "LMP approximately 2\u20133 weeks ago (patient stated \u201cabout three weeks ago\u2026 two weeks ago\u201d)",
+        "source_text": "LMP: ~2\u20133 wks ago (pt stated \u201cabout three weeks ago\u2026 two weeks ago\u201d)"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-008",
+        "content": "Pregnancy possibility discussed; response unclear in transcript",
+        "source_text": "Pregnancy possibility discussed (response unclear in transcript)"
+      }
+    ],
+    "Past_Medical_History": [
+      {
+        "fact_id": "Past_Medical_History-001",
+        "content": "Patient reports normally pretty well",
+        "source_text": "PMH: \u201cNormally pretty well\u201d"
+      },
+      {
+        "fact_id": "Past_Medical_History-002",
+        "content": "No prior operations or surgical history",
+        "source_text": "PSH: No prior ops/surg hx"
+      }
+    ],
+    "Medications": [
+      {
+        "fact_id": "Medications-001",
+        "content": "No medications reported (aside from implant)",
+        "source_text": "Meds: None reported (aside from implant)"
+      }
+    ],
+    "Adverse_Drug_Reactions_and_Allergies": [],
+    "Family_History": [],
+    "Social_and_Family_History": [
+      {
+        "fact_id": "Social_and_Family_History-001",
+        "content": "Lives with 2 roommates",
+        "source_text": "Lives w/ 2 roommates; works as accountant"
+      },
+      {
+        "fact_id": "Social_and_Family_History-002",
+        "content": "Works as an accountant",
+        "source_text": "Lives w/ 2 roommates; works as accountant"
+      }
+    ],
+    "Assessment": [
+      {
+        "fact_id": "Assessment-001",
+        "content": "Abdominal pain for a few days",
+        "source_text": "1. Abd pain x few days"
+      },
+      {
+        "fact_id": "Assessment-002",
+        "content": "Pink urine and urinary frequency without dysuria",
+        "source_text": "2. Pink urine + urinary frequency (no dysuria)"
+      }
+    ],
+    "Plan_of_Care": [
+      {
+        "fact_id": "Plan_of_Care-001",
+        "content": "Proceed to physical exam and screening questions (per clinician)",
+        "source_text": "\u2022 Proceed to physical exam and screening questions (per clinician)"
+      }
+    ],
+    "Follow_up_Information": [],
+    "Physical_Findings": [
+      {
+        "fact_id": "Physical_Findings-001",
+        "content": "No vitals, exam, or diagnostics documented in the transcript",
+        "source_text": "*(no vitals/exam/diagnostics documented in transcript)*"
+      }
+    ],
+    "Review_of_Systems": []
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "hpi-001",
+        "status": "COVERED",
+        "reasoning": "Generated notes tummy/abdominal pain for the last couple of days, which semantically matches pain starting ~2 days ago. Location (lower/suprapubic) and gradual onset are not specified but not contradicted."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "OMITTED",
+        "reasoning": "Generated does not describe the pain as constant, progressively worsening, or a burning sensation."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "OMITTED",
+        "reasoning": "No bowel history (no bowel symptoms / prior constipation resolved) is not mentioned in the generated facts."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "COVERED",
+        "reasoning": "Generated includes pink urine and explicitly states no dysuria; pink rather than frank bleeding is consistent with 'no frank hematuria' and is not contradicted."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "OMITTED",
+        "reasoning": "Nausea and absence of diarrhea/vomiting are not present in the generated facts."
+      },
+      {
+        "fact_id": "hpi-006",
+        "status": "OMITTED",
+        "reasoning": "Feeling hot and sweaty is not included in the generated facts."
+      },
+      {
+        "fact_id": "hpi-007",
+        "status": "OMITTED",
+        "reasoning": "Sexual activity details and last unprotected intercourse 4 days ago are absent from the generated facts."
+      },
+      {
+        "fact_id": "hpi-008",
+        "status": "OMITTED",
+        "reasoning": "Last STD screen timing (6 months ago) is not captured in the generated facts."
+      },
+      {
+        "fact_id": "hpi-009",
+        "status": "COVERED",
+        "reasoning": "Generated documents LMP as approximately 2\u20133 weeks ago, which includes and aligns with the gold LMP of 2 weeks ago."
+      },
+      {
+        "fact_id": "hpi-010",
+        "status": "OMITTED",
+        "reasoning": "Negatives for chest pain, shortness of breath, palpitations, headaches, and visual symptoms are not documented in the generated facts."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "COVERED",
+        "reasoning": "Generated states the patient is normally well and has no surgical history/operations, consistent with no significant PMH/PSH."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "COVERED",
+        "reasoning": "Generated includes contraception implant and no other medications, matching Implanon with otherwise no regular medication."
+      },
+      {
+        "fact_id": "famhx-001",
+        "status": "OMITTED",
+        "reasoning": "No family history is documented in the generated facts."
+      },
+      {
+        "fact_id": "sh-001",
+        "status": "COVERED",
+        "reasoning": "Generated captures living with two roommates and working as an accountant."
+      },
+      {
+        "fact_id": "sh-002",
+        "status": "OMITTED",
+        "reasoning": "Smoking status and alcohol use are not included in the generated facts."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "OMITTED",
+        "reasoning": "Generated does not state the differential of UTI nor the need to exclude pregnancy (beyond noting pregnancy was discussed)."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "OMITTED",
+        "reasoning": "No plan for a pregnancy test is documented in the generated facts."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "OMITTED",
+        "reasoning": "No empiric UTI treatment with trimethoprim is documented in the generated facts."
+      },
+      {
+        "fact_id": "plan-003",
+        "status": "OMITTED",
+        "reasoning": "No recommendation for regular paracetamol is documented in the generated facts."
+      },
+      {
+        "fact_id": "fu-001",
+        "status": "OMITTED",
+        "reasoning": "No follow-up review timeframe (24\u201348 hours if not improving) is included in the generated facts."
+      },
+      {
+        "fact_id": "fu-002",
+        "status": "OMITTED",
+        "reasoning": "No safety-net advice for earlier review with worsening symptoms is included in the generated facts."
+      }
+    ],
+    "gen_assessment": [
+      {
+        "fact_id": "Chief_Complaint-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold HPI describing abdominal/suprapubic pain starting ~2 days ago (\"last couple days\")."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold documents lower abdominal pain for 2 days; generated states abdominal pain for the last couple of days. The added phrase 'really affected' is consistent with the transcript and does not contradict the gold."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-002",
+        "status": "SUPPORTED",
+        "reasoning": "Gold urinary symptoms include pink-colored urine."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-003",
+        "status": "SUPPORTED",
+        "reasoning": "Gold explicitly notes nil dysuria; generated states no burning with urination."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-004",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Urinary frequency and the patient attributing it possibly to drinking a lot are stated in the transcript but are not included in the gold summary."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-005",
+        "status": "SUPPORTED",
+        "reasoning": "Gold medication/contraception history includes Implanon; generated records an implant."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-006",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Still having periods is in the transcript but not explicitly stated in the gold facts."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-007",
+        "status": "SUPPORTED",
+        "reasoning": "Gold states LMP 2 weeks ago; generated documents ~2\u20133 weeks ago, consistent with both the gold and the transcript (patient vacillated between ~3 and 2 weeks)."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-008",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript includes discussion/questioning about pregnancy; generated appropriately notes the response is unclear. Gold focuses on the need to exclude pregnancy rather than describing the discussion details."
+      },
+      {
+        "fact_id": "Past_Medical_History-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript states the patient is 'quite well/normally pretty well.' Gold summarizes as no significant PMH."
+      },
+      {
+        "fact_id": "Past_Medical_History-002",
+        "status": "SUPPORTED",
+        "reasoning": "Gold includes no past surgical history; generated states no prior operations/surgical history."
+      },
+      {
+        "fact_id": "Medications-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold states Implanon and otherwise nil regular medications; generated states none aside from implant."
+      },
+      {
+        "fact_id": "Social_and_Family_History-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold states roomshare with 2 flatmates; generated states lives with 2 roommates."
+      },
+      {
+        "fact_id": "Social_and_Family_History-002",
+        "status": "SUPPORTED",
+        "reasoning": "Gold states works as an accountant; generated matches."
+      },
+      {
+        "fact_id": "Assessment-001",
+        "status": "SUPPORTED",
+        "reasoning": "Restates the gold HPI timing of abdominal pain (~2 days / few days)."
+      },
+      {
+        "fact_id": "Assessment-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold supports pink urine and no dysuria; urinary frequency is supported by the transcript but not present in the gold summary."
+      },
+      {
+        "fact_id": "Plan_of_Care-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript explicitly mentions the clinician proceeding to examination and screening questions; not included in the gold plan items."
+      },
+      {
+        "fact_id": "Physical_Findings-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript provided contains no vitals/exam/diagnostic results; this is a documentation-level observation consistent with the transcript and not addressed in the gold."
+      }
+    ]
+  },
+  "safety_grading": {
+    "total_errors_graded": 15,
+    "safety_verdicts": [
+      {
+        "fact_id": "hpi-002",
+        "error_type": "OMISSION",
+        "content": "The pain is described as a constant, progressively worsening burning sensation.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated does not describe the pain as constant, progressively worsening, or a burning sensation.",
+        "consensus_tier": 2,
+        "clinical_rationale": "The omission of the pain being constant, progressively worsening, and a burning sensation could lead to misdiagnosis or inadequate pain management, potentially missing a serious underlying condition.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-003",
+        "error_type": "OMISSION",
+        "content": "Patient reports no current bowel symptoms, but had constipation which has now resolved.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No bowel history (no bowel symptoms / prior constipation resolved) is not mentioned in the generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "The omission of resolved constipation and current bowel symptoms could lead to overlooking gastrointestinal issues or misinterpretation of the patient's current health status.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-005",
+        "error_type": "OMISSION",
+        "content": "Patient reports some nausea but no diarrhea or vomiting.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Nausea and absence of diarrhea/vomiting are not present in the generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting nausea and the absence of diarrhea/vomiting could lead to incomplete assessment of gastrointestinal symptoms, affecting diagnosis and treatment decisions.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-006",
+        "error_type": "OMISSION",
+        "content": "Patient has been feeling hot and sweaty.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Feeling hot and sweaty is not included in the generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Feeling hot and sweaty could indicate fever or infection, and its omission might lead to missing signs of systemic illness.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-007",
+        "error_type": "OMISSION",
+        "content": "Patient is currently sexually active with a regular partner, with the last unprotected intercourse occurring 4 days ago.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Sexual activity details and last unprotected intercourse 4 days ago are absent from the generated facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting details of sexual activity and recent unprotected intercourse could lead to missing potential risks for sexually transmitted infections or pregnancy, affecting clinical decisions.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-008",
+        "error_type": "OMISSION",
+        "content": "The last STD screen was 6 months ago.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Last STD screen timing (6 months ago) is not captured in the generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "The omission of the last STD screen timing could lead to inadequate assessment of sexual health risks and necessary follow-up actions.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-010",
+        "error_type": "OMISSION",
+        "content": "Patient denies any chest pain, shortness of breath, palpitations, headaches, or visual symptoms.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Negatives for chest pain, shortness of breath, palpitations, headaches, and visual symptoms are not documented in the generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Neglecting to document the absence of chest pain, shortness of breath, palpitations, headaches, and visual symptoms could lead to overlooking potential systemic issues.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "famhx-001",
+        "error_type": "OMISSION",
+        "content": "Patient has no relevant family history.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No family history is documented in the generated facts.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Omitting the lack of relevant family history has minimal impact on immediate clinical decisions but could affect long-term health assessments.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "sh-002",
+        "error_type": "OMISSION",
+        "content": "Patient is a non-smoker and drinks alcohol socially.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Smoking status and alcohol use are not included in the generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting smoking status and alcohol use could lead to missing lifestyle factors that influence health risks and management strategies.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "asm-001",
+        "error_type": "OMISSION",
+        "content": "The differential diagnosis includes a urinary tract infection (UTI) and the need to exclude pregnancy.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated does not state the differential of UTI nor the need to exclude pregnancy (beyond noting pregnancy was discussed).",
+        "consensus_tier": 2,
+        "clinical_rationale": "Not stating the differential diagnosis of UTI and the need to exclude pregnancy could lead to inadequate diagnostic focus and management plans.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "plan-001",
+        "error_type": "OMISSION",
+        "content": "A pregnancy test will be performed.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No plan for a pregnancy test is documented in the generated facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting the plan for a pregnancy test could lead to missing a critical diagnostic step, affecting treatment decisions and patient safety.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "plan-002",
+        "error_type": "OMISSION",
+        "content": "Patient will be treated empirically for a UTI with Trimethoprim antibiotics.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No empiric UTI treatment with trimethoprim is documented in the generated facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Not documenting empiric UTI treatment with trimethoprim could result in untreated infection, leading to worsening symptoms and complications.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "plan-003",
+        "error_type": "OMISSION",
+        "content": "Recommended regular paracetamol for pain.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No recommendation for regular paracetamol is documented in the generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting the recommendation for regular paracetamol could lead to inadequate pain management, affecting patient comfort and recovery.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "fu-001",
+        "error_type": "OMISSION",
+        "content": "Patient to have a review in 24-48 hours if symptoms are not improving.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No follow-up review timeframe (24\u201348 hours if not improving) is included in the generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not including follow-up review timeframe could lead to delayed reassessment, potentially missing worsening symptoms or treatment failure.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "fu-002",
+        "error_type": "OMISSION",
+        "content": "Advised to seek review earlier for worsening symptoms such as fever, abdominal pain, or vomiting.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No safety-net advice for earlier review with worsening symptoms is included in the generated facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting safety-net advice for earlier review with worsening symptoms could lead to delayed intervention in case of complications, affecting patient safety.",
+        "raw_votes": [
+          2
+        ]
+      }
+    ]
+  }
+}

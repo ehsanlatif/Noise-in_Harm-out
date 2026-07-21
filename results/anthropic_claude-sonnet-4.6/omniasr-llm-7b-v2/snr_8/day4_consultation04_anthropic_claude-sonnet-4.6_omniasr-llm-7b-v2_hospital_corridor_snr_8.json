@@ -1,0 +1,405 @@
+{
+  "metadata": {
+    "consultation_id": "day4_consultation04",
+    "llm_scribe_model": "anthropic_claude-sonnet-4.6",
+    "asr_model": "omniasr-llm-7b-v2",
+    "noise_profile": "hospital_corridor",
+    "snr_level": "snr_8"
+  },
+  "generated_note": {
+    "Chief_Complaint": [
+      {
+        "fact_id": "chief-001",
+        "content": "Wheeze and shortness of breath for 2 days",
+        "source_text": "CC: Wheeze and shortness of breath \u00d7 2 days"
+      }
+    ],
+    "History_of_Present_Illness": [
+      {
+        "fact_id": "hpi-001",
+        "content": "Wheeze onset approximately 2 days ago triggered by dust exposure while cleaning carpets",
+        "source_text": "- Wheeze onset ~2 days ago, triggered by dust exposure while cleaning carpets"
+      },
+      {
+        "fact_id": "hpi-002",
+        "content": "Symptoms started gradually about 1 hour after exposure",
+        "source_text": "- Started gradually (~1 hr after exposure)"
+      },
+      {
+        "fact_id": "hpi-003",
+        "content": "Symptoms worsening at night",
+        "source_text": "- Worsening at night"
+      },
+      {
+        "fact_id": "hpi-004",
+        "content": "No medications taken for current episode",
+        "source_text": "- No medications taken for current episode"
+      }
+    ],
+    "Past_Medical_History": [
+      {
+        "fact_id": "pmh-001",
+        "content": "Childhood asthma partially resolved, exacerbates with prolonged running",
+        "source_text": "- Childhood asthma (partially resolved; exacerbates with prolonged running)"
+      },
+      {
+        "fact_id": "pmh-002",
+        "content": "Seasonal hay fever occurring in summers",
+        "source_text": "- Seasonal hay fever (summers)"
+      }
+    ],
+    "Medications": [
+      {
+        "fact_id": "meds-001",
+        "content": "Inhaler present but old, possibly expired or misplaced",
+        "source_text": "- Inhaler (old; possibly expired/misplaced)"
+      },
+      {
+        "fact_id": "meds-002",
+        "content": "Steroids previously used for asthma",
+        "source_text": "- Steroids previously used for asthma"
+      },
+      {
+        "fact_id": "meds-003",
+        "content": "No regular antihistamines for hay fever",
+        "source_text": "- No regular antihistamines for hay fever"
+      }
+    ],
+    "Adverse_Drug_Reactions_and_Allergies": [
+      {
+        "fact_id": "allergy-001",
+        "content": "No known allergies (dust allergy queried)",
+        "source_text": "**Allergies:** None known (dust allergy queried)"
+      }
+    ],
+    "Family_History": [],
+    "Social_and_Family_History": [],
+    "Assessment": [
+      {
+        "fact_id": "assessment-001",
+        "content": "Wheeze/shortness of breath likely asthma exacerbation or allergic reaction triggered by dust exposure with background of childhood asthma and hay fever",
+        "source_text": "1. **Wheeze/SOB** \u2014 likely asthma exacerbation or allergic reaction, triggered by dust exposure; background of childhood asthma and hay fever"
+      }
+    ],
+    "Plan_of_Care": [
+      {
+        "fact_id": "plan-001",
+        "content": "Attend GP surgery in person for further assessment (estimated ~10 min consult)",
+        "source_text": "- **Attend GP surgery in person** for further assessment (estimated ~10 min consult)"
+      },
+      {
+        "fact_id": "plan-002",
+        "content": "Pulse oximetry to be performed at clinic to assess oxygen saturation",
+        "source_text": "- **Pulse oximetry** to be performed at clinic to assess oxygen saturation"
+      },
+      {
+        "fact_id": "plan-003",
+        "content": "Antihistamine advised to purchase OTC (approx. \u00a34\u20136) en route to surgery; GP can prescribe if unavailable",
+        "source_text": "- **Antihistamine** \u2014 advised to purchase OTC (approx. \u00a34\u20136) en route to surgery; GP can prescribe if unavailable"
+      },
+      {
+        "fact_id": "plan-004",
+        "content": "Steroids may be required pending clinic assessment",
+        "source_text": "- **Steroids** \u2014 may be required pending clinic assessment"
+      },
+      {
+        "fact_id": "plan-005",
+        "content": "GP letter to be sent via app summarising this consultation",
+        "source_text": "- **GP letter** to be sent via app summarising this consultation"
+      }
+    ],
+    "Follow_up_Information": [
+      {
+        "fact_id": "followup-001",
+        "content": "GP letter to be sent via app summarising this consultation",
+        "source_text": "- **GP letter** to be sent via app summarising this consultation"
+      }
+    ],
+    "Physical_Findings": [
+      {
+        "fact_id": "physical-001",
+        "content": "Telehealth consultation with video signal lost during encounter",
+        "source_text": "- Telehealth consultation; video signal lost during encounter"
+      },
+      {
+        "fact_id": "physical-002",
+        "content": "No vitals recorded",
+        "source_text": "- No vitals recorded"
+      }
+    ],
+    "Review_of_Systems": [
+      {
+        "fact_id": "ros-001",
+        "content": "Shortness of breath present; unable to complete sentences at times",
+        "source_text": "- SOB present; unable to complete sentences at times"
+      },
+      {
+        "fact_id": "ros-002",
+        "content": "No chest pain on deep inspiration",
+        "source_text": "- No chest pain on deep inspiration"
+      },
+      {
+        "fact_id": "ros-003",
+        "content": "No dizziness",
+        "source_text": "- No dizziness"
+      },
+      {
+        "fact_id": "ros-004",
+        "content": "Eating and drinking okay; had approximately 4\u20135 glasses of water today",
+        "source_text": "- Eating/drinking okay; ~4\u20135 glasses of water today"
+      }
+    ]
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "cc-001",
+        "status": "COVERED",
+        "reasoning": "Generated notes shortness of breath with wheeze for 2 days and SOB with difficulty completing sentences, which captures SOB at rest/ongoing symptoms."
+      },
+      {
+        "fact_id": "hpi-001",
+        "status": "COVERED",
+        "reasoning": "Generated documents 2-day wheeze/SOB triggered by dust exposure while cleaning carpets."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "COVERED",
+        "reasoning": "Generated explicitly states symptoms are worse/worsening at night."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "COVERED",
+        "reasoning": "Generated states patient is unable to complete sentences at times."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "COVERED",
+        "reasoning": "Generated documents childhood asthma."
+      },
+      {
+        "fact_id": "pmh-002",
+        "status": "COVERED",
+        "reasoning": "Generated documents seasonal hay fever."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "OMITTED",
+        "reasoning": "Generated does not clearly state that the patient takes no regular medications overall (only mentions no regular antihistamines)."
+      },
+      {
+        "fact_id": "med-002",
+        "status": "COVERED",
+        "reasoning": "Generated documents prior steroid use for asthma."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "COVERED",
+        "reasoning": "Generated documents no known allergies."
+      },
+      {
+        "fact_id": "ros-001",
+        "status": "COVERED",
+        "reasoning": "Generated explicitly documents no chest pain on deep inspiration."
+      },
+      {
+        "fact_id": "ros-002",
+        "status": "OMITTED",
+        "reasoning": "Generated does not mention nausea."
+      },
+      {
+        "fact_id": "ros-003",
+        "status": "OMITTED",
+        "reasoning": "Generated does not mention vomiting."
+      },
+      {
+        "fact_id": "ros-004",
+        "status": "COVERED",
+        "reasoning": "Generated documents eating/drinking okay with ~4\u20135 glasses of water."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "COVERED",
+        "reasoning": "Generated assessment includes likely asthma exacerbation."
+      },
+      {
+        "fact_id": "asm-002",
+        "status": "COVERED",
+        "reasoning": "Generated assessment includes possible allergic reaction."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "COVERED",
+        "reasoning": "Generated advises antihistamine (OTC or prescribed)."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "COVERED",
+        "reasoning": "Generated includes in-person evaluation and investigations (e.g., pulse oximetry)."
+      }
+    ],
+    "gen_assessment": [
+      {
+        "fact_id": "chief-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold HPI describing 2-day wheeze and shortness of breath."
+      },
+      {
+        "fact_id": "hpi-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold: symptoms after cleaning dusty environment with 2-day history."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in Gold, but supported by transcript: symptoms started about an hour after exposure."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold: SOB worse at night."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not stated in Gold, but transcript supports: patient had not taken anything for the wheeze."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold includes childhood asthma; transcript further supports partial persistence/exercise-triggered symptoms (running brings it on)."
+      },
+      {
+        "fact_id": "pmh-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold says hay fever; transcript specifies occurs in summer (seasonal)."
+      },
+      {
+        "fact_id": "meds-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in Gold; transcript suggests she may still have an inhaler but uncertain where/availability. The 'possibly expired' element is not explicit but presented as possibility and consistent with long time since childhood asthma."
+      },
+      {
+        "fact_id": "meds-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold: previously used steroids for asthma exacerbations; also supported by transcript."
+      },
+      {
+        "fact_id": "meds-003",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not explicitly in Gold, but transcript supports she does not really take medication for hay fever."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold: no known allergies; transcript also indicates no known allergies though dust allergy was questioned."
+      },
+      {
+        "fact_id": "assessment-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold assessment: asthma exacerbation considered with possible allergy trigger."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold generally says further examination/investigation; transcript specifically directs patient to attend GP/clinic in person and mentions ~10-minute consult."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not explicit in Gold, but transcript supports plan for pulse oximetry at clinic."
+      },
+      {
+        "fact_id": "plan-003",
+        "status": "SUPPORTED",
+        "reasoning": "Core plan (start antihistamine) matches Gold; transcript supports OTC purchase, cost estimate, and GP prescription option."
+      },
+      {
+        "fact_id": "plan-004",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in Gold plan, but transcript supports possibility of needing steroids after tests/assessment."
+      },
+      {
+        "fact_id": "plan-005",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in Gold, but transcript supports: doctor will write/send a GP letter via the app."
+      },
+      {
+        "fact_id": "followup-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Same as plan-005; transcript supports letter via app."
+      },
+      {
+        "fact_id": "physical-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript explicitly mentions video signal loss during telehealth encounter."
+      },
+      {
+        "fact_id": "physical-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "No vitals were documented/measured in the transcript; only a plan for pulse oximetry later."
+      },
+      {
+        "fact_id": "ros-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold: difficulty speaking full sentences with SOB."
+      },
+      {
+        "fact_id": "ros-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold: denies chest pain."
+      },
+      {
+        "fact_id": "ros-003",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in Gold, but transcript supports denial of dizziness."
+      },
+      {
+        "fact_id": "ros-004",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold: no problems eating/drinking; transcript provides 4\u20135 glasses of water detail."
+      }
+    ]
+  },
+  "safety_grading": {
+    "total_errors_graded": 3,
+    "safety_verdicts": [
+      {
+        "fact_id": "med-001",
+        "error_type": "OMISSION",
+        "content": "Patient takes no regular medications.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated does not clearly state that the patient takes no regular medications overall (only mentions no regular antihistamines).",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting that the patient takes no regular medications can impair safe prescribing/triage documentation (e.g., assessing baseline asthma therapy, potential interactions, or whether symptoms could relate to meds), even if it is often re-checked later. The likely impact is additional clarification or minor delays rather than direct injury.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "ros-002",
+        "error_type": "OMISSION",
+        "content": "Patient denies nausea.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated does not mention nausea.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Failure to document denial of nausea is generally low impact in an isolated wheeze/shortness-of-breath presentation and mainly reduces completeness of the ROS. It is unlikely to change immediate management in this scenario.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "ros-003",
+        "error_type": "OMISSION",
+        "content": "Patient denies vomiting.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated does not mention vomiting.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Failure to document denial of vomiting is primarily a documentation completeness issue and is unlikely to alter assessment or treatment of suspected asthma/allergy symptoms in this context. The main consequence would be minor loss of clinical detail.",
+        "raw_votes": [
+          4
+        ]
+      }
+    ]
+  }
+}

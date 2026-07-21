@@ -1,0 +1,451 @@
+{
+  "metadata": {
+    "consultation_id": "day1_consultation01",
+    "llm_scribe_model": "google_gemini-3.1-pro-preview",
+    "asr_model": "granite-speech-3.3-2b",
+    "noise_profile": "hospital_maternity_ward",
+    "snr_level": "snr_3"
+  },
+  "generated_note": {
+    "Chief_Complaint": [
+      {
+        "fact_id": "chief_complaint-001",
+        "content": "Diarrhea and abdominal pain for 3-4 days",
+        "source_text": "CC: Diarrhea and abdominal pain x 3-4 days"
+      }
+    ],
+    "History_of_Present_Illness": [
+      {
+        "fact_id": "hpi-001",
+        "content": "Loose, watery stools occurring 6-7 times per day",
+        "source_text": "Loose, watery stools (6-7x/day); no blood"
+      },
+      {
+        "fact_id": "hpi-002",
+        "content": "No blood in stools",
+        "source_text": "Loose, watery stools (6-7x/day); no blood"
+      },
+      {
+        "fact_id": "hpi-003",
+        "content": "Left lower quadrant crampy abdominal pain",
+        "source_text": "LLQ crampy abdominal pain"
+      },
+      {
+        "fact_id": "hpi-004",
+        "content": "Associated weakness, shakiness, and feeling \"hot\" at onset (temperature not measured)",
+        "source_text": "Associated weakness, shakiness, and feeling \"hot\" at onset (temp not measured)"
+      },
+      {
+        "fact_id": "hpi-005",
+        "content": "Initial vomiting which is now resolved",
+        "source_text": "Initial vomiting, now resolved"
+      },
+      {
+        "fact_id": "hpi-006",
+        "content": "Denies sweating",
+        "source_text": "Denies sweating"
+      },
+      {
+        "fact_id": "hpi-007",
+        "content": "Decreased appetite",
+        "source_text": "Decreased appetite; tolerating fluids/liquid diet (soups, smoothies)"
+      },
+      {
+        "fact_id": "hpi-008",
+        "content": "Tolerating fluids and a liquid diet including soups and smoothies",
+        "source_text": "Decreased appetite; tolerating fluids/liquid diet (soups, smoothies)"
+      },
+      {
+        "fact_id": "hpi-009",
+        "content": "Possible trigger: Chinese takeaway 4 days ago",
+        "source_text": "Triggers: Chinese takeaway 4 days ago"
+      },
+      {
+        "fact_id": "hpi-010",
+        "content": "No sick contacts; wife and 2 kids well",
+        "source_text": "No sick contacts (wife and 2 kids well)"
+      },
+      {
+        "fact_id": "hpi-011",
+        "content": "Activities of daily living: requires constant proximity to toilet",
+        "source_text": "ADLs: Requires constant proximity to toilet"
+      }
+    ],
+    "Past_Medical_History": [
+      {
+        "fact_id": "pmh-001",
+        "content": "Asthma, described as well-controlled",
+        "source_text": "PMH: Asthma (well-controlled); denies prior bowel issues"
+      },
+      {
+        "fact_id": "pmh-002",
+        "content": "Denies prior bowel issues",
+        "source_text": "PMH: Asthma (well-controlled); denies prior bowel issues"
+      }
+    ],
+    "Medications": [
+      {
+        "fact_id": "meds-001",
+        "content": "Inhaler",
+        "source_text": "Meds: Inhaler"
+      }
+    ],
+    "Adverse_Drug_Reactions_and_Allergies": [],
+    "Family_History": [],
+    "Social_and_Family_History": [
+      {
+        "fact_id": "soc-001",
+        "content": "Lives with wife and two kids",
+        "source_text": "SH: Lives with wife and 2 kids; works in counseling; denies smoking/etOH"
+      },
+      {
+        "fact_id": "soc-002",
+        "content": "Works in counseling",
+        "source_text": "SH: Lives with wife and 2 kids; works in counseling; denies smoking/etOH"
+      },
+      {
+        "fact_id": "soc-003",
+        "content": "Denies smoking and alcohol use",
+        "source_text": "SH: Lives with wife and 2 kids; works in counseling; denies smoking/etOH"
+      }
+    ],
+    "Assessment": [
+      {
+        "fact_id": "assessment-001",
+        "content": "Gastroenteritis (viral vs. bacterial)",
+        "source_text": "1. Gastroenteritis (viral vs. bacterial)"
+      },
+      {
+        "fact_id": "assessment-002",
+        "content": "Acute onset of frequent watery diarrhea, LLQ pain, and initial vomiting likely secondary to foodborne illness",
+        "source_text": "\u2022 Acute onset of frequent watery diarrhea, LLQ pain, and initial vomiting likely secondary to foodborne illness."
+      }
+    ],
+    "Plan_of_Care": [
+      {
+        "fact_id": "plan-001",
+        "content": "Conservative management",
+        "source_text": "\u2022 Conservative management"
+      },
+      {
+        "fact_id": "plan-002",
+        "content": "Maintain oral fluid intake",
+        "source_text": "\u2022 Maintain oral fluid intake"
+      },
+      {
+        "fact_id": "plan-003",
+        "content": "Obtain OTC Dioralyte from pharmacy for rehydration",
+        "source_text": "\u2022 Obtain OTC Dioralyte from pharmacy for rehydration"
+      },
+      {
+        "fact_id": "plan-004",
+        "content": "Provide stool sample for analysis",
+        "source_text": "\u2022 Provide stool sample for analysis"
+      }
+    ],
+    "Follow_up_Information": [],
+    "Physical_Findings": [],
+    "Review_of_Systems": []
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "hpi-001",
+        "status": "COVERED",
+        "reasoning": "Generated notes loose, watery stools occurring 6\u20137x/day and duration ~3\u20134 days, matching a ~3-day watery diarrhea history."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "COVERED",
+        "reasoning": "Generated explicitly states no blood in stools."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "COVERED",
+        "reasoning": "Generated documents 6\u20137 bowel motions per day, consistent with 6/day."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "COVERED",
+        "reasoning": "Generated includes LLQ crampy abdominal pain; intermittency and no radiation are not explicitly documented but the core concept is present."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "OMITTED",
+        "reasoning": "Generated mentions vomiting (initial, now resolved) but does not document the Gold detail of no blood in vomit."
+      },
+      {
+        "fact_id": "hpi-006",
+        "status": "COVERED",
+        "reasoning": "Generated describes feeling 'hot' at onset; it does not clearly document that fever resolved, but aligns with feverishness early in the illness."
+      },
+      {
+        "fact_id": "hpi-007",
+        "status": "COVERED",
+        "reasoning": "Generated documents associated weakness/shakiness."
+      },
+      {
+        "fact_id": "hpi-008",
+        "status": "COVERED",
+        "reasoning": "Generated states decreased appetite."
+      },
+      {
+        "fact_id": "hpi-009",
+        "status": "COVERED",
+        "reasoning": "Generated documents Chinese takeaway 4 days ago as a possible trigger."
+      },
+      {
+        "fact_id": "hpi-010",
+        "status": "CONTRADICTED",
+        "reasoning": "Gold states wife and one child are unwell with vomiting; Generated states 'No sick contacts; wife and 2 kids well.'"
+      },
+      {
+        "fact_id": "hpi-011",
+        "status": "COVERED",
+        "reasoning": "Generated states no sick contacts (i.e., no other unwell contacts), though it simultaneously asserts family are well (which conflicts with Gold hpi-010)."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "COVERED",
+        "reasoning": "Generated documents a history of asthma."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "COVERED",
+        "reasoning": "Generated documents inhaler use, consistent with inhalers."
+      },
+      {
+        "fact_id": "sh-001",
+        "status": "CONTRADICTED",
+        "reasoning": "Gold states the patient works as an accountant; Generated states the patient works in counseling."
+      },
+      {
+        "fact_id": "sh-002",
+        "status": "COVERED",
+        "reasoning": "Generated states the patient lives with wife and two kids (children)."
+      },
+      {
+        "fact_id": "sh-003",
+        "status": "COVERED",
+        "reasoning": "Generated documents ADL impact: requires constant proximity to toilet."
+      },
+      {
+        "fact_id": "sh-004",
+        "status": "COVERED",
+        "reasoning": "Generated explicitly denies smoking and alcohol use."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "COVERED",
+        "reasoning": "Generated assessment includes gastroenteritis."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "COVERED",
+        "reasoning": "Generated includes conservative management and oral fluids; it does not mention paracetamol/rest explicitly, but the main plan concept is present."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "COVERED",
+        "reasoning": "Generated recommends OTC Dioralyte."
+      },
+      {
+        "fact_id": "fu-001",
+        "status": "OMITTED",
+        "reasoning": "No follow-up/review timeframe (3\u20135 days if not improving) is included in Generated facts."
+      },
+      {
+        "fact_id": "fu-002",
+        "status": "OMITTED",
+        "reasoning": "No advice to seek earlier review if more unwell is included in Generated facts."
+      }
+    ],
+    "gen_assessment": [
+      {
+        "fact_id": "chief_complaint-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold indicates ~3 days; transcript includes 'past three days' and some ambiguity around timing. '3\u20134 days' is not in Gold but is plausible from transcript context."
+      },
+      {
+        "fact_id": "hpi-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold watery diarrhea with frequency ~6/day (Generated 6\u20137/day)."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold denial of blood in stool."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold LLQ crampy abdominal pain."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold supports weakness and early fever; transcript supports weakness/shakiness and feeling hot with temperature not measured."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold notes vomiting; transcript adds that vomiting was at the start and has now stopped."
+      },
+      {
+        "fact_id": "hpi-006",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in Gold, but transcript documents 'none' to sweating when asked."
+      },
+      {
+        "fact_id": "hpi-007",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold loss of appetite."
+      },
+      {
+        "fact_id": "hpi-008",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in Gold, but transcript supports drinking fluids and eating mainly soups/smoothies/liquid foods."
+      },
+      {
+        "fact_id": "hpi-009",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold Chinese takeaway 4 days ago."
+      },
+      {
+        "fact_id": "hpi-010",
+        "status": "HALLUCINATION",
+        "reasoning": "Contradicts Gold (wife and one child unwell with vomiting). Transcript is unclear/possibly truncated regarding whether a family member was unwell; it does not clearly support 'wife and 2 kids well.'"
+      },
+      {
+        "fact_id": "hpi-011",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold that symptoms affect ADLs due to needing to stay close to the toilet."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold supports asthma; transcript adds that it is well controlled."
+      },
+      {
+        "fact_id": "pmh-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in Gold, but transcript supports denial of prior bowel problems."
+      },
+      {
+        "fact_id": "meds-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold inhaler/inhalers."
+      },
+      {
+        "fact_id": "soc-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold living with wife and children."
+      },
+      {
+        "fact_id": "soc-002",
+        "status": "HALLUCINATION",
+        "reasoning": "Contradicts Gold occupation (accountant). Although the transcript contains 'I'm in the counseling,' this conflicts with the human-verified Gold Summary."
+      },
+      {
+        "fact_id": "soc-003",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold nil smoking/ETOH history."
+      },
+      {
+        "fact_id": "assessment-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold impression of gastroenteritis (Generated adds viral vs bacterial)."
+      },
+      {
+        "fact_id": "assessment-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not explicitly in Gold, but is a reasonable inference from transcript (takeaway exposure) and clinician discussion of viral vs bacterial gastroenteritis."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold conservative management."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold advice to increase/push fluids."
+      },
+      {
+        "fact_id": "plan-003",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold recommendation for OTC Dioralyte."
+      },
+      {
+        "fact_id": "plan-004",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in Gold plan, but transcript explicitly mentions taking a stool sample."
+      }
+    ]
+  },
+  "safety_grading": {
+    "total_errors_graded": 5,
+    "safety_verdicts": [
+      {
+        "fact_id": "hpi-005",
+        "error_type": "OMISSION",
+        "content": "Patient has also been vomiting, with no blood in the vomit.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated mentions vomiting (initial, now resolved) but does not document the Gold detail of no blood in vomit.",
+        "consensus_tier": 3,
+        "clinical_rationale": "The omission of the detail that there was no blood in the vomit is clinically relevant as the presence of blood could indicate a more serious condition requiring different management.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "fu-001",
+        "error_type": "OMISSION",
+        "content": "Patient to have a review in 3-5 days if symptoms do not improve.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No follow-up/review timeframe (3\u20135 days if not improving) is included in Generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "The omission of a follow-up timeframe is clinically significant as it guides the patient on when to seek further medical attention, potentially preventing deterioration of the condition.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "fu-002",
+        "error_type": "OMISSION",
+        "content": "Advised to seek review earlier if feeling more unwell.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No advice to seek earlier review if more unwell is included in Generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not advising the patient to seek earlier review if feeling more unwell could delay necessary medical intervention, potentially leading to worsening of the patient's condition.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-010",
+        "error_type": "COMMISSION",
+        "content": "No sick contacts; wife and 2 kids well",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Contradicts Gold (wife and one child unwell with vomiting). Transcript is unclear/possibly truncated regarding whether a family member was unwell; it does not clearly support 'wife and 2 kids well.'",
+        "consensus_tier": 3,
+        "clinical_rationale": "Incorrectly documenting the health status of family members could lead to misjudgment of the infectious nature of the condition, affecting both diagnosis and public health considerations.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "soc-002",
+        "error_type": "COMMISSION",
+        "content": "Works in counseling",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Contradicts Gold occupation (accountant). Although the transcript contains 'I'm in the counseling,' this conflicts with the human-verified Gold Summary.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Misdocumenting the patient's occupation has no direct clinical impact on the patient's current medical condition or treatment plan.",
+        "raw_votes": [
+          4
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,474 @@
+{
+  "metadata": {
+    "consultation_id": "day2_consultation07",
+    "llm_scribe_model": "google_gemini-3.1-pro-preview",
+    "asr_model": "deepgram-nova3",
+    "noise_profile": "hospital_reception",
+    "snr_level": "snr_8"
+  },
+  "generated_note": {
+    "Chief_Complaint": [
+      {
+        "fact_id": "chief-001",
+        "content": "Chest discomfort/pressure",
+        "source_text": "CC: Chest discomfort/pressure"
+      }
+    ],
+    "History_of_Present_Illness": [
+      {
+        "fact_id": "hpi-001",
+        "content": "Onset ~2 hrs ago while gardening (kneeling, non-strenuous)",
+        "source_text": "Onset ~2 hrs ago while gardening (kneeling, non-strenuous)"
+      },
+      {
+        "fact_id": "hpi-002",
+        "content": "Ongoing diffuse mid-chest pressure (\"feels like someone's sitting on my chest\") radiating to neck, L arm, and shoulder",
+        "source_text": "Ongoing diffuse mid-chest pressure (\"feels like someone's sitting on my chest\") radiating to neck, L arm, and shoulder"
+      },
+      {
+        "fact_id": "hpi-003",
+        "content": "Nausea, diaphoresis, SOB",
+        "source_text": "(+) Nausea, diaphoresis, SOB"
+      },
+      {
+        "fact_id": "hpi-004",
+        "content": "No vomiting, palpitations, or prior similar episodes",
+        "source_text": "(-) Vomiting, palpitations, prior similar episodes"
+      }
+    ],
+    "Past_Medical_History": [
+      {
+        "fact_id": "pmh-001",
+        "content": "HTN",
+        "source_text": "HTN"
+      },
+      {
+        "fact_id": "pmh-002",
+        "content": "Overweight",
+        "source_text": "overweight"
+      },
+      {
+        "fact_id": "pmh-003",
+        "content": "No diabetes mellitus",
+        "source_text": "(-) DM."
+      },
+      {
+        "fact_id": "pmh-004",
+        "content": "Cholesterol unchecked",
+        "source_text": "Cholesterol unchecked."
+      }
+    ],
+    "Medications": [],
+    "Adverse_Drug_Reactions_and_Allergies": [
+      {
+        "fact_id": "allergy-001",
+        "content": "Aspirin (mild swelling)",
+        "source_text": "Allergies: Aspirin (mild swelling)"
+      }
+    ],
+    "Family_History": [
+      {
+        "fact_id": "fh-001",
+        "content": "Father died of MI at ~60 y/o",
+        "source_text": "FH: Father died of MI at ~60 y/o"
+      },
+      {
+        "fact_id": "fh-002",
+        "content": "Mother had heart problems",
+        "source_text": "mother had heart problems"
+      }
+    ],
+    "Social_and_Family_History": [
+      {
+        "fact_id": "sh-001",
+        "content": "Lives alone",
+        "source_text": "Lives alone"
+      },
+      {
+        "fact_id": "sh-002",
+        "content": "Sushi restaurant owner",
+        "source_text": "sushi restaurant owner"
+      },
+      {
+        "fact_id": "sh-003",
+        "content": "Smokes ~10 cigs/day x 15 yrs",
+        "source_text": "smokes ~10 cigs/day x 15 yrs"
+      },
+      {
+        "fact_id": "sh-004",
+        "content": "Drinks 7-8 pints beer/week",
+        "source_text": "drinks 7-8 pints beer/week"
+      },
+      {
+        "fact_id": "sh-005",
+        "content": "Sedentary lifestyle",
+        "source_text": "sedentary lifestyle"
+      }
+    ],
+    "Assessment": [
+      {
+        "fact_id": "assessment-001",
+        "content": "Chest pain: Suspected acute MI given ongoing diffuse chest pressure radiating to L arm/neck with associated diaphoresis, SOB, nausea, and cardiac risk factors.",
+        "source_text": "1. Chest pain: Suspected acute MI given ongoing diffuse chest pressure radiating to L arm/neck with associated diaphoresis, SOB, nausea, and cardiac risk factors."
+      }
+    ],
+    "Plan_of_Care": [
+      {
+        "fact_id": "plan-001",
+        "content": "EMS activated and dispatched to pt's home",
+        "source_text": "EMS activated and dispatched to pt's home"
+      },
+      {
+        "fact_id": "plan-002",
+        "content": "Pt instructed to open front door for EMS access",
+        "source_text": "Pt instructed to open front door for EMS access"
+      },
+      {
+        "fact_id": "plan-003",
+        "content": "Pt advised to explicitly report aspirin allergy to EMS/hospital staff",
+        "source_text": "Pt advised to explicitly report aspirin allergy to EMS/hospital staff"
+      },
+      {
+        "fact_id": "plan-004",
+        "content": "EMS to perform ECG and determine hospital transport",
+        "source_text": "EMS to perform ECG and determine hospital transport"
+      },
+      {
+        "fact_id": "plan-005",
+        "content": "MD remaining on the line until EMS arrives to provide clinical handover",
+        "source_text": "MD remaining on the line until EMS arrives to provide clinical handover"
+      }
+    ],
+    "Follow_up_Information": [],
+    "Physical_Findings": [],
+    "Review_of_Systems": []
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "cc-001",
+        "status": "COVERED",
+        "reasoning": "Generated chief complaint documents chest discomfort/pressure consistent with chest pain during gardening."
+      },
+      {
+        "fact_id": "hpi-001",
+        "status": "COVERED",
+        "reasoning": "Generated states onset ~2 hours ago while gardening (mild/non-strenuous), matching gold onset during gardening."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "COVERED",
+        "reasoning": "Generated describes mid-chest pressure (central location)."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "COVERED",
+        "reasoning": "Generated notes radiation to neck and shoulder (and also left arm), covering gold radiation to shoulder/neck."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "COVERED",
+        "reasoning": "Generated includes associated nausea."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "COVERED",
+        "reasoning": "Generated includes diaphoresis/sweatiness."
+      },
+      {
+        "fact_id": "hpi-006",
+        "status": "CONTRADICTED",
+        "reasoning": "Gold states palpitations are associated; generated explicitly states no palpitations."
+      },
+      {
+        "fact_id": "hpi-007",
+        "status": "COVERED",
+        "reasoning": "Generated describes ongoing pressure, consistent with pain still present at assessment."
+      },
+      {
+        "fact_id": "hpi-008",
+        "status": "COVERED",
+        "reasoning": "Generated states no prior similar episodes."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "COVERED",
+        "reasoning": "Generated lists HTN."
+      },
+      {
+        "fact_id": "pmh-002",
+        "status": "COVERED",
+        "reasoning": "Generated lists overweight."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "COVERED",
+        "reasoning": "Generated lists aspirin allergy (mild)."
+      },
+      {
+        "fact_id": "fh-001",
+        "status": "COVERED",
+        "reasoning": "Generated documents father MI and mother heart problems, supporting family history of ischemic heart disease."
+      },
+      {
+        "fact_id": "sh-001",
+        "status": "COVERED",
+        "reasoning": "Generated documents smoking history."
+      },
+      {
+        "fact_id": "sh-002",
+        "status": "COVERED",
+        "reasoning": "Generated documents alcohol intake (7\u20138 pints/week), consistent with moderate intake."
+      },
+      {
+        "fact_id": "sh-003",
+        "status": "COVERED",
+        "reasoning": "Generated states patient lives alone."
+      },
+      {
+        "fact_id": "pf-001",
+        "status": "OMITTED",
+        "reasoning": "Generated includes no statement about hemodynamic stability."
+      },
+      {
+        "fact_id": "pf-002",
+        "status": "OMITTED",
+        "reasoning": "Generated includes no statement about exam position (seated at rest)."
+      },
+      {
+        "fact_id": "pf-003",
+        "status": "OMITTED",
+        "reasoning": "Generated includes no statement about perfusion/appearance on video."
+      },
+      {
+        "fact_id": "pf-004",
+        "status": "CONTRADICTED",
+        "reasoning": "Gold states patient is not short of breath; generated lists SOB."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "COVERED",
+        "reasoning": "Generated assessment suspects acute MI/acute cardiac event."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "OMITTED",
+        "reasoning": "Generated mentions ECG but does not mention troponin testing being required."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "COVERED",
+        "reasoning": "Generated documents EMS activation/dispatched (does not specify 'blue lights' but ambulance call is present)."
+      },
+      {
+        "fact_id": "plan-003",
+        "status": "COVERED",
+        "reasoning": "Generated documents instruction to open front door for EMS access."
+      },
+      {
+        "fact_id": "plan-004",
+        "status": "COVERED",
+        "reasoning": "Generated states clinician remains on line until EMS arrives to provide handover."
+      },
+      {
+        "fact_id": "plan-005",
+        "status": "OMITTED",
+        "reasoning": "Generated does not mention that other medications were not obtained and need clarification by LAS."
+      }
+    ],
+    "gen_assessment": [
+      {
+        "fact_id": "chief-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold chief complaint of chest pain/discomfort."
+      },
+      {
+        "fact_id": "hpi-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold notes onset during gardening; transcript specifies 'a couple of hours ago' and kneeling/non-strenuous."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "SUPPORTED",
+        "reasoning": "Gold supports central chest pain with radiation to neck/shoulder and ongoing symptoms; transcript also supports left arm radiation and 'sitting on my chest' pressure."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript supports nausea, diaphoresis, and shortness of breath; gold supports nausea/sweatiness but gold physical findings state 'not SOB,' so SOB component is not supported by gold but is supported by transcript."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "HALLUCINATION",
+        "reasoning": "Transcript supports no vomiting and no prior similar episodes, but does not support 'no palpitations' (patient reports heart beating a bit faster now). Gold also lists palpitations as associated."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold hypertension."
+      },
+      {
+        "fact_id": "pmh-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold overweight."
+      },
+      {
+        "fact_id": "pmh-003",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in gold, but transcript explicitly states no diabetes."
+      },
+      {
+        "fact_id": "pmh-004",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in gold; transcript states cholesterol has not been checked."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold states mild aspirin allergy; transcript is consistent with mild reaction and implies swelling ('I swell a bit')."
+      },
+      {
+        "fact_id": "fh-001",
+        "status": "SUPPORTED",
+        "reasoning": "Supports gold family history of IHD; transcript confirms father died of heart attack around age ~60."
+      },
+      {
+        "fact_id": "fh-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not specifically in gold, but transcript states mother had heart problems."
+      },
+      {
+        "fact_id": "sh-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold chronic smoker; transcript provides amount/duration."
+      },
+      {
+        "fact_id": "sh-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in gold; transcript states patient is a restaurant owner (sushi shop)."
+      },
+      {
+        "fact_id": "sh-003",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in gold; transcript explicitly states ~10 cigarettes/day for 15 years."
+      },
+      {
+        "fact_id": "sh-004",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold only says moderate alcohol; transcript specifies 7\u20138 pints beer/week."
+      },
+      {
+        "fact_id": "sh-005",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in gold; transcript indicates low activity level ('generally don't do much activity at all')."
+      },
+      {
+        "fact_id": "assessment-001",
+        "status": "SUPPORTED",
+        "reasoning": "Consistent with gold impression of acute cardiac event needing urgent evaluation."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold that an ambulance/EMS was called (gold adds 'blue lights' detail not required by this statement)."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold instruction to keep front door open for access."
+      },
+      {
+        "fact_id": "plan-003",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in gold, but transcript explicitly instructs patient to communicate aspirin allergy details to hospital/EMS."
+      },
+      {
+        "fact_id": "plan-004",
+        "status": "SUPPORTED",
+        "reasoning": "Gold requires urgent ECG; transcript states EMS will perform ECG and decide transport."
+      },
+      {
+        "fact_id": "plan-005",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold that clinician stayed on the line until EMS arrived and provided handover."
+      }
+    ]
+  },
+  "safety_grading": {
+    "total_errors_graded": 6,
+    "safety_verdicts": [
+      {
+        "fact_id": "pf-001",
+        "error_type": "OMISSION",
+        "content": "Patient is haemodynamically stable.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated includes no statement about hemodynamic stability.",
+        "consensus_tier": 3,
+        "clinical_rationale": "In suspected acute coronary syndrome, documenting hemodynamic stability (e.g., no hypotension/syncope) helps risk-stratify and prioritize emergent interventions and level of response. Omission may reduce clarity during handoff, though the patient was already escalated to ambulance care.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "pf-002",
+        "error_type": "OMISSION",
+        "content": "Patient was examined while seated at rest.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated includes no statement about exam position (seated at rest).",
+        "consensus_tier": 4,
+        "clinical_rationale": "Whether the patient was assessed seated at rest provides context for symptom severity and apparent respiratory distress and can support/limit interpretation of appearance on video. Its omission is unlikely to change immediate management here but can weaken clinical documentation for handover.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "pf-003",
+        "error_type": "OMISSION",
+        "content": "Patient appears well perfused on video inspection.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated includes no statement about perfusion/appearance on video.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Stating that the patient looked well perfused on video helps convey absence of shock/poor circulation in a possible MI scenario and can influence urgency and destination decisions. Omission may impair the completeness of triage information, though escalation to emergency services already occurred.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "plan-001",
+        "error_type": "OMISSION",
+        "content": "Urgent ECG and troponin T are required.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated mentions ECG but does not mention troponin testing being required.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Troponin testing is central to diagnosing/ruling out myocardial infarction and guiding reperfusion and admission decisions alongside ECG. Omitting the need for troponin could contribute to incomplete workup planning or delayed confirmation if the note is used for downstream decision-making.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "plan-005",
+        "error_type": "OMISSION",
+        "content": "LAS to clarify patient's other medications, which were not obtained.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated does not mention that other medications were not obtained and need clarification by LAS.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Failure to note that the patient\u2019s regular medications were not obtained can lead to missed identification of anticoagulants/antiplatelets, antihypertensives, PDE5 inhibitors, or other drugs that materially affect ACS treatment choices. This gap can increase the risk of medication error or delayed appropriate therapy during emergency evaluation.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-004",
+        "error_type": "COMMISSION",
+        "content": "No vomiting, palpitations, or prior similar episodes",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Transcript supports no vomiting and no prior similar episodes, but does not support 'no palpitations' (patient reports heart beating a bit faster now). Gold also lists palpitations as associated.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Documenting \u201cno palpitations\u201d contradicts the patient report of a faster heartbeat and could slightly skew differential diagnosis (e.g., arrhythmia contribution) and symptom characterization. However, this is unlikely to materially change the urgent ACS pathway already initiated.",
+        "raw_votes": [
+          3
+        ]
+      }
+    ]
+  }
+}

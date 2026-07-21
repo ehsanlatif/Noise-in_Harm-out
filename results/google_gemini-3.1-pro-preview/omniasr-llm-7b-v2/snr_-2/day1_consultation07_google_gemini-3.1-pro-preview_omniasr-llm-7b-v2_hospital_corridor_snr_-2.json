@@ -1,0 +1,339 @@
+{
+  "metadata": {
+    "consultation_id": "day1_consultation07",
+    "llm_scribe_model": "google_gemini-3.1-pro-preview",
+    "asr_model": "omniasr-llm-7b-v2",
+    "noise_profile": "hospital_corridor",
+    "snr_level": "snr_-2"
+  },
+  "generated_note": {
+    "Chief_Complaint": [],
+    "History_of_Present_Illness": [],
+    "Past_Medical_History": [],
+    "Medications": [],
+    "Adverse_Drug_Reactions_and_Allergies": [],
+    "Family_History": [],
+    "Social_and_Family_History": [],
+    "Assessment": [],
+    "Plan_of_Care": [],
+    "Follow_up_Information": [],
+    "Physical_Findings": [],
+    "Review_of_Systems": []
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "hpi-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts contains no HPI content; does not mention 5-day general unwellness with cough/cold symptoms."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "OMITTED",
+        "reasoning": "No cough characterization present in Generated Facts."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "OMITTED",
+        "reasoning": "No documentation of chest pain denial or shortness of breath in Generated Facts."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "OMITTED",
+        "reasoning": "No documentation of hot/cold sweats or fever status in Generated Facts."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "OMITTED",
+        "reasoning": "No associated symptom documentation (sore throat/blocked ears/runny nose) in Generated Facts."
+      },
+      {
+        "fact_id": "hpi-006",
+        "status": "OMITTED",
+        "reasoning": "No documentation of myalgia/arthralgia or joint stiffness in Generated Facts."
+      },
+      {
+        "fact_id": "hpi-007",
+        "status": "OMITTED",
+        "reasoning": "No documentation of initial diarrhea with resolution in Generated Facts."
+      },
+      {
+        "fact_id": "hpi-008",
+        "status": "OMITTED",
+        "reasoning": "No documentation of no sick contacts and no nausea/vomiting in Generated Facts."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "OMITTED",
+        "reasoning": "No past medical history documented in Generated Facts."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "OMITTED",
+        "reasoning": "No medication list documented in Generated Facts."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "OMITTED",
+        "reasoning": "No allergy status documented in Generated Facts."
+      },
+      {
+        "fact_id": "sh-001",
+        "status": "OMITTED",
+        "reasoning": "No social history (living with wife; factory/manufacturing work) documented in Generated Facts."
+      },
+      {
+        "fact_id": "sh-002",
+        "status": "OMITTED",
+        "reasoning": "No smoking or alcohol history documented in Generated Facts."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "OMITTED",
+        "reasoning": "No assessment/impression documented in Generated Facts."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "OMITTED",
+        "reasoning": "No conservative management advice (rest/fluids/paracetamol) documented in Generated Facts."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "OMITTED",
+        "reasoning": "No delayed amoxicillin prescription plan documented in Generated Facts."
+      },
+      {
+        "fact_id": "fu-001",
+        "status": "OMITTED",
+        "reasoning": "No follow-up plan (review in one week if not improving) documented in Generated Facts."
+      },
+      {
+        "fact_id": "fu-002",
+        "status": "OMITTED",
+        "reasoning": "No safety-netting advice for worsening symptoms documented in Generated Facts."
+      }
+    ],
+    "gen_assessment": []
+  },
+  "safety_grading": {
+    "total_errors_graded": 18,
+    "safety_verdicts": [
+      {
+        "fact_id": "hpi-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a 5-day history of feeling generally unwell with cough and cold symptoms.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts contains no HPI content; does not mention 5-day general unwellness with cough/cold symptoms.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting the core timeline and overall URI symptom context (5 days of feeling unwell with cough/cold symptoms) impairs diagnostic framing and continuity for follow-up or escalation decisions. This is unlikely to directly cause immediate harm but can lead to inappropriate workup or delayed reassessment.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-002",
+        "error_type": "OMISSION",
+        "content": "The cough is mainly dry.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No cough characterization present in Generated Facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Cough characterization (mainly dry) helps differentiate viral URTI/bronchitis from pneumonia and guides whether antibiotics, imaging, or safety-netting are needed. Missing this detail can lead to less accurate assessment and follow-up decisions.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-003",
+        "error_type": "OMISSION",
+        "content": "Patient denies chest pain but is feeling more short of breath.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No documentation of chest pain denial or shortness of breath in Generated Facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Shortness of breath is a red-flag symptom that can indicate pneumonia, asthma/COPD exacerbation, heart failure, or pulmonary embolism; documenting chest pain denial also informs risk stratification. Omission could contribute to under-triage or missed need for urgent assessment.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-004",
+        "error_type": "OMISSION",
+        "content": "Patient reports feeling hot/cold and sweaty, but has had no fevers.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No documentation of hot/cold sweats or fever status in Generated Facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Hot/cold sweats and fever status influence suspicion for influenza/pneumonia and the need for vitals, testing, or escalation. Missing this information may lead to less appropriate monitoring and safety-netting but typically does not alone cause severe harm.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-005",
+        "error_type": "OMISSION",
+        "content": "Associated symptoms include a sore throat, blocked ears, and a runny nose.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No associated symptom documentation (sore throat/blocked ears/runny nose) in Generated Facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Sore throat, blocked ears, and runny nose support an upper-respiratory source and help distinguish URTI from lower-respiratory or non-infectious etiologies. Omission mainly reduces diagnostic clarity and continuity rather than directly creating high-risk harm.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-006",
+        "error_type": "OMISSION",
+        "content": "Patient is experiencing myalgia and arthralgia, described as joint stiffness.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No documentation of myalgia/arthralgia or joint stiffness in Generated Facts.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Myalgia/arthralgia (joint stiffness) supports a viral syndrome and helps assess severity and differential diagnosis. Missing it generally has limited impact beyond reduced completeness of the clinical picture.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "hpi-007",
+        "error_type": "OMISSION",
+        "content": "Patient had an initial episode of diarrhea which has now resolved.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No documentation of initial diarrhea with resolution in Generated Facts.",
+        "consensus_tier": 4,
+        "clinical_rationale": "A brief, resolved diarrhea episode can suggest viral illness and affects hydration counseling, but resolution reduces ongoing risk. Omission is unlikely to change management meaningfully in most cases.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "hpi-008",
+        "error_type": "OMISSION",
+        "content": "Patient reports no unwell contacts and no nausea or vomiting.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No documentation of no sick contacts and no nausea/vomiting in Generated Facts.",
+        "consensus_tier": 4,
+        "clinical_rationale": "No sick contacts and no nausea/vomiting help with exposure history and dehydration risk assessment. Omission may slightly affect counseling and differential but is typically low impact.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "pmh-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a history of obesity, type 2 diabetes, and hypertension.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No past medical history documented in Generated Facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Diabetes, hypertension, and obesity substantially affect risk stratification for respiratory infections, thresholds for escalation, and medication choices (e.g., renal considerations, cardiovascular risk). Missing PMH can lead to inappropriate treatment intensity or missed need for closer follow-up.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "med-001",
+        "error_type": "OMISSION",
+        "content": "Patient takes metformin, lisinopril, and aspirin.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No medication list documented in Generated Facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "An absent medication list (metformin, lisinopril, aspirin) raises risk of drug interactions, contraindications, and duplicative/unsafe prescribing, especially if antibiotics or symptomatic meds are added. This can cause clinically meaningful harm through medication error or missed monitoring needs.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "allergy-001",
+        "error_type": "OMISSION",
+        "content": "Patient has no known drug allergies.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No allergy status documented in Generated Facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Failure to document allergy status removes a critical safety check before prescribing (e.g., penicillins), increasing the risk of inadvertent administration without confirming tolerance. Even though the patient reports NKDA, omission can still contribute to downstream prescribing errors.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "sh-001",
+        "error_type": "OMISSION",
+        "content": "Patient lives with his wife and works in a factory/manufacturing.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No social history (living with wife; factory/manufacturing work) documented in Generated Facts.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Living situation and occupation mainly inform exposure risk, ability to self-care, and discharge planning. Omission is generally administrative/contextual and rarely changes acute clinical decisions.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "sh-002",
+        "error_type": "OMISSION",
+        "content": "Patient smokes socially and consumes more than 9 units of alcohol per week.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No smoking or alcohol history documented in Generated Facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Smoking and higher alcohol intake affect respiratory risk, healing, and counseling, and may influence differential diagnosis (e.g., chronic bronchitis) and follow-up needs. Omission can reduce care quality and preventive counseling but usually does not cause immediate severe harm.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "asm-001",
+        "error_type": "OMISSION",
+        "content": "The impression is a viral upper respiratory tract infection (URTI) with a possible lower respiratory tract infection (LRTI).",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No assessment/impression documented in Generated Facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting the clinician\u2019s impression (viral URTI vs possible LRTI) undermines continuity, makes rationale for antibiotics unclear, and can impair appropriate follow-up/escalation by other clinicians. This can lead to misaligned ongoing care and potentially delayed recognition of deterioration.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "plan-001",
+        "error_type": "OMISSION",
+        "content": "Advised conservative management including rest, increased fluid intake, and regular paracetamol.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No conservative management advice (rest/fluids/paracetamol) documented in Generated Facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting conservative management advice (rest, fluids, regular paracetamol) can lead to poorer symptom control, dehydration risk, and reduced adherence to appropriate self-care and safety-netting. Harm is usually limited and correctable with follow-up.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "plan-002",
+        "error_type": "OMISSION",
+        "content": "A delayed prescription for Amoxicillin was provided, to be started in 24-48 hours if symptoms do not improve.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No delayed amoxicillin prescription plan documented in Generated Facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting the delayed-start amoxicillin plan from the documentation can lead to misunderstanding about whether/when antibiotics should be taken, and may contribute to inappropriate immediate use or missed initiation if symptoms worsen. It also impairs continuity of care because subsequent clinicians may not know an antibiotic was prescribed or under what conditions it should be started.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "fu-001",
+        "error_type": "OMISSION",
+        "content": "Patient to have a review in one week if not better.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No follow-up plan (review in one week if not improving) documented in Generated Facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Failure to document the planned review timeframe (one week if not improving) can delay reassessment for a persisting respiratory illness, potentially prolonging symptoms and delaying escalation if the course is not as expected. This primarily creates follow-up/continuity gaps that can result in additional monitoring or treatment later.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "fu-002",
+        "error_type": "OMISSION",
+        "content": "Advised to seek review earlier for worsening symptoms such as chest pain, shortness of breath, or fevers.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No safety-netting advice for worsening symptoms documented in Generated Facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Not documenting safety-netting for red-flag deterioration (e.g., chest pain, worsening shortness of breath, persistent/high fevers) increases the risk that urgent reassessment is delayed, especially if another clinician relies on the note to understand what the patient was told. Delayed recognition/escalation of potentially serious cardiopulmonary infection or complications can lead to clinically meaningful harm.",
+        "raw_votes": [
+          2
+        ]
+      }
+    ]
+  }
+}

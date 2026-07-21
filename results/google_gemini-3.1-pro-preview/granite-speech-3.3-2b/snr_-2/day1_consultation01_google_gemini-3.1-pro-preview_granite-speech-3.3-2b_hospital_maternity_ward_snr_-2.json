@@ -1,0 +1,528 @@
+{
+  "metadata": {
+    "consultation_id": "day1_consultation01",
+    "llm_scribe_model": "google_gemini-3.1-pro-preview",
+    "asr_model": "granite-speech-3.3-2b",
+    "noise_profile": "hospital_maternity_ward",
+    "snr_level": "snr_-2"
+  },
+  "generated_note": {
+    "Chief_Complaint": [
+      {
+        "fact_id": "chiefcomplaint-001",
+        "content": "Diarrhea and abdominal pain for 3-4 days",
+        "source_text": "CC: Diarrhea and abdominal pain x 3-4 days"
+      }
+    ],
+    "History_of_Present_Illness": [
+      {
+        "fact_id": "hpi-001",
+        "content": "Diarrhea that is loose, watery, and frequent",
+        "source_text": "Diarrhea: Loose, watery, frequent; denies blood"
+      },
+      {
+        "fact_id": "hpi-002",
+        "content": "Denies blood in stool",
+        "source_text": "Diarrhea: Loose, watery, frequent; denies blood"
+      },
+      {
+        "fact_id": "hpi-003",
+        "content": "Lower abdominal, one-sided pain",
+        "source_text": "Abd pain: Lower abdomen, one-sided"
+      },
+      {
+        "fact_id": "hpi-004",
+        "content": "Vomited at onset, now resolved",
+        "source_text": "Vomited at onset, now resolved."
+      },
+      {
+        "fact_id": "hpi-005",
+        "content": "Felt hot (temperature unmeasured)",
+        "source_text": "Associated symptoms: Weak, shaky, felt \"hot\" (temp unmeasured)."
+      },
+      {
+        "fact_id": "hpi-006",
+        "content": "Weak",
+        "source_text": "Associated symptoms: Weak, shaky, felt \"hot\" (temp unmeasured)."
+      },
+      {
+        "fact_id": "hpi-007",
+        "content": "Shaky",
+        "source_text": "Associated symptoms: Weak, shaky, felt \"hot\" (temp unmeasured)."
+      },
+      {
+        "fact_id": "hpi-008",
+        "content": "Decreased appetite",
+        "source_text": "PO intake: Decreased appetite; tolerating fluids, soups, and smoothies"
+      },
+      {
+        "fact_id": "hpi-009",
+        "content": "Tolerating fluids, soups, and smoothies",
+        "source_text": "PO intake: Decreased appetite; tolerating fluids, soups, and smoothies"
+      },
+      {
+        "fact_id": "hpi-010",
+        "content": "Ate Chinese takeaway approximately 4 days ago",
+        "source_text": "Exposures: Ate Chinese takeaway ~4 days ago."
+      },
+      {
+        "fact_id": "hpi-011",
+        "content": "Denies sick contacts at home",
+        "source_text": "Exposures: Ate Chinese takeaway ~4 days ago. Denies sick contacts at home (lives with wife and 2 kids)"
+      }
+    ],
+    "Past_Medical_History": [
+      {
+        "fact_id": "pmh-001",
+        "content": "Asthma, well-controlled",
+        "source_text": "PMH: Asthma (well-controlled); denies prior bowel issues"
+      },
+      {
+        "fact_id": "pmh-002",
+        "content": "Denies prior bowel issues",
+        "source_text": "PMH: Asthma (well-controlled); denies prior bowel issues"
+      }
+    ],
+    "Medications": [
+      {
+        "fact_id": "meds-001",
+        "content": "Inhaler",
+        "source_text": "Meds: Inhaler"
+      }
+    ],
+    "Adverse_Drug_Reactions_and_Allergies": [],
+    "Family_History": [],
+    "Social_and_Family_History": [
+      {
+        "fact_id": "social-001",
+        "content": "Staying close to toilet due to symptom frequency",
+        "source_text": "SH: Staying close to toilet due to symptom frequency"
+      },
+      {
+        "fact_id": "social-002",
+        "content": "Lives with wife and 2 kids",
+        "source_text": "Exposures: Ate Chinese takeaway ~4 days ago. Denies sick contacts at home (lives with wife and 2 kids)"
+      }
+    ],
+    "Assessment": [
+      {
+        "fact_id": "assessment-001",
+        "content": "Gastroenteritis (viral vs. bacterial)",
+        "source_text": "Gastroenteritis (viral vs. bacterial)"
+      },
+      {
+        "fact_id": "assessment-002",
+        "content": "Presentation includes watery diarrhea, one-sided lower abdominal pain, and resolved vomiting",
+        "source_text": "Presenting with watery diarrhea, one-sided lower abdominal pain, and resolved vomiting."
+      }
+    ],
+    "Plan_of_Care": [
+      {
+        "fact_id": "plan-001",
+        "content": "Conservative management",
+        "source_text": "Conservative management"
+      },
+      {
+        "fact_id": "plan-002",
+        "content": "Obtain over-the-counter anti-diarrheal from pharmacy",
+        "source_text": "Obtain OTC anti-diarrheal from pharmacy"
+      }
+    ],
+    "Follow_up_Information": [],
+    "Physical_Findings": [],
+    "Review_of_Systems": [
+      {
+        "fact_id": "ros-001",
+        "content": "Denies sweating",
+        "source_text": "Denies sweating; denies fatigue"
+      },
+      {
+        "fact_id": "ros-002",
+        "content": "Denies fatigue",
+        "source_text": "Denies sweating; denies fatigue"
+      }
+    ]
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "hpi-001",
+        "status": "COVERED",
+        "reasoning": "Generated notes watery/loose diarrhea for ~3\u20134 days, which semantically matches a 3-day history of mainly watery diarrhea."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "COVERED",
+        "reasoning": "Generated explicitly states denial of blood in stool."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "OMITTED",
+        "reasoning": "Generated describes diarrhea as frequent but does not include the specific frequency of 6 times/day."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "OMITTED",
+        "reasoning": "Generated mentions lower abdominal one-sided pain but does not capture LLQ location, crampy quality, intermittent nature, or no radiation as specified in Gold."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "OMITTED",
+        "reasoning": "Generated includes vomiting at onset but does not include the Gold detail of no blood in vomit."
+      },
+      {
+        "fact_id": "hpi-006",
+        "status": "OMITTED",
+        "reasoning": "Generated only states 'felt hot (temperature unmeasured)' and does not document fever on day 1 with subsequent resolution."
+      },
+      {
+        "fact_id": "hpi-007",
+        "status": "CONTRADICTED",
+        "reasoning": "Gold states lethargic/weak; Generated includes 'weak' but also documents 'denies fatigue,' which conflicts with lethargy/fatigue."
+      },
+      {
+        "fact_id": "hpi-008",
+        "status": "COVERED",
+        "reasoning": "Generated documents decreased appetite, matching loss of appetite."
+      },
+      {
+        "fact_id": "hpi-009",
+        "status": "COVERED",
+        "reasoning": "Generated documents Chinese takeaway approximately 4 days ago, matching Gold."
+      },
+      {
+        "fact_id": "hpi-010",
+        "status": "CONTRADICTED",
+        "reasoning": "Gold states wife and one child are unwell with vomiting (no diarrhea); Generated states 'denies sick contacts at home.'"
+      },
+      {
+        "fact_id": "hpi-011",
+        "status": "OMITTED",
+        "reasoning": "Gold specifies no other unwell contacts (apart from those noted); Generated only addresses home contacts and does not clearly cover the broader statement."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "COVERED",
+        "reasoning": "Generated includes asthma."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "COVERED",
+        "reasoning": "Generated lists inhaler use, matching inhalers."
+      },
+      {
+        "fact_id": "sh-001",
+        "status": "OMITTED",
+        "reasoning": "No occupation (accountant) appears in the Generated facts."
+      },
+      {
+        "fact_id": "sh-002",
+        "status": "COVERED",
+        "reasoning": "Generated states he lives with wife and 2 kids, consistent with living with wife and children."
+      },
+      {
+        "fact_id": "sh-003",
+        "status": "COVERED",
+        "reasoning": "Generated notes staying close to the toilet due to frequency, matching impact on ADLs."
+      },
+      {
+        "fact_id": "sh-004",
+        "status": "OMITTED",
+        "reasoning": "Generated does not mention smoking or alcohol history."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "COVERED",
+        "reasoning": "Generated assessment includes gastroenteritis."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "COVERED",
+        "reasoning": "Generated includes conservative management, though it omits the specific elements (rest/fluids/paracetamol if feverish)."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "CONTRADICTED",
+        "reasoning": "Gold recommends OTC Dioralyte (oral rehydration). Generated instead recommends an OTC anti-diarrheal, which is a different intervention."
+      },
+      {
+        "fact_id": "fu-001",
+        "status": "OMITTED",
+        "reasoning": "No follow-up timeframe of review in 3\u20135 days is documented in Generated."
+      },
+      {
+        "fact_id": "fu-002",
+        "status": "OMITTED",
+        "reasoning": "Generated does not include advice to seek earlier review if more unwell."
+      }
+    ],
+    "gen_assessment": [
+      {
+        "fact_id": "chiefcomplaint-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold supports diarrhea + abdominal pain; transcript supports symptom duration 'three or four days ago,' aligning with 3\u20134 days."
+      },
+      {
+        "fact_id": "hpi-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold watery diarrhea and frequent stools."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold denial of blood in stool."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "SUPPORTED",
+        "reasoning": "Consistent with Gold LLQ pain; 'lower abdominal, one-sided' is a less specific but compatible restatement."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript explicitly states vomiting at the start and that it has now stopped; Gold only states vomiting."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript indicates he felt hot and did not measure temperature; Gold frames this as fever on day 1, but the 'unmeasured hot' detail is transcript-supported."
+      },
+      {
+        "fact_id": "hpi-006",
+        "status": "SUPPORTED",
+        "reasoning": "Gold states lethargic/weak; Generated includes weak."
+      },
+      {
+        "fact_id": "hpi-007",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript includes feeling weak and shaky; shakiness is not explicitly in Gold."
+      },
+      {
+        "fact_id": "hpi-008",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold loss of appetite."
+      },
+      {
+        "fact_id": "hpi-009",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript supports intake of fluids, soups, fruits/smoothies; not listed in Gold."
+      },
+      {
+        "fact_id": "hpi-010",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold Chinese takeaway 4 days ago."
+      },
+      {
+        "fact_id": "hpi-011",
+        "status": "HALLUCINATION",
+        "reasoning": "Contradicts Gold, which states wife and one child are unwell with vomiting (no diarrhea)."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold supports asthma; transcript indicates it is 'under control,' supporting the added 'well-controlled' detail."
+      },
+      {
+        "fact_id": "pmh-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript supports denial of other tummy/bowel problems; not present as a Gold fact."
+      },
+      {
+        "fact_id": "meds-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold inhaler/inhalers use."
+      },
+      {
+        "fact_id": "social-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold that symptoms affect ADLs due to needing to be near the toilet."
+      },
+      {
+        "fact_id": "social-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold living with wife and children (Generated specifies 2 kids)."
+      },
+      {
+        "fact_id": "assessment-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold impression is gastroenteritis; transcript discusses viral vs bacterial causes, supporting the added differential."
+      },
+      {
+        "fact_id": "assessment-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Synthesis of transcript-supported symptoms (watery diarrhea, lower one-sided pain, vomiting resolved) and consistent with Gold overall picture."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold includes conservative management."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "HALLUCINATION",
+        "reasoning": "Gold recommends OTC Dioralyte (oral rehydration), not an anti-diarrheal; transcript reference aligns more with oral rehydration than anti-diarrheal medication."
+      },
+      {
+        "fact_id": "ros-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript explicitly denies sweating; not included in Gold facts."
+      },
+      {
+        "fact_id": "ros-002",
+        "status": "HALLUCINATION",
+        "reasoning": "Contradicts Gold lethargy/weakness and is not clearly supported by the transcript (which emphasizes weakness/shakiness rather than denying fatigue)."
+      }
+    ]
+  },
+  "safety_grading": {
+    "total_errors_graded": 12,
+    "safety_verdicts": [
+      {
+        "fact_id": "hpi-003",
+        "error_type": "OMISSION",
+        "content": "Patient is opening their bowels 6 times per day.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated describes diarrhea as frequent but does not include the specific frequency of 6 times/day.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting the specific stool frequency (6/day) reduces the ability to gauge illness severity, dehydration risk, and need for closer follow-up, but the presence of frequent diarrhea is still captured. This is unlikely to directly change immediate management in an otherwise uncomplicated gastroenteritis presentation.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-004",
+        "error_type": "OMISSION",
+        "content": "The diarrhea is associated with intermittent, crampy pain in the left lower quadrant (LLQ) with no radiation.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated mentions lower abdominal one-sided pain but does not capture LLQ location, crampy quality, intermittent nature, or no radiation as specified in Gold.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting LLQ location, crampy/intermittent nature, and lack of radiation reduces diagnostic specificity and could affect consideration of alternate diagnoses (e.g., colitis/diverticular disease) versus benign gastroenteritis. However, abdominal pain is at least noted, limiting the risk of complete diagnostic miss.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-005",
+        "error_type": "OMISSION",
+        "content": "Patient has also been vomiting, with no blood in the vomit.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated includes vomiting at onset but does not include the Gold detail of no blood in vomit.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Failure to document that vomit was non-bloody removes a key negative finding used to screen for upper GI bleeding and severity. Given vomiting is documented and there is no other bleeding history noted, the incremental risk is limited but still clinically relevant.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-006",
+        "error_type": "OMISSION",
+        "content": "Patient had a fever on the first day of illness which has since resolved.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated only states 'felt hot (temperature unmeasured)' and does not document fever on day 1 with subsequent resolution.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Missing the history of fever on day 1 with resolution can alter assessment of infectious severity and the differential (viral vs bacterial), and can influence safety-netting thresholds. The note instead implies only feeling hot without measured fever, which may downplay prior systemic illness.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-011",
+        "error_type": "OMISSION",
+        "content": "Patient reports no other unwell contacts.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold specifies no other unwell contacts (apart from those noted); Generated only addresses home contacts and does not clearly cover the broader statement.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Omitting the broader statement of no other unwell contacts slightly limits epidemiologic context and exposure assessment. This is unlikely to change immediate treatment in a straightforward diarrhea/vomiting presentation.",
+        "raw_votes": [
+          4,
+          3
+        ]
+      },
+      {
+        "fact_id": "sh-001",
+        "error_type": "OMISSION",
+        "content": "Patient works as an accountant.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No occupation (accountant) appears in the Generated facts.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Occupation (accountant) is largely administrative here and does not materially change diagnostic or treatment decisions for acute gastroenteritis. Clinical harm from this omission is negligible.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "sh-004",
+        "error_type": "OMISSION",
+        "content": "Patient has no history of smoking or alcohol use.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated does not mention smoking or alcohol history.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Not documenting smoking/alcohol history is generally good practice, but it is unlikely to affect short-term management of an acute diarrheal illness in the absence of red flags. The omission has minimal clinical consequence in this context.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "fu-001",
+        "error_type": "OMISSION",
+        "content": "Patient to have a review in 3-5 days if symptoms do not improve.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No follow-up timeframe of review in 3\u20135 days is documented in Generated.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting planned review in 3\u20135 days if not improving weakens the follow-up plan and can contribute to delayed reassessment if symptoms persist. However, many patients will still re-present if ongoing symptoms, limiting the typical impact to additional monitoring/delay.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "fu-002",
+        "error_type": "OMISSION",
+        "content": "Advised to seek review earlier if feeling more unwell.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated does not include advice to seek earlier review if more unwell.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Missing safety-net advice to seek earlier review if worsening can lead to delayed care for complications (dehydration, severe infection, surgical abdomen), which can adversely affect outcomes. This is a clinically important omission because it directly impacts escalation behavior.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-011",
+        "error_type": "COMMISSION",
+        "content": "Denies sick contacts at home",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Contradicts Gold, which states wife and one child are unwell with vomiting (no diarrhea).",
+        "consensus_tier": 4,
+        "clinical_rationale": "Omitting the broader statement of no other unwell contacts slightly limits epidemiologic context and exposure assessment. This is unlikely to change immediate treatment in a straightforward diarrhea/vomiting presentation.",
+        "raw_votes": [
+          4,
+          3
+        ]
+      },
+      {
+        "fact_id": "plan-002",
+        "error_type": "COMMISSION",
+        "content": "Obtain over-the-counter anti-diarrheal from pharmacy",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Gold recommends OTC Dioralyte (oral rehydration), not an anti-diarrheal; transcript reference aligns more with oral rehydration than anti-diarrheal medication.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Recommending an anti-diarrheal instead of oral rehydration solution can increase risk if an inappropriate agent is used (e.g., loperamide in potentially invasive infectious diarrhea) and may worsen outcomes by delaying clearance or masking deterioration. The correct plan (rehydration) is safety-critical in gastroenteritis, making this a higher-risk plan error.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "ros-002",
+        "error_type": "COMMISSION",
+        "content": "Denies fatigue",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Contradicts Gold lethargy/weakness and is not clearly supported by the transcript (which emphasizes weakness/shakiness rather than denying fatigue).",
+        "consensus_tier": 3,
+        "clinical_rationale": "Documenting denial of fatigue contradicts reported lethargy/weakness and can downplay illness severity, potentially influencing hydration assessment and follow-up urgency. While unlikely to cause major harm alone, it can contribute to under-triage.",
+        "raw_votes": [
+          3
+        ]
+      }
+    ]
+  }
+}

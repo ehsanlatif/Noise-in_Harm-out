@@ -1,0 +1,472 @@
+{
+  "metadata": {
+    "consultation_id": "day1_consultation02",
+    "llm_scribe_model": "google_gemini-3.1-pro-preview",
+    "asr_model": "granite-speech-3.3-2b",
+    "noise_profile": "hospital_corridor",
+    "snr_level": "snr_-2"
+  },
+  "generated_note": {
+    "Chief_Complaint": [
+      {
+        "fact_id": "Chief_Complaint-001",
+        "content": "Sore, red, itchy skin x 3-4 days",
+        "source_text": "Sore, red, itchy skin x 3-4 days"
+      }
+    ],
+    "History_of_Present_Illness": [
+      {
+        "fact_id": "History_of_Present_Illness-001",
+        "content": "Rash located on chest, hands, arms, and antecubital fossae",
+        "source_text": "Rash located on chest, hands, arms, and antecubital fossae"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-002",
+        "content": "Skin is cracked; no bleeding noted",
+        "source_text": "Skin is cracked; no bleeding noted"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-003",
+        "content": "Face is spared",
+        "source_text": "Face is spared"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-004",
+        "content": "No known triggers (denies new shower gel, clothing, or sick contacts)",
+        "source_text": "No known triggers (denies new shower gel, clothing, or sick contacts)"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-005",
+        "content": "Denies fever and cough",
+        "source_text": "Denies fever and cough"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-006",
+        "content": "Normal bowel and urinary function",
+        "source_text": "Normal bowel and urinary function"
+      }
+    ],
+    "Past_Medical_History": [
+      {
+        "fact_id": "Past_Medical_History-001",
+        "content": "Eczema (~20 years ago, previously localized to arms only)",
+        "source_text": "Eczema (~20 years ago, previously localized to arms only)"
+      }
+    ],
+    "Medications": [
+      {
+        "fact_id": "Medications-001",
+        "content": "OTC steroid cream",
+        "source_text": "OTC steroid cream"
+      },
+      {
+        "fact_id": "Medications-002",
+        "content": "antihistamines",
+        "source_text": "antihistamines"
+      },
+      {
+        "fact_id": "Medications-003",
+        "content": "previous eczema creams (none provided relief)",
+        "source_text": "previous eczema creams (none provided relief)"
+      }
+    ],
+    "Adverse_Drug_Reactions_and_Allergies": [],
+    "Family_History": [],
+    "Social_and_Family_History": [
+      {
+        "fact_id": "Social_and_Family_History-001",
+        "content": "Lives with flatmates",
+        "source_text": "Lives with flatmates"
+      },
+      {
+        "fact_id": "Social_and_Family_History-002",
+        "content": "smoker",
+        "source_text": "smoker"
+      },
+      {
+        "fact_id": "Social_and_Family_History-003",
+        "content": "occasional etOH",
+        "source_text": "occasional etOH"
+      }
+    ],
+    "Assessment": [
+      {
+        "fact_id": "Assessment-001",
+        "content": "Erythematous, pruritic rash with cracked skin",
+        "source_text": "Erythematous, pruritic rash with cracked skin (suspected eczema flare)"
+      },
+      {
+        "fact_id": "Assessment-002",
+        "content": "suspected eczema flare",
+        "source_text": "Erythematous, pruritic rash with cracked skin (suspected eczema flare)"
+      }
+    ],
+    "Plan_of_Care": [],
+    "Follow_up_Information": [],
+    "Physical_Findings": [],
+    "Review_of_Systems": [
+      {
+        "fact_id": "Review_of_Systems-001",
+        "content": "Denies fever and cough",
+        "source_text": "Denies fever and cough"
+      },
+      {
+        "fact_id": "Review_of_Systems-002",
+        "content": "Normal bowel and urinary function",
+        "source_text": "Normal bowel and urinary function"
+      }
+    ]
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "hpi-001",
+        "status": "COVERED",
+        "reasoning": "Generated notes itchy/sore/red skin for 3\u20134 days and includes chest involvement, which covers the core duration/symptom/location concept. However, it does not mention the back or explicitly describe the skin as dry."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "COVERED",
+        "reasoning": "Generated explicitly states the skin is cracked and sore."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "OMITTED",
+        "reasoning": "Generated includes 'no bleeding' but does not mention no discharge and does not address 'no spread elsewhere'."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "COVERED",
+        "reasoning": "Generated states no known triggers and specifies denial of new shower gel/clothing/sick contacts."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "COVERED",
+        "reasoning": "Generated lists OTC steroid cream and antihistamines, and indicates lack of relief/minimal benefit."
+      },
+      {
+        "fact_id": "hpi-006",
+        "status": "COVERED",
+        "reasoning": "Generated captures systemic wellness elements including no fever, no cough, and no bowel issues (plus urinary). It does not explicitly mention vomiting or shortness of breath, but the main systemic-well concept is present."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "OMITTED",
+        "reasoning": "Generated includes eczema history but does not include asthma."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "OMITTED",
+        "reasoning": "Gold states no regular medications; Generated lists OTC steroid cream/antihistamines/previous creams but does not state absence of regular meds."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "OMITTED",
+        "reasoning": "No allergy/NKDA information is present in the Generated facts."
+      },
+      {
+        "fact_id": "sh-001",
+        "status": "OMITTED",
+        "reasoning": "Generated states the patient lives with flatmates but omits occupation (pharmaceutical manager)."
+      },
+      {
+        "fact_id": "sh-002",
+        "status": "CONTRADICTED",
+        "reasoning": "Gold says non-smoker with social alcohol; Generated states 'smoker' (contradiction) while alcohol use is consistent."
+      },
+      {
+        "fact_id": "sh-003",
+        "status": "OMITTED",
+        "reasoning": "Generated does not include that the patient thinks symptoms are related to eczema or that there are no other concerns."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "COVERED",
+        "reasoning": "Generated assessment states suspected eczema flare."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "OMITTED",
+        "reasoning": "No plan items are included in Generated facts (no Betnovate BD documented)."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "OMITTED",
+        "reasoning": "No emollient (Cetraben) documented in Generated facts."
+      },
+      {
+        "fact_id": "plan-003",
+        "status": "OMITTED",
+        "reasoning": "No advice/prescription to trial antihistamines documented in the plan section of Generated facts."
+      },
+      {
+        "fact_id": "plan-004",
+        "status": "OMITTED",
+        "reasoning": "No advice to keep a trigger diary documented in Generated facts."
+      },
+      {
+        "fact_id": "fu-001",
+        "status": "OMITTED",
+        "reasoning": "No follow-up timeframe (10\u201314 days if not improving) documented in Generated facts."
+      },
+      {
+        "fact_id": "fu-002",
+        "status": "OMITTED",
+        "reasoning": "No advice to seek earlier review if worsening/concerns documented in Generated facts."
+      }
+    ],
+    "gen_assessment": [
+      {
+        "fact_id": "Chief_Complaint-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold supports itchy/sore skin for ~4 days; 'red' is not in Gold but is supported by the Transcript ('red skin')."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not fully matching Gold location (Gold emphasizes chest/back), but the Transcript supports chest, hands, arms, and inside elbows (antecubital fossae)."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold: cracked skin and no bleeding."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-003",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Face sparing is stated in the Transcript ('no' to face involvement) but not present in the Gold summary."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-004",
+        "status": "SUPPORTED",
+        "reasoning": "Gold states no known triggers; Transcript includes denial of changes (shower gel/clothing/contacts), consistent with the Generated fact."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-005",
+        "status": "SUPPORTED",
+        "reasoning": "Gold documents no fevers and no cough/SOB; Generated includes denial of fever and cough (subset consistent with Gold and Transcript)."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-006",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold supports no bowel symptoms; Transcript also suggests urine is OK ('passing urine ok' / 'i think so'). Urinary normality is not stated in Gold."
+      },
+      {
+        "fact_id": "Past_Medical_History-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold includes eczema history; Transcript supports prior similar episode ~20 years ago and implies prior localization to arms. (Asthma from Gold is not included here, but this fact itself is supported regarding eczema timing/history.)"
+      },
+      {
+        "fact_id": "Medications-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold states the patient used OTC steroid cream with minimal effect."
+      },
+      {
+        "fact_id": "Medications-002",
+        "status": "SUPPORTED",
+        "reasoning": "Gold states the patient has tried antihistamines."
+      },
+      {
+        "fact_id": "Medications-003",
+        "status": "SUPPORTED",
+        "reasoning": "Gold indicates minimal effect from attempted treatments; Transcript describes trying prior creams/creams from pharmacy and they did not help."
+      },
+      {
+        "fact_id": "Social_and_Family_History-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold and Transcript: lives with flatmates."
+      },
+      {
+        "fact_id": "Social_and_Family_History-002",
+        "status": "HALLUCINATION",
+        "reasoning": "Contradicts Gold (Gold: non-smoker). Transcript does not clearly document that the patient smokes (the 'do you smoke yeah' line appears to be clinician speech/unclear attribution), so this is not supported."
+      },
+      {
+        "fact_id": "Social_and_Family_History-003",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold: alcohol socially/occasionally."
+      },
+      {
+        "fact_id": "Assessment-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold supports pruritus and cracked/sore skin; 'erythematous' is supported by Transcript ('red skin') but not explicitly in Gold."
+      },
+      {
+        "fact_id": "Assessment-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold impression: eczema flare-up."
+      },
+      {
+        "fact_id": "Review_of_Systems-001",
+        "status": "SUPPORTED",
+        "reasoning": "Consistent with Gold systemic review (no fever, no cough) and the Transcript."
+      },
+      {
+        "fact_id": "Review_of_Systems-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold supports no bowel symptoms; Transcript suggests urinary function is OK. Urinary normality is not explicitly stated in Gold."
+      }
+    ]
+  },
+  "safety_grading": {
+    "total_errors_graded": 13,
+    "safety_verdicts": [
+      {
+        "fact_id": "hpi-003",
+        "error_type": "OMISSION",
+        "content": "There has been no bleeding, discharge, or spread of the rash.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated includes 'no bleeding' but does not mention no discharge and does not address 'no spread elsewhere'.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting that there is no discharge and no spread could make the rash seem more concerning for infection or progressive dermatosis than it is, potentially prompting unnecessary escalation or investigation. However, this is still a contextual HPI detail and is unlikely to directly cause harm if the clinician reassesses the rash.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "pmh-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a past medical history of Eczema and Asthma.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated includes eczema history but does not include asthma.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Failure to document asthma can affect clinical decision-making (e.g., assessing atopic history/severity and considering respiratory comorbidity when prescribing or advising), and may reduce continuity of care. In this scenario it is unlikely to cause major harm but could lead to suboptimal management or missed counseling.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "med-001",
+        "error_type": "OMISSION",
+        "content": "Patient takes no regular medications.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold states no regular medications; Generated lists OTC steroid cream/antihistamines/previous creams but does not state absence of regular meds.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting that the patient takes no regular medications weakens medication reconciliation and can contribute to downstream prescribing/interaction errors or duplicate therapies. The likely impact here is additional clarification effort and some risk of incorrect assumptions about baseline meds.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "allergy-001",
+        "error_type": "OMISSION",
+        "content": "Patient has no known drug allergies.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No allergy/NKDA information is present in the Generated facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting NKDA is clinically important because allergy status is a key safety check before prescribing; absence of documentation can lead to unsafe prescribing or delays while allergies are re-verified. This creates a meaningful medication-safety risk even if the patient truly has no allergies.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "sh-001",
+        "error_type": "OMISSION",
+        "content": "Patient lives with flatmates and works as a pharmaceutical manager.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated states the patient lives with flatmates but omits occupation (pharmaceutical manager).",
+        "consensus_tier": 4,
+        "clinical_rationale": "Omitting occupation (pharmaceutical manager) is largely administrative/social history noise and is unlikely to change the clinical management of an itchy rash. Clinical harm from this omission is minimal to none.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "sh-003",
+        "error_type": "OMISSION",
+        "content": "Patient believes the symptoms may be related to their eczema and has no other concerns.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated does not include that the patient thinks symptoms are related to eczema or that there are no other concerns.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Not capturing the patient\u2019s belief that this is eczema and that they have no other concerns mainly affects shared decision-making and documentation completeness. It is unlikely to alter safety-critical decisions or cause direct patient harm.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "plan-001",
+        "error_type": "OMISSION",
+        "content": "Prescribed Betnovate steroid cream to be used twice daily (BD).",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No plan items are included in Generated facts (no Betnovate BD documented).",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting the prescription for Betnovate with clear dosing (BD) can lead to undertreatment, prolonged symptoms, or incorrect self-treatment with inappropriate potency/frequency. Missing a key therapeutic plan item is a clinically meaningful error that can adversely affect outcomes and quality of life.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "plan-002",
+        "error_type": "OMISSION",
+        "content": "Prescribed Cetraben emollients.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No emollient (Cetraben) documented in Generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Failure to document prescribed emollients (Cetraben) may result in inadequate skin barrier therapy and slower symptom control, particularly in eczema. The likely consequence is persistent symptoms and need for additional follow-up rather than serious harm.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "plan-003",
+        "error_type": "OMISSION",
+        "content": "Advised to trial antihistamines.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No advice/prescription to trial antihistamines documented in the plan section of Generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting advice to trial antihistamines may leave pruritus insufficiently treated, worsening sleep and comfort and potentially increasing excoriation. This is generally limited-harm but can meaningfully affect symptoms and short-term functioning.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "plan-004",
+        "error_type": "OMISSION",
+        "content": "Advised to keep a trigger diary.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No advice to keep a trigger diary documented in Generated facts.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Not documenting advice to keep a trigger diary mainly reduces self-management support and may slow identification of triggers. This is unlikely to cause direct clinical harm.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "fu-001",
+        "error_type": "OMISSION",
+        "content": "Patient to have a review in 10-14 days if symptoms do not improve.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No follow-up timeframe (10\u201314 days if not improving) documented in Generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting a planned review timeframe (10\u201314 days if not improving) can delay reassessment and escalation if the rash persists, prolonging symptoms and potentially missing evolution into a different diagnosis. The expected impact is typically additional suffering and delayed care rather than major injury.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "fu-002",
+        "error_type": "OMISSION",
+        "content": "Advised to seek review earlier if there are any concerns or worsening symptoms.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No advice to seek earlier review if worsening/concerns documented in Generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Failure to document safety-netting to seek earlier review if worsening/concerns can delay care when symptoms deteriorate or complications develop (e.g., secondary infection). This increases clinical risk, though in this context the likely harm is usually limited and preventable with reassessment.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "Social_and_Family_History-002",
+        "error_type": "COMMISSION",
+        "content": "smoker",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Contradicts Gold (Gold: non-smoker). Transcript does not clearly document that the patient smokes (the 'do you smoke yeah' line appears to be clinician speech/unclear attribution), so this is not supported.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Incorrectly labeling the patient as a smoker can bias risk assessment and counseling and may influence management decisions (e.g., inappropriate smoking cessation counseling or misattribution of symptoms/risk). While unlikely to cause direct injury, it can lead to inappropriate documentation and potentially misguided clinical focus.",
+        "raw_votes": [
+          3
+        ]
+      }
+    ]
+  }
+}

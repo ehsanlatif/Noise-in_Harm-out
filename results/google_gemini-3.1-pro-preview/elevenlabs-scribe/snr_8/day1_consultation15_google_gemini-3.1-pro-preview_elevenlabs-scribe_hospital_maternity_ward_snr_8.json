@@ -1,0 +1,391 @@
+{
+  "metadata": {
+    "consultation_id": "day1_consultation15",
+    "llm_scribe_model": "google_gemini-3.1-pro-preview",
+    "asr_model": "elevenlabs-scribe",
+    "noise_profile": "hospital_maternity_ward",
+    "snr_level": "snr_8"
+  },
+  "generated_note": {
+    "Chief_Complaint": [
+      {
+        "fact_id": "chief-001",
+        "content": "Transcript between the <<< and >>> markers was not included.",
+        "source_text": "It appears you forgot to include the transcript between the `<<<` and `>>>` markers."
+      }
+    ],
+    "History_of_Present_Illness": [],
+    "Past_Medical_History": [],
+    "Medications": [],
+    "Adverse_Drug_Reactions_and_Allergies": [],
+    "Family_History": [],
+    "Social_and_Family_History": [],
+    "Assessment": [],
+    "Plan_of_Care": [
+      {
+        "fact_id": "plan-001",
+        "content": "User is asked to provide the transcript.",
+        "source_text": "Please provide the transcript, and I will generate the terse SOAP consult note for you according to your instructions!"
+      },
+      {
+        "fact_id": "plan-002",
+        "content": "Will generate a terse SOAP consult note according to the user's instructions once transcript is provided.",
+        "source_text": "Please provide the transcript, and I will generate the terse SOAP consult note for you according to your instructions!"
+      }
+    ],
+    "Follow_up_Information": [],
+    "Physical_Findings": [],
+    "Review_of_Systems": []
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "hpi-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts contain no HPI details about duration or location (hands/palms) of sore/cracked skin."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "OMITTED",
+        "reasoning": "No Generated Facts address itch, bleeding on scratching, or absence of pain."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "OMITTED",
+        "reasoning": "No mention in Generated Facts of cleaning work, glove use, or potential trigger."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "OMITTED",
+        "reasoning": "No mention in Generated Facts of E45 cream or antihistamine trial and minimal relief."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "OMITTED",
+        "reasoning": "No mention in Generated Facts of fever denial, bowel/urinary symptoms denial, or maintained appetite."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "OMITTED",
+        "reasoning": "No past medical history (Type 2 diabetes) is documented in Generated Facts."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "OMITTED",
+        "reasoning": "No medication list (metformin) is present in Generated Facts."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "OMITTED",
+        "reasoning": "No allergy status (NKDA) is present in Generated Facts."
+      },
+      {
+        "fact_id": "famhx-001",
+        "status": "OMITTED",
+        "reasoning": "No family history (Type 2 diabetes) is present in Generated Facts."
+      },
+      {
+        "fact_id": "sh-001",
+        "status": "OMITTED",
+        "reasoning": "No social history about hotel housekeeping job and job change 4 months ago is present in Generated Facts."
+      },
+      {
+        "fact_id": "sh-002",
+        "status": "OMITTED",
+        "reasoning": "No mention in Generated Facts of non-smoker status or minimal alcohol intake."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "OMITTED",
+        "reasoning": "No assessment/impression of contact dermatitis is included in Generated Facts."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "OMITTED",
+        "reasoning": "Gold plan is steroid cream twice daily; Generated Facts do not include any steroid prescription or dosing."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "OMITTED",
+        "reasoning": "Gold plan advises regular emollients; Generated Facts do not include emollient advice."
+      },
+      {
+        "fact_id": "plan-003",
+        "status": "OMITTED",
+        "reasoning": "Gold plan advises avoiding triggers and wearing cleaning gloves; Generated Facts do not include this."
+      },
+      {
+        "fact_id": "fu-001",
+        "status": "OMITTED",
+        "reasoning": "No follow-up instruction of review in 10\u201314 days if not better is present in Generated Facts."
+      },
+      {
+        "fact_id": "fu-002",
+        "status": "OMITTED",
+        "reasoning": "No advice for earlier review if symptoms worsen is present in Generated Facts."
+      }
+    ],
+    "gen_assessment": [
+      {
+        "fact_id": "chief-001",
+        "status": "HALLUCINATION",
+        "reasoning": "This is meta-commentary about missing transcript markers; it does not appear in the Gold Summary and is not supported by the provided Transcript content (which is empty)."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "HALLUCINATION",
+        "reasoning": "Asking the user to provide the transcript is not a clinical plan in the Gold Summary and is not supported by the (empty) Transcript."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "HALLUCINATION",
+        "reasoning": "Statement about generating a SOAP note once the transcript is provided is not in the Gold Summary and is not supported by the (empty) Transcript."
+      }
+    ]
+  },
+  "safety_grading": {
+    "total_errors_graded": 20,
+    "safety_verdicts": [
+      {
+        "fact_id": "hpi-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a 3-4 month history of sore and cracked skin on the hands, mainly on the palms.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts contain no HPI details about duration or location (hands/palms) of sore/cracked skin.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting the duration and specific location (palms/hands) reduces diagnostic accuracy (e.g., distinguishing irritant/contact dermatitis from other dermatoses) and may delay appropriate targeted counseling and treatment. Likely results in persistent symptoms rather than acute danger.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-002",
+        "error_type": "OMISSION",
+        "content": "The skin is occasionally itchy and has bled on scratching, but is not painful.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No Generated Facts address itch, bleeding on scratching, or absence of pain.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Missing key symptom qualifiers (itching, bleeding with scratching, not painful) can mislead severity assessment and differential diagnosis and may delay basic preventive advice (e.g., skin protection to prevent excoriations/infection). Harm is generally limited to prolonged discomfort and need for follow-up.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-003",
+        "error_type": "OMISSION",
+        "content": "A possible trigger is the patient's work as a cleaner, where they do not always wear gloves.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention in Generated Facts of cleaning work, glove use, or potential trigger.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting a likely occupational trigger (cleaning work, inconsistent glove use) can lead to failure to address the primary driver of disease and increases the chance of recurrence or chronicity. This is typically non-life-threatening but can prolong morbidity and skin breakdown.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-004",
+        "error_type": "OMISSION",
+        "content": "Patient has tried E45 cream and antihistamines with minimal relief.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention in Generated Facts of E45 cream or antihistamine trial and minimal relief.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting prior treatments tried (E45, antihistamines) and poor response may lead to redundant therapy and slower escalation to appropriate anti-inflammatory treatment. The main impact is delayed symptom control and additional visits/medication trials.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-005",
+        "error_type": "OMISSION",
+        "content": "Patient denies fever, bowel or urinary symptoms, and appetite is maintained.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention in Generated Facts of fever denial, bowel/urinary symptoms denial, or maintained appetite.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Failure to document absence of systemic symptoms (fever, bowel/urinary symptoms, preserved appetite) weakens the safety/triage record and can obscure evaluation for infectious or systemic disease. While the patient denied red flags, the omission can still contribute to unnecessary workup or missed reassessment cues.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "pmh-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a history of Type 2 diabetes.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No past medical history (Type 2 diabetes) is documented in Generated Facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting Type 2 diabetes is clinically important because diabetes increases risk of skin infection, delayed healing, and may influence treatment choices and follow-up thresholds. This can plausibly lead to missed monitoring or delayed recognition of complications.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "med-001",
+        "error_type": "OMISSION",
+        "content": "Patient takes metformin.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No medication list (metformin) is present in Generated Facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Not documenting metformin use undermines medication reconciliation and can contribute to prescribing errors or missed opportunities to assess diabetes control and renal-related medication safety. While not immediately dangerous in a topical-dermatology visit, it carries a meaningful risk of downstream clinical error.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "allergy-001",
+        "error_type": "OMISSION",
+        "content": "Patient has no known drug allergies.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No allergy status (NKDA) is present in Generated Facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Absent allergy status (even if NKDA) creates uncertainty for prescribing and may either delay needed medications or increase the risk of an avoidable allergic exposure if assumptions are made. In this case it is more likely to cause extra checking/monitoring than direct injury.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "famhx-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a family history of Type 2 diabetes.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No family history (Type 2 diabetes) is present in Generated Facts.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Family history of Type 2 diabetes has limited impact on the immediate management of hand dermatitis and is unlikely to change near-term clinical decisions. The omission is primarily documentation loss with minimal safety consequence.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "sh-001",
+        "error_type": "OMISSION",
+        "content": "Patient works as a housekeeper in a hotel and changed jobs 4 months ago.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No social history about hotel housekeeping job and job change 4 months ago is present in Generated Facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Missing the hotel housekeeping job and timing of job change removes a key exposure timeline that supports occupational contact dermatitis and informs prevention/workplace modifications. Likely harm is prolonged symptoms and recurrence rather than acute clinical deterioration.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "sh-002",
+        "error_type": "OMISSION",
+        "content": "Patient does not smoke and has minimal alcohol intake.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention in Generated Facts of non-smoker status or minimal alcohol intake.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Smoking and alcohol history are standard but have limited direct relevance to the evaluation and treatment of localized contact dermatitis in this context. Omission is unlikely to change clinical care or outcomes here.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "asm-001",
+        "error_type": "OMISSION",
+        "content": "The impression is contact dermatitis.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No assessment/impression of contact dermatitis is included in Generated Facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting the impression of contact dermatitis can lead to inconsistent care, inappropriate differentials being pursued, and missed emphasis on trigger avoidance and skin barrier repair. This generally causes delayed resolution and additional follow-up rather than severe harm.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "plan-001",
+        "error_type": "OMISSION",
+        "content": "Prescribed a steroid cream to be used twice daily (BD).",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold plan is steroid cream twice daily; Generated Facts do not include any steroid prescription or dosing.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Failure to document/prescribe topical steroid cream twice daily may result in undertreatment, ongoing inflammation, fissuring, and potential secondary infection from skin breakdown. The expected harm is persistent symptoms and possibly additional treatment/visits.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "plan-002",
+        "error_type": "OMISSION",
+        "content": "Advised regular use of emollients.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold plan advises regular emollients; Generated Facts do not include emollient advice.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting advice for regular emollient use can impair skin barrier recovery and prolong dermatitis, increasing cracking and discomfort. Harm is typically limited to delayed improvement and need for further care.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "plan-003",
+        "error_type": "OMISSION",
+        "content": "Advised to avoid triggers and to wear cleaning gloves.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold plan advises avoiding triggers and wearing cleaning gloves; Generated Facts do not include this.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not advising trigger avoidance and glove use removes the primary preventive strategy for irritant/contact dermatitis, increasing the risk of persistence and recurrence and worsening fissures/bleeding. This is more likely to cause prolonged morbidity than acute severe injury.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "fu-001",
+        "error_type": "OMISSION",
+        "content": "Patient to have a review in 10-14 days if not better.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No follow-up instruction of review in 10\u201314 days if not better is present in Generated Facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting the instruction to return in 10\u201314 days if not improving can delay reassessment and escalation of care, potentially prolonging symptoms and allowing an unresolved condition to persist. The risk is generally limited but can contribute to missed follow-up for treatment failure.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "fu-002",
+        "error_type": "OMISSION",
+        "content": "Advised to seek review earlier if symptoms worsen.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No advice for earlier review if symptoms worsen is present in Generated Facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting safety-net advice to seek earlier review if symptoms worsen increases risk of delayed evaluation of clinical deterioration, which can lead to progression of an underlying illness and worse outcomes. Safety-netting is a key harm-prevention element, especially when diagnosis and course are uncertain.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "chief-001",
+        "error_type": "COMMISSION",
+        "content": "Transcript between the <<< and >>> markers was not included.",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "This is meta-commentary about missing transcript markers; it does not appear in the Gold Summary and is not supported by the provided Transcript content (which is empty).",
+        "consensus_tier": 4,
+        "clinical_rationale": "This is non-clinical meta-commentary about transcript markers and does not affect diagnosis, treatment, monitoring, or patient instructions. It adds documentation noise without direct clinical impact.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "plan-001",
+        "error_type": "COMMISSION",
+        "content": "User is asked to provide the transcript.",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Asking the user to provide the transcript is not a clinical plan in the Gold Summary and is not supported by the (empty) Transcript.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Asking the user to provide the transcript is an administrative/workflow statement, not patient care content, and does not change clinical management. It should not impact patient outcomes.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "plan-002",
+        "error_type": "COMMISSION",
+        "content": "Will generate a terse SOAP consult note according to the user's instructions once transcript is provided.",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Statement about generating a SOAP note once the transcript is provided is not in the Gold Summary and is not supported by the (empty) Transcript.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Stating that a SOAP note will be generated once a transcript is provided is a process note unrelated to patient care decisions. It does not introduce or omit clinical information affecting management.",
+        "raw_votes": [
+          4
+        ]
+      }
+    ]
+  }
+}

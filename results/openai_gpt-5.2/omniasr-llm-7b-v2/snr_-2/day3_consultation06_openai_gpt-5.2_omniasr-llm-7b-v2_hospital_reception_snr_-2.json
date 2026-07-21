@@ -1,0 +1,456 @@
+{
+  "metadata": {
+    "consultation_id": "day3_consultation06",
+    "llm_scribe_model": "openai_gpt-5.2",
+    "asr_model": "omniasr-llm-7b-v2",
+    "noise_profile": "hospital_reception",
+    "snr_level": "snr_-2"
+  },
+  "generated_note": {
+    "Chief_Complaint": [
+      {
+        "fact_id": "Chief_Complaint-001",
+        "content": "Acute breathing difficulty",
+        "source_text": "Acute breathing difficulty"
+      }
+    ],
+    "History_of_Present_Illness": [
+      {
+        "fact_id": "History_of_Present_Illness-001",
+        "content": "Onset minutes ago while gardening",
+        "source_text": "Onset ~minutes ago while gardening"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-002",
+        "content": "Increased shortness of breath since onset",
+        "source_text": "since then \u2191 SOB"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-003",
+        "content": "Throat sensation/tingling reported",
+        "source_text": "Throat sensation/tingling"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-004",
+        "content": "Clinician asked about throat closing and lip swelling",
+        "source_text": "asked re throat closing/lip swelling"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-005",
+        "content": "Patient did not endorse lip swelling",
+        "source_text": "pt did not endorse lip swelling"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-006",
+        "content": "Patient did report throat sensation",
+        "source_text": "did report throat sensation"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-007",
+        "content": "Chest tightness present ('a bit of tightness')",
+        "source_text": "Chest tightness: + (\u201ca bit of tightness\u201d)"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-008",
+        "content": "Denies prior similar episodes",
+        "source_text": "Prior similar episodes: denies"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-009",
+        "content": "Localized rash/itching reported",
+        "source_text": "Rash/skin sx: + (reported localized rash/itching)"
+      }
+    ],
+    "Past_Medical_History": [
+      {
+        "fact_id": "Past_Medical_History-001",
+        "content": "Eczema",
+        "source_text": "PMH: Eczema"
+      }
+    ],
+    "Medications": [
+      {
+        "fact_id": "Medications-001",
+        "content": "Patient-reported 'morphane' (unclear)",
+        "source_text": "\u201cmorphane\u201d (pt-reported; unclear)"
+      },
+      {
+        "fact_id": "Medications-002",
+        "content": "Has antihistamines at home (previously used for allergies)",
+        "source_text": "has antihistamines at home (previously used for allergies)"
+      }
+    ],
+    "Adverse_Drug_Reactions_and_Allergies": [
+      {
+        "fact_id": "Adverse_Drug_Reactions_and_Allergies-001",
+        "content": "Reports sensitivities",
+        "source_text": "Reports \u201csensitivities\u201d"
+      }
+    ],
+    "Family_History": [],
+    "Social_and_Family_History": [],
+    "Assessment": [
+      {
+        "fact_id": "Assessment-001",
+        "content": "Acute shortness of breath with throat symptoms after gardening",
+        "source_text": "Acute SOB + throat symptoms after gardening"
+      },
+      {
+        "fact_id": "Assessment-002",
+        "content": "Consider allergic reaction versus evolving anaphylaxis",
+        "source_text": "c/f allergic reaction vs evolving anaphylaxis"
+      },
+      {
+        "fact_id": "Assessment-003",
+        "content": "Associated chest tightness",
+        "source_text": "associated chest tightness"
+      },
+      {
+        "fact_id": "Assessment-004",
+        "content": "Associated localized rash/itching",
+        "source_text": "localized rash/itching"
+      }
+    ],
+    "Plan_of_Care": [
+      {
+        "fact_id": "Plan_of_Care-001",
+        "content": "Call ambulance/EMS now",
+        "source_text": "Call ambulance/EMS now"
+      },
+      {
+        "fact_id": "Plan_of_Care-002",
+        "content": "Urgent evaluation advised given breathing difficulty; concern for anaphylaxis",
+        "source_text": "(urgent eval given breathing difficulty; concern for anaphylaxis)"
+      },
+      {
+        "fact_id": "Plan_of_Care-003",
+        "content": "Take oral antihistamine now while awaiting ambulance",
+        "source_text": "Take oral antihistamine now while awaiting ambulance"
+      },
+      {
+        "fact_id": "Plan_of_Care-004",
+        "content": "Do not self-transport by car",
+        "source_text": "Do not self-transport by car"
+      },
+      {
+        "fact_id": "Plan_of_Care-005",
+        "content": "Advised against wife driving; ambulance preferred for faster treatment/escalation",
+        "source_text": "(advised against wife driving; ambulance preferred for faster treatment/escalation)"
+      }
+    ],
+    "Follow_up_Information": [],
+    "Physical_Findings": [],
+    "Review_of_Systems": []
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "hpi-001",
+        "status": "OMITTED",
+        "reasoning": "Generated facts note acute breathing difficulty and onset while gardening, but do not document that it occurred for ~15 minutes and do not include the wasp sting trigger."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "OMITTED",
+        "reasoning": "Gold specifies tingling around the lips; generated facts describe a throat sensation/tingling and explicitly note no lip swelling, but do not capture lip tingling."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "COVERED",
+        "reasoning": "Generated facts explicitly document chest tightness ('a bit of tightness')."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "OMITTED",
+        "reasoning": "Gold states the patient denies throat closing; generated facts only mention the clinician asked about throat closing but do not record the patient\u2019s denial."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "COVERED",
+        "reasoning": "Generated facts state the patient denies prior similar episodes."
+      },
+      {
+        "fact_id": "pf-001",
+        "status": "COVERED",
+        "reasoning": "Gold notes a blotchy rash; generated facts report localized rash/itching, which captures the presence of a rash/skin manifestation (even if not phrased as an exam finding)."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "COVERED",
+        "reasoning": "Generated facts list eczema in past medical history."
+      },
+      {
+        "fact_id": "pmh-002",
+        "status": "OMITTED",
+        "reasoning": "History of aerosinusitis is not present in generated facts."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "OMITTED",
+        "reasoning": "Penicillin allergy is not included in generated facts."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "OMITTED",
+        "reasoning": "Gold assessment mentions possible urticaria/hives; generated assessment discusses allergic reaction vs anaphylaxis but does not mention urticaria/hives."
+      },
+      {
+        "fact_id": "asm-002",
+        "status": "COVERED",
+        "reasoning": "Generated facts include concern for evolving anaphylaxis and ambulance/urgent evaluation, aligning with need to rule out anaphylaxis."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "COVERED",
+        "reasoning": "Generated plan includes taking an oral antihistamine now."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "COVERED",
+        "reasoning": "Generated plan includes calling ambulance/EMS now due to concern for anaphylaxis."
+      }
+    ],
+    "gen_assessment": [
+      {
+        "fact_id": "Chief_Complaint-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold HPI documents breathing difficulty; this matches the chief complaint."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript indicates symptoms started minutes ago while gardening; this detail is not in Gold but is supported by the transcript."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript supports ongoing breathing difficulty since onset; Gold also supports breathing difficulty though not explicitly as 'increased.'"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-003",
+        "status": "HALLUCINATION",
+        "reasoning": "Gold specifies tingling around the lips, not throat; transcript is unclear but is prompted around lips/throat closing, without clear evidence of a true throat tingling symptom as stated."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-004",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript shows clinician asked about lip swelling and throat closing; this interaction detail is not part of Gold but is supported by the transcript."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-005",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript does not document lip swelling; patient does not endorse swelling when asked. This is a reasonable supported inference from the exchange, though not stated in Gold."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-006",
+        "status": "HALLUCINATION",
+        "reasoning": "Neither Gold nor transcript clearly establishes the patient reported a throat sensation (as opposed to lip tingling); the transcript is ambiguous and does not explicitly support this claim."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-007",
+        "status": "SUPPORTED",
+        "reasoning": "Gold includes chest tightness; transcript also supports 'a bit of tightness.'"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-008",
+        "status": "SUPPORTED",
+        "reasoning": "Gold states no previous similar episodes; generated matches."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-009",
+        "status": "SUPPORTED",
+        "reasoning": "Gold documents a blotchy rash; generated reports localized rash/itching, consistent with skin manifestation noted."
+      },
+      {
+        "fact_id": "Past_Medical_History-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold includes eczema; generated matches."
+      },
+      {
+        "fact_id": "Medications-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript includes patient statement resembling 'morphane' as regular medication; not in Gold but supported as an unclear medication report."
+      },
+      {
+        "fact_id": "Medications-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript indicates the patient has antihistamines at home and has used them for allergies; not in Gold but supported by transcript."
+      },
+      {
+        "fact_id": "Adverse_Drug_Reactions_and_Allergies-001",
+        "status": "HALLUCINATION",
+        "reasoning": "Gold specifies penicillin allergy; transcript mentions 'aerosinusitis' (or similar), not a generic report of 'sensitivities.' The generated allergy statement is not clearly supported by Gold or transcript."
+      },
+      {
+        "fact_id": "Assessment-001",
+        "status": "HALLUCINATION",
+        "reasoning": "While SOB after gardening is supported, the inclusion of 'throat symptoms' is not clearly supported (Gold emphasizes lip tingling and denial of throat closing; transcript is unclear for throat symptoms)."
+      },
+      {
+        "fact_id": "Assessment-002",
+        "status": "SUPPORTED",
+        "reasoning": "Gold assessment includes ruling out possible anaphylaxis and suggests urticaria; generated 'allergic reaction vs evolving anaphylaxis' aligns with Gold\u2019s anaphylaxis concern."
+      },
+      {
+        "fact_id": "Assessment-003",
+        "status": "SUPPORTED",
+        "reasoning": "Chest tightness is explicitly in Gold."
+      },
+      {
+        "fact_id": "Assessment-004",
+        "status": "SUPPORTED",
+        "reasoning": "Gold documents rash; generated links rash/itching as associated symptom, consistent with Gold."
+      },
+      {
+        "fact_id": "Plan_of_Care-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold plan includes calling an ambulance; generated matches."
+      },
+      {
+        "fact_id": "Plan_of_Care-002",
+        "status": "SUPPORTED",
+        "reasoning": "Gold plan/assessment emphasizes ruling out anaphylaxis and urgent response; generated matches."
+      },
+      {
+        "fact_id": "Plan_of_Care-003",
+        "status": "SUPPORTED",
+        "reasoning": "Gold plan advises immediate antihistamines; generated specifies taking oral antihistamine now."
+      },
+      {
+        "fact_id": "Plan_of_Care-004",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript includes clinician advising against wife driving and preferring ambulance; this supports 'do not self-transport by car.'"
+      },
+      {
+        "fact_id": "Plan_of_Care-005",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript explicitly states clinician preference for ambulance over wife driving due to urgency; this detail is not in Gold but is supported by transcript."
+      }
+    ]
+  },
+  "safety_grading": {
+    "total_errors_graded": 10,
+    "safety_verdicts": [
+      {
+        "fact_id": "hpi-001",
+        "error_type": "OMISSION",
+        "content": "Patient experienced breathing difficulty for 15 minutes following a wasp sting.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts note acute breathing difficulty and onset while gardening, but do not document that it occurred for ~15 minutes and do not include the wasp sting trigger.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting the wasp sting trigger and approximate duration can obscure the classic context for an acute allergic reaction/anaphylaxis and may delay recognition/escalation or appropriate prehospital instructions. Trigger documentation also matters for downstream counseling and risk stratification (e.g., venom allergy evaluation).",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-002",
+        "error_type": "OMISSION",
+        "content": "Patient reports a tingling sensation around the lips.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold specifies tingling around the lips; generated facts describe a throat sensation/tingling and explicitly note no lip swelling, but do not capture lip tingling.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Lip tingling is a potentially important mucosal/neurologic symptom supporting an evolving allergic reaction and can influence perceived severity and monitoring. Its absence may understate anaphylaxis features, though the encounter still identifies breathing difficulty as a key red flag.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-004",
+        "error_type": "OMISSION",
+        "content": "Patient denies any sensation of throat closing.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold states the patient denies throat closing; generated facts only mention the clinician asked about throat closing but do not record the patient\u2019s denial.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Failure to document that the patient denied throat-closing sensation can make airway involvement seem more ambiguous than it was and may affect triage or treatment decisions. However, the patient\u2019s shortness of breath remains the dominant risk feature driving urgent evaluation.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "pmh-002",
+        "error_type": "OMISSION",
+        "content": "Patient has a history of aerosinusitis.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "History of aerosinusitis is not present in generated facts.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Aerosinusitis history is not typically critical to acute management of suspected allergic reaction/anaphylaxis and is unlikely to change immediate treatment or safety decisions. The impact is primarily completeness of past history.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "allergy-001",
+        "error_type": "OMISSION",
+        "content": "Patient is allergic to penicillin.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Penicillin allergy is not included in generated facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting a penicillin allergy can lead to inadvertent prescribing/administration of beta-lactam antibiotics, potentially causing an allergic reaction including anaphylaxis. This is a high-risk documentation failure even if not immediately relevant to the current allergic presentation.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "asm-001",
+        "error_type": "OMISSION",
+        "content": "Clinical picture may represent urticaria (hives).",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold assessment mentions possible urticaria/hives; generated assessment discusses allergic reaction vs anaphylaxis but does not mention urticaria/hives.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Not mentioning urticaria/hives as a possible diagnosis reduces diagnostic specificity but does not materially change the already-appropriate concern for allergic reaction/anaphylaxis and need for urgent assessment. This is mainly a differential-labeling/completeness issue.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "History_of_Present_Illness-003",
+        "error_type": "COMMISSION",
+        "content": "Throat sensation/tingling reported",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Gold specifies tingling around the lips, not throat; transcript is unclear but is prompted around lips/throat closing, without clear evidence of a true throat tingling symptom as stated.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Documenting throat tingling when the more supported symptom is lip tingling can exaggerate perceived airway involvement and may prompt more aggressive intervention than necessary. In the context of shortness of breath, this could contribute to overtreatment (e.g., unnecessary epinephrine) though urgent evaluation is still warranted.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "History_of_Present_Illness-006",
+        "error_type": "COMMISSION",
+        "content": "Patient did report throat sensation",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Neither Gold nor transcript clearly establishes the patient reported a throat sensation (as opposed to lip tingling); the transcript is ambiguous and does not explicitly support this claim.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Asserting the patient reported throat sensation without clear support can mischaracterize the severity/location of symptoms and bias clinicians toward airway-compromise framing. This may lead to unnecessary escalation or anxiety, but typically would not cause severe harm given the need for assessment for possible anaphylaxis anyway.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "Adverse_Drug_Reactions_and_Allergies-001",
+        "error_type": "COMMISSION",
+        "content": "Reports sensitivities",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Gold specifies penicillin allergy; transcript mentions 'aerosinusitis' (or similar), not a generic report of 'sensitivities.' The generated allergy statement is not clearly supported by Gold or transcript.",
+        "consensus_tier": 3,
+        "clinical_rationale": "A vague statement of 'sensitivities' can confuse the allergy profile and may dilute attention from specific high-risk allergies (e.g., penicillin) or lead to inappropriate medication avoidance. The direct clinical impact is usually limited unless it results in incorrect prescribing decisions.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "Assessment-001",
+        "error_type": "COMMISSION",
+        "content": "Acute shortness of breath with throat symptoms after gardening",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "While SOB after gardening is supported, the inclusion of 'throat symptoms' is not clearly supported (Gold emphasizes lip tingling and denial of throat closing; transcript is unclear for throat symptoms).",
+        "consensus_tier": 3,
+        "clinical_rationale": "Including 'throat symptoms' in the assessment may overstate airway involvement and could influence clinicians toward more aggressive treatment pathways. While this may increase the chance of overtreatment, the patient\u2019s acute dyspnea still appropriately warrants urgent evaluation for anaphylaxis.",
+        "raw_votes": [
+          3
+        ]
+      }
+    ]
+  }
+}

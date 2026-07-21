@@ -1,0 +1,390 @@
+{
+  "metadata": {
+    "consultation_id": "day1_consultation05",
+    "llm_scribe_model": "google_gemini-3.1-pro-preview",
+    "asr_model": "assemblyai-universal2",
+    "noise_profile": "hospital_reception",
+    "snr_level": "snr_-2"
+  },
+  "generated_note": {
+    "Chief_Complaint": [],
+    "History_of_Present_Illness": [],
+    "Past_Medical_History": [],
+    "Medications": [],
+    "Adverse_Drug_Reactions_and_Allergies": [],
+    "Family_History": [],
+    "Social_and_Family_History": [],
+    "Assessment": [],
+    "Plan_of_Care": [],
+    "Follow_up_Information": [],
+    "Physical_Findings": [],
+    "Review_of_Systems": []
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "hpi-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts contains no HPI content; does not mention lower abdominal/suprapubic pain starting 2 days ago with gradual onset."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts does not document the pain quality (burning), constancy, or progressive worsening."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts does not include bowel history or the resolved constipation."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts does not include urinary symptoms (pink urine) or the absence of dysuria/hematuria."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts does not mention nausea or the absence of diarrhea/vomiting."
+      },
+      {
+        "fact_id": "hpi-006",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts does not mention feeling hot and sweaty."
+      },
+      {
+        "fact_id": "hpi-007",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts does not document sexual activity, regular partner status, or last unprotected intercourse 4 days ago."
+      },
+      {
+        "fact_id": "hpi-008",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts does not mention last STD screen being 6 months ago."
+      },
+      {
+        "fact_id": "hpi-009",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts does not document LMP being 2 weeks ago."
+      },
+      {
+        "fact_id": "hpi-010",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts does not include ROS negatives for chest pain, shortness of breath, palpitations, headaches, or visual symptoms."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts does not document absence of significant past medical/surgical history."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts does not document Implanon use or that there are no other regular medications."
+      },
+      {
+        "fact_id": "famhx-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts does not document family history."
+      },
+      {
+        "fact_id": "sh-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts does not document living situation (roomshare with two flatmates) or occupation (accountant)."
+      },
+      {
+        "fact_id": "sh-002",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts does not document smoking status or social alcohol use."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts does not document assessment/differential (possible UTI; need to exclude pregnancy)."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts does not include plan for pregnancy test."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts does not include empiric UTI treatment with trimethoprim."
+      },
+      {
+        "fact_id": "plan-003",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts does not include recommendation for regular paracetamol for pain."
+      },
+      {
+        "fact_id": "fu-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts does not include follow-up advice to review in 24\u201348 hours if not improving."
+      },
+      {
+        "fact_id": "fu-002",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts does not include safety-net advice to seek earlier review for worsening symptoms (fever, abdominal pain, vomiting)."
+      }
+    ],
+    "gen_assessment": []
+  },
+  "safety_grading": {
+    "total_errors_graded": 21,
+    "safety_verdicts": [
+      {
+        "fact_id": "hpi-001",
+        "error_type": "OMISSION",
+        "content": "Patient developed lower abdominal/suprapubic pain 2 days ago with a gradual onset.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts contains no HPI content; does not mention lower abdominal/suprapubic pain starting 2 days ago with gradual onset.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting the core presenting symptom (new lower abdominal/suprapubic pain for 2 days) removes the primary diagnostic anchor and can derail evaluation for time-sensitive causes (e.g., UTI/pyelonephritis, appendicitis, gynecologic pathology). This can lead to delayed or inappropriate workup and treatment.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-002",
+        "error_type": "OMISSION",
+        "content": "The pain is described as a constant, progressively worsening burning sensation.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts does not document the pain quality (burning), constancy, or progressive worsening.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Missing pain character (burning), persistence, and progressive worsening reduces the ability to risk-stratify and differentiate etiologies (e.g., cystitis/stone vs evolving surgical abdomen). Failure to document worsening, constant pain can delay escalation and reassessment.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-003",
+        "error_type": "OMISSION",
+        "content": "Patient reports no current bowel symptoms, but had constipation which has now resolved.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts does not include bowel history or the resolved constipation.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting resolved constipation and lack of current bowel symptoms can obscure GI differentials and may prompt unnecessary GI-focused testing or missed recognition that bowel symptoms are not driving the presentation. This usually affects efficiency more than immediate safety.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-004",
+        "error_type": "OMISSION",
+        "content": "Urinary symptoms include noticing some pink-colored urine, but no frank hematuria or dysuria.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts does not include urinary symptoms (pink urine) or the absence of dysuria/hematuria.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Pink urine is clinically important for hematuria, stone, UTI, or other urinary tract pathology; omitting it and the absence of dysuria may mislead diagnostic reasoning and delay appropriate urinalysis/imaging. This could result in missed or delayed treatment of potentially painful or escalating conditions.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-005",
+        "error_type": "OMISSION",
+        "content": "Patient reports some nausea but no diarrhea or vomiting.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts does not mention nausea or the absence of diarrhea/vomiting.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Nausea and the absence of diarrhea/vomiting help differentiate gastroenteritis from appendicitis, urinary/gynecologic causes, and contribute to dehydration risk assessment. Omission may lead to less accurate triage and follow-up advice, though it is often correctable with subsequent questioning.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-006",
+        "error_type": "OMISSION",
+        "content": "Patient has been feeling hot and sweaty.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts does not mention feeling hot and sweaty.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Feeling hot and sweaty can indicate systemic illness (e.g., fever/sepsis) and is a red-flag feature when paired with abdominal pain and urinary changes. Missing this may delay urgent assessment (vitals, infection workup) and appropriate safety-netting.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-007",
+        "error_type": "OMISSION",
+        "content": "Patient is currently sexually active with a regular partner, with the last unprotected intercourse occurring 4 days ago.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts does not document sexual activity, regular partner status, or last unprotected intercourse 4 days ago.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting recent unprotected intercourse and sexual activity impairs assessment for pregnancy-related emergencies (including ectopic pregnancy) and STIs/PID in a patient with lower abdominal pain. This can lead to missed need for pregnancy testing, pelvic evaluation, or STI management, with potentially serious consequences.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-008",
+        "error_type": "OMISSION",
+        "content": "The last STD screen was 6 months ago.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts does not mention last STD screen being 6 months ago.",
+        "consensus_tier": 3,
+        "clinical_rationale": "The timing of the last STI screen informs current risk for PID/STIs contributing to lower abdominal pain and guides testing/empiric treatment decisions. Omission may reduce diagnostic accuracy and delay appropriate screening.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-009",
+        "error_type": "OMISSION",
+        "content": "The last menstrual period (LMP) was 2 weeks ago.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts does not document LMP being 2 weeks ago.",
+        "consensus_tier": 2,
+        "clinical_rationale": "LMP is critical in any reproductive-age patient with lower abdominal pain to assess pregnancy possibility and ectopic risk, even with contraception. Missing this can delay pregnancy testing and appropriate urgent evaluation pathways.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-010",
+        "error_type": "OMISSION",
+        "content": "Patient denies any chest pain, shortness of breath, palpitations, headaches, or visual symptoms.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts does not include ROS negatives for chest pain, shortness of breath, palpitations, headaches, or visual symptoms.",
+        "consensus_tier": 4,
+        "clinical_rationale": "ROS negatives for chest pain, dyspnea, palpitations, headaches, and visual symptoms are supportive but not central to the primary abdominal/pelvic complaint. Omission mainly affects documentation completeness and risk communication rather than altering immediate management in most cases.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "pmh-001",
+        "error_type": "OMISSION",
+        "content": "Patient has no significant past medical or surgical history.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts does not document absence of significant past medical/surgical history.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting the absence of significant PMH/surgical history can lead to incomplete risk assessment (e.g., prior abdominal surgery/adhesions, chronic conditions affecting infection risk). This typically results in inefficiency or additional questioning rather than direct harm.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "med-001",
+        "error_type": "OMISSION",
+        "content": "Patient uses an Implanon and takes no other regular medication.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts does not document Implanon use or that there are no other regular medications.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Implanon use and lack of other medications are important for pregnancy risk estimation and to avoid medication interactions/contraindications when treating pain or suspected infection. Omission can contribute to suboptimal decision-making (e.g., assumptions about pregnancy risk or current meds).",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "famhx-001",
+        "error_type": "OMISSION",
+        "content": "Patient has no relevant family history.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts does not document family history.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Family history is generally low-yield for an acute 2-day lower abdominal pain presentation and is unlikely to change immediate management. Omission is primarily a documentation completeness issue.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "sh-001",
+        "error_type": "OMISSION",
+        "content": "Patient lives in a roomshare with two flatmates and works as an accountant.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts does not document living situation (roomshare with two flatmates) or occupation (accountant).",
+        "consensus_tier": 4,
+        "clinical_rationale": "Living situation and occupation can affect follow-up feasibility and social context but rarely alters acute diagnostic or treatment decisions for this presentation. Missing it is largely administrative/social documentation loss.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "sh-002",
+        "error_type": "OMISSION",
+        "content": "Patient is a non-smoker and drinks alcohol socially.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts does not document smoking status or social alcohol use.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Smoking and alcohol history can inform general health risks and medication counseling, but it is unlikely to materially change acute management of lower abdominal pain in this context. The impact is mainly on completeness of preventive counseling and documentation.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "asm-001",
+        "error_type": "OMISSION",
+        "content": "The differential diagnosis includes a urinary tract infection (UTI) and the need to exclude pregnancy.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts does not document assessment/differential (possible UTI; need to exclude pregnancy).",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting key differentials (UTI and need to exclude pregnancy) can reduce diagnostic vigilance for important causes of lower abdominal pain and urinary color change, particularly pregnancy-related complications. This may contribute to delayed or incomplete evaluation if subsequent clinicians rely on the note.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "plan-001",
+        "error_type": "OMISSION",
+        "content": "A pregnancy test will be performed.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts does not include plan for pregnancy test.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting the plan to perform a pregnancy test in a reproductive-age patient with lower abdominal pain risks missed pregnancy/ectopic pregnancy and can lead to inappropriate downstream management decisions. Failure to confirm pregnancy status can directly impact safety and timeliness of care.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "plan-002",
+        "error_type": "OMISSION",
+        "content": "Patient will be treated empirically for a UTI with Trimethoprim antibiotics.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts does not include empiric UTI treatment with trimethoprim.",
+        "consensus_tier": 3,
+        "clinical_rationale": "If empiric UTI treatment with trimethoprim was actually intended but omitted from documentation, the patient may not receive antibiotics, potentially allowing infection to persist or progress (e.g., to pyelonephritis). The primary impact is delayed treatment and additional monitoring/visits.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "plan-003",
+        "error_type": "OMISSION",
+        "content": "Recommended regular paracetamol for pain.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts does not include recommendation for regular paracetamol for pain.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting advice to use regular paracetamol may lead to avoidable ongoing pain and reduced symptom control, but is unlikely to change the underlying disease course. Harm is generally limited to discomfort and potentially an extra contact for analgesia guidance.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "fu-001",
+        "error_type": "OMISSION",
+        "content": "Patient to have a review in 24-48 hours if symptoms are not improving.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts does not include follow-up advice to review in 24\u201348 hours if not improving.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting advice to seek review in 24\u201348 hours if not improving can delay reassessment and escalation, particularly if symptoms represent a condition that evolves over days. This increases the chance of prolonged symptoms and delayed diagnosis/treatment.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "fu-002",
+        "error_type": "OMISSION",
+        "content": "Advised to seek review earlier for worsening symptoms such as fever, abdominal pain, or vomiting.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts does not include safety-net advice to seek earlier review for worsening symptoms (fever, abdominal pain, vomiting).",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omission of safety-net advice for worsening symptoms (fever, increasing abdominal pain, vomiting) may delay urgent re-presentation in potentially serious conditions (e.g., pyelonephritis, appendicitis, ectopic pregnancy). This can allow clinical deterioration and increases risk of significant morbidity.",
+        "raw_votes": [
+          2
+        ]
+      }
+    ]
+  }
+}

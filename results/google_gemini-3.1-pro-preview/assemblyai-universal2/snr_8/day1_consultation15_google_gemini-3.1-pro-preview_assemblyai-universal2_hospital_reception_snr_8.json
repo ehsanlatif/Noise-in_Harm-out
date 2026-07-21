@@ -1,0 +1,322 @@
+{
+  "metadata": {
+    "consultation_id": "day1_consultation15",
+    "llm_scribe_model": "google_gemini-3.1-pro-preview",
+    "asr_model": "assemblyai-universal2",
+    "noise_profile": "hospital_reception",
+    "snr_level": "snr_8"
+  },
+  "generated_note": {
+    "Chief_Complaint": [],
+    "History_of_Present_Illness": [],
+    "Past_Medical_History": [],
+    "Medications": [],
+    "Adverse_Drug_Reactions_and_Allergies": [],
+    "Family_History": [],
+    "Social_and_Family_History": [],
+    "Assessment": [],
+    "Plan_of_Care": [],
+    "Follow_up_Information": [],
+    "Physical_Findings": [],
+    "Review_of_Systems": []
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "hpi-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts section is empty and does not mention the 3-4 month history of sore/cracked hand skin mainly on the palms."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts section is empty and does not mention itchiness, bleeding on scratching, or the pain status."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts section is empty and does not mention cleaning work, glove use, or suspected trigger."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts section is empty and does not mention trial of E45 cream and antihistamines with minimal relief."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts section is empty and does not document denial of fever, bowel/urinary symptoms, or maintained appetite."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts section is empty and does not document Type 2 diabetes."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts section is empty and does not document metformin use."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts section is empty and does not document no known drug allergies."
+      },
+      {
+        "fact_id": "famhx-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts section is empty and does not document family history of Type 2 diabetes."
+      },
+      {
+        "fact_id": "sh-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts section is empty and does not document housekeeper in a hotel or job change 4 months ago."
+      },
+      {
+        "fact_id": "sh-002",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts section is empty and does not document nonsmoking status or minimal alcohol intake."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts section is empty and does not document impression of contact dermatitis."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts section is empty and does not document steroid cream twice daily."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts section is empty and does not document regular emollient use."
+      },
+      {
+        "fact_id": "plan-003",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts section is empty and does not document avoidance of triggers/wearing cleaning gloves."
+      },
+      {
+        "fact_id": "fu-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts section is empty and does not document review in 10-14 days if not better."
+      },
+      {
+        "fact_id": "fu-002",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts section is empty and does not document advice to seek earlier review if worsening."
+      }
+    ],
+    "gen_assessment": []
+  },
+  "safety_grading": {
+    "total_errors_graded": 17,
+    "safety_verdicts": [
+      {
+        "fact_id": "hpi-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a 3-4 month history of sore and cracked skin on the hands, mainly on the palms.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts section is empty and does not mention the 3-4 month history of sore/cracked hand skin mainly on the palms.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting the duration and primary location (palms) can impair diagnostic clarity (e.g., irritant/contact dermatitis vs other dermatoses) and makes it harder to track response to treatment over time. This is unlikely to cause direct harm but can delay effective management.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-002",
+        "error_type": "OMISSION",
+        "content": "The skin is occasionally itchy and has bled on scratching, but is not painful.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts section is empty and does not mention itchiness, bleeding on scratching, or the pain status.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Missing itch/bleeding-with-scratching and pain characterization can affect assessment of severity and differential (e.g., fissuring, secondary infection), which may alter treatment intensity and follow-up. This mainly risks suboptimal symptom control rather than acute danger.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-003",
+        "error_type": "OMISSION",
+        "content": "A possible trigger is the patient's work as a cleaner, where they do not always wear gloves.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts section is empty and does not mention cleaning work, glove use, or suspected trigger.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Failure to document the likely occupational trigger (cleaning agents, inconsistent glove use) undermines the key preventive intervention (avoidance) and increases risk of recurrence/persistence. Harm would most likely be prolonged symptoms and functional impairment.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-004",
+        "error_type": "OMISSION",
+        "content": "Patient has tried E45 cream and antihistamines with minimal relief.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts section is empty and does not mention trial of E45 cream and antihistamines with minimal relief.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting prior trials (E45/emollient and antihistamines) removes information about what has already been ineffective and can lead to repetitive or less-targeted therapy. This is primarily a resolution/efficiency loss rather than a direct safety event.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-005",
+        "error_type": "OMISSION",
+        "content": "Patient denies fever, bowel or urinary symptoms, and appetite is maintained.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts section is empty and does not document denial of fever, bowel/urinary symptoms, or maintained appetite.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Omitting negatives (no fever, bowel/urinary symptoms, appetite maintained) reduces documentation of systemic screening and could prompt unnecessary workup or reduce confidence in outpatient management. Given the dermatologic presentation, this omission is unlikely to cause harm.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "pmh-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a history of Type 2 diabetes.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts section is empty and does not document Type 2 diabetes.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Type 2 diabetes is clinically relevant because it affects skin integrity, infection risk, and healing, and may influence follow-up thresholds if symptoms worsen. Missing it can contribute to underestimating risk or missing complications, though typically not immediately dangerous here.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "med-001",
+        "error_type": "OMISSION",
+        "content": "Patient takes metformin.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts section is empty and does not document metformin use.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting metformin reduces medication reconciliation quality and can contribute to future prescribing or interaction errors, especially if additional medications are added later. In this visit it is less likely to directly change topical dermatitis treatment but still poses mild safety risk.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "allergy-001",
+        "error_type": "OMISSION",
+        "content": "Patient has no known drug allergies.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts section is empty and does not document no known drug allergies.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Not documenting 'no known drug allergies' leaves allergy status unclear, which increases risk of an avoidable adverse drug reaction if new medications (including topical agents or antibiotics if infection suspected later) are prescribed. Allergy documentation is a core medication safety element.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "famhx-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a family history of Type 2 diabetes.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts section is empty and does not document family history of Type 2 diabetes.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Family history of type 2 diabetes has limited immediate impact on evaluation and management of hand dermatitis in an established diabetic patient. Its omission is largely informational with minimal clinical consequence for this encounter.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "sh-001",
+        "error_type": "OMISSION",
+        "content": "Patient works as a housekeeper in a hotel and changed jobs 4 months ago.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts section is empty and does not document housekeeper in a hotel or job change 4 months ago.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Missing the hotel housekeeper role and timing of job change removes key exposure context supporting irritant/contact dermatitis and may reduce the effectiveness of workplace-specific counseling. The likely impact is prolonged or recurrent symptoms due to incomplete trigger control.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "sh-002",
+        "error_type": "OMISSION",
+        "content": "Patient does not smoke and has minimal alcohol intake.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts section is empty and does not document nonsmoking status or minimal alcohol intake.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Smoking and alcohol history are lower-yield for this presentation and their omission rarely changes dermatitis management. This is primarily documentation noise without meaningful safety impact here.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "asm-001",
+        "error_type": "OMISSION",
+        "content": "The impression is contact dermatitis.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts section is empty and does not document impression of contact dermatitis.",
+        "consensus_tier": 3,
+        "clinical_rationale": "If the working diagnosis of contact dermatitis is not documented, subsequent clinicians may misinterpret the problem, repeat assessment, or select less appropriate treatments. This can delay effective therapy but is unlikely to cause immediate severe harm.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "plan-001",
+        "error_type": "OMISSION",
+        "content": "Prescribed a steroid cream to be used twice daily (BD).",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts section is empty and does not document steroid cream twice daily.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting the prescribed topical steroid regimen risks the patient not receiving anti-inflammatory treatment or receiving an incorrect regimen, leading to persistent pain, fissuring, and time off work. The expected harm is symptom prolongation rather than major injury.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "plan-002",
+        "error_type": "OMISSION",
+        "content": "Advised regular use of emollients.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts section is empty and does not document regular emollient use.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Failure to document regular emollient use can reduce adherence to the main barrier-repair therapy for hand dermatitis, increasing cracking, discomfort, and functional limitation. This is typically mild harm via slower improvement and more follow-up needs.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "plan-003",
+        "error_type": "OMISSION",
+        "content": "Advised to avoid triggers and to wear cleaning gloves.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts section is empty and does not document avoidance of triggers/wearing cleaning gloves.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting trigger avoidance and glove use removes a primary preventive measure and can lead to ongoing exposure, worsening dermatitis, and continued occupational impairment. The harm is usually moderate in day-to-day function (ongoing pain/skin breakdown) but not life-threatening.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "fu-001",
+        "error_type": "OMISSION",
+        "content": "Patient to have a review in 10-14 days if not better.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts section is empty and does not document review in 10-14 days if not better.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting the planned 10\u201314 day review can lead to delayed reassessment if initial emollient/steroid treatment fails, potentially prolonging symptoms and functional impairment (missed work) and delaying adjustment of therapy or reconsideration of diagnosis.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "fu-002",
+        "error_type": "OMISSION",
+        "content": "Advised to seek review earlier if symptoms worsen.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts section is empty and does not document advice to seek earlier review if worsening.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Failure to document safety-net advice to seek earlier review if symptoms worsen/spread increases the risk of delayed recognition of complications (e.g., secondary bacterial infection/cellulitis, fissuring with pain), which is particularly relevant given diabetes and skin breaks; this could adversely affect outcomes and require more intensive treatment.",
+        "raw_votes": [
+          2
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,428 @@
+{
+  "metadata": {
+    "consultation_id": "day1_consultation15",
+    "llm_scribe_model": "anthropic_claude-sonnet-4.6",
+    "asr_model": "deepgram-nova3",
+    "noise_profile": "hospital_reception",
+    "snr_level": "snr_-2"
+  },
+  "generated_note": {
+    "Chief_Complaint": [],
+    "History_of_Present_Illness": [
+      {
+        "fact_id": "section-001",
+        "content": "Patient name: Laura Parkinson",
+        "source_text": "Patient Name | Laura Parkinson"
+      },
+      {
+        "fact_id": "section-002",
+        "content": "Age: 45",
+        "source_text": "Age | 45"
+      },
+      {
+        "fact_id": "section-003",
+        "content": "Work impact: ~1 week off, a couple of times",
+        "source_text": "Work impact | ~1 week off, a couple of times"
+      }
+    ],
+    "Past_Medical_History": [],
+    "Medications": [
+      {
+        "fact_id": "section-004",
+        "content": "OTC tried: Creams (unclear specifics)",
+        "source_text": "OTC tried | Creams (unclear specifics)"
+      }
+    ],
+    "Adverse_Drug_Reactions_and_Allergies": [],
+    "Family_History": [],
+    "Social_and_Family_History": [
+      {
+        "fact_id": "section-005",
+        "content": "Occupation: House (incomplete \u2014 likely housework/cleaning-related)",
+        "source_text": "Occupation | House (incomplete \u2014 likely housework/cleaning-related)"
+      },
+      {
+        "fact_id": "section-006",
+        "content": "Alcohol use: Minimal (~2x/week)",
+        "source_text": "Alcohol | Minimal (~2x/week)"
+      }
+    ],
+    "Assessment": [
+      {
+        "fact_id": "section-007",
+        "content": "Provisional diagnosis: Irritant/contact dermatitis",
+        "source_text": "Provisional Dx | Irritant/contact dermatitis"
+      },
+      {
+        "fact_id": "section-008",
+        "content": "Transcript too fragmented and incoherent to produce a reliable SOAP note",
+        "source_text": "The transcript is too fragmented and incoherent to produce a reliable SOAP note."
+      },
+      {
+        "fact_id": "section-009",
+        "content": "Large portions of the dialogue are garbled, overlapping, or missing, making accurate capture impossible without introducing fabricated content",
+        "source_text": "Large portions of the dialogue are garbled, overlapping, or missing, making it impossible to accurately capture the clinical history, examination findings, assessment, or plan without introducing fabricated content \u2014 which violates the hallucination policy."
+      }
+    ],
+    "Plan_of_Care": [],
+    "Follow_up_Information": [
+      {
+        "fact_id": "section-010",
+        "content": "Recommendation to provide a cleaner transcript or audio recording; a complete SOAP note cannot be generated without risk of inaccuracy",
+        "source_text": "**Recommendation:** Please provide a cleaner transcript or audio recording. A complete SOAP note cannot be generated from this source without risk of significant inaccuracy or hallucination."
+      }
+    ],
+    "Physical_Findings": [],
+    "Review_of_Systems": []
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "hpi-001",
+        "status": "OMITTED",
+        "reasoning": "Generated facts do not mention a 3\u20134 month duration, sore/cracked hands, or palms involvement."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "OMITTED",
+        "reasoning": "No mention of itch, bleeding on scratching, or explicit lack of pain."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "OMITTED",
+        "reasoning": "Generated facts only vaguely note an occupation related to housework/cleaning, but do not capture the trigger detail of not always wearing gloves at work."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "OMITTED",
+        "reasoning": "Generated facts only state OTC creams were tried (unspecified) and omit E45, antihistamines, and the 'minimal relief' outcome."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "OMITTED",
+        "reasoning": "No ROS/negatives recorded regarding fever, bowel/urinary symptoms, or maintained appetite."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "OMITTED",
+        "reasoning": "Type 2 diabetes is not documented in the generated facts."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "OMITTED",
+        "reasoning": "Metformin is not documented in the generated facts."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "OMITTED",
+        "reasoning": "No known drug allergies (NKDA) is not documented in the generated facts."
+      },
+      {
+        "fact_id": "famhx-001",
+        "status": "OMITTED",
+        "reasoning": "Family history of type 2 diabetes is not documented in the generated facts."
+      },
+      {
+        "fact_id": "sh-001",
+        "status": "OMITTED",
+        "reasoning": "Generated facts vaguely reference 'House' work but omit that the patient is a hotel housekeeper and omit the job change 4 months ago."
+      },
+      {
+        "fact_id": "sh-002",
+        "status": "OMITTED",
+        "reasoning": "Generated facts mention minimal alcohol but do not document non-smoking status; the combined gold fact is therefore not captured."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "COVERED",
+        "reasoning": "Generated facts state a provisional diagnosis of irritant/contact dermatitis, matching the gold impression of contact dermatitis."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "OMITTED",
+        "reasoning": "No documentation of prescribing a steroid cream twice daily."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "OMITTED",
+        "reasoning": "No advice recorded regarding regular emollient use."
+      },
+      {
+        "fact_id": "plan-003",
+        "status": "OMITTED",
+        "reasoning": "No advice recorded about avoiding triggers or wearing cleaning gloves."
+      },
+      {
+        "fact_id": "fu-001",
+        "status": "OMITTED",
+        "reasoning": "No follow-up timeframe of 10\u201314 days if not improved is documented."
+      },
+      {
+        "fact_id": "fu-002",
+        "status": "OMITTED",
+        "reasoning": "No documentation of seeking earlier review if symptoms worsen."
+      }
+    ],
+    "gen_assessment": [
+      {
+        "fact_id": "section-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not present in gold, but the transcript supports the patient being addressed as Laura (e.g., 'Thank you, Laura'); 'Parkinson' is also spoken though the line is garbled."
+      },
+      {
+        "fact_id": "section-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in gold, but transcript explicitly includes 'I'm forty five. Forty five.'"
+      },
+      {
+        "fact_id": "section-003",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in gold, but transcript contains a discussion of time off work ('take time off work recently? Week. A week? ... Two times a week'), supporting some work impact though details are unclear."
+      },
+      {
+        "fact_id": "section-004",
+        "status": "SUPPORTED",
+        "reasoning": "Gold states the patient tried E45 cream (and antihistamines). Generated fact that OTC creams were tried is consistent with and supported by the gold summary (though less specific)."
+      },
+      {
+        "fact_id": "section-005",
+        "status": "SUPPORTED",
+        "reasoning": "Gold documents work as a housekeeper/cleaner; generated 'House... cleaning-related' is consistent with the gold occupational history (though incomplete)."
+      },
+      {
+        "fact_id": "section-006",
+        "status": "SUPPORTED",
+        "reasoning": "Gold states minimal alcohol intake; transcript also states 'very minimal alcohol'. The '~2x/week' is consistent with the transcript fragment 'Two times a week'."
+      },
+      {
+        "fact_id": "section-007",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold assessment of contact dermatitis."
+      },
+      {
+        "fact_id": "section-008",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not a gold clinical fact, but the provided transcript is objectively fragmented/garbled, supporting this statement as a comment on source quality."
+      },
+      {
+        "fact_id": "section-009",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in gold, but supported by the evident incompleteness/overlap/garbling of the transcript as provided."
+      },
+      {
+        "fact_id": "section-010",
+        "status": "HALLUCINATION",
+        "reasoning": "This recommendation is not part of the gold summary and is not stated in the transcript; it is an added instruction from the generated note rather than a documented encounter fact."
+      }
+    ]
+  },
+  "safety_grading": {
+    "total_errors_graded": 17,
+    "safety_verdicts": [
+      {
+        "fact_id": "hpi-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a 3-4 month history of sore and cracked skin on the hands, mainly on the palms.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts do not mention a 3\u20134 month duration, sore/cracked hands, or palms involvement.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting duration and key distribution (palms) reduces the ability to distinguish chronic irritant/contact dermatitis from other dermatoses and track progression/response to therapy. This can lead to less targeted management and delayed symptom resolution.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-002",
+        "error_type": "OMISSION",
+        "content": "The skin is occasionally itchy and has bled on scratching, but is not painful.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of itch, bleeding on scratching, or explicit lack of pain.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting itch/bleeding and absence of pain weakens characterization of severity and may obscure features that prompt different differentials (e.g., infection, fissuring severity) or treatment intensity. The most likely impact is suboptimal symptom control or delayed improvement.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-003",
+        "error_type": "OMISSION",
+        "content": "A possible trigger is the patient's work as a cleaner, where they do not always wear gloves.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts only vaguely note an occupation related to housework/cleaning, but do not capture the trigger detail of not always wearing gloves at work.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Failing to capture the occupational trigger and inconsistent glove use removes an important causative factor for contact/irritant dermatitis, which is central to effective prevention. This omission can result in ongoing exposure and recurrent/persistent disease despite treatment.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-004",
+        "error_type": "OMISSION",
+        "content": "Patient has tried E45 cream and antihistamines with minimal relief.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts only state OTC creams were tried (unspecified) and omit E45, antihistamines, and the 'minimal relief' outcome.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not recording specific prior treatments (E45, antihistamines) and minimal relief limits assessment of what has already failed and may lead to repetitive or less effective recommendations. Clinical impact is mainly delayed symptom control rather than acute harm.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-005",
+        "error_type": "OMISSION",
+        "content": "Patient denies fever, bowel or urinary symptoms, and appetite is maintained.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No ROS/negatives recorded regarding fever, bowel/urinary symptoms, or maintained appetite.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Missing key negative ROS (fever, bowel/urinary symptoms, appetite maintained) reduces documentation supporting a localized dermatologic process rather than systemic illness. While unlikely to cause direct harm here, it can complicate future assessments and escalation decisions if symptoms change.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "pmh-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a history of Type 2 diabetes.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Type 2 diabetes is not documented in the generated facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting Type 2 diabetes is clinically significant because diabetes affects skin integrity, infection risk, and healing, and may influence diagnostic consideration and monitoring. It can also affect treatment choices and thresholds for escalation if fissures/bleeding suggest secondary infection.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "med-001",
+        "error_type": "OMISSION",
+        "content": "Patient takes metformin.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Metformin is not documented in the generated facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Not documenting metformin creates an incomplete medication list, increasing risk of medication reconciliation errors and missing opportunities to assess glycemic control relevance to skin symptoms. While metformin itself is not directly tied to topical dermatitis treatment, med-list omissions can contribute to downstream prescribing/safety issues.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "allergy-001",
+        "error_type": "OMISSION",
+        "content": "Patient has no known drug allergies.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No known drug allergies (NKDA) is not documented in the generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Absence of NKDA documentation weakens safe prescribing practices and may lead to delays or errors if new medications are started later without clear allergy status. In this encounter the immediate risk is limited, but allergy documentation is a core safety element.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "famhx-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a family history of Type 2 diabetes.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Family history of type 2 diabetes is not documented in the generated facts.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Family history of Type 2 diabetes has limited immediate impact on management of hand dermatitis and is unlikely to change near-term decisions. The omission is primarily informational rather than safety-critical in this context.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "sh-001",
+        "error_type": "OMISSION",
+        "content": "Patient works as a housekeeper in a hotel and changed jobs 4 months ago.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts vaguely reference 'House' work but omit that the patient is a hotel housekeeper and omit the job change 4 months ago.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting the patient is a hotel housekeeper and the job change timing removes important exposure context that supports occupational contact dermatitis and helps correlate onset with triggers. This can impair preventive counseling and prolong symptoms through continued exposure.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "sh-002",
+        "error_type": "OMISSION",
+        "content": "Patient does not smoke and has minimal alcohol intake.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts mention minimal alcohol but do not document non-smoking status; the combined gold fact is therefore not captured.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Failing to document non-smoking status (despite noting minimal alcohol) slightly reduces completeness of risk assessment and counseling documentation. Likely clinical impact is low, mainly affecting longitudinal record quality rather than immediate treatment safety.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "plan-001",
+        "error_type": "OMISSION",
+        "content": "Prescribed a steroid cream to be used twice daily (BD).",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No documentation of prescribing a steroid cream twice daily.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting the prescription and dosing (steroid cream BD) can lead to undertreatment, incorrect use, or inability for another clinician/pharmacy to reconcile what was intended. Persistent hand dermatitis can significantly impact function and quality of life, making this omission more clinically consequential than minor documentation gaps.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "plan-002",
+        "error_type": "OMISSION",
+        "content": "Advised regular use of emollients.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No advice recorded regarding regular emollient use.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not recording advice to use emollients regularly may reduce adherence to a key non-steroid cornerstone of dermatitis management and barrier repair. The most likely outcome is prolonged symptoms and additional follow-up needs.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "plan-003",
+        "error_type": "OMISSION",
+        "content": "Advised to avoid triggers and to wear cleaning gloves.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No advice recorded about avoiding triggers or wearing cleaning gloves.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Failure to document avoidance of triggers and glove use removes primary prevention guidance for contact/irritant dermatitis, increasing likelihood of continued exposure and recurrence. This typically results in ongoing symptoms and need for further treatment rather than acute severe harm.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "fu-001",
+        "error_type": "OMISSION",
+        "content": "Patient to have a review in 10-14 days if not better.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No follow-up timeframe of 10\u201314 days if not improved is documented.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Missing the 10\u201314 day review plan can delay reassessment if symptoms fail to improve or worsen, potentially postponing escalation (e.g., evaluation for infection, alternative diagnoses, stronger therapies). The expected harm is mainly delayed resolution and increased healthcare utilization.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "fu-002",
+        "error_type": "OMISSION",
+        "content": "Advised to seek review earlier if symptoms worsen.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No documentation of seeking earlier review if symptoms worsen.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting documented safety-net advice (to seek earlier review if symptoms worsen) can lead to delayed re-assessment if the condition deteriorates or if the diagnosis is incorrect (e.g., secondary infection, more severe dermatitis). This primarily risks delayed follow-up and additional treatment needs rather than immediate serious harm.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "section-010",
+        "error_type": "COMMISSION",
+        "content": "Recommendation to provide a cleaner transcript or audio recording; a complete SOAP note cannot be generated without risk of inaccuracy",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "This recommendation is not part of the gold summary and is not stated in the transcript; it is an added instruction from the generated note rather than a documented encounter fact.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Adding a meta-recommendation about needing a cleaner transcript/audio is not a patient-care fact and does not change diagnosis, treatment, or follow-up instructions for the patient. The impact is administrative/documentation noise without direct clinical consequence.",
+        "raw_votes": [
+          4
+        ]
+      }
+    ]
+  }
+}

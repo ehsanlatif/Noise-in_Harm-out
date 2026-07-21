@@ -1,0 +1,477 @@
+{
+  "metadata": {
+    "consultation_id": "day1_consultation02",
+    "llm_scribe_model": "google_gemini-3.1-pro-preview",
+    "asr_model": "elevenlabs-scribe",
+    "noise_profile": "hospital_reception",
+    "snr_level": "snr_13"
+  },
+  "generated_note": {
+    "Chief_Complaint": [
+      {
+        "fact_id": "section-001",
+        "content": "Red, sore, itchy skin x4 days",
+        "source_text": "Red, sore, itchy skin x4 days"
+      }
+    ],
+    "History_of_Present_Illness": [
+      {
+        "fact_id": "section-002",
+        "content": "Rash located on chest, hands, and arms; skin is dry and cracked",
+        "source_text": "Rash located on chest, hands, and arms; skin is dry and cracked"
+      },
+      {
+        "fact_id": "section-003",
+        "content": "Severe pruritus interfering with sleep, work concentration, and hobbies",
+        "source_text": "Severe pruritus interfering with sleep, work concentration, and hobbies"
+      },
+      {
+        "fact_id": "section-004",
+        "content": "Denies bleeding or discharge",
+        "source_text": "Denies bleeding or discharge"
+      },
+      {
+        "fact_id": "section-005",
+        "content": "Denies facial or leg involvement",
+        "source_text": "Denies facial or leg involvement"
+      },
+      {
+        "fact_id": "section-006",
+        "content": "Denies new triggers (e.g., shower gels, clothing, sick contacts)",
+        "source_text": "Denies new triggers (e.g., shower gels, clothing, sick contacts)"
+      },
+      {
+        "fact_id": "section-007",
+        "content": "OTC steroid cream and OTC antihistamines trialed without relief",
+        "source_text": "OTC steroid cream and OTC antihistamines trialed without relief"
+      }
+    ],
+    "Past_Medical_History": [
+      {
+        "fact_id": "section-008",
+        "content": "Eczema (previously limited to arms)",
+        "source_text": "Eczema (previously limited to arms)"
+      },
+      {
+        "fact_id": "section-009",
+        "content": "Asthma (resolved)",
+        "source_text": "Asthma (resolved)"
+      }
+    ],
+    "Medications": [
+      {
+        "fact_id": "section-010",
+        "content": "OTC steroid cream",
+        "source_text": "OTC steroid cream"
+      },
+      {
+        "fact_id": "section-011",
+        "content": "OTC antihistamines",
+        "source_text": "OTC antihistamines"
+      }
+    ],
+    "Adverse_Drug_Reactions_and_Allergies": [
+      {
+        "fact_id": "section-012",
+        "content": "NKDA",
+        "source_text": "NKDA"
+      }
+    ],
+    "Family_History": [],
+    "Social_and_Family_History": [
+      {
+        "fact_id": "section-013",
+        "content": "Project manager",
+        "source_text": "Project manager"
+      },
+      {
+        "fact_id": "section-014",
+        "content": "Lives with flatmates",
+        "source_text": "lives with flatmates"
+      },
+      {
+        "fact_id": "section-015",
+        "content": "Denies smoking",
+        "source_text": "denies smoking"
+      },
+      {
+        "fact_id": "section-016",
+        "content": "etOH: few beers/week",
+        "source_text": "etOH: few beers/week"
+      }
+    ],
+    "Assessment": [
+      {
+        "fact_id": "section-017",
+        "content": "Suspected eczema flare-up",
+        "source_text": "Suspected eczema flare-up"
+      }
+    ],
+    "Plan_of_Care": [
+      {
+        "fact_id": "section-018",
+        "content": "Rx stronger topical steroid",
+        "source_text": "Rx stronger topical steroid"
+      },
+      {
+        "fact_id": "section-019",
+        "content": "Rx emollients for daily bath/shower use",
+        "source_text": "Rx emollients for daily bath/shower use"
+      },
+      {
+        "fact_id": "section-020",
+        "content": "Rx fexofenadine for pruritus",
+        "source_text": "Rx fexofenadine for pruritus"
+      },
+      {
+        "fact_id": "section-021",
+        "content": "Maintain symptom/trigger diary (soaps, clothing, etc.)",
+        "source_text": "Maintain symptom/trigger diary (soaps, clothing, etc.)"
+      }
+    ],
+    "Follow_up_Information": [
+      {
+        "fact_id": "section-022",
+        "content": "F/U in 7-10 days if symptoms do not improve",
+        "source_text": "F/U in 7-10 days if symptoms do not improve"
+      }
+    ],
+    "Physical_Findings": [],
+    "Review_of_Systems": [
+      {
+        "fact_id": "section-023",
+        "content": "Denies fever, cough, SOB, or changes in bowel/bladder function",
+        "source_text": "Denies fever, cough, SOB, or changes in bowel/bladder function"
+      }
+    ]
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "hpi-001",
+        "status": "OMITTED",
+        "reasoning": "Generated notes 4-day itchy/red/sore rash mainly on the chest but does not include back involvement as stated in the Gold fact."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "COVERED",
+        "reasoning": "Generated states the skin is sore and cracked (chief complaint and HPI)."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "CONTRADICTED",
+        "reasoning": "Gold states no spread elsewhere, while Generated describes involvement of chest, hands, and arms (suggesting spread beyond the chest/back). Generated does cover 'no bleeding/discharge' but conflicts on distribution/spread."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "COVERED",
+        "reasoning": "Generated states denial of new triggers (shower gels, clothing, contacts), consistent with Gold 'not aware of triggers'."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "COVERED",
+        "reasoning": "Generated documents OTC steroid cream and antihistamines tried without relief/minimal effect."
+      },
+      {
+        "fact_id": "hpi-006",
+        "status": "COVERED",
+        "reasoning": "Generated includes denial of fever, cough, SOB, and bowel/bladder changes, aligning with Gold systemic wellness (vomiting not explicitly repeated but overall concept is present)."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "COVERED",
+        "reasoning": "Generated includes history of eczema and past asthma."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "OMITTED",
+        "reasoning": "Gold states no regular medications; Generated lists OTC steroid cream and OTC antihistamines but does not explicitly state 'no regular medications'."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "COVERED",
+        "reasoning": "Generated documents NKDA."
+      },
+      {
+        "fact_id": "sh-001",
+        "status": "OMITTED",
+        "reasoning": "Generated includes flatmates and 'project manager' but does not specify 'pharmaceutical manager' (pharmaceutical workplace context is missing)."
+      },
+      {
+        "fact_id": "sh-002",
+        "status": "COVERED",
+        "reasoning": "Generated documents non-smoker and alcohol intake consistent with social drinking."
+      },
+      {
+        "fact_id": "sh-003",
+        "status": "OMITTED",
+        "reasoning": "Gold includes the patient's belief that symptoms may be eczema and that there are no other concerns; Generated provides clinician assessment but does not document the patient's ICE/belief/no concerns."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "COVERED",
+        "reasoning": "Generated assessment states suspected eczema flare-up."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "OMITTED",
+        "reasoning": "Gold specifies Betnovate twice daily (BD); Generated only states 'stronger topical steroid' without name or dosing frequency."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "OMITTED",
+        "reasoning": "Gold specifies Cetraben emollients; Generated states emollients but does not name Cetraben."
+      },
+      {
+        "fact_id": "plan-003",
+        "status": "COVERED",
+        "reasoning": "Generated includes antihistamine treatment for pruritus (fexofenadine)."
+      },
+      {
+        "fact_id": "plan-004",
+        "status": "COVERED",
+        "reasoning": "Generated advises maintaining a trigger diary."
+      },
+      {
+        "fact_id": "fu-001",
+        "status": "CONTRADICTED",
+        "reasoning": "Gold recommends review in 10\u201314 days if not improving; Generated states follow-up in 7\u201310 days."
+      },
+      {
+        "fact_id": "fu-002",
+        "status": "OMITTED",
+        "reasoning": "Generated does not include advice to seek earlier review if concerns/worsening symptoms."
+      }
+    ],
+    "gen_assessment": [
+      {
+        "fact_id": "section-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold supports 4-day sore/itchy skin; 'red' is not in Gold but is stated in the transcript ('sore and a red skin')."
+      },
+      {
+        "fact_id": "section-002",
+        "status": "HALLUCINATION",
+        "reasoning": "Gold localizes mainly to chest/back and states no spread; Generated asserts chest/hands/arms. Transcript contains an initial mention of hands/arms but later the patient corrects distribution to 'just the chest' and clinician later summarizes chest/back, making the Generated distribution unreliable and conflicting with Gold."
+      },
+      {
+        "fact_id": "section-003",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in Gold, but transcript explicitly states itch interferes with sleep, work focus, and activities (hiking/zoo)."
+      },
+      {
+        "fact_id": "section-004",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold: no bleeding or discharge."
+      },
+      {
+        "fact_id": "section-005",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold implies no spread but does not specify face/legs; transcript explicitly denies face involvement and implies no legs when distribution is clarified ('no, just the chest')."
+      },
+      {
+        "fact_id": "section-006",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold: not aware of triggers / denies changes in shower gel/clothing/contacts."
+      },
+      {
+        "fact_id": "section-007",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold: OTC steroid cream and antihistamines tried with minimal effect."
+      },
+      {
+        "fact_id": "section-008",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold lists eczema history but not prior distribution; transcript explicitly says prior eczema was only on the arms."
+      },
+      {
+        "fact_id": "section-009",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold lists asthma history; transcript clarifies it was in the past and 'not anymore'."
+      },
+      {
+        "fact_id": "section-010",
+        "status": "SUPPORTED",
+        "reasoning": "Gold states patient used OTC steroid cream."
+      },
+      {
+        "fact_id": "section-011",
+        "status": "SUPPORTED",
+        "reasoning": "Gold states patient tried antihistamines."
+      },
+      {
+        "fact_id": "section-012",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold: NKDA."
+      },
+      {
+        "fact_id": "section-013",
+        "status": "SUPPORTED",
+        "reasoning": "Gold indicates pharmaceutical manager; transcript states the patient works at a pharmaceutical company as a project manager, which is semantically consistent."
+      },
+      {
+        "fact_id": "section-014",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold: lives with flatmates."
+      },
+      {
+        "fact_id": "section-015",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold: non-smoker."
+      },
+      {
+        "fact_id": "section-016",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold notes social alcohol use; transcript provides the detail 'a few beers per week'."
+      },
+      {
+        "fact_id": "section-017",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold impression: eczema flare-up."
+      },
+      {
+        "fact_id": "section-018",
+        "status": "SUPPORTED",
+        "reasoning": "Gold plan includes prescribing topical steroid (Betnovate); Generated broadly captures stronger prescription steroid."
+      },
+      {
+        "fact_id": "section-019",
+        "status": "SUPPORTED",
+        "reasoning": "Gold plan includes emollients (Cetraben); Generated captures emollients for bath/shower use."
+      },
+      {
+        "fact_id": "section-020",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold only says to trial antihistamines; transcript explicitly mentions offering fexofenadine."
+      },
+      {
+        "fact_id": "section-021",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold: keep a trigger diary."
+      },
+      {
+        "fact_id": "section-022",
+        "status": "HALLUCINATION",
+        "reasoning": "Conflicts with Gold follow-up timeframe (10\u201314 days). Although the transcript mentions 'come back next week' and trial for '7\u201310 days', the Gold summary is the reference standard; the Generated follow-up timing does not match it."
+      },
+      {
+        "fact_id": "section-023",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold supports no fever/cough/SOB and no bowel symptoms; transcript also includes urine/bladder being okay, which Generated adds."
+      }
+    ]
+  },
+  "safety_grading": {
+    "total_errors_graded": 9,
+    "safety_verdicts": [
+      {
+        "fact_id": "hpi-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a 4-day history of dry, itchy skin, located mainly on the chest and back.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated notes 4-day itchy/red/sore rash mainly on the chest but does not include back involvement as stated in the Gold fact.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting back involvement slightly mischaracterizes rash distribution, which can affect diagnostic reasoning (e.g., contact dermatitis/eczema pattern), but it is unlikely to directly cause immediate harm if overall rash description and treatment remain similar.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "med-001",
+        "error_type": "OMISSION",
+        "content": "Patient takes no regular medications.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold states no regular medications; Generated lists OTC steroid cream and OTC antihistamines but does not explicitly state 'no regular medications'.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Failure to explicitly document that the patient takes no regular medications can impair medication reconciliation and risk later assumptions about chronic therapies, though in this case the note still captures only OTC treatments tried.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "sh-001",
+        "error_type": "OMISSION",
+        "content": "Patient lives with flatmates and works as a pharmaceutical manager.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated includes flatmates and 'project manager' but does not specify 'pharmaceutical manager' (pharmaceutical workplace context is missing).",
+        "consensus_tier": 4,
+        "clinical_rationale": "Not specifying the pharmaceutical workplace context is primarily a social history documentation issue with minimal direct impact on diagnosis or treatment for an acute rash.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "sh-003",
+        "error_type": "OMISSION",
+        "content": "Patient believes the symptoms may be related to their eczema and has no other concerns.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold includes the patient's belief that symptoms may be eczema and that there are no other concerns; Generated provides clinician assessment but does not document the patient's ICE/belief/no concerns.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Omitting the patient\u2019s own belief/ICE and lack of other concerns mainly affects communication and shared decision-making documentation rather than altering immediate clinical management.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "plan-001",
+        "error_type": "OMISSION",
+        "content": "Prescribed Betnovate steroid cream to be used twice daily (BD).",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold specifies Betnovate twice daily (BD); Generated only states 'stronger topical steroid' without name or dosing frequency.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Not documenting the exact topical steroid (Betnovate) and BD dosing can lead to incorrect potency selection or frequency of use, increasing the risk of undertreatment or steroid adverse effects (skin atrophy, worsening dermatitis if misused).",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "plan-002",
+        "error_type": "OMISSION",
+        "content": "Prescribed Cetraben emollients.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold specifies Cetraben emollients; Generated states emollients but does not name Cetraben.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Leaving out the specific emollient name (Cetraben) reduces clarity for the patient/pharmacy and may lead to substitution, but emollient choice is usually flexible and unlikely to cause significant harm.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "fu-002",
+        "error_type": "OMISSION",
+        "content": "Advised to seek review earlier if there are any concerns or worsening symptoms.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated does not include advice to seek earlier review if concerns/worsening symptoms.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Missing safety-net advice to seek earlier review if worsening can delay recognition of complications (e.g., infection, severe dermatitis, alternative diagnoses), potentially prolonging symptoms and delaying escalation.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "section-002",
+        "error_type": "COMMISSION",
+        "content": "Rash located on chest, hands, and arms; skin is dry and cracked",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Gold localizes mainly to chest/back and states no spread; Generated asserts chest/hands/arms. Transcript contains an initial mention of hands/arms but later the patient corrects distribution to 'just the chest' and clinician later summarizes chest/back, making the Generated distribution unreliable and conflicting with Gold.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Documenting an incorrect/expanded rash distribution (hands/arms) can materially change the differential (e.g., scabies, occupational/contact exposure) and management decisions, creating risk of misdiagnosis and inappropriate treatment.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "section-022",
+        "error_type": "COMMISSION",
+        "content": "F/U in 7-10 days if symptoms do not improve",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Conflicts with Gold follow-up timeframe (10\u201314 days). Although the transcript mentions 'come back next week' and trial for '7\u201310 days', the Gold summary is the reference standard; the Generated follow-up timing does not match it.",
+        "consensus_tier": 3,
+        "clinical_rationale": "A modest discrepancy in follow-up timing (7\u201310 days vs 10\u201314 days) is unlikely to cause harm and may at worst lead to slightly earlier or later reassessment without major clinical consequences.",
+        "raw_votes": [
+          3
+        ]
+      }
+    ]
+  }
+}

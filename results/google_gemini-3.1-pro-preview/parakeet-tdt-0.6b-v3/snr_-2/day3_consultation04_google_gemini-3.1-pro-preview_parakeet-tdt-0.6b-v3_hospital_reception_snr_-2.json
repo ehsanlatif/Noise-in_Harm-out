@@ -1,0 +1,532 @@
+{
+  "metadata": {
+    "consultation_id": "day3_consultation04",
+    "llm_scribe_model": "google_gemini-3.1-pro-preview",
+    "asr_model": "parakeet-tdt-0.6b-v3",
+    "noise_profile": "hospital_reception",
+    "snr_level": "snr_-2"
+  },
+  "generated_note": {
+    "Chief_Complaint": [
+      {
+        "fact_id": "Chief_Complaint-001",
+        "content": "2-3 days of shortness of breath and cough",
+        "source_text": "2-3 days SOB and cough, onset while running"
+      }
+    ],
+    "History_of_Present_Illness": [
+      {
+        "fact_id": "History_of_Present_Illness-001",
+        "content": "Onset occurred while running",
+        "source_text": "onset while running"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-002",
+        "content": "No sputum production",
+        "source_text": "Nil sputum"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-003",
+        "content": "Blue inhaler used PRN with no relief",
+        "source_text": "Blue inhaler PRN providing nil relief"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-004",
+        "content": "Baseline peak flow approximately 380, unchecked since symptom onset",
+        "source_text": "Baseline peak flow ~380; unchecked since symptom onset"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-005",
+        "content": "Last asthma review approximately 2 years ago",
+        "source_text": "Last asthma review ~2 yrs ago"
+      }
+    ],
+    "Past_Medical_History": [
+      {
+        "fact_id": "Past_Medical_History-001",
+        "content": "DOB 14/09/97",
+        "source_text": "DOB: 14/09/97"
+      },
+      {
+        "fact_id": "Past_Medical_History-002",
+        "content": "Asthma",
+        "source_text": "PMH: Asthma (last attack 3-4 yrs ago, nil prior PO steroids), eczema, hay fever"
+      },
+      {
+        "fact_id": "Past_Medical_History-003",
+        "content": "Last asthma attack 3-4 years ago",
+        "source_text": "last attack 3-4 yrs ago"
+      },
+      {
+        "fact_id": "Past_Medical_History-004",
+        "content": "No prior oral (PO) steroids",
+        "source_text": "nil prior PO steroids"
+      },
+      {
+        "fact_id": "Past_Medical_History-005",
+        "content": "Eczema",
+        "source_text": "eczema"
+      },
+      {
+        "fact_id": "Past_Medical_History-006",
+        "content": "Hay fever",
+        "source_text": "hay fever"
+      }
+    ],
+    "Medications": [
+      {
+        "fact_id": "Medications-001",
+        "content": "Salbutamol (blue inhaler)",
+        "source_text": "Salbutamol (blue inhaler)"
+      },
+      {
+        "fact_id": "Medications-002",
+        "content": "Clenil (brown inhaler)",
+        "source_text": "Clenil (brown inhaler)"
+      },
+      {
+        "fact_id": "Medications-003",
+        "content": "Hydrocortisone",
+        "source_text": "hydrocortisone"
+      }
+    ],
+    "Adverse_Drug_Reactions_and_Allergies": [
+      {
+        "fact_id": "Adverse_Drug_Reactions_and_Allergies-001",
+        "content": "No known drug allergies (NKDA)",
+        "source_text": "Allergies: NKDA"
+      }
+    ],
+    "Family_History": [
+      {
+        "fact_id": "Family_History-001",
+        "content": "Maternal history of asthma",
+        "source_text": "FH: Maternal asthma"
+      }
+    ],
+    "Social_and_Family_History": [],
+    "Assessment": [
+      {
+        "fact_id": "Assessment-001",
+        "content": "Asthma exacerbation",
+        "source_text": "1. Asthma exacerbation"
+      }
+    ],
+    "Plan_of_Care": [
+      {
+        "fact_id": "Plan_of_Care-001",
+        "content": "Increase Clenil to 4 puffs twice daily (BID)",
+        "source_text": "Increase Clenil to 4 puffs BID"
+      },
+      {
+        "fact_id": "Plan_of_Care-002",
+        "content": "Salbutamol to be used PRN up to every 2-4 hours",
+        "source_text": "Salbutamol PRN up to q2-4h"
+      },
+      {
+        "fact_id": "Plan_of_Care-003",
+        "content": "Safety net advice to go to A&E if breathing worsens",
+        "source_text": "Safety net: Go to A&E if breathing worsens"
+      }
+    ],
+    "Follow_up_Information": [
+      {
+        "fact_id": "Follow_up_Information-001",
+        "content": "Book face-to-face GP follow-up in the next few days for examination and peak flow",
+        "source_text": "Book face-to-face GP f/u in next few days for exam and peak flow"
+      }
+    ],
+    "Physical_Findings": [],
+    "Review_of_Systems": []
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "cc-001",
+        "status": "COVERED",
+        "reasoning": "Generated states \u201c2-3 days of shortness of breath,\u201d which matches breathlessness for 2\u20133 days."
+      },
+      {
+        "fact_id": "hpi-001",
+        "status": "COVERED",
+        "reasoning": "Generated includes 2\u20133 days of shortness of breath."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "COVERED",
+        "reasoning": "Generated documents onset/occurrence while running."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "OMITTED",
+        "reasoning": "Gold specifies blue inhaler needed twice daily; generated does not capture this frequency."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "OMITTED",
+        "reasoning": "Gold states the patient normally uses the blue inhaler only as needed; generated does not clearly state this baseline pattern."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "OMITTED",
+        "reasoning": "Generated lists Clenil but does not include the baseline dosing of 2 puffs twice daily."
+      },
+      {
+        "fact_id": "hpi-006",
+        "status": "COVERED",
+        "reasoning": "Generated notes cough and explicitly states no sputum production."
+      },
+      {
+        "fact_id": "hpi-007",
+        "status": "OMITTED",
+        "reasoning": "Wheezing is not mentioned in the generated facts."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "OMITTED",
+        "reasoning": "Generated lists asthma but does not specify asthma since childhood."
+      },
+      {
+        "fact_id": "pmh-002",
+        "status": "COVERED",
+        "reasoning": "Generated explicitly includes eczema."
+      },
+      {
+        "fact_id": "pmh-003",
+        "status": "COVERED",
+        "reasoning": "Generated states last asthma attack 3\u20134 years ago, which is semantically consistent with ~3 years."
+      },
+      {
+        "fact_id": "pmh-004",
+        "status": "OMITTED",
+        "reasoning": "Generated states no prior oral steroids, but does not include the 'never needed antibiotics' component from the Gold fact."
+      },
+      {
+        "fact_id": "pmh-005",
+        "status": "OMITTED",
+        "reasoning": "No statement in generated facts about never being hospitalized for asthma."
+      },
+      {
+        "fact_id": "pmh-006",
+        "status": "COVERED",
+        "reasoning": "Generated documents baseline peak flow approximately 380."
+      },
+      {
+        "fact_id": "pmh-007",
+        "status": "COVERED",
+        "reasoning": "Generated states last asthma review approximately 2 years ago."
+      },
+      {
+        "fact_id": "pmh-008",
+        "status": "COVERED",
+        "reasoning": "Generated includes hay fever."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "OMITTED",
+        "reasoning": "Generated lists Clenil but does not capture the routine dose/frequency (2 puffs twice daily)."
+      },
+      {
+        "fact_id": "med-002",
+        "status": "OMITTED",
+        "reasoning": "Gold specifies current use up to twice daily; generated does not document this frequency."
+      },
+      {
+        "fact_id": "med-003",
+        "status": "COVERED",
+        "reasoning": "Generated includes hydrocortisone (indication not required for coverage of medication fact)."
+      },
+      {
+        "fact_id": "med-004",
+        "status": "OMITTED",
+        "reasoning": "Cetraban is not listed in generated medications."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "COVERED",
+        "reasoning": "Generated states asthma exacerbation; Gold specifies mild asthma exacerbation (same clinical concept)."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "COVERED",
+        "reasoning": "Generated instructs increasing Clenil/brown inhaler to 4 puffs twice daily."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "COVERED",
+        "reasoning": "Generated instructs salbutamol/blue inhaler PRN up to every 2\u20134 hours."
+      },
+      {
+        "fact_id": "fu-001",
+        "status": "COVERED",
+        "reasoning": "Generated advises GP follow-up in the next few days for examination; this is consistent with review within ~2 days."
+      },
+      {
+        "fact_id": "fu-002",
+        "status": "COVERED",
+        "reasoning": "Generated provides safety net advice to attend A&E if breathing worsens."
+      }
+    ],
+    "gen_assessment": [
+      {
+        "fact_id": "Chief_Complaint-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold includes breathlessness for 2\u20133 days and cough without sputum; generated combines these into the chief complaint."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold fact that shortness of breath occurred while running."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold: cough without sputum production."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-003",
+        "status": "HALLUCINATION",
+        "reasoning": "Transcript supports that the blue inhaler \u201chasn't really helped,\u201d but generated says it was used PRN; transcript/Gold indicate increased regular use (e.g., morning and evening/twice daily), not PRN. This makes the combined statement not reliably supported."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-004",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Baseline peak flow ~380 is in Gold; the additional detail that it has not been checked since symptom onset is consistent with transcript (patient has not done peak flow since symptoms/hasn\u2019t checked recently) though not explicitly in Gold."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-005",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold: asthma review/check was about 2 years ago."
+      },
+      {
+        "fact_id": "Past_Medical_History-001",
+        "status": "HALLUCINATION",
+        "reasoning": "DOB 14/09/97 is not present in the Gold summary and is not clearly/explicitly supported by the provided transcript (DOB audio is unclear)."
+      },
+      {
+        "fact_id": "Past_Medical_History-002",
+        "status": "SUPPORTED",
+        "reasoning": "Gold includes asthma history."
+      },
+      {
+        "fact_id": "Past_Medical_History-003",
+        "status": "SUPPORTED",
+        "reasoning": "Gold states last attack 3 years ago; generated 3\u20134 years is consistent with transcript and semantically aligned."
+      },
+      {
+        "fact_id": "Past_Medical_History-004",
+        "status": "SUPPORTED",
+        "reasoning": "Gold states patient has never needed steroids; generated \u2018no prior oral steroids\u2019 is consistent with that."
+      },
+      {
+        "fact_id": "Past_Medical_History-005",
+        "status": "SUPPORTED",
+        "reasoning": "Gold includes eczema."
+      },
+      {
+        "fact_id": "Past_Medical_History-006",
+        "status": "SUPPORTED",
+        "reasoning": "Gold includes hayfever."
+      },
+      {
+        "fact_id": "Medications-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold identifies use of the blue reliever inhaler (salbutamol)."
+      },
+      {
+        "fact_id": "Medications-002",
+        "status": "SUPPORTED",
+        "reasoning": "Gold identifies routine use of Clenil (brown inhaler)."
+      },
+      {
+        "fact_id": "Medications-003",
+        "status": "SUPPORTED",
+        "reasoning": "Gold includes hydrocortisone use for eczema."
+      },
+      {
+        "fact_id": "Adverse_Drug_Reactions_and_Allergies-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold does not list medication allergies status, but transcript indicates no medication allergies (NKDA)."
+      },
+      {
+        "fact_id": "Family_History-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in Gold, but transcript suggests maternal asthma/atopy (\u201cmother\u201d referenced in context of asthma)."
+      },
+      {
+        "fact_id": "Assessment-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold diagnosis is mild asthma exacerbation; generated asthma exacerbation is consistent."
+      },
+      {
+        "fact_id": "Plan_of_Care-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold plan to increase brown inhaler (Clenil) to 4 puffs twice daily."
+      },
+      {
+        "fact_id": "Plan_of_Care-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold plan: blue inhaler up to every 2\u20134 hours as needed."
+      },
+      {
+        "fact_id": "Plan_of_Care-003",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold safety net: attend A&E if breathlessness worsens before review."
+      },
+      {
+        "fact_id": "Follow_up_Information-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold states chest review by a doctor within ~2 days; transcript adds face-to-face review, examination, and peak flow measurement. Generated includes these additional, transcript-supported details."
+      }
+    ]
+  },
+  "safety_grading": {
+    "total_errors_graded": 12,
+    "safety_verdicts": [
+      {
+        "fact_id": "hpi-003",
+        "error_type": "OMISSION",
+        "content": "Patient has needed to use the blue inhaler twice a day.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold specifies blue inhaler needed twice daily; generated does not capture this frequency.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting that the patient is needing their blue reliever twice daily can understate current asthma control/exacerbation severity and may lead to insufficient urgency in follow-up or treatment escalation. This mainly risks delayed optimization of asthma management rather than direct immediate harm in most cases.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-004",
+        "error_type": "OMISSION",
+        "content": "Patient normally uses the blue inhaler only as needed.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold states the patient normally uses the blue inhaler only as needed; generated does not clearly state this baseline pattern.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting that the blue inhaler is normally PRN removes an important comparison baseline (new increase in reliever use), which is a key marker of worsening asthma control. This can blunt recognition of an acute change and lead to less appropriate monitoring/treatment planning.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-005",
+        "error_type": "OMISSION",
+        "content": "Patient is taking the Clenil inhaler every day, 2 puffs twice daily.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated lists Clenil but does not include the baseline dosing of 2 puffs twice daily.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Failure to capture the baseline Clenil dose (2 puffs twice daily) impairs assessment of adherence and appropriate step-up dosing during an exacerbation. This may cause confusion or incorrect dosing recommendations at follow-up.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-007",
+        "error_type": "OMISSION",
+        "content": "Patient notes some wheezing.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Wheezing is not mentioned in the generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Wheezing is a clinically relevant symptom supporting bronchospasm/asthma exacerbation; omitting it can make the presentation appear less severe. This could contribute to under-triage or less complete assessment.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "pmh-001",
+        "error_type": "OMISSION",
+        "content": "Patient has had asthma since childhood.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated lists asthma but does not specify asthma since childhood.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Not specifying asthma since childhood typically has minimal impact on immediate management, as current severity, triggers, and control drive acute decisions. It is mainly background context rather than a determinant of today\u2019s treatment.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "pmh-004",
+        "error_type": "OMISSION",
+        "content": "Patient has never needed antibiotics or steroids for asthma.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated states no prior oral steroids, but does not include the 'never needed antibiotics' component from the Gold fact.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting that the patient has never needed antibiotics for asthma (in addition to no steroids) reduces clarity about prior exacerbation severity and past management patterns. This could slightly affect risk stratification and decision-making about escalation, but usually does not by itself cause direct harm.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "pmh-005",
+        "error_type": "OMISSION",
+        "content": "Patient has never been hospitalized because of asthma.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No statement in generated facts about never being hospitalized for asthma.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not recording that the patient has never been hospitalized for asthma removes an important marker of past severity and future risk. This could lead to less accurate risk assessment and follow-up planning.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "med-001",
+        "error_type": "OMISSION",
+        "content": "Patient routinely uses the Clenil inhaler, 2 puffs twice daily.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated lists Clenil but does not capture the routine dose/frequency (2 puffs twice daily).",
+        "consensus_tier": 3,
+        "clinical_rationale": "Missing the routine Clenil regimen (2 puffs twice daily) can lead to medication reconciliation errors and inappropriate step-up/step-down instructions. This may result in suboptimal control or dosing confusion.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "med-002",
+        "error_type": "OMISSION",
+        "content": "Patient uses the blue reliever inhaler, currently up to twice daily.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold specifies current use up to twice daily; generated does not document this frequency.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting that the reliever is currently used up to twice daily can under-represent symptom burden and current control, which are central to assessing exacerbation severity. This may delay escalation or appropriate safety-netting.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "med-004",
+        "error_type": "OMISSION",
+        "content": "Patient uses Cetraban for eczema.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Cetraban is not listed in generated medications.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Omitting Cetraban (an emollient used for eczema) is unlikely to affect acute respiratory management or pose meaningful safety risk. The impact is primarily completeness of the medication list.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "History_of_Present_Illness-003",
+        "error_type": "COMMISSION",
+        "content": "Blue inhaler used PRN with no relief",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Transcript supports that the blue inhaler \u201chasn't really helped,\u201d but generated says it was used PRN; transcript/Gold indicate increased regular use (e.g., morning and evening/twice daily), not PRN. This makes the combined statement not reliably supported.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Documenting the blue inhaler as PRN despite evidence of increased regular use can mischaracterize the exacerbation and current control, potentially leading to underestimation of severity. While the \u201cno relief\u201d component is supported, the incorrect usage pattern could affect triage and management decisions.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "Past_Medical_History-001",
+        "error_type": "COMMISSION",
+        "content": "DOB 14/09/97",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "DOB 14/09/97 is not present in the Gold summary and is not clearly/explicitly supported by the provided transcript (DOB audio is unclear).",
+        "consensus_tier": 4,
+        "clinical_rationale": "An unsupported/incorrect DOB is primarily an administrative identity error and generally does not change clinical decision-making in an acute asthma presentation. The main risk is clerical (misidentification, record mismatch) rather than direct clinical harm in this context.",
+        "raw_votes": [
+          4
+        ]
+      }
+    ]
+  }
+}

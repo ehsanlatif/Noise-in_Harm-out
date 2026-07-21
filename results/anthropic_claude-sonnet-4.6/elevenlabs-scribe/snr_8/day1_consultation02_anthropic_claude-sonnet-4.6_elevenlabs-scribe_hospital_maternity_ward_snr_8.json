@@ -1,0 +1,379 @@
+{
+  "metadata": {
+    "consultation_id": "day1_consultation02",
+    "llm_scribe_model": "anthropic_claude-sonnet-4.6",
+    "asr_model": "elevenlabs-scribe",
+    "noise_profile": "hospital_maternity_ward",
+    "snr_level": "snr_8"
+  },
+  "generated_note": {
+    "Chief_Complaint": [],
+    "History_of_Present_Illness": [
+      {
+        "fact_id": "History_of_Present_Illness-001",
+        "content": "It looks like you submitted an **empty transcript** \u2014 the content between the `<<< >>>` markers is blank.",
+        "source_text": "It looks like you submitted an **empty transcript** \u2014 the content between the `<<< >>>` markers is blank."
+      }
+    ],
+    "Past_Medical_History": [],
+    "Medications": [],
+    "Adverse_Drug_Reactions_and_Allergies": [],
+    "Family_History": [],
+    "Social_and_Family_History": [],
+    "Assessment": [],
+    "Plan_of_Care": [],
+    "Follow_up_Information": [
+      {
+        "fact_id": "Follow_up_Information-001",
+        "content": "Please paste the raw clinician-patient transcript and I'll generate the SOAP note right away.",
+        "source_text": "Please paste the raw clinician-patient transcript and I'll generate the SOAP note right away."
+      }
+    ],
+    "Physical_Findings": [],
+    "Review_of_Systems": []
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "hpi-001",
+        "status": "OMITTED",
+        "reasoning": "Generated facts contain no clinical history about duration (4 days), symptoms (dry/itchy), or distribution (chest/back)."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "OMITTED",
+        "reasoning": "No mention in generated facts of skin being sore or cracked."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "OMITTED",
+        "reasoning": "Generated facts do not address bleeding, discharge, or spread/localization."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "OMITTED",
+        "reasoning": "No mention of triggers or lack thereof in the generated facts."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "OMITTED",
+        "reasoning": "Generated facts do not mention OTC steroid cream use or antihistamines with minimal effect."
+      },
+      {
+        "fact_id": "hpi-006",
+        "status": "OMITTED",
+        "reasoning": "Generated facts do not include systemic review/denials (fever, vomiting, SOB, cough, bowel symptoms)."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "OMITTED",
+        "reasoning": "No past medical history (eczema, asthma) is present in generated facts."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "OMITTED",
+        "reasoning": "Generated facts do not state that the patient has no regular medications."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "OMITTED",
+        "reasoning": "No allergy status/NKDA statement is present in generated facts."
+      },
+      {
+        "fact_id": "sh-001",
+        "status": "OMITTED",
+        "reasoning": "Generated facts do not include living situation or occupation."
+      },
+      {
+        "fact_id": "sh-002",
+        "status": "OMITTED",
+        "reasoning": "Generated facts do not mention smoking status or alcohol use."
+      },
+      {
+        "fact_id": "sh-003",
+        "status": "OMITTED",
+        "reasoning": "Generated facts do not include patient's belief that symptoms relate to eczema or that they have no other concerns."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "OMITTED",
+        "reasoning": "No clinical impression/assessment (eczema flare) is present in generated facts."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "OMITTED",
+        "reasoning": "No prescription of Betnovate twice daily is present in generated facts."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "OMITTED",
+        "reasoning": "No emollient (Cetraben) plan is present in generated facts."
+      },
+      {
+        "fact_id": "plan-003",
+        "status": "OMITTED",
+        "reasoning": "No advice to trial antihistamines is present in generated facts."
+      },
+      {
+        "fact_id": "plan-004",
+        "status": "OMITTED",
+        "reasoning": "No advice to keep a trigger diary is present in generated facts."
+      },
+      {
+        "fact_id": "fu-001",
+        "status": "OMITTED",
+        "reasoning": "No follow-up timing (review in 10\u201314 days if not improved) is present in generated facts."
+      },
+      {
+        "fact_id": "fu-002",
+        "status": "OMITTED",
+        "reasoning": "No safety-netting/earlier review if worsening concerns is present in generated facts."
+      }
+    ],
+    "gen_assessment": [
+      {
+        "fact_id": "History_of_Present_Illness-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in the Gold Summary, but supported by the provided transcript section being blank/empty; this is a meta-observation about missing input rather than a clinical claim."
+      },
+      {
+        "fact_id": "Follow_up_Information-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in the Gold Summary, but logically follows from the empty transcript (requesting the user to paste the raw transcript). It does not contradict any transcript content."
+      }
+    ]
+  },
+  "safety_grading": {
+    "total_errors_graded": 19,
+    "safety_verdicts": [
+      {
+        "fact_id": "hpi-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a 4-day history of dry, itchy skin, located mainly on the chest and back.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts contain no clinical history about duration (4 days), symptoms (dry/itchy), or distribution (chest/back).",
+        "consensus_tier": 3,
+        "clinical_rationale": "The omission of the duration, symptoms, and distribution of the skin condition could lead to misdiagnosis or inappropriate treatment, but it is unlikely to cause significant harm as these are common symptoms of dermatological conditions.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-002",
+        "error_type": "OMISSION",
+        "content": "The skin is also described as sore and cracked.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention in generated facts of skin being sore or cracked.",
+        "consensus_tier": 3,
+        "clinical_rationale": "The omission of the skin being sore and cracked could lead to underestimation of the severity of the condition, potentially delaying appropriate treatment.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-003",
+        "error_type": "OMISSION",
+        "content": "There has been no bleeding, discharge, or spread of the rash.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts do not address bleeding, discharge, or spread/localization.",
+        "consensus_tier": 3,
+        "clinical_rationale": "The omission of information about bleeding, discharge, or spread of the rash could lead to misjudgment of the condition's severity, but the absence of these symptoms suggests a less severe condition.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-004",
+        "error_type": "OMISSION",
+        "content": "Patient is not aware of any specific triggers.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of triggers or lack thereof in the generated facts.",
+        "consensus_tier": 4,
+        "clinical_rationale": "The omission of the patient's lack of awareness of specific triggers is unlikely to impact clinical decision-making significantly.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "hpi-005",
+        "error_type": "OMISSION",
+        "content": "Patient has tried an over-the-counter steroid cream and antihistamines with minimal effect.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts do not mention OTC steroid cream use or antihistamines with minimal effect.",
+        "consensus_tier": 3,
+        "clinical_rationale": "The omission of previous treatments tried and their minimal effect could lead to repetition of ineffective treatments, delaying effective management.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-006",
+        "error_type": "OMISSION",
+        "content": "Patient is systemically well, denying any fevers, vomiting, shortness of breath, cough, or bowel symptoms.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts do not include systemic review/denials (fever, vomiting, SOB, cough, bowel symptoms).",
+        "consensus_tier": 3,
+        "clinical_rationale": "The omission of systemic review denials could lead to unnecessary concern about systemic involvement, but the absence of these symptoms suggests no systemic illness.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "pmh-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a past medical history of Eczema and Asthma.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No past medical history (eczema, asthma) is present in generated facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "The omission of a past medical history of eczema and asthma could lead to misdiagnosis or inappropriate treatment, as these conditions are relevant to the current symptoms.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "med-001",
+        "error_type": "OMISSION",
+        "content": "Patient takes no regular medications.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts do not state that the patient has no regular medications.",
+        "consensus_tier": 4,
+        "clinical_rationale": "The omission of the fact that the patient takes no regular medications is unlikely to impact clinical decision-making significantly.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "allergy-001",
+        "error_type": "OMISSION",
+        "content": "Patient has no known drug allergies.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No allergy status/NKDA statement is present in generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "The omission of the patient's allergy status could lead to prescribing medications that the patient is allergic to, but since the patient has no known drug allergies, the risk is minimal.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "sh-001",
+        "error_type": "OMISSION",
+        "content": "Patient lives with flatmates and works as a pharmaceutical manager.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts do not include living situation or occupation.",
+        "consensus_tier": 4,
+        "clinical_rationale": "The omission of the patient's living situation and occupation is unlikely to impact clinical decision-making significantly.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "sh-002",
+        "error_type": "OMISSION",
+        "content": "Patient is a non-smoker and consumes alcohol socially.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts do not mention smoking status or alcohol use.",
+        "consensus_tier": 4,
+        "clinical_rationale": "The omission of smoking status and alcohol use is unlikely to impact clinical decision-making significantly in the context of a dermatological condition.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "sh-003",
+        "error_type": "OMISSION",
+        "content": "Patient believes the symptoms may be related to their eczema and has no other concerns.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts do not include patient's belief that symptoms relate to eczema or that they have no other concerns.",
+        "consensus_tier": 4,
+        "clinical_rationale": "The omission of the patient's belief that symptoms relate to eczema and that they have no other concerns could lead to misalignment in patient-provider understanding, but it is unlikely to cause harm.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "asm-001",
+        "error_type": "OMISSION",
+        "content": "The impression is a flare-up of eczema.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No clinical impression/assessment (eczema flare) is present in generated facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "The omission of the clinical impression of an eczema flare-up could lead to misdiagnosis or inappropriate treatment, as it is crucial for guiding management.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "plan-001",
+        "error_type": "OMISSION",
+        "content": "Prescribed Betnovate steroid cream to be used twice daily (BD).",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No prescription of Betnovate twice daily is present in generated facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "The omission of the prescription of Betnovate steroid cream could lead to inadequate treatment of the eczema flare-up, potentially prolonging symptoms.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "plan-002",
+        "error_type": "OMISSION",
+        "content": "Prescribed Cetraben emollients.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No emollient (Cetraben) plan is present in generated facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "The omission of the prescription of Cetraben emollients could lead to inadequate management of the skin condition, potentially prolonging symptoms.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "plan-003",
+        "error_type": "OMISSION",
+        "content": "Advised to trial antihistamines.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No advice to trial antihistamines is present in generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "The omission of advice to trial antihistamines could delay symptom relief for conditions like allergies, but it does not pose a direct risk of harm as antihistamines are typically used for mild symptom management.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "plan-004",
+        "error_type": "OMISSION",
+        "content": "Advised to keep a trigger diary.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No advice to keep a trigger diary is present in generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "The omission of advice to keep a trigger diary may hinder the identification of factors exacerbating the patient's condition, potentially prolonging symptoms but not causing direct harm.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "fu-001",
+        "error_type": "OMISSION",
+        "content": "Patient to have a review in 10-14 days if symptoms do not improve.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No follow-up timing (review in 10\u201314 days if not improved) is present in generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "The omission of follow-up timing could lead to a delay in reassessment and management of the patient's condition, potentially prolonging symptoms or delaying necessary treatment adjustments.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "fu-002",
+        "error_type": "OMISSION",
+        "content": "Advised to seek review earlier if there are any concerns or worsening symptoms.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No safety-netting/earlier review if worsening concerns is present in generated facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "The omission of advice to seek earlier review if symptoms worsen is a significant safety-netting error, as it could lead to a delay in addressing potentially serious complications or deterioration in the patient's condition.",
+        "raw_votes": [
+          2
+        ]
+      }
+    ]
+  }
+}

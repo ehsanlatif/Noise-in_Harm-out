@@ -1,0 +1,416 @@
+{
+  "metadata": {
+    "consultation_id": "day1_consultation15",
+    "llm_scribe_model": "google_gemini-3.1-pro-preview",
+    "asr_model": "parakeet-tdt-0.6b-v3",
+    "noise_profile": "hospital_maternity_ward",
+    "snr_level": "snr_-2"
+  },
+  "generated_note": {
+    "Chief_Complaint": [
+      {
+        "fact_id": "chiefcomplaint-001",
+        "content": "Dry, cracked, itchy skin on hands/fingers (mainly palms).",
+        "source_text": "CC: Dry, cracked, itchy skin on hands/fingers (mainly palms)."
+      }
+    ],
+    "History_of_Present_Illness": [
+      {
+        "fact_id": "hpi-001",
+        "content": "Worsening recently; interfering with work.",
+        "source_text": "Worsening recently; interfering with work."
+      },
+      {
+        "fact_id": "hpi-002",
+        "content": "Onset correlates with starting work as a housekeeper.",
+        "source_text": "Onset correlates with starting work as a housekeeper."
+      },
+      {
+        "fact_id": "hpi-003",
+        "content": "Mild, chronic dryness on legs.",
+        "source_text": "Mild, chronic dryness on legs."
+      },
+      {
+        "fact_id": "hpi-004",
+        "content": "Tried OTC creams without relief.",
+        "source_text": "Tried OTC creams without relief."
+      }
+    ],
+    "Past_Medical_History": [
+      {
+        "fact_id": "pmh-001",
+        "content": "Diabetes.",
+        "source_text": "PMH: Diabetes."
+      }
+    ],
+    "Medications": [
+      {
+        "fact_id": "med-001",
+        "content": "Topical steroid cream for inflammation.",
+        "source_text": "Rx: Topical steroid cream for inflammation."
+      },
+      {
+        "fact_id": "med-002",
+        "content": "Strong emollient to apply 3-4 times daily for the next couple of weeks.",
+        "source_text": "Rx: Strong emollient to apply 3-4 times daily for the next couple of weeks."
+      }
+    ],
+    "Adverse_Drug_Reactions_and_Allergies": [],
+    "Family_History": [],
+    "Social_and_Family_History": [
+      {
+        "fact_id": "social-001",
+        "content": "Housekeeper.",
+        "source_text": "SH: Housekeeper;"
+      },
+      {
+        "fact_id": "social-002",
+        "content": "Does not wear gloves while working.",
+        "source_text": "does not wear gloves while working."
+      },
+      {
+        "fact_id": "social-003",
+        "content": "Denies smoking.",
+        "source_text": "Denies smoking."
+      },
+      {
+        "fact_id": "social-004",
+        "content": "etOH: ~2 pints/week.",
+        "source_text": "etOH: ~2 pints/week."
+      }
+    ],
+    "Assessment": [
+      {
+        "fact_id": "assessment-001",
+        "content": "Contact dermatitis of hands.",
+        "source_text": "1. Contact dermatitis of hands."
+      }
+    ],
+    "Plan_of_Care": [
+      {
+        "fact_id": "plan-001",
+        "content": "Avoid triggers.",
+        "source_text": "Avoid triggers; strongly advised to wear gloves at all times while working."
+      },
+      {
+        "fact_id": "plan-002",
+        "content": "Strongly advised to wear gloves at all times while working.",
+        "source_text": "Avoid triggers; strongly advised to wear gloves at all times while working."
+      }
+    ],
+    "Follow_up_Information": [
+      {
+        "fact_id": "fup-001",
+        "content": "Follow-up in 10-14 days if no improvement, or sooner if symptoms worsen or spread.",
+        "source_text": "Follow-up in 10-14 days if no improvement, or sooner if symptoms worsen or spread."
+      }
+    ],
+    "Physical_Findings": [],
+    "Review_of_Systems": [
+      {
+        "fact_id": "ros-001",
+        "content": "Denies nausea, vomiting, bowel issues, or urinary issues.",
+        "source_text": "Denies nausea, vomiting, bowel issues, or urinary issues."
+      },
+      {
+        "fact_id": "ros-002",
+        "content": "Feels generally well.",
+        "source_text": "Feels generally well."
+      }
+    ]
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "hpi-001",
+        "status": "OMITTED",
+        "reasoning": "Generated facts note dry/cracked skin mainly on the palms, but do not include the key timeframe of 3\u20134 months (duration not captured)."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "OMITTED",
+        "reasoning": "Generated facts include itchiness, but do not mention bleeding on scratching and do not document 'no pain'."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "COVERED",
+        "reasoning": "Generated facts state the patient is a housekeeper and does not wear gloves, aligning with the occupational trigger described in Gold."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "OMITTED",
+        "reasoning": "Generated facts only say OTC creams were tried without relief; they do not specifically capture E45 cream and antihistamines with minimal relief."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "OMITTED",
+        "reasoning": "Generated ROS covers bowel/urinary symptoms (and N/V), but does not document denial of fever and does not mention appetite maintained."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "COVERED",
+        "reasoning": "Generated facts document diabetes; Gold specifies Type 2, but the core condition (diabetes) is present without contradiction."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "OMITTED",
+        "reasoning": "Metformin is not documented anywhere in the generated facts."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "OMITTED",
+        "reasoning": "No known drug allergies (NKDA) is not documented; the allergy section is empty."
+      },
+      {
+        "fact_id": "famhx-001",
+        "status": "OMITTED",
+        "reasoning": "Family history of Type 2 diabetes is not included in the generated facts; family history section is empty."
+      },
+      {
+        "fact_id": "sh-001",
+        "status": "OMITTED",
+        "reasoning": "Generated facts include 'housekeeper' but omit working in a hotel and omit the job change 4 months ago."
+      },
+      {
+        "fact_id": "sh-002",
+        "status": "COVERED",
+        "reasoning": "Generated facts document no smoking and minimal alcohol (quantified as ~2 pints/week), consistent with Gold."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "COVERED",
+        "reasoning": "Generated assessment states contact dermatitis of the hands, matching Gold impression."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "OMITTED",
+        "reasoning": "Generated facts mention a topical steroid, but do not document the Gold frequency of twice daily (BD)."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "COVERED",
+        "reasoning": "Generated facts include regular emollient use (3\u20134 times daily), which covers the Gold recommendation for regular emollients."
+      },
+      {
+        "fact_id": "plan-003",
+        "status": "COVERED",
+        "reasoning": "Generated facts include avoidance of triggers and wearing gloves while working, matching Gold."
+      },
+      {
+        "fact_id": "fu-001",
+        "status": "COVERED",
+        "reasoning": "Generated follow-up states review in 10\u201314 days if no improvement, matching Gold."
+      },
+      {
+        "fact_id": "fu-002",
+        "status": "COVERED",
+        "reasoning": "Generated follow-up includes earlier review if worsening/spreading, matching Gold."
+      }
+    ],
+    "gen_assessment": [
+      {
+        "fact_id": "chiefcomplaint-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold HPI: sore/cracked hands mainly palms with itchiness (Generated adds 'dry'/'fingers' but consistent)."
+      },
+      {
+        "fact_id": "hpi-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not stated in Gold, but supported by transcript: symptoms have worsened and are affecting ability to do the job."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "SUPPORTED",
+        "reasoning": "Consistent with Gold social history/job change and suspected occupational trigger; transcript also suggests correlation with starting the job."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "SUPPORTED",
+        "reasoning": "Gold notes general dryness including legs; transcript also states dryness on legs is present but mild."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "SUPPORTED",
+        "reasoning": "Gold documents E45 cream and antihistamines with minimal relief; 'OTC creams without relief' is a semantically consistent (less specific) match."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold PMH is Type 2 diabetes; generated states diabetes (non-specific but consistent with Gold)."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold plan includes prescribing a steroid cream; transcript also discusses steroid cream for inflammation."
+      },
+      {
+        "fact_id": "med-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold says regular emollients; transcript explicitly specifies applying a strong emollient 3\u20134 times/day for a couple of weeks."
+      },
+      {
+        "fact_id": "social-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold states the patient works as a housekeeper/cleaner; generated matches."
+      },
+      {
+        "fact_id": "social-002",
+        "status": "SUPPORTED",
+        "reasoning": "Gold indicates they do not always wear gloves at work; generated matches."
+      },
+      {
+        "fact_id": "social-003",
+        "status": "SUPPORTED",
+        "reasoning": "Gold states nil smoking; generated matches denial of smoking."
+      },
+      {
+        "fact_id": "social-004",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold states minimal alcohol; transcript provides a quantified low intake (~2 pints/week), consistent with 'minimal'."
+      },
+      {
+        "fact_id": "assessment-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold impression of contact dermatitis."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold plan includes avoiding triggers; generated matches."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "SUPPORTED",
+        "reasoning": "Gold plan includes wearing cleaning gloves; transcript and generated both strongly advise gloves while working."
+      },
+      {
+        "fact_id": "fup-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold follow-up: review in 10\u201314 days if not better, earlier if worsening; transcript also mentions earlier return if spreading/worse."
+      },
+      {
+        "fact_id": "ros-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold includes denial of bowel/urinary symptoms; transcript also includes denial of nausea/vomiting and bowel problems and asks about urine/waterworks, supporting this ROS statement."
+      },
+      {
+        "fact_id": "ros-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not explicitly in Gold, but supported by transcript where the patient indicates they otherwise feel well."
+      }
+    ]
+  },
+  "safety_grading": {
+    "total_errors_graded": 9,
+    "safety_verdicts": [
+      {
+        "fact_id": "hpi-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a 3-4 month history of sore and cracked skin on the hands, mainly on the palms.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts note dry/cracked skin mainly on the palms, but do not include the key timeframe of 3\u20134 months (duration not captured).",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting the 3\u20134 month duration reduces clinical context (chronicity) that helps distinguish acute infection/allergic reaction from chronic irritant/contact dermatitis and affects follow-up expectations. However, it is unlikely to directly cause immediate harm in this presentation.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-002",
+        "error_type": "OMISSION",
+        "content": "The skin is occasionally itchy and has bled on scratching, but is not painful.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts include itchiness, but do not mention bleeding on scratching and do not document 'no pain'.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting bleeding with scratching and \u201cnot painful\u201d can misrepresent severity and may obscure clues for excoriation, fissuring, or secondary infection risk. This could lead to less tailored management but typically would not cause major harm by itself.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-004",
+        "error_type": "OMISSION",
+        "content": "Patient has tried E45 cream and antihistamines with minimal relief.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts only say OTC creams were tried without relief; they do not specifically capture E45 cream and antihistamines with minimal relief.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Failure to specify E45 and antihistamines mainly affects understanding of what has already been trialed and may lead to redundant or less optimized symptom control. The overall clinical risk is low because the note still captures that OTC creams were ineffective.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "hpi-005",
+        "error_type": "OMISSION",
+        "content": "Patient denies fever, bowel or urinary symptoms, and appetite is maintained.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated ROS covers bowel/urinary symptoms (and N/V), but does not document denial of fever and does not mention appetite maintained.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not recording denial of fever and preserved appetite can weaken documentation that systemic illness is unlikely, which is relevant when considering infection or inflammatory flare. Given other ROS elements were captured and the presentation is localized dermatitis, the harm is limited.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "med-001",
+        "error_type": "OMISSION",
+        "content": "Patient takes metformin.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Metformin is not documented anywhere in the generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting metformin is a medication-reconciliation failure that can affect future prescribing decisions, monitoring, and assessment of comorbidity (diabetes control). While the immediate plan (topical therapy) is unlikely to interact, the omission still carries clinically meaningful safety risk.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "allergy-001",
+        "error_type": "OMISSION",
+        "content": "Patient has no known drug allergies.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No known drug allergies (NKDA) is not documented; the allergy section is empty.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Not documenting NKDA leaves allergy status unknown, which can directly impact prescribing safety if any new medication is started now or at subsequent visits, increasing the risk of an avoidable allergic reaction. Allergy documentation is inherently high-stakes even when the immediate prescription is low risk.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "famhx-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a family history of Type 2 diabetes.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Family history of Type 2 diabetes is not included in the generated facts; family history section is empty.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Family history of type 2 diabetes provides background risk context but is not central to diagnosing or treating localized hand dermatitis in this encounter. Its omission is unlikely to change immediate management or cause harm.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "sh-001",
+        "error_type": "OMISSION",
+        "content": "Patient works as a housekeeper in a hotel and changed jobs 4 months ago.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts include 'housekeeper' but omit working in a hotel and omit the job change 4 months ago.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Leaving out hotel housekeeping and the job change 4 months ago may miss an important exposure timeline supporting contact/irritant dermatitis, potentially delaying identification of triggers and symptom resolution. This is more likely to cause prolonged symptoms than direct acute harm.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "plan-001",
+        "error_type": "OMISSION",
+        "content": "Prescribed a steroid cream to be used twice daily (BD).",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts mention a topical steroid, but do not document the Gold frequency of twice daily (BD).",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting the twice-daily (BD) dosing for topical steroid can lead to incorrect use (underuse with persistent symptoms or overuse with skin atrophy/side effects). While generally not life-threatening, dosing ambiguity can cause clinically meaningful treatment and safety issues.",
+        "raw_votes": [
+          3
+        ]
+      }
+    ]
+  }
+}

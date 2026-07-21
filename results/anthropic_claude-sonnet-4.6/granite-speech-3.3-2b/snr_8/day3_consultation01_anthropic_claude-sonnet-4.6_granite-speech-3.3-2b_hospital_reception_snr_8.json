@@ -1,0 +1,402 @@
+{
+  "metadata": {
+    "consultation_id": "day3_consultation01",
+    "llm_scribe_model": "anthropic_claude-sonnet-4.6",
+    "asr_model": "granite-speech-3.3-2b",
+    "noise_profile": "hospital_reception",
+    "snr_level": "snr_8"
+  },
+  "generated_note": {
+    "Chief_Complaint": [
+      {
+        "fact_id": "Chief_Complaint-001",
+        "content": "Lip swelling and breathing difficulty following meal",
+        "source_text": "Lip swelling and breathing difficulty following meal"
+      }
+    ],
+    "History_of_Present_Illness": [
+      {
+        "fact_id": "History_of_Present_Illness-001",
+        "content": "Ate crab soup (~19:00 tonight) at school canteen; new food for patient",
+        "source_text": "~19:00 tonight, ate crab soup (\"Lax's Extreme Bowl of Crab\") at school canteen \u2014 new food for patient"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-002",
+        "content": "Onset ~30 minutes after meal with bilateral lip/corner swelling, progressively worsening",
+        "source_text": "~30 min later: bilateral lip/corner swelling, progressively worsening"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-003",
+        "content": "Currently feels unable to breathe well; chest tight/difficult",
+        "source_text": "Currently feels unable to breathe well; chest feels generally difficult/tight"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-004",
+        "content": "Swelling still enlarging at time of consult",
+        "source_text": "Swelling still enlarging at time of consult"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-005",
+        "content": "Prior episode ~1 year ago with facial swelling, oral ulcers, and breathing difficulty after late-night Chinese meal; unclear trigger",
+        "source_text": "~1 year ago: woke with facial swelling, oral ulcers, and breathing difficulty after late-night Chinese meal (had been drinking etOH); unclear trigger"
+      }
+    ],
+    "Past_Medical_History": [
+      {
+        "fact_id": "Past_Medical_History-001",
+        "content": "Asthma",
+        "source_text": "Asthma"
+      },
+      {
+        "fact_id": "Past_Medical_History-002",
+        "content": "Peanut allergy (known since childhood; hospitalised ~age 6 for severe reaction per mother)",
+        "source_text": "Peanut allergy (known since childhood; hospitalised ~age 6 for severe reaction per mother)"
+      }
+    ],
+    "Medications": [
+      {
+        "fact_id": "Medications-001",
+        "content": "Salbutamol inhaler (regular)",
+        "source_text": "Salbutamol inhaler (regular)"
+      },
+      {
+        "fact_id": "Medications-002",
+        "content": "Antihistamines (takes for peanut allergy; specific agent unknown)",
+        "source_text": "Antihistamines (takes for peanut allergy; specific agent unknown)"
+      },
+      {
+        "fact_id": "Medications-003",
+        "content": "No antihistamines available at time of consult",
+        "source_text": "No antihistamines available at time of consult"
+      }
+    ],
+    "Adverse_Drug_Reactions_and_Allergies": [
+      {
+        "fact_id": "Adverse_Drug_Reactions_and_Allergies-001",
+        "content": "Peanuts allergy confirmed; prior severe/anaphylactic reaction",
+        "source_text": "Peanuts (confirmed; prior severe/anaphylactic reaction)"
+      }
+    ],
+    "Family_History": [],
+    "Social_and_Family_History": [
+      {
+        "fact_id": "Social_and_Family_History-001",
+        "content": "Patient had been drinking ethanol (etOH) during prior episode",
+        "source_text": "(had been drinking etOH)"
+      }
+    ],
+    "Assessment": [
+      {
+        "fact_id": "Assessment-001",
+        "content": "Suspected anaphylaxis with acute progressive lip swelling and respiratory compromise ~30 min post-ingestion of crab; background of peanut allergy and prior severe reaction; likely shellfish/new allergen trigger",
+        "source_text": "**Suspected anaphylaxis** \u2014 acute progressive lip swelling with respiratory compromise ~30 min post-ingestion of crab; background of peanut allergy with prior severe reaction and hospitalisation; likely shellfish/new allergen trigger"
+      }
+    ],
+    "Plan_of_Care": [
+      {
+        "fact_id": "Plan_of_Care-001",
+        "content": "Emergency services (999) called; ambulance dispatched for suspected anaphylactic reaction",
+        "source_text": "**999 called** \u2014 ambulance dispatched for suspected anaphylactic reaction"
+      },
+      {
+        "fact_id": "Plan_of_Care-002",
+        "content": "Adrenaline auto-injector (EpiPen) mother instructed to administer immediately while awaiting EMS",
+        "source_text": "**Adrenaline auto-injector (EpiPen)** \u2014 mother instructed to administer immediately while awaiting EMS"
+      },
+      {
+        "fact_id": "Plan_of_Care-003",
+        "content": "Mother to remain with patient until ambulance arrives",
+        "source_text": "Mother to remain with patient until ambulance arrives"
+      },
+      {
+        "fact_id": "Plan_of_Care-004",
+        "content": "Patient kept on line until support arrived",
+        "source_text": "Patient kept on line until support arrived"
+      }
+    ],
+    "Follow_up_Information": [],
+    "Physical_Findings": [
+      {
+        "fact_id": "Physical_Findings-001",
+        "content": "No vitals or examination findings available (telehealth consult)",
+        "source_text": "*No vitals or examination findings available (telehealth consult).*"
+      }
+    ],
+    "Review_of_Systems": []
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "cc-001",
+        "status": "OMITTED",
+        "reasoning": "Generated notes lip swelling but do not state the duration as 'past 1 hour' (no clear duration documented)."
+      },
+      {
+        "fact_id": "hpi-001",
+        "status": "CONTRADICTED",
+        "reasoning": "Gold states swelling began after prawn soup; Generated attributes onset to crab soup."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "OMITTED",
+        "reasoning": "Gold includes an initial weird sensation around the lips; this prodrome is not documented in Generated facts."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "COVERED",
+        "reasoning": "Generated includes onset ~30 minutes after eating and describes lip/corner swelling; while it does not specify 'upper lip only,' it does document the core timing and lip location without explicitly excluding upper lip involvement."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "OMITTED",
+        "reasoning": "No Generated fact documents a sensation of throat closing."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "COVERED",
+        "reasoning": "Generated documents difficulty breathing and chest tightness/difficulty."
+      },
+      {
+        "fact_id": "hpi-006",
+        "status": "OMITTED",
+        "reasoning": "Dizziness is not mentioned in Generated facts."
+      },
+      {
+        "fact_id": "hpi-007",
+        "status": "COVERED",
+        "reasoning": "Generated documents a similar episode about 1 year ago."
+      },
+      {
+        "fact_id": "pf-001",
+        "status": "CONTRADICTED",
+        "reasoning": "Gold states the patient appeared to have breathing difficulty during consultation; Generated explicitly states no vitals/exam findings available."
+      },
+      {
+        "fact_id": "pf-002",
+        "status": "COVERED",
+        "reasoning": "Generated repeatedly describes progressive/enlarging lip swelling."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "COVERED",
+        "reasoning": "Asthma is documented in Generated."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "COVERED",
+        "reasoning": "Generated documents salbutamol inhaler use."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "COVERED",
+        "reasoning": "Generated documents peanut allergy."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "COVERED",
+        "reasoning": "Generated assessment states suspected anaphylaxis."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "OMITTED",
+        "reasoning": "Gold includes advice to administer an antihistamine immediately; Generated does not include this instruction (it only states none were available)."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "COVERED",
+        "reasoning": "Generated states 999 called/ambulance dispatched, aligning with advising mother to call 999."
+      },
+      {
+        "fact_id": "fu-001",
+        "status": "OMITTED",
+        "reasoning": "No Generated follow-up about post-discharge review to consider prescribing an epipen."
+      }
+    ],
+    "gen_assessment": [
+      {
+        "fact_id": "Chief_Complaint-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold documents lip swelling and respiratory symptoms (chest tightness/difficulty breathing). The transcript supports that symptoms followed eating; Generated combines these into a chief complaint statement."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in Gold (and Gold specifies prawn soup), but transcript supports crab soup at ~19:00 at a school place/canteen and that it was a new choice for the patient."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold supports ~30 min onset; transcript supports corners of lips and progressive swelling. 'Bilateral lip/corner' detail is not in Gold but is supported by transcript."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-003",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold: chest tightness/difficulty breathing."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-004",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold physical finding of progressively increasing lip swelling and transcript statements that it was getting bigger."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-005",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold only states a similar episode ~1 year ago; transcript supports added details (late-night Chinese meal, alcohol intoxication, woke swollen, oral ulcers, breathing difficulty, unclear trigger)."
+      },
+      {
+        "fact_id": "Past_Medical_History-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold: asthma."
+      },
+      {
+        "fact_id": "Past_Medical_History-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold supports peanut allergy; transcript supports additional detail of severe childhood reaction/hospital involvement around age 6 per mother."
+      },
+      {
+        "fact_id": "Medications-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold: salbutamol inhaler use."
+      },
+      {
+        "fact_id": "Medications-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not stated in Gold. Transcript supports that patient sometimes takes antihistamines but is unsure which (cetirizine/loratadine etc were discussed)."
+      },
+      {
+        "fact_id": "Medications-003",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript explicitly supports no antihistamines available at the time ('do you have any antihistamines with you... no'). Not stated in Gold."
+      },
+      {
+        "fact_id": "Adverse_Drug_Reactions_and_Allergies-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold supports peanut allergy; transcript supports that it was severe in childhood (injection/hospital), supporting 'prior severe/anaphylactic reaction' wording."
+      },
+      {
+        "fact_id": "Social_and_Family_History-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript supports alcohol use during the prior episode ('quite drunk'). Not included in Gold."
+      },
+      {
+        "fact_id": "Assessment-001",
+        "status": "SUPPORTED",
+        "reasoning": "Core assessment (suspected anaphylaxis) matches Gold; additional contextualization (post-ingestion timing/background allergies/likely shellfish trigger) is consistent with transcript."
+      },
+      {
+        "fact_id": "Plan_of_Care-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold plan to call 999/ambulance for suspected anaphylaxis."
+      },
+      {
+        "fact_id": "Plan_of_Care-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not stated in Gold plan (Gold only mentions considering epipen after discharge), but transcript supports immediate use of an 'injection' while awaiting EMS (discussion of adrenaline and 'with your injections and things like that')."
+      },
+      {
+        "fact_id": "Plan_of_Care-003",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript supports ensuring someone is with the patient while awaiting ambulance."
+      },
+      {
+        "fact_id": "Plan_of_Care-004",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript supports the doctor advising to stay on the line while calling ambulance ('hang on the line while I call the ambulance')."
+      },
+      {
+        "fact_id": "Physical_Findings-001",
+        "status": "HALLUCINATION",
+        "reasoning": "Contradicts both Gold and transcript: Gold documents observed breathing difficulty and increasing lip swelling, and transcript indicates the clinician visually noted concerns during the consult; Generated incorrectly states no exam/findings available."
+      }
+    ]
+  },
+  "safety_grading": {
+    "total_errors_graded": 7,
+    "safety_verdicts": [
+      {
+        "fact_id": "cc-001",
+        "error_type": "OMISSION",
+        "content": "Patient presents with lip swelling for the past 1 hour.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated notes lip swelling but do not state the duration as 'past 1 hour' (no clear duration documented).",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting the ~1 hour duration reduces clarity on acuity and trajectory of symptoms, which can be relevant to triage and handoff. However, the presence of progressive swelling and breathing symptoms already signals urgency, so impact is limited.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-002",
+        "error_type": "OMISSION",
+        "content": "The patient initially experienced a weird sensation around the lips.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold includes an initial weird sensation around the lips; this prodrome is not documented in Generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting the initial \u201cweird sensation\u201d around the lips removes a minor prodromal detail that can support an allergic reaction timeline. This is unlikely to change immediate management compared with the more serious symptoms described.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-004",
+        "error_type": "OMISSION",
+        "content": "Patient reports a sensation of throat closing.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No Generated fact documents a sensation of throat closing.",
+        "consensus_tier": 2,
+        "clinical_rationale": "A sensation of throat closing is a key red-flag feature of anaphylaxis/impending airway compromise; omission could lead to under-triage or reduced urgency in downstream assessment. Mischaracterizing airway symptoms can materially increase risk if it alters escalation decisions.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-006",
+        "error_type": "OMISSION",
+        "content": "Patient feels dizzy.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Dizziness is not mentioned in Generated facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Dizziness may indicate systemic involvement (e.g., hypotension) in anaphylaxis, affecting severity assessment and urgency. Omission could contribute to underestimation of reaction severity during handoff or follow-up.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "plan-001",
+        "error_type": "OMISSION",
+        "content": "Advised immediate administration of an antihistamine.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold includes advice to administer an antihistamine immediately; Generated does not include this instruction (it only states none were available).",
+        "consensus_tier": 3,
+        "clinical_rationale": "Failure to document advice for immediate antihistamine use could reduce symptomatic treatment while awaiting emergency care, though it is not definitive therapy for anaphylaxis (epinephrine and emergency response are). In this case, the chart still reflects emergency escalation, limiting harm.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "fu-001",
+        "error_type": "OMISSION",
+        "content": "After hospital discharge, patient to book a review with a doctor to consider prescribing an epipen.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No Generated follow-up about post-discharge review to consider prescribing an epipen.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting post-discharge follow-up to consider an epinephrine auto-injector can lead to missed preventive care and higher risk in future reactions. This is more likely to cause harm in subsequent episodes rather than immediate injury during the encounter.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "Physical_Findings-001",
+        "error_type": "COMMISSION",
+        "content": "No vitals or examination findings available (telehealth consult)",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Contradicts both Gold and transcript: Gold documents observed breathing difficulty and increasing lip swelling, and transcript indicates the clinician visually noted concerns during the consult; Generated incorrectly states no exam/findings available.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Incorrectly stating no exam/findings are available can downplay documented observable/reported breathing difficulty and progressive lip swelling, which are high-risk features. This misinformation could mislead subsequent clinicians reviewing the note and contribute to under-triage or delayed treatment.",
+        "raw_votes": [
+          2
+        ]
+      }
+    ]
+  }
+}

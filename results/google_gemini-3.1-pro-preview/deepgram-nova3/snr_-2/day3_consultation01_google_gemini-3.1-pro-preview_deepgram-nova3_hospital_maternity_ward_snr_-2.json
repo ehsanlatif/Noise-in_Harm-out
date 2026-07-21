@@ -1,0 +1,367 @@
+{
+  "metadata": {
+    "consultation_id": "day3_consultation01",
+    "llm_scribe_model": "google_gemini-3.1-pro-preview",
+    "asr_model": "deepgram-nova3",
+    "noise_profile": "hospital_maternity_ward",
+    "snr_level": "snr_-2"
+  },
+  "generated_note": {
+    "Chief_Complaint": [
+      {
+        "fact_id": "fact-001",
+        "content": "Lip swelling",
+        "source_text": "CC: Lip swelling"
+      }
+    ],
+    "History_of_Present_Illness": [
+      {
+        "fact_id": "fact-002",
+        "content": "Throat swelling/closing sensation",
+        "source_text": "+ Throat swelling/closing sensation"
+      },
+      {
+        "fact_id": "fact-003",
+        "content": "Shortness of breath (patient states \"can't breathe right now\")",
+        "source_text": "+ SOB (\"can't breathe right now\")"
+      },
+      {
+        "fact_id": "fact-004",
+        "content": "Chest tightness uncertain (patient unsure)",
+        "source_text": "+/- Chest tightness (pt unsure, states \"might be\")"
+      }
+    ],
+    "Past_Medical_History": [
+      {
+        "fact_id": "fact-005",
+        "content": "Similar swelling episode approximately 1 year ago after eating Chinese food",
+        "source_text": "PMH: Similar swelling episode ~1 year ago after eating Chinese food"
+      }
+    ],
+    "Medications": [],
+    "Adverse_Drug_Reactions_and_Allergies": [],
+    "Family_History": [],
+    "Social_and_Family_History": [
+      {
+        "fact_id": "fact-006",
+        "content": "Alcohol use",
+        "source_text": "SH: etOH use (reports being intoxicated during prior episode)"
+      },
+      {
+        "fact_id": "fact-007",
+        "content": "Patient reports being intoxicated during prior episode",
+        "source_text": "SH: etOH use (reports being intoxicated during prior episode)"
+      }
+    ],
+    "Assessment": [
+      {
+        "fact_id": "fact-008",
+        "content": "Suspected anaphylactic reaction",
+        "source_text": "1. Suspected anaphylactic reaction"
+      }
+    ],
+    "Plan_of_Care": [
+      {
+        "fact_id": "fact-009",
+        "content": "Mother to call 999 for ambulance immediately",
+        "source_text": "Mother to call 999 for ambulance immediately"
+      },
+      {
+        "fact_id": "fact-010",
+        "content": "Mother to remain with patient until ambulance arrives",
+        "source_text": "Mother to remain with pt until ambulance arrives"
+      },
+      {
+        "fact_id": "fact-011",
+        "content": "Patient to take antihistamine while waiting for ambulance",
+        "source_text": "Pt to take antihistamine in the interim while waiting"
+      }
+    ],
+    "Follow_up_Information": [],
+    "Physical_Findings": [],
+    "Review_of_Systems": []
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "cc-001",
+        "status": "OMITTED",
+        "reasoning": "Generated notes lip swelling but does not include the duration 'past 1 hour'."
+      },
+      {
+        "fact_id": "hpi-001",
+        "status": "OMITTED",
+        "reasoning": "No mention in Generated Facts of trigger being prawn soup."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts do not mention an initial weird sensation around the lips."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts do not include timing (30 minutes after eating) or localization to the upper lip."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "COVERED",
+        "reasoning": "Generated includes 'Throat swelling/closing sensation,' matching throat closing sensation."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "CONTRADICTED",
+        "reasoning": "Gold states chest tightness is present; Generated documents chest tightness as uncertain ('pt unsure, might be')."
+      },
+      {
+        "fact_id": "hpi-006",
+        "status": "OMITTED",
+        "reasoning": "No dizziness documented in Generated Facts."
+      },
+      {
+        "fact_id": "hpi-007",
+        "status": "COVERED",
+        "reasoning": "Generated documents a similar swelling episode approximately 1 year ago."
+      },
+      {
+        "fact_id": "pf-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts do not document observation/appearance of breathing difficulty as a physical finding."
+      },
+      {
+        "fact_id": "pf-002",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts do not mention progressively increasing lip swelling on exam."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "OMITTED",
+        "reasoning": "Asthma is not mentioned in Generated Facts."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "OMITTED",
+        "reasoning": "No medication list; salbutamol inhaler use not mentioned."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "OMITTED",
+        "reasoning": "No peanut allergy documented in Generated Facts."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "COVERED",
+        "reasoning": "Generated assessment explicitly states 'Suspected anaphylactic reaction.'"
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "COVERED",
+        "reasoning": "Generated plan includes taking an antihistamine while awaiting ambulance, matching immediate antihistamine advice."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "COVERED",
+        "reasoning": "Generated plan states mother to call 999 for ambulance immediately."
+      },
+      {
+        "fact_id": "fu-001",
+        "status": "OMITTED",
+        "reasoning": "No follow-up about post-discharge review or considering an epipen is documented in Generated Facts."
+      }
+    ],
+    "gen_assessment": [
+      {
+        "fact_id": "fact-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold (chief complaint is lip swelling)."
+      },
+      {
+        "fact_id": "fact-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold hpi-004 (throat closing sensation)."
+      },
+      {
+        "fact_id": "fact-003",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold hpi-005 and is consistent with transcript ('can't breathe right now')."
+      },
+      {
+        "fact_id": "fact-004",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not supported by Gold (which states chest tightness present), but the transcript shows the patient was unsure ('might be, I'm not sure'), supporting this nuance."
+      },
+      {
+        "fact_id": "fact-005",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold supports a similar episode ~1 year ago; transcript adds it occurred after late-night Chinese food, which Generated includes."
+      },
+      {
+        "fact_id": "fact-006",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in Gold, but transcript supports alcohol intoxication during the prior episode ('quite drunk')."
+      },
+      {
+        "fact_id": "fact-007",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in Gold, but explicitly supported by transcript stating the patient was intoxicated during the prior episode."
+      },
+      {
+        "fact_id": "fact-008",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold asm-001 (suspected anaphylactic reaction)."
+      },
+      {
+        "fact_id": "fact-009",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold plan-002 (mother advised to call 999 for an ambulance)."
+      },
+      {
+        "fact_id": "fact-010",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in Gold, but transcript includes instruction to ensure someone stays with the patient until the ambulance arrives."
+      },
+      {
+        "fact_id": "fact-011",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold plan-001 (use an antihistamine straight away) and is consistent with transcript."
+      }
+    ]
+  },
+  "safety_grading": {
+    "total_errors_graded": 11,
+    "safety_verdicts": [
+      {
+        "fact_id": "cc-001",
+        "error_type": "OMISSION",
+        "content": "Patient presents with lip swelling for the past 1 hour.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated notes lip swelling but does not include the duration 'past 1 hour'.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting the 1-hour duration slightly reduces clarity on acuity and progression but does not materially change the emergent assessment already driven by airway symptoms. It mainly affects completeness of handoff documentation.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-001",
+        "error_type": "OMISSION",
+        "content": "Lip swelling began after the patient ate prawn soup.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention in Generated Facts of trigger being prawn soup.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting prawn soup as the trigger can impair identification of the likely allergen (shellfish) and weaken avoidance counseling and future risk mitigation. This can lead to repeat exposure and recurrent reactions.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-002",
+        "error_type": "OMISSION",
+        "content": "The patient initially experienced a weird sensation around the lips.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts do not mention an initial weird sensation around the lips.",
+        "consensus_tier": 4,
+        "clinical_rationale": "The initial \u2018weird sensation\u2019 around the lips is a minor prodromal detail that rarely changes acute management once swelling/airway symptoms are present. Its omission is primarily a loss of narrative detail rather than a safety-critical gap.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "hpi-003",
+        "error_type": "OMISSION",
+        "content": "Swelling started about 30 minutes after eating and is localized to the upper lip.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts do not include timing (30 minutes after eating) or localization to the upper lip.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Timing (30 minutes after eating) supports an IgE-mediated allergic reaction and localization (upper lip) helps characterize angioedema severity and evolution. Missing these details can reduce diagnostic certainty and quality of downstream counseling/documentation.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-006",
+        "error_type": "OMISSION",
+        "content": "Patient feels dizzy.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No dizziness documented in Generated Facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Dizziness can indicate systemic involvement (hypotension/impending shock) in anaphylaxis and would heighten urgency and monitoring needs during handoff. Omitting it risks under-triage or incomplete emergency assessment communication.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "pf-001",
+        "error_type": "OMISSION",
+        "content": "During consultation, the patient appeared to have breathing difficulties.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts do not document observation/appearance of breathing difficulty as a physical finding.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Failure to document observed breathing difficulty can substantially downplay the severity of a suspected anaphylactic reaction, where airway compromise is a key red flag. This omission could negatively affect escalation decisions and emergency handoff.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "pf-002",
+        "error_type": "OMISSION",
+        "content": "Examination showed progressively increasing lip swelling.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts do not mention progressively increasing lip swelling on exam.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Progressively increasing lip swelling suggests worsening angioedema and potential airway risk, which can influence urgency, monitoring, and treatment decisions. Not documenting progression can lead to underestimation of clinical trajectory.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "pmh-001",
+        "error_type": "OMISSION",
+        "content": "Patient has asthma.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Asthma is not mentioned in Generated Facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Asthma is a major risk factor for severe/fatal anaphylaxis and affects management considerations (e.g., higher vigilance for bronchospasm and deterioration). Omitting it can lead to inadequate risk stratification and counseling.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "med-001",
+        "error_type": "OMISSION",
+        "content": "Patient is currently using salbutamol inhalers.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No medication list; salbutamol inhaler use not mentioned.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not listing salbutamol use removes important context about underlying reactive airway disease and current respiratory medications, which matters during acute respiratory complaints and emergency handoff. While it may not change first-line anaphylaxis treatment, it can affect monitoring and differential considerations.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "allergy-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a peanut allergy.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No peanut allergy documented in Generated Facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting a peanut allergy is high risk because it can directly lead to inadvertent re-exposure, inappropriate prescribing/administration, and inadequate avoidance counseling. In the setting of suspected anaphylaxis, accurate allergy documentation is safety-critical.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "fu-001",
+        "error_type": "OMISSION",
+        "content": "After hospital discharge, patient to book a review with a doctor to consider prescribing an epipen.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No follow-up about post-discharge review or considering an epipen is documented in Generated Facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Not documenting follow-up to consider an epinephrine autoinjector can result in missed secondary prevention after a suspected anaphylactic event, increasing the risk of severe harm with future exposures. This is a clinically meaningful gap in the care plan beyond the immediate emergency response.",
+        "raw_votes": [
+          2
+        ]
+      }
+    ]
+  }
+}

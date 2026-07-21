@@ -1,0 +1,407 @@
+{
+  "metadata": {
+    "consultation_id": "day1_consultation01",
+    "llm_scribe_model": "google_gemini-3.1-pro-preview",
+    "asr_model": "cohere-transcribe-03-2026",
+    "noise_profile": "hospital_maternity_ward",
+    "snr_level": "snr_13"
+  },
+  "generated_note": {
+    "Chief_Complaint": [],
+    "History_of_Present_Illness": [],
+    "Past_Medical_History": [],
+    "Medications": [],
+    "Adverse_Drug_Reactions_and_Allergies": [],
+    "Family_History": [],
+    "Social_and_Family_History": [],
+    "Assessment": [],
+    "Plan_of_Care": [],
+    "Follow_up_Information": [],
+    "Physical_Findings": [],
+    "Review_of_Systems": []
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "hpi-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts contain no HPI content; 3-day watery diarrhea is not documented."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts do not mention presence/absence of blood in stool."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts do not include stool frequency (6x/day)."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts do not include LLQ intermittent crampy pain or lack of radiation."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts do not document vomiting or absence of blood in vomit."
+      },
+      {
+        "fact_id": "hpi-006",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts do not include history of fever on day 1 with resolution."
+      },
+      {
+        "fact_id": "hpi-007",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts do not mention lethargy/weakness."
+      },
+      {
+        "fact_id": "hpi-008",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts do not include loss of appetite."
+      },
+      {
+        "fact_id": "hpi-009",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts do not document Chinese takeaway exposure 4 days ago."
+      },
+      {
+        "fact_id": "hpi-010",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts do not mention family members unwell with vomiting (no diarrhea)."
+      },
+      {
+        "fact_id": "hpi-011",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts do not document other sick contacts being absent."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts do not record past history of asthma."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts do not document inhaler use."
+      },
+      {
+        "fact_id": "sh-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts do not state occupation (accountant)."
+      },
+      {
+        "fact_id": "sh-002",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts do not mention living with wife and children."
+      },
+      {
+        "fact_id": "sh-003",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts do not include ADL impact (needing to stay near toilet)."
+      },
+      {
+        "fact_id": "sh-004",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts do not document non-smoker and no alcohol use."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts do not include the impression/diagnosis of gastroenteritis."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts do not include conservative management advice (rest/fluids/paracetamol if feverish)."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts do not mention OTC Dioralyte recommendation."
+      },
+      {
+        "fact_id": "fu-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts do not include follow-up timing (review in 3\u20135 days if not improving)."
+      },
+      {
+        "fact_id": "fu-002",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts do not include advice to seek earlier review if more unwell."
+      }
+    ],
+    "gen_assessment": []
+  },
+  "safety_grading": {
+    "total_errors_graded": 22,
+    "safety_verdicts": [
+      {
+        "fact_id": "hpi-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a 3-day history of mainly watery diarrhea.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts contain no HPI content; 3-day watery diarrhea is not documented.",
+        "consensus_tier": 2,
+        "clinical_rationale": "The omission of a 3-day history of watery diarrhea is significant as it is a key symptom that guides the diagnosis and management of potential gastroenteritis or other gastrointestinal conditions.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-002",
+        "error_type": "OMISSION",
+        "content": "Patient denies seeing blood in the stool.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts do not mention presence/absence of blood in stool.",
+        "consensus_tier": 2,
+        "clinical_rationale": "The absence of documentation regarding blood in the stool is clinically important as the presence of blood could indicate a more serious condition requiring different management.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-003",
+        "error_type": "OMISSION",
+        "content": "Patient is opening their bowels 6 times per day.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts do not include stool frequency (6x/day).",
+        "consensus_tier": 2,
+        "clinical_rationale": "Not documenting the frequency of bowel movements (6 times per day) can affect the assessment of the severity of the diarrhea and the need for further intervention.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-004",
+        "error_type": "OMISSION",
+        "content": "The diarrhea is associated with intermittent, crampy pain in the left lower quadrant (LLQ) with no radiation.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts do not include LLQ intermittent crampy pain or lack of radiation.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting the detail of intermittent, crampy pain in the left lower quadrant with no radiation can lead to an incomplete understanding of the patient's abdominal pain, which is crucial for differential diagnosis.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-005",
+        "error_type": "OMISSION",
+        "content": "Patient has also been vomiting, with no blood in the vomit.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts do not document vomiting or absence of blood in vomit.",
+        "consensus_tier": 2,
+        "clinical_rationale": "The omission of vomiting and the absence of blood in the vomit is significant as it affects the clinical picture and potential diagnosis of gastroenteritis or other conditions.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-006",
+        "error_type": "OMISSION",
+        "content": "Patient had a fever on the first day of illness which has since resolved.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts do not include history of fever on day 1 with resolution.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Not documenting the history of fever on the first day of illness, which has since resolved, can lead to an incomplete assessment of the patient's condition and its progression.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-007",
+        "error_type": "OMISSION",
+        "content": "Patient has been feeling lethargic and weak.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts do not mention lethargy/weakness.",
+        "consensus_tier": 2,
+        "clinical_rationale": "The omission of lethargy and weakness is clinically relevant as these symptoms can indicate the severity of the illness and the need for supportive care.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-008",
+        "error_type": "OMISSION",
+        "content": "Patient reports a loss of appetite.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts do not include loss of appetite.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Loss of appetite is an important symptom that can affect the patient's nutritional status and recovery, and its omission can lead to an incomplete clinical assessment.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-009",
+        "error_type": "OMISSION",
+        "content": "Patient consumed a takeaway from a Chinese restaurant 4 days ago.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts do not document Chinese takeaway exposure 4 days ago.",
+        "consensus_tier": 2,
+        "clinical_rationale": "The omission of recent exposure to a Chinese takeaway is relevant as it could be a potential source of foodborne illness, influencing the diagnostic considerations.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-010",
+        "error_type": "OMISSION",
+        "content": "Patient's wife and one child are also unwell with vomiting, but no diarrhea.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts do not mention family members unwell with vomiting (no diarrhea).",
+        "consensus_tier": 2,
+        "clinical_rationale": "Not documenting that family members are unwell with vomiting but no diarrhea is important for understanding potential infectious spread and epidemiological context.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-011",
+        "error_type": "OMISSION",
+        "content": "Patient reports no other unwell contacts.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts do not document other sick contacts being absent.",
+        "consensus_tier": 3,
+        "clinical_rationale": "The absence of documentation regarding other sick contacts being absent is less critical but still relevant for assessing potential sources of infection.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "pmh-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a history of asthma.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts do not record past history of asthma.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting the patient's history of asthma is significant as it is a chronic condition that could influence the management of any acute illness.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "med-001",
+        "error_type": "OMISSION",
+        "content": "Patient uses inhalers.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts do not document inhaler use.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Not documenting the use of inhalers is important as it relates to the management of the patient's asthma, which could be relevant in the context of acute illness.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "sh-001",
+        "error_type": "OMISSION",
+        "content": "Patient works as an accountant.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts do not state occupation (accountant).",
+        "consensus_tier": 4,
+        "clinical_rationale": "The omission of the patient's occupation as an accountant is primarily demographic information with minimal clinical impact.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "sh-002",
+        "error_type": "OMISSION",
+        "content": "Patient lives with his wife and children.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts do not mention living with wife and children.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Not mentioning that the patient lives with his wife and children is demographic information with minimal clinical impact.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "sh-003",
+        "error_type": "OMISSION",
+        "content": "The symptoms are affecting the patient's Activities of Daily Living (ADLs).",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts do not include ADL impact (needing to stay near toilet).",
+        "consensus_tier": 3,
+        "clinical_rationale": "The omission of the impact on Activities of Daily Living (ADLs) is clinically relevant as it provides insight into the severity of the patient's condition and the need for potential adjustments in daily routines or work, but it does not directly affect the treatment plan or diagnosis.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "sh-004",
+        "error_type": "OMISSION",
+        "content": "Patient has no history of smoking or alcohol use.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts do not document non-smoker and no alcohol use.",
+        "consensus_tier": 4,
+        "clinical_rationale": "The omission of smoking and alcohol use history is important for a comprehensive health assessment, but in this context, it does not directly impact the immediate management of the patient's current condition.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "asm-001",
+        "error_type": "OMISSION",
+        "content": "The impression is gastroenteritis.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts do not include the impression/diagnosis of gastroenteritis.",
+        "consensus_tier": 2,
+        "clinical_rationale": "The omission of the diagnosis of gastroenteritis is significant as it directly relates to the patient's treatment plan and understanding of their condition, potentially leading to confusion or mismanagement.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "plan-001",
+        "error_type": "OMISSION",
+        "content": "Advised conservative management including rest, increased fluid intake, and paracetamol if feverish.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts do not include conservative management advice (rest/fluids/paracetamol if feverish).",
+        "consensus_tier": 2,
+        "clinical_rationale": "The omission of conservative management advice, including rest, fluid intake, and paracetamol, could lead to inadequate symptom management and prolonged recovery, impacting the patient's quality of life.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "plan-002",
+        "error_type": "OMISSION",
+        "content": "Recommended over-the-counter Dioralyte.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts do not mention OTC Dioralyte recommendation.",
+        "consensus_tier": 3,
+        "clinical_rationale": "The omission of the recommendation for over-the-counter Dioralyte could result in suboptimal rehydration and electrolyte balance, which is important for recovery in cases of gastroenteritis.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "fu-001",
+        "error_type": "OMISSION",
+        "content": "Patient to have a review in 3-5 days if symptoms do not improve.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts do not include follow-up timing (review in 3\u20135 days if not improving).",
+        "consensus_tier": 2,
+        "clinical_rationale": "The omission of follow-up timing advice is important for monitoring the progression of the condition and ensuring timely intervention if symptoms persist, potentially delaying necessary care.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "fu-002",
+        "error_type": "OMISSION",
+        "content": "Advised to seek review earlier if feeling more unwell.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts do not include advice to seek earlier review if more unwell.",
+        "consensus_tier": 2,
+        "clinical_rationale": "The omission of advice to seek earlier review if feeling more unwell could delay necessary medical intervention in case of worsening symptoms, posing a risk to patient safety.",
+        "raw_votes": [
+          2
+        ]
+      }
+    ]
+  }
+}

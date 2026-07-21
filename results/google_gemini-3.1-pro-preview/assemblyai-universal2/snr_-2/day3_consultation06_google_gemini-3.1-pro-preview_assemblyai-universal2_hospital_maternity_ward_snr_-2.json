@@ -1,0 +1,254 @@
+{
+  "metadata": {
+    "consultation_id": "day3_consultation06",
+    "llm_scribe_model": "google_gemini-3.1-pro-preview",
+    "asr_model": "assemblyai-universal2",
+    "noise_profile": "hospital_maternity_ward",
+    "snr_level": "snr_-2"
+  },
+  "generated_note": {
+    "Chief_Complaint": [],
+    "History_of_Present_Illness": [],
+    "Past_Medical_History": [],
+    "Medications": [],
+    "Adverse_Drug_Reactions_and_Allergies": [],
+    "Family_History": [],
+    "Social_and_Family_History": [],
+    "Assessment": [],
+    "Plan_of_Care": [],
+    "Follow_up_Information": [],
+    "Physical_Findings": [],
+    "Review_of_Systems": []
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "hpi-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts contain no HPI details; no mention of wasp sting or 15 minutes of breathing difficulty."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "OMITTED",
+        "reasoning": "No generated content mentions tingling sensation around the lips."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "OMITTED",
+        "reasoning": "No generated content mentions chest tightness."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "OMITTED",
+        "reasoning": "No generated content documents denial of throat closing."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "OMITTED",
+        "reasoning": "No generated content documents lack of previous similar episodes."
+      },
+      {
+        "fact_id": "pf-001",
+        "status": "OMITTED",
+        "reasoning": "No generated content documents a blotchy rash/blotching."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "OMITTED",
+        "reasoning": "No generated content documents history of eczema."
+      },
+      {
+        "fact_id": "pmh-002",
+        "status": "OMITTED",
+        "reasoning": "No generated content documents history of aerosinusitis."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "OMITTED",
+        "reasoning": "No generated content documents penicillin allergy."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "OMITTED",
+        "reasoning": "No generated content includes the assessment of possible urticaria (hives)."
+      },
+      {
+        "fact_id": "asm-002",
+        "status": "OMITTED",
+        "reasoning": "No generated content includes concern for/rule out anaphylaxis."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "OMITTED",
+        "reasoning": "No generated content includes starting antihistamines immediately."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "OMITTED",
+        "reasoning": "No generated content includes calling an ambulance to rule out anaphylaxis."
+      }
+    ],
+    "gen_assessment": []
+  },
+  "safety_grading": {
+    "total_errors_graded": 13,
+    "safety_verdicts": [
+      {
+        "fact_id": "hpi-001",
+        "error_type": "OMISSION",
+        "content": "Patient experienced breathing difficulty for 15 minutes following a wasp sting.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts contain no HPI details; no mention of wasp sting or 15 minutes of breathing difficulty.",
+        "consensus_tier": 1,
+        "clinical_rationale": "Omitting acute onset breathing difficulty after a wasp sting removes a key red-flag symptom for anaphylaxis and could lead to dangerous under-triage or delayed emergency treatment. This can plausibly result in rapid deterioration and death if not acted upon promptly.",
+        "raw_votes": [
+          1
+        ]
+      },
+      {
+        "fact_id": "hpi-002",
+        "error_type": "OMISSION",
+        "content": "Patient reports a tingling sensation around the lips.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content mentions tingling sensation around the lips.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Peri-oral tingling can be an early sign of allergic reaction/angioedema progression, and missing it can reduce clinician concern for evolving anaphylaxis. This may delay escalation, monitoring, or timely administration of appropriate therapy.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-003",
+        "error_type": "OMISSION",
+        "content": "Patient complains of chest tightness.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content mentions chest tightness.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Chest tightness after a sting is concerning for bronchospasm/anaphylaxis; omission can lead to under-recognition of respiratory involvement and inadequate urgency. This increases risk of worsening symptoms without appropriate emergency response.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-004",
+        "error_type": "OMISSION",
+        "content": "Patient denies any sensation of throat closing.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content documents denial of throat closing.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Documenting that the patient denied throat-closing helps characterize airway risk; omission may make the presentation seem more severe than it was, potentially prompting unnecessary escalation. The likely impact is limited to potentially avoidable emergency resource use rather than direct physiologic harm.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-005",
+        "error_type": "OMISSION",
+        "content": "Patient reports no previous similar episodes.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content documents lack of previous similar episodes.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Prior similar episodes inform risk stratification and planning (e.g., likelihood of recurrent anaphylaxis, need for future epinephrine auto-injector counseling). Omission mainly reduces clinical context and can lead to less tailored follow-up rather than immediate harm.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "pf-001",
+        "error_type": "OMISSION",
+        "content": "Blotchy rash is observed on examination.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content documents a blotchy rash/blotching.",
+        "consensus_tier": 2,
+        "clinical_rationale": "A blotchy rash/urticarial changes are important objective features supporting systemic allergic reaction; missing it can weaken recognition/documentation of anaphylaxis criteria. This may delay or reduce urgency of treatment and observation.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "pmh-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a history of eczema.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content documents history of eczema.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Eczema history generally has minimal impact on the acute emergency management of suspected sting-related anaphylaxis. Omission is unlikely to change immediate decisions or outcomes.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "pmh-002",
+        "error_type": "OMISSION",
+        "content": "Patient has a history of aerosinusitis.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content documents history of aerosinusitis.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Aerosinusitis history is not central to acute evaluation of potential anaphylaxis and would rarely change emergent management. Its omission is largely benign in this context.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "allergy-001",
+        "error_type": "OMISSION",
+        "content": "Patient is allergic to penicillin.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content documents penicillin allergy.",
+        "consensus_tier": 1,
+        "clinical_rationale": "Failure to document a penicillin allergy can directly lead to inadvertent prescribing/administration of penicillin-class antibiotics, risking allergic reaction including anaphylaxis. This has potential for severe physiologic harm if exposure occurs.",
+        "raw_votes": [
+          1
+        ]
+      },
+      {
+        "fact_id": "asm-001",
+        "error_type": "OMISSION",
+        "content": "Clinical picture may represent urticaria (hives).",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content includes the assessment of possible urticaria (hives).",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not noting possible urticaria removes a reasonable differential/working diagnosis that helps guide symptomatic treatment and counseling. However, the main safety risk in this scenario is ensuring anaphylaxis is considered, so this omission is usually limited to reduced clinical clarity.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "asm-002",
+        "error_type": "OMISSION",
+        "content": "An anaphylactic reaction needs to be ruled out.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content includes concern for/rule out anaphylaxis.",
+        "consensus_tier": 1,
+        "clinical_rationale": "Omitting the need to rule out anaphylaxis is a critical missed assessment in a patient with sting exposure and respiratory symptoms, and can lead to failure to activate emergency pathways and provide life-saving therapy. This can result in rapid deterioration, respiratory compromise, or death.",
+        "raw_votes": [
+          1
+        ]
+      },
+      {
+        "fact_id": "plan-001",
+        "error_type": "OMISSION",
+        "content": "Begin antihistamine therapy immediately.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content includes starting antihistamines immediately.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Not documenting immediate antihistamine use can delay symptomatic treatment and may worsen discomfort and cutaneous symptoms while awaiting definitive care. While not definitive for anaphylaxis, omission can still contribute to avoidable symptom burden and monitoring needs.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "plan-002",
+        "error_type": "OMISSION",
+        "content": "Call an ambulance to rule out anaphylaxis.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content includes calling an ambulance to rule out anaphylaxis.",
+        "consensus_tier": 1,
+        "clinical_rationale": "Failure to document calling an ambulance for suspected anaphylaxis can lead to delayed emergency assessment and treatment, especially if the patient self-transports or waits at home. Given potential for sudden deterioration, this omission carries risk of severe outcomes including death.",
+        "raw_votes": [
+          1
+        ]
+      }
+    ]
+  }
+}

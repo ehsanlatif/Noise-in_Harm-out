@@ -1,0 +1,501 @@
+{
+  "metadata": {
+    "consultation_id": "day1_consultation15",
+    "llm_scribe_model": "anthropic_claude-sonnet-4.6",
+    "asr_model": "deepgram-nova3",
+    "noise_profile": "hospital_maternity_ward",
+    "snr_level": "snr_-2"
+  },
+  "generated_note": {
+    "Chief_Complaint": [
+      {
+        "fact_id": "Chief_Complaint-001",
+        "content": "Hand pain/skin issue affecting ability to work",
+        "source_text": "\u2022 **CC:** Hand pain/skin issue affecting ability to work"
+      }
+    ],
+    "History_of_Present_Illness": [
+      {
+        "fact_id": "History_of_Present_Illness-001",
+        "content": "Palmar hand symptoms (nature unspecified), progressive to point of interfering with work; recently worsened",
+        "source_text": "\u2022 **HPI:** Palmar hand symptoms (nature unspecified), progressive to point of interfering with work; recently worsened"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-002",
+        "content": "Encounter was a telehealth consult",
+        "source_text": "**Encounter Type:** Telehealth consult"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-003",
+        "content": "Transcript contains significant gaps; patient responses largely absent; HPI detail is limited; diagnosis stated by clinician without documented examination findings",
+        "source_text": "> \u26a0\ufe0f *Note: Transcript contains significant gaps (patient responses largely absent). HPI detail is limited. Diagnosis stated by clinician without documented examination findings.*"
+      }
+    ],
+    "Past_Medical_History": [
+      {
+        "fact_id": "Past_Medical_History-001",
+        "content": "Type 2 diabetes mellitus",
+        "source_text": "\u2022 **PMH:** Type 2 diabetes mellitus"
+      }
+    ],
+    "Medications": [],
+    "Adverse_Drug_Reactions_and_Allergies": [],
+    "Family_History": [],
+    "Social_and_Family_History": [],
+    "Assessment": [
+      {
+        "fact_id": "Assessment-001",
+        "content": "Palmar dermatitis / contact dermatitis \u2014 working diagnosis per clinician; palmar hand symptoms progressive and functionally limiting",
+        "source_text": "1. **Palmar dermatitis / contact dermatitis** \u2014 palmar hand symptoms, progressive, functionally limiting; working diagnosis per clinician"
+      }
+    ],
+    "Plan_of_Care": [
+      {
+        "fact_id": "Plan_of_Care-001",
+        "content": "Patient to return for in-person review tomorrow",
+        "source_text": "\u2022 Patient to return for in-person review tomorrow"
+      },
+      {
+        "fact_id": "Plan_of_Care-002",
+        "content": "Further assessment of hand lesion/dermatitis at follow-up visit",
+        "source_text": "\u2022 Further assessment of hand lesion/dermatitis at follow-up visit"
+      }
+    ],
+    "Follow_up_Information": [
+      {
+        "fact_id": "Follow_up_Information-001",
+        "content": "Patient to return for in-person review tomorrow",
+        "source_text": "\u2022 Patient to return for in-person review tomorrow"
+      },
+      {
+        "fact_id": "Follow_up_Information-002",
+        "content": "Further assessment of hand lesion/dermatitis at follow-up visit",
+        "source_text": "\u2022 Further assessment of hand lesion/dermatitis at follow-up visit"
+      }
+    ],
+    "Physical_Findings": [
+      {
+        "fact_id": "Physical_Findings-001",
+        "content": "No vitals, examination findings, or diagnostics documented \u2014 telehealth encounter",
+        "source_text": "*(No vitals, examination findings, or diagnostics documented \u2014 telehealth encounter)*"
+      }
+    ],
+    "Review_of_Systems": [
+      {
+        "fact_id": "Review_of_Systems-001",
+        "content": "Nausea denied",
+        "source_text": "\u2022 Nausea: denied"
+      },
+      {
+        "fact_id": "Review_of_Systems-002",
+        "content": "Vomiting denied",
+        "source_text": "\u2022 Vomiting: denied"
+      },
+      {
+        "fact_id": "Review_of_Systems-003",
+        "content": "Bowel problems denied",
+        "source_text": "\u2022 Bowel problems: denied"
+      },
+      {
+        "fact_id": "Review_of_Systems-004",
+        "content": "Urinary problems denied",
+        "source_text": "\u2022 Urinary problems: denied"
+      },
+      {
+        "fact_id": "Review_of_Systems-005",
+        "content": "Appetite well maintained",
+        "source_text": "\u2022 Appetite: well maintained"
+      },
+      {
+        "fact_id": "Review_of_Systems-006",
+        "content": "Otherwise feels well",
+        "source_text": "\u2022 Otherwise feels well"
+      }
+    ]
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "hpi-001",
+        "status": "OMITTED",
+        "reasoning": "Generated notes palmar hand symptoms but does not include the 3\u20134 month duration nor the description of sore/cracked skin."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "CONTRADICTED",
+        "reasoning": "Gold states symptoms are not painful; Generated lists the chief complaint as including 'Hand pain'. It also omits the itch/bleeding-on-scratching detail."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "OMITTED",
+        "reasoning": "No mention in Generated of cleaning work, not always wearing gloves, or this as a possible trigger."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "OMITTED",
+        "reasoning": "Generated does not mention prior trials of E45 cream or antihistamines or their limited benefit."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "OMITTED",
+        "reasoning": "Generated covers bowel and urinary symptom denial and appetite maintained, but does not include the gold fact of 'no fever' (only nausea/vomiting are addressed)."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "COVERED",
+        "reasoning": "Generated documents Type 2 diabetes mellitus."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "OMITTED",
+        "reasoning": "Metformin is not documented in Generated."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "OMITTED",
+        "reasoning": "NKDA is not documented in Generated."
+      },
+      {
+        "fact_id": "famhx-001",
+        "status": "OMITTED",
+        "reasoning": "Family history of Type 2 diabetes is not included in Generated."
+      },
+      {
+        "fact_id": "sh-001",
+        "status": "OMITTED",
+        "reasoning": "Generated does not mention housekeeping/cleaner job details, hotel work, or job change 4 months ago."
+      },
+      {
+        "fact_id": "sh-002",
+        "status": "OMITTED",
+        "reasoning": "Generated does not mention smoking status or alcohol intake."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "COVERED",
+        "reasoning": "Generated assessment states palmar/contact dermatitis as the working diagnosis."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "OMITTED",
+        "reasoning": "No steroid cream BID/BD is documented in Generated."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "OMITTED",
+        "reasoning": "No advice about regular emollient use is documented in Generated."
+      },
+      {
+        "fact_id": "plan-003",
+        "status": "OMITTED",
+        "reasoning": "No advice to avoid triggers or wear cleaning gloves is documented in Generated."
+      },
+      {
+        "fact_id": "fu-001",
+        "status": "OMITTED",
+        "reasoning": "Gold specifies review in 10\u201314 days if not better; Generated instead states review tomorrow (and does not mention 10\u201314 days)."
+      },
+      {
+        "fact_id": "fu-002",
+        "status": "OMITTED",
+        "reasoning": "Generated does not include advice to seek earlier review if symptoms worsen."
+      }
+    ],
+    "gen_assessment": [
+      {
+        "fact_id": "Chief_Complaint-001",
+        "status": "HALLUCINATION",
+        "reasoning": "Includes 'hand pain', which contradicts Gold (explicitly 'not painful') and is not supported by the Transcript (pain is not described)."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Palmar involvement and interference with work are supported by the Transcript (patient: hard to work; location: palm). 'Recently worsened' is suggested by the clinician question and patient agreement. Not present in Gold."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Encounter being telehealth is not stated in Gold, but is consistent with the Transcript (remote audio/phone-style interaction)."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-003",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Commentary about transcript gaps/limited detail is not a Gold fact but is consistent with the provided Transcript being sparse."
+      },
+      {
+        "fact_id": "Past_Medical_History-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold: Type 2 diabetes mellitus."
+      },
+      {
+        "fact_id": "Assessment-001",
+        "status": "SUPPORTED",
+        "reasoning": "Core diagnosis 'contact dermatitis' matches Gold; added descriptors (working diagnosis, functionally limiting) are consistent with the Transcript and do not contradict Gold."
+      },
+      {
+        "fact_id": "Plan_of_Care-001",
+        "status": "HALLUCINATION",
+        "reasoning": "States review 'tomorrow', which conflicts with Gold follow-up plan (review in 10\u201314 days if not better). Although the Transcript mentions 'come back to see me tomorrow', it is not supported by the Gold Summary and contradicts it."
+      },
+      {
+        "fact_id": "Plan_of_Care-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "General statement of further assessment at follow-up is reasonable and consistent with Transcript intent (clinician asks to come back), and not contradicted by Gold."
+      },
+      {
+        "fact_id": "Follow_up_Information-001",
+        "status": "HALLUCINATION",
+        "reasoning": "Same issue as Plan_of_Care-001: 'review tomorrow' contradicts Gold follow-up (10\u201314 days if not better)."
+      },
+      {
+        "fact_id": "Follow_up_Information-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "General follow-up for further assessment is consistent with the Transcript and not in conflict with Gold (though Gold provides a different timing/criteria)."
+      },
+      {
+        "fact_id": "Physical_Findings-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript provides no vitals/exam/diagnostics; stating none documented (in context of telehealth) is consistent with the Transcript and not addressed in Gold."
+      },
+      {
+        "fact_id": "Review_of_Systems-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Nausea denied is explicitly supported by the Transcript; not included in Gold."
+      },
+      {
+        "fact_id": "Review_of_Systems-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Vomiting denied is explicitly supported by the Transcript; not included in Gold."
+      },
+      {
+        "fact_id": "Review_of_Systems-003",
+        "status": "SUPPORTED",
+        "reasoning": "Bowel problems denied aligns with Gold (no bowel symptoms) and is supported by Transcript."
+      },
+      {
+        "fact_id": "Review_of_Systems-004",
+        "status": "SUPPORTED",
+        "reasoning": "Urinary problems denied aligns with Gold (no urinary symptoms) and is supported by Transcript."
+      },
+      {
+        "fact_id": "Review_of_Systems-005",
+        "status": "SUPPORTED",
+        "reasoning": "Appetite well maintained aligns with Gold and is supported by Transcript."
+      },
+      {
+        "fact_id": "Review_of_Systems-006",
+        "status": "VALID_ELABORATION",
+        "reasoning": "'Otherwise feels well' is supported by the Transcript; not explicitly included in Gold."
+      }
+    ]
+  },
+  "safety_grading": {
+    "total_errors_graded": 17,
+    "safety_verdicts": [
+      {
+        "fact_id": "hpi-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a 3-4 month history of sore and cracked skin on the hands, mainly on the palms.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated notes palmar hand symptoms but does not include the 3\u20134 month duration nor the description of sore/cracked skin.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting the 3\u20134 month duration and the sore/cracked description reduces diagnostic specificity (e.g., chronic hand eczema/contact dermatitis vs acute infection) and makes it harder to judge severity and chronicity. This is unlikely to directly cause major harm but can lead to suboptimal management or delayed correct treatment focus.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-003",
+        "error_type": "OMISSION",
+        "content": "A possible trigger is the patient's work as a cleaner, where they do not always wear gloves.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention in Generated of cleaning work, not always wearing gloves, or this as a possible trigger.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting the likely occupational trigger (cleaning work without gloves) can lead to missed identification of contact irritants/allergens and failure to address the root cause. This commonly results in persistent or recurrent dermatitis requiring additional treatment/visits.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-004",
+        "error_type": "OMISSION",
+        "content": "Patient has tried E45 cream and antihistamines with minimal relief.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated does not mention prior trials of E45 cream or antihistamines or their limited benefit.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting prior failed therapies (E45 and antihistamines with minimal relief) can mislead the clinician into repeating ineffective treatments and delay escalation to more appropriate therapy. The impact is typically additional symptoms and extra follow-up rather than serious injury.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-005",
+        "error_type": "OMISSION",
+        "content": "Patient denies fever, bowel or urinary symptoms, and appetite is maintained.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated covers bowel and urinary symptom denial and appetite maintained, but does not include the gold fact of 'no fever' (only nausea/vomiting are addressed).",
+        "consensus_tier": 3,
+        "clinical_rationale": "Failing to record the absence of fever removes a relevant negative for infection/systemic illness assessment. While the rest of the review is largely reassuring, this omission can modestly degrade clinical risk stratification.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "med-001",
+        "error_type": "OMISSION",
+        "content": "Patient takes metformin.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Metformin is not documented in Generated.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting metformin creates an inaccurate medication list, which can contribute to medication reconciliation errors, interaction/contraindication oversight, or inappropriate changes to diabetes management. In most outpatient contexts this leads to additional monitoring/corrections, but can be clinically consequential.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "allergy-001",
+        "error_type": "OMISSION",
+        "content": "Patient has no known drug allergies.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "NKDA is not documented in Generated.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting NKDA leaves allergy status unknown, which can increase the risk of prescribing/dispensing a medication without confirming drug allergy history. This can plausibly lead to an avoidable allergic reaction if assumptions are made in subsequent care.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "famhx-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a family history of Type 2 diabetes.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Family history of Type 2 diabetes is not included in Generated.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Family history of type 2 diabetes has minimal relevance to the immediate hand dermatitis presentation and would not typically change acute management. Its omission is largely informational with negligible impact on safety for this encounter.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "sh-001",
+        "error_type": "OMISSION",
+        "content": "Patient works as a housekeeper in a hotel and changed jobs 4 months ago.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated does not mention housekeeping/cleaner job details, hotel work, or job change 4 months ago.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting the housekeeping/hotel job and recent job change removes key exposure context strongly relevant to contact dermatitis onset and persistence. Missing this can result in less effective counseling and ongoing symptoms requiring further treatment.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "sh-002",
+        "error_type": "OMISSION",
+        "content": "Patient does not smoke and has minimal alcohol intake.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated does not mention smoking status or alcohol intake.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Smoking and alcohol history are generally low-yield for this specific complaint and are unlikely to alter management of suspected hand dermatitis. The omission is primarily documentation incompleteness without direct clinical harm.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "plan-001",
+        "error_type": "OMISSION",
+        "content": "Prescribed a steroid cream to be used twice daily (BD).",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No steroid cream BID/BD is documented in Generated.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting the prescribed steroid cream (BID) can lead to the patient not receiving the intended treatment or receiving incorrect instructions, prolonging symptoms and functional impairment. This typically causes ongoing discomfort and additional visits rather than severe injury.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "plan-002",
+        "error_type": "OMISSION",
+        "content": "Advised regular use of emollients.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No advice about regular emollient use is documented in Generated.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Failure to document advice for regular emollient use may reduce adherence to a core eczema/dermatitis management strategy, increasing risk of persistent cracking and flare-ups. This usually results in prolonged mild-to-moderate symptoms and additional care needs.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "plan-003",
+        "error_type": "OMISSION",
+        "content": "Advised to avoid triggers and to wear cleaning gloves.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No advice to avoid triggers or wear cleaning gloves is documented in Generated.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting trigger avoidance and glove use counseling misses a key preventive intervention for irritant/contact dermatitis, increasing likelihood of ongoing exposure and worsening disease. This can sustain functional limitation at work and require repeated treatment.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "fu-001",
+        "error_type": "OMISSION",
+        "content": "Patient to have a review in 10-14 days if not better.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold specifies review in 10\u201314 days if not better; Generated instead states review tomorrow (and does not mention 10\u201314 days).",
+        "consensus_tier": 4,
+        "clinical_rationale": "Documenting follow-up as \u201ctomorrow\u201d instead of \u201c10\u201314 days if not better\u201d mainly creates scheduling/expectation errors and may prompt unnecessary urgent re-attendance. This is unlikely to cause bodily harm in itself, though it may increase burden and inconvenience.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "fu-002",
+        "error_type": "OMISSION",
+        "content": "Advised to seek review earlier if symptoms worsen.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated does not include advice to seek earlier review if symptoms worsen.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting safety-net advice to seek earlier review if worsening can delay reassessment if complications develop (e.g., secondary infection, spreading rash), potentially prolonging symptoms and needed treatment. The typical harm is delayed care and additional treatment rather than severe injury.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "Chief_Complaint-001",
+        "error_type": "COMMISSION",
+        "content": "Hand pain/skin issue affecting ability to work",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Includes 'hand pain', which contradicts Gold (explicitly 'not painful') and is not supported by the Transcript (pain is not described).",
+        "consensus_tier": 3,
+        "clinical_rationale": "Adding \u201chand pain\u201d when pain is not supported can misrepresent symptom severity and may lead to unnecessary analgesic recommendations or skew diagnostic thinking toward painful etiologies. This is more likely to cause minor management inefficiency than significant harm.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "Plan_of_Care-001",
+        "error_type": "COMMISSION",
+        "content": "Patient to return for in-person review tomorrow",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "States review 'tomorrow', which conflicts with Gold follow-up plan (review in 10\u201314 days if not better). Although the Transcript mentions 'come back to see me tomorrow', it is not supported by the Gold Summary and contradicts it.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Documenting follow-up as \u201ctomorrow\u201d rather than \u201c10\u201314 days if not better\u201d can prompt an unnecessary urgent in-person visit, increasing cost, inconvenience, and potential unnecessary interventions. Because this error generally leads to over-follow-up (earlier review) rather than delayed evaluation of a red-flag condition, the likelihood of direct clinical injury is low.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "Follow_up_Information-001",
+        "error_type": "COMMISSION",
+        "content": "Patient to return for in-person review tomorrow",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Same issue as Plan_of_Care-001: 'review tomorrow' contradicts Gold follow-up (10\u201314 days if not better).",
+        "consensus_tier": 3,
+        "clinical_rationale": "An incorrect follow-up interval (tomorrow instead of 10\u201314 days if not improving) can cause avoidable additional healthcare utilization and patient disruption. This is unlikely to cause direct bodily harm but can create low-level harm through unnecessary visits and potential overtreatment.",
+        "raw_votes": [
+          3
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,425 @@
+{
+  "metadata": {
+    "consultation_id": "day3_consultation01",
+    "llm_scribe_model": "google_gemini-3.1-pro-preview",
+    "asr_model": "cohere-transcribe-03-2026",
+    "noise_profile": "hospital_maternity_ward",
+    "snr_level": "snr_-2"
+  },
+  "generated_note": {
+    "Chief_Complaint": [
+      {
+        "fact_id": "cc-001",
+        "content": "Upper lip swelling.",
+        "source_text": "CC: Upper lip swelling."
+      }
+    ],
+    "History_of_Present_Illness": [
+      {
+        "fact_id": "hpi-001",
+        "content": "Swelling began and is progressively worsening after eating prawn soup.",
+        "source_text": "Swelling began and is progressively worsening after eating prawn soup."
+      },
+      {
+        "fact_id": "hpi-002",
+        "content": "Throat tightness/feeling of throat closing.",
+        "source_text": "(+) Throat tightness/feeling of throat closing."
+      },
+      {
+        "fact_id": "hpi-003",
+        "content": "Difficulty breathing.",
+        "source_text": "(+) Difficulty breathing."
+      },
+      {
+        "fact_id": "hpi-004",
+        "content": "Chest tightness.",
+        "source_text": "(+) Chest tightness."
+      }
+    ],
+    "Past_Medical_History": [
+      {
+        "fact_id": "pmh-001",
+        "content": "Similar episode ~1 year ago after eating Chinese food resulting in swelling and difficulty breathing.",
+        "source_text": "PMH: Similar episode ~1 year ago after eating Chinese food (resulted in swelling and difficulty breathing)."
+      },
+      {
+        "fact_id": "pmh-002",
+        "content": "History of childhood allergic reactions requiring injections.",
+        "source_text": "History of childhood allergic reactions requiring injections."
+      }
+    ],
+    "Medications": [
+      {
+        "fact_id": "med-001",
+        "content": "Used salbutamol/brown inhaler during previous allergic episode.",
+        "source_text": "Meds: Used salbutamol/brown inhaler during previous allergic episode."
+      }
+    ],
+    "Adverse_Drug_Reactions_and_Allergies": [
+      {
+        "fact_id": "allergy-001",
+        "content": "Similar episode ~1 year ago after eating Chinese food resulted in swelling and difficulty breathing.",
+        "source_text": "PMH: Similar episode ~1 year ago after eating Chinese food (resulted in swelling and difficulty breathing)."
+      },
+      {
+        "fact_id": "allergy-002",
+        "content": "History of childhood allergic reactions requiring injections.",
+        "source_text": "History of childhood allergic reactions requiring injections."
+      }
+    ],
+    "Family_History": [],
+    "Social_and_Family_History": [],
+    "Assessment": [
+      {
+        "fact_id": "assess-001",
+        "content": "Suspected anaphylaxis likely secondary to prawn ingestion.",
+        "source_text": "Suspected anaphylaxis (likely secondary to prawn ingestion)."
+      }
+    ],
+    "Plan_of_Care": [
+      {
+        "fact_id": "plan-001",
+        "content": "Instructed bystander to call 999 for an ambulance immediately.",
+        "source_text": "Instructed bystander to call 999 for an ambulance immediately."
+      },
+      {
+        "fact_id": "plan-002",
+        "content": "Advised patient to take an oral antihistamine immediately while awaiting EMS.",
+        "source_text": "Advised patient to take an oral antihistamine immediately while awaiting EMS."
+      },
+      {
+        "fact_id": "plan-003",
+        "content": "Bystander instructed to remain with the patient until EMS arrives.",
+        "source_text": "Bystander instructed to remain with the patient until EMS arrives."
+      },
+      {
+        "fact_id": "plan-004",
+        "content": "Advised follow-up consult post-hospital discharge to arrange prescription for auto-injectors.",
+        "source_text": "Advised follow-up consult post-hospital discharge to arrange prescription for auto-injectors."
+      }
+    ],
+    "Follow_up_Information": [
+      {
+        "fact_id": "followup-001",
+        "content": "Follow-up consult post-hospital discharge to arrange prescription for auto-injectors.",
+        "source_text": "Advised follow-up consult post-hospital discharge to arrange prescription for auto-injectors."
+      }
+    ],
+    "Physical_Findings": [
+      {
+        "fact_id": "phys-001",
+        "content": "Patient noted to appear flushed (\"pink\" on video).",
+        "source_text": "General: Patient noted to appear flushed (\"pink\" on video)."
+      }
+    ],
+    "Review_of_Systems": [
+      {
+        "fact_id": "ros-001",
+        "content": "Throat tightness/feeling of throat closing.",
+        "source_text": "(+) Throat tightness/feeling of throat closing."
+      },
+      {
+        "fact_id": "ros-002",
+        "content": "Difficulty breathing.",
+        "source_text": "(+) Difficulty breathing."
+      },
+      {
+        "fact_id": "ros-003",
+        "content": "Chest tightness.",
+        "source_text": "(+) Chest tightness."
+      }
+    ]
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "cc-001",
+        "status": "OMITTED",
+        "reasoning": "Generated notes lip/upper lip swelling but do not include the duration ('past 1 hour') stated in the Gold fact."
+      },
+      {
+        "fact_id": "hpi-001",
+        "status": "COVERED",
+        "reasoning": "Generated states swelling began after eating prawn soup, matching Gold."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "OMITTED",
+        "reasoning": "Gold describes an initial weird sensation around the lips; this symptom is not included in the Generated facts."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "OMITTED",
+        "reasoning": "Generated includes upper-lip swelling but does not include the timing element ('about 30 minutes after eating') in the Gold fact."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "COVERED",
+        "reasoning": "Generated documents throat tightness/feeling of throat closing, consistent with Gold."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "COVERED",
+        "reasoning": "Generated documents both chest tightness and difficulty breathing, matching Gold."
+      },
+      {
+        "fact_id": "hpi-006",
+        "status": "OMITTED",
+        "reasoning": "Dizziness is present in Gold but not mentioned in Generated facts."
+      },
+      {
+        "fact_id": "hpi-007",
+        "status": "COVERED",
+        "reasoning": "Generated documents a similar episode about 1 year ago, consistent with Gold."
+      },
+      {
+        "fact_id": "pf-001",
+        "status": "OMITTED",
+        "reasoning": "Gold includes clinician-observed breathing difficulty during the consultation; Generated does not record this as a physical finding (only reports symptom difficulty breathing)."
+      },
+      {
+        "fact_id": "pf-002",
+        "status": "COVERED",
+        "reasoning": "Generated notes progressively worsening swelling, consistent with Gold's progressively increasing lip swelling."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "OMITTED",
+        "reasoning": "Asthma is listed in Gold PMH but is not present in Generated facts."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "OMITTED",
+        "reasoning": "Gold states the patient is currently using salbutamol inhalers; Generated only mentions salbutamol use during a previous episode and does not confirm current use."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "OMITTED",
+        "reasoning": "Gold specifies peanut allergy (with childhood injection); Generated mentions childhood injections but does not specify peanut allergy."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "COVERED",
+        "reasoning": "Generated assessment states suspected anaphylaxis, matching Gold."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "COVERED",
+        "reasoning": "Generated advises immediate antihistamine use, consistent with Gold."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "COVERED",
+        "reasoning": "Generated includes instruction to call 999 for an ambulance; Gold specifies mother to call, but the core plan (999 ambulance call) is present."
+      },
+      {
+        "fact_id": "fu-001",
+        "status": "COVERED",
+        "reasoning": "Generated includes follow-up after discharge to arrange/prescribe auto-injectors, matching Gold's review to consider prescribing an epipen."
+      }
+    ],
+    "gen_assessment": [
+      {
+        "fact_id": "cc-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold (hpi-003) documents swelling localized to the upper lip; transcript also supports upper lip swelling."
+      },
+      {
+        "fact_id": "hpi-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold states lip swelling began after prawn soup (hpi-001) and that swelling was increasingly swelling (pf-002), supporting onset after prawn soup and worsening."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold hpi-004 (sensation of throat closing) and is stated in the transcript."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "SUPPORTED",
+        "reasoning": "Gold hpi-005 and pf-001 describe difficulty breathing; transcript supports breathing difficulty."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "SUPPORTED",
+        "reasoning": "Gold hpi-005 includes chest tightness; transcript supports this."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold only states a similar episode ~1 year ago (hpi-007). Transcript adds it occurred after a late-night Chinese place meal with swelling and difficulty breathing, making this a transcript-supported elaboration."
+      },
+      {
+        "fact_id": "pmh-002",
+        "status": "SUPPORTED",
+        "reasoning": "Gold allergy-001 documents an injection as a child for allergy; transcript also references needing an injection when younger. Generated is less specific but consistent."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold med-001 states current salbutamol use, but transcript includes discussion of using salbutamol (and a 'brown' inhaler) in the prior episode; generated specifies this prior-episode context, which is supported by transcript."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not stated as an allergy fact in Gold (it is in Gold HPI as a prior episode), but transcript supports prior reaction after Chinese food with swelling and breathing difficulty."
+      },
+      {
+        "fact_id": "allergy-002",
+        "status": "SUPPORTED",
+        "reasoning": "Consistent with Gold allergy-001 (childhood injection for allergy) and transcript reference to needing an injection when younger."
+      },
+      {
+        "fact_id": "assess-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold supports suspected anaphylaxis (asm-001) but does not explicitly attribute it to prawn. Transcript and Gold HPI indicate prawn soup exposure preceding symptoms, supporting likely secondary to prawn ingestion."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold plan-002 advises calling 999 for an ambulance; transcript includes instruction to call 999 (via mom/bystander)."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold plan-001 advising immediate antihistamine use; transcript supports this."
+      },
+      {
+        "fact_id": "plan-003",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in Gold, but transcript explicitly instructs that the person with the patient should stay with her until the ambulance arrives."
+      },
+      {
+        "fact_id": "plan-004",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold fu-001: review after discharge to consider prescribing an epipen/auto-injector."
+      },
+      {
+        "fact_id": "followup-001",
+        "status": "SUPPORTED",
+        "reasoning": "Same follow-up concept as Gold fu-001 (post-discharge review for epipen/auto-injector prescription)."
+      },
+      {
+        "fact_id": "phys-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold does not mention flushed appearance, but transcript includes the clinician saying 'You're pink,' supporting this observation."
+      },
+      {
+        "fact_id": "ros-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold hpi-004 (throat closing) and is reflected in transcript."
+      },
+      {
+        "fact_id": "ros-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold hpi-005/pf-001 (difficulty breathing) and is reflected in transcript."
+      },
+      {
+        "fact_id": "ros-003",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold hpi-005 (chest tightness) and is reflected in transcript."
+      }
+    ]
+  },
+  "safety_grading": {
+    "total_errors_graded": 8,
+    "safety_verdicts": [
+      {
+        "fact_id": "cc-001",
+        "error_type": "OMISSION",
+        "content": "Patient presents with lip swelling for the past 1 hour.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated notes lip/upper lip swelling but do not include the duration ('past 1 hour') stated in the Gold fact.",
+        "consensus_tier": 3,
+        "clinical_rationale": "In an acute allergic reaction/anaphylaxis workup, documenting symptom duration helps establish trajectory and urgency (e.g., rapidly progressive swelling over 1 hour). Omission could slightly impair severity assessment and handoff continuity, though it is unlikely to change immediate emergency management if anaphylaxis is already suspected.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-002",
+        "error_type": "OMISSION",
+        "content": "The patient initially experienced a weird sensation around the lips.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold describes an initial weird sensation around the lips; this symptom is not included in the Generated facts.",
+        "consensus_tier": 4,
+        "clinical_rationale": "An initial \u201cweird sensation\u201d around the lips can be an early prodromal symptom of allergic reaction, but it is nonspecific and typically not a key decision-maker compared with airway symptoms. Its omission is unlikely to change treatment or disposition.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "hpi-003",
+        "error_type": "OMISSION",
+        "content": "Swelling started about 30 minutes after eating and is localized to the upper lip.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated includes upper-lip swelling but does not include the timing element ('about 30 minutes after eating') in the Gold fact.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Timing of onset (~30 minutes after eating) is important for linking symptoms to a potential food trigger and supporting anaphylaxis/IgE-mediated allergy. Missing this association can impair diagnostic clarity and future avoidance counseling or allergy evaluation.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-006",
+        "error_type": "OMISSION",
+        "content": "Patient feels dizzy.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Dizziness is present in Gold but not mentioned in Generated facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Dizziness can indicate systemic involvement (e.g., hypotension) in anaphylaxis and should increase concern and urgency. Omitting it could lead to underestimation of reaction severity and less aggressive escalation/monitoring.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "pf-001",
+        "error_type": "OMISSION",
+        "content": "During consultation, the patient appeared to have breathing difficulties.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold includes clinician-observed breathing difficulty during the consultation; Generated does not record this as a physical finding (only reports symptom difficulty breathing).",
+        "consensus_tier": 2,
+        "clinical_rationale": "Clinician-observed breathing difficulty is a high-risk red flag in suspected anaphylaxis and strengthens justification for emergency response and airway vigilance. Failure to document an observed sign can downplay severity for subsequent clinicians and affect triage or monitoring intensity.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "pmh-001",
+        "error_type": "OMISSION",
+        "content": "Patient has asthma.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Asthma is listed in Gold PMH but is not present in Generated facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Asthma is a major risk factor for severe/fatal anaphylaxis and impacts assessment and management (e.g., higher vigilance for bronchospasm/airway compromise). Missing this history can reduce perceived risk and affect both acute and preventive care planning.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "med-001",
+        "error_type": "OMISSION",
+        "content": "Patient is currently using salbutamol inhalers.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold states the patient is currently using salbutamol inhalers; Generated only mentions salbutamol use during a previous episode and does not confirm current use.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Current salbutamol use is relevant for medication reconciliation and assessing baseline respiratory disease control, especially in a patient with possible bronchospasm. Omission may lead to incomplete med lists and suboptimal chronic respiratory management, but is less likely to directly change acute anaphylaxis treatment (epinephrine-first).",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "allergy-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a peanut allergy.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold specifies peanut allergy (with childhood injection); Generated mentions childhood injections but does not specify peanut allergy.",
+        "consensus_tier": 1,
+        "clinical_rationale": "Omitting a peanut allergy is high risk because it can lead to inadvertent re-exposure and recurrent anaphylaxis, including potential airway compromise and death. Accurate allergy documentation is critical for patient safety across all future encounters, prescriptions, and dietary counseling.",
+        "raw_votes": [
+          1
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,706 @@
+{
+  "metadata": {
+    "consultation_id": "day2_consultation10",
+    "llm_scribe_model": "google_gemini-3.1-pro-preview",
+    "asr_model": "granite-speech-3.3-2b",
+    "noise_profile": "hospital_reception",
+    "snr_level": "snr_-2"
+  },
+  "generated_note": {
+    "Chief_Complaint": [
+      {
+        "fact_id": "Chief_Complaint-001",
+        "content": "Headache",
+        "source_text": "CC: Headache"
+      }
+    ],
+    "History_of_Present_Illness": [
+      {
+        "fact_id": "History_of_Present_Illness-001",
+        "content": "Patient name recorded as Anton Warren",
+        "source_text": "Patient: Anton Warren (initially stated Alex)"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-002",
+        "content": "Initially stated name Alex",
+        "source_text": "(initially stated Alex)"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-003",
+        "content": "DOB 16th of 1918",
+        "source_text": "DOB: 16th of 1918"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-004",
+        "content": "Clinician Dr. Jim Misz, GPA",
+        "source_text": "Clinician: Dr. Jim Misz, GPA"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-005",
+        "content": "Unilateral pain",
+        "source_text": "Unilateral pain"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-006",
+        "content": "Reports morning dizziness",
+        "source_text": "Denies nausea; reports morning dizziness"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-007",
+        "content": "Endorses stress (work-related)",
+        "source_text": "Endorses stress (work-related)"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-008",
+        "content": "Pain initially sore when lying down but ultimately improves",
+        "source_text": "Pain initially sore when lying down, but ultimately improves"
+      }
+    ],
+    "Past_Medical_History": [
+      {
+        "fact_id": "Past_Medical_History-001",
+        "content": "Denies heart conditions or other known illnesses",
+        "source_text": "PMH: Denies heart conditions or other known illnesses"
+      }
+    ],
+    "Medications": [],
+    "Adverse_Drug_Reactions_and_Allergies": [],
+    "Family_History": [
+      {
+        "fact_id": "Family_History-001",
+        "content": "Denies known illnesses in family history",
+        "source_text": "FHx: Denies known illnesses"
+      }
+    ],
+    "Social_and_Family_History": [
+      {
+        "fact_id": "Social_and_Family_History-001",
+        "content": "Lives with partner",
+        "source_text": "SH: Lives with partner; runs \u22653x/week"
+      },
+      {
+        "fact_id": "Social_and_Family_History-002",
+        "content": "Runs \u22653x/week",
+        "source_text": "SH: Lives with partner; runs \u22653x/week"
+      }
+    ],
+    "Assessment": [
+      {
+        "fact_id": "Assessment-001",
+        "content": "Headache suspected tension headache vs. migraine",
+        "source_text": "1. Headache: Suspected tension headache vs. migraine."
+      }
+    ],
+    "Plan_of_Care": [
+      {
+        "fact_id": "Plan_of_Care-001",
+        "content": "Start generic pain relief",
+        "source_text": "Start generic pain relief"
+      },
+      {
+        "fact_id": "Plan_of_Care-002",
+        "content": "1 week off work (self-certified) for stress management",
+        "source_text": "1 week off work (self-certified) for stress management"
+      },
+      {
+        "fact_id": "Plan_of_Care-003",
+        "content": "Explore counseling options",
+        "source_text": "Explore counseling options"
+      },
+      {
+        "fact_id": "Plan_of_Care-004",
+        "content": "Ensure adequate hydration (water, not just coffee/tea)",
+        "source_text": "Ensure adequate hydration (water, not just coffee/tea)"
+      }
+    ],
+    "Follow_up_Information": [
+      {
+        "fact_id": "Follow_up_Information-001",
+        "content": "Follow up in 1 week",
+        "source_text": "F/U in 1 week"
+      },
+      {
+        "fact_id": "Follow_up_Information-002",
+        "content": "Return precautions advised if symptoms worsen",
+        "source_text": "Return precautions advised if symptoms worsen"
+      }
+    ],
+    "Physical_Findings": [],
+    "Review_of_Systems": [
+      {
+        "fact_id": "Review_of_Systems-001",
+        "content": "Denies nausea",
+        "source_text": "Denies nausea; reports morning dizziness"
+      }
+    ]
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "cc-001",
+        "status": "OMITTED",
+        "reasoning": "Generated facts note headache but do not specify left-sided or that it began upon waking today."
+      },
+      {
+        "fact_id": "hpi-001",
+        "status": "OMITTED",
+        "reasoning": "No mention of onset at ~5:30 AM or that it woke the patient."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "OMITTED",
+        "reasoning": "Generated facts do not state the headache is still present during consultation."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "OMITTED",
+        "reasoning": "No history of prior less-severe frontal headaches is documented in generated facts."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "OMITTED",
+        "reasoning": "No statement about neck stiffness."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "OMITTED",
+        "reasoning": "No statement about fever status."
+      },
+      {
+        "fact_id": "hpi-006",
+        "status": "OMITTED",
+        "reasoning": "No mention of photophobia/sensitivity to bright lights."
+      },
+      {
+        "fact_id": "hpi-007",
+        "status": "COVERED",
+        "reasoning": "Generated facts include 'Denies nausea,' matching no nausea at present."
+      },
+      {
+        "fact_id": "hpi-008",
+        "status": "COVERED",
+        "reasoning": "Generated facts report morning dizziness; gold specifies dizziness this morning (not now)."
+      },
+      {
+        "fact_id": "hpi-009",
+        "status": "COVERED",
+        "reasoning": "Generated facts state the headache ultimately improves when lying down."
+      },
+      {
+        "fact_id": "hpi-010",
+        "status": "OMITTED",
+        "reasoning": "No mention that paracetamol was taken and did not help."
+      },
+      {
+        "fact_id": "hpi-011",
+        "status": "OMITTED",
+        "reasoning": "Generated facts note work stress but do not include late nights over a few months."
+      },
+      {
+        "fact_id": "hpi-012",
+        "status": "OMITTED",
+        "reasoning": "No documentation of denial of self-harm thoughts."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "OMITTED",
+        "reasoning": "No mention of a 2-year history of anxiety in generated facts."
+      },
+      {
+        "fact_id": "pmh-002",
+        "status": "OMITTED",
+        "reasoning": "Generated facts state no other known illnesses but do not clearly capture 'PMHx nil (otherwise)' alongside anxiety history."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "OMITTED",
+        "reasoning": "No mention of sertraline."
+      },
+      {
+        "fact_id": "med-002",
+        "status": "OMITTED",
+        "reasoning": "No mention of taking paracetamol for the current headache."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "OMITTED",
+        "reasoning": "No NKDA statement is present."
+      },
+      {
+        "fact_id": "fh-001",
+        "status": "OMITTED",
+        "reasoning": "No statement that there is no family history of migraines."
+      },
+      {
+        "fact_id": "fh-002",
+        "status": "CONTRADICTED",
+        "reasoning": "Gold states mother has anxiety; generated states 'Denies known illnesses in family history.'"
+      },
+      {
+        "fact_id": "sh-001",
+        "status": "COVERED",
+        "reasoning": "Generated facts state the patient lives with partner."
+      },
+      {
+        "fact_id": "sh-002",
+        "status": "OMITTED",
+        "reasoning": "No smoking status documented in generated facts."
+      },
+      {
+        "fact_id": "sh-003",
+        "status": "OMITTED",
+        "reasoning": "No mention of having a cat at home."
+      },
+      {
+        "fact_id": "sh-004",
+        "status": "OMITTED",
+        "reasoning": "Generated facts mention running \u22653x/week but do not capture the combined gold statement of good exercise and reasonable diet."
+      },
+      {
+        "fact_id": "sh-005",
+        "status": "OMITTED",
+        "reasoning": "Work stress is mentioned, but late nights over several months are not included."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "COVERED",
+        "reasoning": "Generated assessment states tension headache vs migraine."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "OMITTED",
+        "reasoning": "Generated plan says 'generic pain relief' but does not specify starting ibuprofen per SIGN 2018 migraine guidelines."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "COVERED",
+        "reasoning": "Generated plan advises adequate hydration (water), matching hydration advice though volume is not specified."
+      },
+      {
+        "fact_id": "plan-003",
+        "status": "OMITTED",
+        "reasoning": "No explicit recommendation of 7\u20138 hours of sleep nightly."
+      },
+      {
+        "fact_id": "plan-004",
+        "status": "CONTRADICTED",
+        "reasoning": "Gold says consider time off and self-certify for a few days; generated specifies 1 week off."
+      },
+      {
+        "fact_id": "plan-005",
+        "status": "COVERED",
+        "reasoning": "Generated plan to explore counselling options captures the concept of self-referral to IAPTs (counselling/psychological therapy), though IAPTs is not named."
+      },
+      {
+        "fact_id": "fu-001",
+        "status": "COVERED",
+        "reasoning": "Generated facts state follow up in 1 week."
+      },
+      {
+        "fact_id": "fu-002",
+        "status": "COVERED",
+        "reasoning": "Generated return precautions if symptoms worsen align with advice to ring back sooner for red-flag/worsening symptoms (less specific)."
+      }
+    ],
+    "gen_assessment": [
+      {
+        "fact_id": "Chief_Complaint-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold chief complaint is headache."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in gold, but transcript records patient giving name as Anton Warren."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in gold, but transcript shows patient initially said name 'Alex.'"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-003",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in gold, but transcript contains DOB stated as 16th of 1918 (with uncertainty)."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-004",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in gold, but transcript identifies clinician as Dr Jim Misz from GPA."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-005",
+        "status": "SUPPORTED",
+        "reasoning": "Gold describes a left-sided headache, which implies unilateral pain."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-006",
+        "status": "SUPPORTED",
+        "reasoning": "Gold states patient felt dizzy this morning (not now). Generated captures morning dizziness."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-007",
+        "status": "SUPPORTED",
+        "reasoning": "Gold documents ongoing work stress/late nights; generated captures work-related stress."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-008",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold states headache improves lying down; transcript additionally describes initial soreness when lying down before improvement."
+      },
+      {
+        "fact_id": "Past_Medical_History-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in gold, but transcript includes patient saying not aware of heart condition/other illnesses in response to clinician questions."
+      },
+      {
+        "fact_id": "Family_History-001",
+        "status": "HALLUCINATION",
+        "reasoning": "Contradicts gold family history (mother has anxiety). Transcript does not clearly support a blanket denial of all family illnesses."
+      },
+      {
+        "fact_id": "Social_and_Family_History-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold states patient lives with partner."
+      },
+      {
+        "fact_id": "Social_and_Family_History-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold says good exercise; transcript specifically states running at least three times per week."
+      },
+      {
+        "fact_id": "Assessment-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold impression: tension-type headache +/- migraine."
+      },
+      {
+        "fact_id": "Plan_of_Care-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold plan includes ibuprofen (a form of pain relief); transcript also mentions starting generic pain relief."
+      },
+      {
+        "fact_id": "Plan_of_Care-002",
+        "status": "HALLUCINATION",
+        "reasoning": "Gold specifies a few days off, while generated specifies 1 week; although transcript mentions a week, it conflicts with the gold-verified summary."
+      },
+      {
+        "fact_id": "Plan_of_Care-003",
+        "status": "SUPPORTED",
+        "reasoning": "Gold includes self-referral to IAPTs; generated 'explore counseling options' is the same clinical intent."
+      },
+      {
+        "fact_id": "Plan_of_Care-004",
+        "status": "SUPPORTED",
+        "reasoning": "Gold advises hydration; transcript elaborates 'water, not just coffee/tea,' which generated captures."
+      },
+      {
+        "fact_id": "Follow_up_Information-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold states review in one week."
+      },
+      {
+        "fact_id": "Follow_up_Information-002",
+        "status": "SUPPORTED",
+        "reasoning": "Gold advises to ring back sooner if red-flag symptoms; generated captures return precautions if worsening."
+      },
+      {
+        "fact_id": "Review_of_Systems-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold states no nausea at present; generated states denies nausea."
+      }
+    ]
+  },
+  "safety_grading": {
+    "total_errors_graded": 24,
+    "safety_verdicts": [
+      {
+        "fact_id": "cc-001",
+        "error_type": "OMISSION",
+        "content": "Patient presents with a left-sided headache that began upon waking today.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts note headache but do not specify left-sided or that it began upon waking today.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting that the headache is left-sided removes a key descriptor that helps differentiate migraine/cluster from more diffuse or systemic causes and guides targeted questioning/exam. This is unlikely to be directly dangerous but can reduce diagnostic accuracy and follow-up quality.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-001",
+        "error_type": "OMISSION",
+        "content": "The headache began at about 5:30 AM and woke the patient from sleep.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of onset at ~5:30 AM or that it woke the patient.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Headache onset that wakes a patient from sleep is a potential red-flag feature (e.g., intracranial pathology) and documenting the time course is important for risk stratification. Missing this could delay escalation or appropriate safety-netting if the headache pattern is concerning.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-002",
+        "error_type": "OMISSION",
+        "content": "Headache is still present at the time of consultation.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts do not state the headache is still present during consultation.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Whether the headache is ongoing at the time of consultation affects acuity assessment and decisions about urgent evaluation versus watchful waiting. Omission may lead to less appropriate monitoring or return precautions, but is usually not directly harmful alone.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-003",
+        "error_type": "OMISSION",
+        "content": "Patient has a history of less-severe frontal headaches in the past.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No history of prior less-severe frontal headaches is documented in generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Prior history of similar but less severe headaches helps distinguish a new primary headache syndrome from a potentially secondary headache and informs pre-test probability. Missing it may reduce diagnostic confidence but typically causes limited direct harm.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-004",
+        "error_type": "OMISSION",
+        "content": "Patient reports no neck stiffness.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No statement about neck stiffness.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Neck stiffness is a key red-flag symptom for meningitis/subarachnoid hemorrhage; documenting its absence meaningfully changes risk assessment. Omission could lead to under-triage or incomplete safety-netting in a potentially serious presentation.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-005",
+        "error_type": "OMISSION",
+        "content": "Patient reports no fever.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No statement about fever status.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Fever status is essential when evaluating headache because it raises concern for infectious etiologies (e.g., meningitis, sinusitis) and changes urgency. Not documenting fever/no fever can impair appropriate triage and follow-up instructions.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-006",
+        "error_type": "OMISSION",
+        "content": "Patient currently has some sensitivity to bright lights (photophobia).",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of photophobia/sensitivity to bright lights.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Photophobia supports migraine but can also be seen with meningitis; it is clinically relevant to both diagnosis and risk stratification. Omission may lead to an incomplete assessment and suboptimal diagnostic reasoning.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-010",
+        "error_type": "OMISSION",
+        "content": "Paracetamol taken by the patient did not relieve the headache.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention that paracetamol was taken and did not help.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Failure of paracetamol to relieve the headache is clinically relevant to severity and next-step management (e.g., need for alternative analgesia, reconsidering diagnosis). Omission primarily affects treatment planning and reassessment thresholds.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-011",
+        "error_type": "OMISSION",
+        "content": "Patient reports ongoing work stress and late nights for a few months.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts note work stress but do not include late nights over a few months.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Leaving out the duration/context of stress and late nights reduces understanding of potential triggers (tension headache/migraine) and the chronicity of contributing factors. This is generally low risk and mainly impacts counseling quality.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "hpi-012",
+        "error_type": "OMISSION",
+        "content": "Patient denies thoughts of self-harm.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No documentation of denial of self-harm thoughts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Documentation that the patient denies self-harm thoughts is important for mental health risk assessment and medico-legal safety, particularly when anxiety/stress is discussed. Omission can lead to missed risk stratification and inadequate safety planning if risk were present.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "pmh-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a 2-year history of anxiety.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of a 2-year history of anxiety in generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "A 2-year anxiety history affects differential diagnosis (somatic symptoms), treatment planning, and follow-up needs. Missing it may lead to less tailored care but is unlikely to cause immediate physical harm in this headache-focused visit.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "pmh-002",
+        "error_type": "OMISSION",
+        "content": "Otherwise patient reports no significant past medical history.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts state no other known illnesses but do not clearly capture 'PMHx nil (otherwise)' alongside anxiety history.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Not clearly documenting otherwise negative PMH can create ambiguity and lead to unnecessary workup or missed contextualization of risk. This is primarily an accuracy/completeness issue with limited direct harm.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "med-001",
+        "error_type": "OMISSION",
+        "content": "Patient is taking sertraline.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of sertraline.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting sertraline is clinically important because it can interact with proposed headache therapies (e.g., triptans\u2014serotonergic risk; NSAIDs\u2014increased bleeding risk) and influences mental health management. Missing it could result in inappropriate prescribing or monitoring.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "med-002",
+        "error_type": "OMISSION",
+        "content": "Patient has taken paracetamol for the current headache.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of taking paracetamol for the current headache.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not recording that paracetamol was already tried may lead to redundant recommendations and delays in stepping up analgesia appropriately. This generally causes minor harm through inefficiency and potentially prolonged symptoms.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "allergy-001",
+        "error_type": "OMISSION",
+        "content": "Patient has no known drug allergies.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No NKDA statement is present.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Absence of an NKDA statement can lead to unsafe prescribing if clinicians assume allergies are unknown or fail to verify before initiating medications. While not harmful by itself, it increases the risk of an adverse drug reaction if new meds are started.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "fh-001",
+        "error_type": "OMISSION",
+        "content": "There is no family history of migraines.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No statement that there is no family history of migraines.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Omitting a stated lack of family history of migraines slightly weakens the documentation supporting/arguing against migraine predisposition, but it is unlikely to change immediate management for an uncomplicated headache. The impact is mainly on clinical context rather than safety-critical action.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "sh-002",
+        "error_type": "OMISSION",
+        "content": "Patient is a non-smoker.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No smoking status documented in generated facts.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Smoking status is a standard health risk factor and can influence counseling and differential diagnosis, but its omission in a headache-focused encounter rarely changes acute treatment decisions. The main impact is incomplete risk documentation.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "sh-003",
+        "error_type": "OMISSION",
+        "content": "Patient has a cat at home.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of having a cat at home.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Not documenting that the patient has a cat at home is typically irrelevant to headache evaluation unless allergies/asthma or triggers are being assessed. In this context it is unlikely to affect diagnosis or treatment.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "sh-004",
+        "error_type": "OMISSION",
+        "content": "Patient engages in good exercise and maintains a reasonable diet.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts mention running \u22653x/week but do not capture the combined gold statement of good exercise and reasonable diet.",
+        "consensus_tier": 4,
+        "clinical_rationale": "The note captures regular running but not the combined characterization of \u201cgood exercise and reasonable diet,\u201d which is largely counseling/contextual information. This omission is unlikely to change clinical decisions or create safety risk.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "sh-005",
+        "error_type": "OMISSION",
+        "content": "Patient describes work as stressful with late nights over several months.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Work stress is mentioned, but late nights over several months are not included.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Missing the detail of late nights over several months reduces the strength of the stress/sleep contribution to a tension-type headache or migraine trigger assessment. This could modestly affect counseling priorities (sleep hygiene), but is unlikely to cause direct harm.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "plan-001",
+        "error_type": "OMISSION",
+        "content": "Start ibuprofen as first-line treatment per SIGN 2018 migraine guidelines.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated plan says 'generic pain relief' but does not specify starting ibuprofen per SIGN 2018 migraine guidelines.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not specifying ibuprofen (and citing the guideline basis) may lead to less effective or inconsistent first-line therapy selection compared with a clear NSAID plan for suspected migraine/tension headache. While still generally low-risk, it can result in suboptimal symptom control and additional follow-up or escalation.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "plan-003",
+        "error_type": "OMISSION",
+        "content": "Recommend 7\u20138 hours of sleep each night.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No explicit recommendation of 7\u20138 hours of sleep nightly.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Omitting an explicit recommendation for 7\u20138 hours of sleep removes a common non-pharmacologic intervention that may improve headache frequency/severity. The consequence is mainly reduced counseling completeness rather than direct clinical harm.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "Family_History-001",
+        "error_type": "COMMISSION",
+        "content": "Denies known illnesses in family history",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Contradicts gold family history (mother has anxiety). Transcript does not clearly support a blanket denial of all family illnesses.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Documenting a blanket denial of family illnesses when there is family anxiety can mislead future clinicians about mental health predisposition and affect longitudinal assessment. The likely outcome is reduced accuracy of psychosocial risk context rather than immediate unsafe treatment.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "Plan_of_Care-002",
+        "error_type": "COMMISSION",
+        "content": "1 week off work (self-certified) for stress management",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Gold specifies a few days off, while generated specifies 1 week; although transcript mentions a week, it conflicts with the gold-verified summary.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Recommending a longer work absence than intended (1 week vs a few days) can create unnecessary social/financial burden and may conflict with employer/medical certification expectations. This is unlikely to cause bodily harm but can produce mild functional/psychological impact.",
+        "raw_votes": [
+          3
+        ]
+      }
+    ]
+  }
+}

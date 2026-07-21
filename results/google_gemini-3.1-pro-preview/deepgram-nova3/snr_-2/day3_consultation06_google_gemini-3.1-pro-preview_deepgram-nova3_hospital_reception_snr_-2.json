@@ -1,0 +1,316 @@
+{
+  "metadata": {
+    "consultation_id": "day3_consultation06",
+    "llm_scribe_model": "google_gemini-3.1-pro-preview",
+    "asr_model": "deepgram-nova3",
+    "noise_profile": "hospital_reception",
+    "snr_level": "snr_-2"
+  },
+  "generated_note": {
+    "Chief_Complaint": [
+      {
+        "fact_id": "Chief_Complaint-001",
+        "content": "Suspected allergic reaction",
+        "source_text": "\u2022 CC: Suspected allergic reaction"
+      }
+    ],
+    "History_of_Present_Illness": [
+      {
+        "fact_id": "History_of_Present_Illness-001",
+        "content": "Lip tingling",
+        "source_text": "\u2022 Lip tingling"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-002",
+        "content": "Denies lip swelling or throat closing",
+        "source_text": "\u2022 Denies lip swelling or throat closing"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-003",
+        "content": "Chest tightness and breathing difficulties",
+        "source_text": "\u2022 Chest tightness and breathing difficulties; denies wheezing"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-004",
+        "content": "Denies wheezing",
+        "source_text": "\u2022 Chest tightness and breathing difficulties; denies wheezing"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-005",
+        "content": "Denies prior similar episodes",
+        "source_text": "\u2022 Denies prior similar episodes"
+      }
+    ],
+    "Past_Medical_History": [],
+    "Medications": [
+      {
+        "fact_id": "Medications-001",
+        "content": "No current medications",
+        "source_text": "\u2022 Meds: None"
+      }
+    ],
+    "Adverse_Drug_Reactions_and_Allergies": [
+      {
+        "fact_id": "Adverse_Drug_Reactions_and_Allergies-001",
+        "content": "Allergy to Penicillin",
+        "source_text": "\u2022 Allergies: Penicillin"
+      }
+    ],
+    "Family_History": [],
+    "Social_and_Family_History": [],
+    "Assessment": [
+      {
+        "fact_id": "Assessment-001",
+        "content": "Suspected anaphylaxis",
+        "source_text": "1. Suspected anaphylaxis"
+      }
+    ],
+    "Plan_of_Care": [
+      {
+        "fact_id": "Plan_of_Care-001",
+        "content": "Administer PO antihistamine immediately at home",
+        "source_text": "\u2022 Administer PO antihistamine immediately at home"
+      },
+      {
+        "fact_id": "Plan_of_Care-002",
+        "content": "Call ambulance for urgent hospital transfer (companion currently calling 999/EMS)",
+        "source_text": "\u2022 Call ambulance for urgent hospital transfer (companion currently calling 999/EMS)"
+      }
+    ],
+    "Follow_up_Information": [],
+    "Physical_Findings": [],
+    "Review_of_Systems": [
+      {
+        "fact_id": "Review_of_Systems-001",
+        "content": "Lip tingling",
+        "source_text": "\u2022 Lip tingling"
+      },
+      {
+        "fact_id": "Review_of_Systems-002",
+        "content": "Denies lip swelling or throat closing",
+        "source_text": "\u2022 Denies lip swelling or throat closing"
+      },
+      {
+        "fact_id": "Review_of_Systems-003",
+        "content": "Chest tightness and breathing difficulties",
+        "source_text": "\u2022 Chest tightness and breathing difficulties; denies wheezing"
+      },
+      {
+        "fact_id": "Review_of_Systems-004",
+        "content": "Denies wheezing",
+        "source_text": "\u2022 Chest tightness and breathing difficulties; denies wheezing"
+      }
+    ]
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "hpi-001",
+        "status": "OMITTED",
+        "reasoning": "Generated facts mention breathing difficulties but do not include the key context of '15 minutes following a wasp sting.'"
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "COVERED",
+        "reasoning": "Generated includes 'Lip tingling,' matching tingling around the lips."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "COVERED",
+        "reasoning": "Generated includes 'Chest tightness and breathing difficulties,' which contains chest tightness."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "COVERED",
+        "reasoning": "Generated states 'Denies lip swelling or throat closing,' which includes denial of throat closing sensation."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "COVERED",
+        "reasoning": "Generated includes 'Denies prior similar episodes,' matching the gold fact."
+      },
+      {
+        "fact_id": "pf-001",
+        "status": "OMITTED",
+        "reasoning": "Gold notes a blotchy rash on exam; Generated Physical Findings section is empty and no rash is documented elsewhere."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "OMITTED",
+        "reasoning": "History of eczema is not present anywhere in the generated facts."
+      },
+      {
+        "fact_id": "pmh-002",
+        "status": "OMITTED",
+        "reasoning": "History of aerosinusitis is not present anywhere in the generated facts."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "COVERED",
+        "reasoning": "Generated documents 'Allergy to Penicillin,' matching the gold fact."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "OMITTED",
+        "reasoning": "Gold assessment includes possible urticaria/hives; Generated assessment only lists suspected anaphylaxis and does not mention urticaria/hives."
+      },
+      {
+        "fact_id": "asm-002",
+        "status": "COVERED",
+        "reasoning": "Gold states anaphylaxis needs to be ruled out; Generated states 'Suspected anaphylaxis,' which captures the same clinical concern."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "COVERED",
+        "reasoning": "Generated includes immediate antihistamine administration, consistent with starting antihistamines straight away."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "COVERED",
+        "reasoning": "Generated includes calling an ambulance for urgent hospital transfer, consistent with calling ambulance to rule out anaphylaxis."
+      }
+    ],
+    "gen_assessment": [
+      {
+        "fact_id": "Chief_Complaint-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not explicitly stated in the Gold Summary, but supported by the transcript context (possible allergic/anaphylactic reaction discussion and antihistamine/ambulance advice)."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold HPI tingling around lips."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold explicitly includes denial of throat closing; transcript also indicates no lip swelling ('no swelling') and no throat closing sensation. Generated combines both, which is consistent."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-003",
+        "status": "SUPPORTED",
+        "reasoning": "Gold includes chest tightness and breathing difficulty; transcript confirms chest tightness and breathing difficulty."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-004",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in Gold Summary, but transcript supports it: doctor asks about wheeze vs tightness and patient reports tightness (implying no wheeze)."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-005",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold statement of no previous similar episodes."
+      },
+      {
+        "fact_id": "Medications-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not listed in the Gold Summary, but transcript supports it: patient reports no regular medication."
+      },
+      {
+        "fact_id": "Adverse_Drug_Reactions_and_Allergies-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches Gold allergy to penicillin."
+      },
+      {
+        "fact_id": "Assessment-001",
+        "status": "SUPPORTED",
+        "reasoning": "Aligns with Gold 'an anaphylactic reaction needs to be ruled out' and transcript concern for possible anaphylaxis; wording is slightly stronger but not conflicting."
+      },
+      {
+        "fact_id": "Plan_of_Care-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold supports immediate antihistamine therapy; transcript supports giving an antihistamine at home. 'PO' route is not explicit in Gold/transcript but is a reasonable inference for home antihistamine use."
+      },
+      {
+        "fact_id": "Plan_of_Care-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold supports calling an ambulance; transcript explicitly states the companion is on the phone calling. 'Urgent hospital transfer' is consistent with transcript advice to go to hospital right away."
+      },
+      {
+        "fact_id": "Review_of_Systems-001",
+        "status": "SUPPORTED",
+        "reasoning": "Duplicate of lip tingling; supported by Gold and transcript."
+      },
+      {
+        "fact_id": "Review_of_Systems-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Duplicate of denial statement; transcript supports no lip swelling and no throat closing sensation; Gold supports denial of throat closing."
+      },
+      {
+        "fact_id": "Review_of_Systems-003",
+        "status": "SUPPORTED",
+        "reasoning": "Duplicate of chest tightness/breathing difficulty; supported by Gold and transcript."
+      },
+      {
+        "fact_id": "Review_of_Systems-004",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Duplicate of denies wheezing; supported by transcript (tightness rather than wheeze)."
+      }
+    ]
+  },
+  "safety_grading": {
+    "total_errors_graded": 5,
+    "safety_verdicts": [
+      {
+        "fact_id": "hpi-001",
+        "error_type": "OMISSION",
+        "content": "Patient experienced breathing difficulty for 15 minutes following a wasp sting.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts mention breathing difficulties but do not include the key context of '15 minutes following a wasp sting.'",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting the trigger and timing (15 minutes after a wasp sting) removes the key exposure history that supports allergic reaction/anaphylaxis and guides urgency, counseling, and future prevention (e.g., venom allergy evaluation). While the patient was still directed to emergency care, missing this context could impair subsequent clinicians\u2019 risk assessment and follow-up planning.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "pf-001",
+        "error_type": "OMISSION",
+        "content": "Blotchy rash is observed on examination.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold notes a blotchy rash on exam; Generated Physical Findings section is empty and no rash is documented elsewhere.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Failure to document a blotchy rash removes an important objective sign that can support an allergic reaction/urticaria and contributes to diagnosing anaphylaxis when paired with respiratory symptoms. This omission could lead to underestimation of reaction severity or incomplete handoff documentation in an acute setting.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "pmh-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a history of eczema.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "History of eczema is not present anywhere in the generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Eczema history indicates atopic tendency and may be relevant background for allergic disease risk, but it typically does not change immediate management of an acute suspected anaphylactic reaction. The main impact is reduced completeness of the past history and future risk-context documentation.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "pmh-002",
+        "error_type": "OMISSION",
+        "content": "Patient has a history of aerosinusitis.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "History of aerosinusitis is not present anywhere in the generated facts.",
+        "consensus_tier": 4,
+        "clinical_rationale": "A history of aerosinusitis is unlikely to affect evaluation or management of an acute allergic reaction/anaphylaxis scenario. Its omission is primarily a documentation completeness issue without meaningful downstream clinical impact in this context.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "asm-001",
+        "error_type": "OMISSION",
+        "content": "Clinical picture may represent urticaria (hives).",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold assessment includes possible urticaria/hives; Generated assessment only lists suspected anaphylaxis and does not mention urticaria/hives.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not mentioning urticaria/hives as a possible diagnosis can narrow the differential and may reduce clarity around symptom-focused treatment (e.g., antihistamines) and documentation of the likely reaction phenotype. However, suspected anaphylaxis was still captured, so the highest-acuity pathway is not missed.",
+        "raw_votes": [
+          3
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,442 @@
+{
+  "metadata": {
+    "consultation_id": "day3_consultation09",
+    "llm_scribe_model": "anthropic_claude-sonnet-4.6",
+    "asr_model": "elevenlabs-scribe",
+    "noise_profile": "hospital_maternity_ward",
+    "snr_level": "snr_8"
+  },
+  "generated_note": {
+    "Chief_Complaint": [],
+    "History_of_Present_Illness": [
+      {
+        "fact_id": "history-001",
+        "content": "Submitted an empty transcript; the `<<< >>>` block contains no content.",
+        "source_text": "It looks like you submitted an **empty transcript** \u2014 the `<<< >>>` block contains no content."
+      }
+    ],
+    "Past_Medical_History": [],
+    "Medications": [],
+    "Adverse_Drug_Reactions_and_Allergies": [],
+    "Family_History": [],
+    "Social_and_Family_History": [],
+    "Assessment": [],
+    "Plan_of_Care": [],
+    "Follow_up_Information": [
+      {
+        "fact_id": "followup-001",
+        "content": "Request to paste the raw clinician-patient transcript between the delimiters so a SOAP note can be generated.",
+        "source_text": "Please paste the raw clinician-patient transcript between the delimiters and I'll generate the SOAP note right away."
+      }
+    ],
+    "Physical_Findings": [],
+    "Review_of_Systems": []
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "cc-001",
+        "status": "OMITTED",
+        "reasoning": "No chief complaint regarding left arm numbness is present in the generated facts."
+      },
+      {
+        "fact_id": "hpi-001",
+        "status": "OMITTED",
+        "reasoning": "No mention of mild weakness with holding objects/playing piano is present in the generated facts."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "OMITTED",
+        "reasoning": "No mention of tingling/numbness in the shoulder is present in the generated facts."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "OMITTED",
+        "reasoning": "No localization of numbness to the front side of the hand is present in the generated facts."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "OMITTED",
+        "reasoning": "No mention of left peripheral visual disturbance lasting 20 minutes is present in the generated facts."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "OMITTED",
+        "reasoning": "No mention of numbness involving left 2nd, 3rd, and 4th fingers is present in the generated facts."
+      },
+      {
+        "fact_id": "hpi-006",
+        "status": "OMITTED",
+        "reasoning": "No mention that massage/warm baths did not help is present in the generated facts."
+      },
+      {
+        "fact_id": "hpi-007",
+        "status": "OMITTED",
+        "reasoning": "No mention of headaches is present in the generated facts."
+      },
+      {
+        "fact_id": "hpi-008",
+        "status": "OMITTED",
+        "reasoning": "No mention of vomiting for 2 weeks beginning over a month ago after a party is present in the generated facts."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "OMITTED",
+        "reasoning": "No medication list (ibuprofen) is present in the generated facts."
+      },
+      {
+        "fact_id": "med-002",
+        "status": "OMITTED",
+        "reasoning": "No medication list (vitamin D) is present in the generated facts."
+      },
+      {
+        "fact_id": "med-003",
+        "status": "OMITTED",
+        "reasoning": "No medication list (iron tablets) is present in the generated facts."
+      },
+      {
+        "fact_id": "med-004",
+        "status": "OMITTED",
+        "reasoning": "No medication list (melatonin) is present in the generated facts."
+      },
+      {
+        "fact_id": "fh-001",
+        "status": "OMITTED",
+        "reasoning": "No family history regarding father's hypothyroidism/autoimmune disorders is present in the generated facts."
+      },
+      {
+        "fact_id": "fh-002",
+        "status": "OMITTED",
+        "reasoning": "No family history regarding mother's diabetes/high cholesterol/high BP is present in the generated facts."
+      },
+      {
+        "fact_id": "sh-001",
+        "status": "OMITTED",
+        "reasoning": "No mention of recently starting boxing lessons is present in the generated facts."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "OMITTED",
+        "reasoning": "No assessment considering/ruling out multiple sclerosis is present in the generated facts."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "OMITTED",
+        "reasoning": "No plan for urgent neurology review is present in the generated facts."
+      },
+      {
+        "fact_id": "fu-001",
+        "status": "OMITTED",
+        "reasoning": "No safety-netting advice about attending A&E for worsening symptoms is present in the generated facts."
+      },
+      {
+        "fact_id": "ros-001",
+        "status": "OMITTED",
+        "reasoning": "No review of systems denying neck pain is present in the generated facts."
+      },
+      {
+        "fact_id": "ros-002",
+        "status": "OMITTED",
+        "reasoning": "No review of systems denying fits/seizures is present in the generated facts."
+      },
+      {
+        "fact_id": "ros-003",
+        "status": "OMITTED",
+        "reasoning": "No mention of no weakness elsewhere and normal gait is present in the generated facts."
+      }
+    ],
+    "gen_assessment": [
+      {
+        "fact_id": "history-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in the gold summary, but supported by the provided transcript section, which is empty (no dialogue content between the transcript boundaries)."
+      },
+      {
+        "fact_id": "followup-001",
+        "status": "HALLUCINATION",
+        "reasoning": "Not present in the gold summary and not supported by the raw transcript content (which contains no such patient/clinician statement); it is an instruction/request rather than a transcript-derived clinical fact."
+      }
+    ]
+  },
+  "safety_grading": {
+    "total_errors_graded": 23,
+    "safety_verdicts": [
+      {
+        "fact_id": "cc-001",
+        "error_type": "OMISSION",
+        "content": "Patient reports numbness of the left arm for 2 weeks.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No chief complaint regarding left arm numbness is present in the generated facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting a 2-week history of left arm numbness removes the primary focal neurologic complaint that should drive evaluation for serious causes (e.g., stroke/TIA, cervical radiculopathy, neuropathy). This can delay appropriate neurologic workup and safety-netting.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-001",
+        "error_type": "OMISSION",
+        "content": "Patient experiences mild weakness when holding objects and playing the piano.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of mild weakness with holding objects/playing piano is present in the generated facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Unrecorded hand/arm weakness (dropping objects, difficulty playing piano) is a focal neurologic deficit that increases concern for central or peripheral neurologic disease. Missing this can reduce triage urgency and delay diagnostic testing/referral.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-002",
+        "error_type": "OMISSION",
+        "content": "Patient has tingling and numbness in the shoulder.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of tingling/numbness in the shoulder is present in the generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Tingling/numbness in the shoulder helps localize the lesion (e.g., cervical radiculopathy/brachial plexus) and informs the differential and exam focus. Omission may lead to mis-localization and an incomplete evaluation.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-003",
+        "error_type": "OMISSION",
+        "content": "The numbness is localized to the front side of the hand.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No localization of numbness to the front side of the hand is present in the generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting the sensory distribution (front/palmar side of the hand) removes key localization information (median/ulnar nerve vs radiculopathy) that guides exam maneuvers and testing. This is more likely to cause diagnostic inefficiency than immediate harm.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-004",
+        "error_type": "OMISSION",
+        "content": "Patient experienced a visual disturbance in the left peripheral field lasting 20 minutes 2 weeks ago.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of left peripheral visual disturbance lasting 20 minutes is present in the generated facts.",
+        "consensus_tier": 1,
+        "clinical_rationale": "A 20-minute left peripheral visual disturbance is a potential TIA/retinal ischemia red flag requiring urgent evaluation to prevent stroke or permanent vision loss. Omission could directly delay time-sensitive management and carries high potential harm.",
+        "raw_votes": [
+          1
+        ]
+      },
+      {
+        "fact_id": "hpi-005",
+        "error_type": "OMISSION",
+        "content": "Numbness involves the left second, third, and fourth fingers.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of numbness involving left 2nd, 3rd, and 4th fingers is present in the generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Finger-specific involvement (2nd\u20134th digits) is important for neuroanatomic localization and distinguishing entrapment neuropathy from radiculopathy or central causes. Missing this detail may lead to a less accurate diagnosis and delayed symptom resolution.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-006",
+        "error_type": "OMISSION",
+        "content": "Massage and warm baths did not relieve the symptoms.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention that massage/warm baths did not help is present in the generated facts.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Failure of massage/warm baths provides information about attempted conservative therapy and symptom persistence, which can influence escalation decisions. Its omission typically causes limited harm, mainly impacting clinical reasoning and follow-up planning.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "hpi-007",
+        "error_type": "OMISSION",
+        "content": "Patient reports headaches.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of headaches is present in the generated facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Headache in the setting of focal neurologic symptoms can indicate higher-risk etiologies (e.g., vascular event, intracranial process, migraine with aura) and affects urgency and workup. Omission may reduce appropriate risk stratification and safety counseling.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-008",
+        "error_type": "OMISSION",
+        "content": "Patient had vomiting for 2 weeks beginning over a month ago after a party.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of vomiting for 2 weeks beginning over a month ago after a party is present in the generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "A 2-week vomiting episode (timing and trigger) may signal significant GI illness, toxin exposure, pregnancy, or\u2014when paired with neurologic symptoms\u2014possible intracranial pathology. Omitting it can lead to missed clues and unnecessary delay or duplication of evaluation.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "med-001",
+        "error_type": "OMISSION",
+        "content": "Patient takes ibuprofen.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No medication list (ibuprofen) is present in the generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting ibuprofen use can affect bleeding risk, renal/GI risk assessment, and medication interaction checking (e.g., with anticoagulants/antiplatelets). This omission can lead to unsafe prescribing or missed counseling/monitoring needs.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "med-002",
+        "error_type": "OMISSION",
+        "content": "Patient takes vitamin D.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No medication list (vitamin D) is present in the generated facts.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Omitting vitamin D use is unlikely to meaningfully change acute clinical decisions and typically has minimal safety implications. The impact is largely administrative/medication reconciliation noise.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "med-003",
+        "error_type": "OMISSION",
+        "content": "Patient takes iron tablets.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No medication list (iron tablets) is present in the generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Missing iron supplementation can obscure underlying anemia evaluation and creates interaction issues (e.g., absorption interactions with certain antibiotics/thyroid meds). The likely harm is mild, mainly leading to incomplete reconciliation and counseling.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "med-004",
+        "error_type": "OMISSION",
+        "content": "Patient takes melatonin.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No medication list (melatonin) is present in the generated facts.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Melatonin omission is generally low risk but can matter for sedation/daytime drowsiness counseling and medication reconciliation. Clinical impact is usually minimal.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "fh-001",
+        "error_type": "OMISSION",
+        "content": "Father has hypothyroidism and autoimmune disorders.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No family history regarding father's hypothyroidism/autoimmune disorders is present in the generated facts.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Not documenting paternal hypothyroidism/autoimmune disease can reduce consideration of autoimmune/thyroid-related etiologies in the differential. This typically leads to mild diagnostic delay rather than immediate harm.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "fh-002",
+        "error_type": "OMISSION",
+        "content": "Mother has diabetes, high cholesterol, and high blood pressure.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No family history regarding mother's diabetes/high cholesterol/high BP is present in the generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting maternal diabetes, hyperlipidemia, and hypertension removes important vascular risk context that can raise suspicion/urgency for TIA/stroke workup in a patient with neurologic symptoms. This may contribute to under-triage and delayed preventative management.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "sh-001",
+        "error_type": "OMISSION",
+        "content": "Patient recently started boxing lessons as a form of physical activity.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of recently starting boxing lessons is present in the generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting the patient\u2019s new boxing activity removes potentially relevant context for musculoskeletal strain or head/neck injury risk, but it is unlikely to change urgent clinical decision-making on its own. Primary impact is reduced completeness of history for future visits.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "asm-001",
+        "error_type": "OMISSION",
+        "content": "Multiple sclerosis is being considered and needs to be ruled out.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No assessment considering/ruling out multiple sclerosis is present in the generated facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Failure to document that multiple sclerosis is being considered and needs ruling out can delay appropriate investigations/referral and lead to missed or delayed diagnosis of a neurologic condition. This can negatively affect functional outcomes if symptoms progress without timely workup.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "plan-001",
+        "error_type": "OMISSION",
+        "content": "Arrange an urgent neurology review.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No plan for urgent neurology review is present in the generated facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting the plan for an urgent neurology review risks delayed specialist assessment for potentially serious neurologic symptoms. Delays in evaluation can worsen outcomes if the underlying cause is time-sensitive (e.g., evolving neurologic deficit).",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "fu-001",
+        "error_type": "OMISSION",
+        "content": "Patient advised to attend A&E if weakness in arms or legs progresses, vomiting, visual disturbances, or fits develop.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No safety-netting advice about attending A&E for worsening symptoms is present in the generated facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Missing safety-netting advice to attend A&E for progression of weakness, vomiting, visual disturbance, or seizures may result in delayed emergency presentation for red-flag neurologic deterioration. This increases the risk of harm from late recognition and treatment of potentially serious conditions.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "ros-001",
+        "error_type": "OMISSION",
+        "content": "Patient denies neck pain.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No review of systems denying neck pain is present in the generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not recording denial of neck pain reduces clarity in the differential (e.g., cervical pathology) but does not by itself create a high-risk management error. The main impact is decreased documentation quality and potential for unnecessary follow-up questioning/testing.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "ros-002",
+        "error_type": "OMISSION",
+        "content": "Patient denies seizures or fits.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No review of systems denying fits/seizures is present in the generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting that the patient denies seizures/fits removes an important negative symptom relevant to neurologic risk stratification, which could lead to ambiguity or redundant evaluation later. However, it is typically a documentation completeness issue rather than a direct harmful action.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "ros-003",
+        "error_type": "OMISSION",
+        "content": "Patient denies weakness elsewhere and gait is normal.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of no weakness elsewhere and normal gait is present in the generated facts.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Failure to document no weakness elsewhere and normal gait obscures neurologic severity assessment and trend comparison across visits. This can cause mild downstream inefficiency or miscommunication, but is less likely to independently cause significant harm.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "followup-001",
+        "error_type": "COMMISSION",
+        "content": "Request to paste the raw clinician-patient transcript between the delimiters so a SOAP note can be generated.",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Not present in the gold summary and not supported by the raw transcript content (which contains no such patient/clinician statement); it is an instruction/request rather than a transcript-derived clinical fact.",
+        "consensus_tier": 4,
+        "clinical_rationale": "This is an irrelevant instruction/request inserted as a \u201cfact,\u201d which adds administrative noise and could confuse documentation workflows but does not alter patient care directly. There is no clinical decision or medical content affected.",
+        "raw_votes": [
+          4
+        ]
+      }
+    ]
+  }
+}

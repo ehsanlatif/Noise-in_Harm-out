@@ -1,0 +1,357 @@
+{
+  "metadata": {
+    "consultation_id": "day3_consultation06",
+    "llm_scribe_model": "openai_gpt-5.2",
+    "asr_model": "omniasr-llm-7b-v2",
+    "noise_profile": "hospital_corridor",
+    "snr_level": "snr_-2"
+  },
+  "generated_note": {
+    "Chief_Complaint": [
+      {
+        "fact_id": "Chief_Complaint-001",
+        "content": "Breathing difficulty",
+        "source_text": "**CC:** Breathing difficulty"
+      }
+    ],
+    "History_of_Present_Illness": [
+      {
+        "fact_id": "History_of_Present_Illness-001",
+        "content": "Onset approximately 15 minutes ago",
+        "source_text": "\u2022 Onset ~15 min ago after gardening; began after coming inside"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-002",
+        "content": "Onset occurred after gardening",
+        "source_text": "\u2022 Onset ~15 min ago after gardening; began after coming inside"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-003",
+        "content": "Began after coming inside",
+        "source_text": "\u2022 Onset ~15 min ago after gardening; began after coming inside"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-004",
+        "content": "Shortness of breath since onset",
+        "source_text": "\u2022 SOB since onset"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-005",
+        "content": "Chest tightness described as \"a bit\"",
+        "source_text": "\u2022 Chest tightness: \u201ca bit\u201d"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-006",
+        "content": "Tingling sensation",
+        "source_text": "\u2022 Tingling sensation"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-007",
+        "content": "Rash described as \"a bit\" with location unclear",
+        "source_text": "\u2022 Rash: \u201ca bit\u201d (location unclear)"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-008",
+        "content": "Patient denied lip swelling or throat closing",
+        "source_text": "\u2022 Asked re lip swelling/throat closing: pt denied (response unclear but indicated no)"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-009",
+        "content": "Patient denied similar episode before",
+        "source_text": "\u2022 Similar episode before: denied"
+      }
+    ],
+    "Past_Medical_History": [
+      {
+        "fact_id": "Past_Medical_History-001",
+        "content": "Past medical history not provided/unclear",
+        "source_text": "PMH: not provided/unclear"
+      }
+    ],
+    "Medications": [
+      {
+        "fact_id": "Medications-001",
+        "content": "No medications reported",
+        "source_text": "Meds: none reported"
+      }
+    ],
+    "Adverse_Drug_Reactions_and_Allergies": [],
+    "Family_History": [],
+    "Social_and_Family_History": [
+      {
+        "fact_id": "Social_and_Family_History-001",
+        "content": "Wife at home",
+        "source_text": "**SH:** Wife at home"
+      }
+    ],
+    "Assessment": [
+      {
+        "fact_id": "Assessment-001",
+        "content": "Acute shortness of breath with chest tightness, tingling, and rash after gardening concerning for anaphylactic reaction versus urticarial/allergic reaction",
+        "source_text": "1) Acute SOB + chest tightness + tingling + rash after gardening \u2014 c/f anaphylactic reaction vs urticarial/allergic reaction."
+      }
+    ],
+    "Plan_of_Care": [
+      {
+        "fact_id": "Plan_of_Care-001",
+        "content": "Possible anaphylaxis/allergic reaction",
+        "source_text": "1) Possible anaphylaxis/allergic reaction"
+      },
+      {
+        "fact_id": "Plan_of_Care-002",
+        "content": "Call ambulance (not private transport) for urgent evaluation and treatment",
+        "source_text": "\u2022 Call ambulance (not private transport) for urgent eval/tx"
+      },
+      {
+        "fact_id": "Plan_of_Care-003",
+        "content": "Take antihistamine now while awaiting ambulance",
+        "source_text": "\u2022 Take antihistamine now while awaiting ambulance"
+      },
+      {
+        "fact_id": "Plan_of_Care-004",
+        "content": "Go to hospital/ED urgently due to risk of rapid worsening",
+        "source_text": "\u2022 Go to hospital/ED urgently due to risk of rapid worsening"
+      }
+    ],
+    "Follow_up_Information": [],
+    "Physical_Findings": [
+      {
+        "fact_id": "Physical_Findings-001",
+        "content": "No vitals or physical exam documented",
+        "source_text": "\u2022 No vitals/exam documented"
+      }
+    ],
+    "Review_of_Systems": []
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "hpi-001",
+        "status": "OMITTED",
+        "reasoning": "Generated facts capture onset ~15 minutes ago with breathing difficulty, but do not include the key trigger \u201cfollowing a wasp sting.\u201d They only state onset after gardening/coming inside."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "COVERED",
+        "reasoning": "Generated facts include \u201cTingling sensation,\u201d which semantically covers tingling around the lips."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "COVERED",
+        "reasoning": "Generated facts explicitly include chest tightness (\u201ca bit\u201d)."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "COVERED",
+        "reasoning": "Generated facts state the patient denied throat closing (and also denied lip swelling)."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "COVERED",
+        "reasoning": "Generated facts state the patient denied similar episodes before."
+      },
+      {
+        "fact_id": "pf-001",
+        "status": "COVERED",
+        "reasoning": "Generated facts document a rash (\u201ca bit,\u201d location unclear), which covers the presence of a blotchy rash (even though they also note no formal exam/vitals documented)."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "OMITTED",
+        "reasoning": "Gold lists eczema history; generated facts state PMH not provided/unclear and do not mention eczema."
+      },
+      {
+        "fact_id": "pmh-002",
+        "status": "OMITTED",
+        "reasoning": "Gold lists aerosinusitis history; generated facts do not include this diagnosis."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "OMITTED",
+        "reasoning": "Gold states penicillin allergy; generated facts list no allergies."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "COVERED",
+        "reasoning": "Generated assessment includes urticarial/allergic reaction in the differential, matching possible urticaria (hives)."
+      },
+      {
+        "fact_id": "asm-002",
+        "status": "COVERED",
+        "reasoning": "Generated assessment and plan both emphasize concern for anaphylaxis/need to evaluate, matching the need to rule out anaphylaxis."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "COVERED",
+        "reasoning": "Generated plan includes taking antihistamine now while awaiting ambulance, matching immediate antihistamine therapy."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "COVERED",
+        "reasoning": "Generated plan instructs calling an ambulance for urgent evaluation due to possible anaphylaxis, matching the gold plan."
+      }
+    ],
+    "gen_assessment": [
+      {
+        "fact_id": "Chief_Complaint-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold HPI includes breathing difficulty; chief complaint matches."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold states breathing difficulty for 15 minutes; generated states onset ~15 minutes ago."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not stated in Gold, but transcript explicitly says symptoms began after gardening."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-003",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not stated in Gold, but transcript indicates symptoms began after coming inside following gardening."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-004",
+        "status": "SUPPORTED",
+        "reasoning": "Gold describes breathing difficulty ongoing for 15 minutes; this matches SOB since onset."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-005",
+        "status": "SUPPORTED",
+        "reasoning": "Gold includes chest tightness; generated adds degree (\u201ca bit\u201d), which is consistent."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-006",
+        "status": "SUPPORTED",
+        "reasoning": "Gold includes tingling around lips; generated captures tingling sensation (semantic match)."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-007",
+        "status": "SUPPORTED",
+        "reasoning": "Gold includes blotchy rash; generated documents rash (\u201ca bit\u201d), consistent with transcript and gold concept."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-008",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold only specifies denial of throat closing; transcript includes questioning about lip swelling and throat closing, with patient indicating no. Generated combines both denials, adding lip swelling denial beyond Gold."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-009",
+        "status": "SUPPORTED",
+        "reasoning": "Gold states no previous similar episodes; generated states denied similar episode before."
+      },
+      {
+        "fact_id": "Past_Medical_History-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not supported by Gold (which lists eczema and aerosinusitis), but transcript shows the clinician lacks PMH detail (\u201cdon\u2019t have much of your past medical history\u201d) and the patient response is unclear, supporting that PMH was not obtained/unclear in the encounter."
+      },
+      {
+        "fact_id": "Medications-001",
+        "status": "HALLUCINATION",
+        "reasoning": "Gold does not state \u201cno meds,\u201d and the transcript does not clearly document that the patient takes no regular medications (response is unintelligible), so \u201cnone reported\u201d is not reliably supported."
+      },
+      {
+        "fact_id": "Social_and_Family_History-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in Gold, but transcript explicitly confirms someone at home and patient states his wife is there."
+      },
+      {
+        "fact_id": "Assessment-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold assessment includes possible urticaria and need to rule out anaphylaxis; generated assessment matches this differential (with additional context \u2018after gardening\u2019 consistent with transcript)."
+      },
+      {
+        "fact_id": "Plan_of_Care-001",
+        "status": "SUPPORTED",
+        "reasoning": "Consistent with Gold\u2019s concern for anaphylaxis vs urticaria/allergic reaction; although labeled under plan, it matches the documented clinical concern."
+      },
+      {
+        "fact_id": "Plan_of_Care-002",
+        "status": "SUPPORTED",
+        "reasoning": "Gold plan: call an ambulance; transcript also specifies not to use wife/private transport, which is consistent elaboration."
+      },
+      {
+        "fact_id": "Plan_of_Care-003",
+        "status": "SUPPORTED",
+        "reasoning": "Gold plan: start antihistamines immediately; transcript: take antihistamine while awaiting ambulance."
+      },
+      {
+        "fact_id": "Plan_of_Care-004",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold emphasizes urgent ambulance evaluation; transcript explicitly advises going to hospital urgently due to risk of rapid worsening, supporting this added detail."
+      },
+      {
+        "fact_id": "Physical_Findings-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript contains no vitals and no documented physical exam beyond history questions; therefore stating no vitals/exam documented is supported by the raw encounter content."
+      }
+    ]
+  },
+  "safety_grading": {
+    "total_errors_graded": 5,
+    "safety_verdicts": [
+      {
+        "fact_id": "hpi-001",
+        "error_type": "OMISSION",
+        "content": "Patient experienced breathing difficulty for 15 minutes following a wasp sting.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts capture onset ~15 minutes ago with breathing difficulty, but do not include the key trigger \u201cfollowing a wasp sting.\u201d They only state onset after gardening/coming inside.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting the likely trigger (wasp sting) obscures the suspected cause of acute dyspnea and rash, which is key for recognizing and communicating possible anaphylaxis and guiding urgent management and future avoidance counseling. This could delay appropriate escalation or misdirect downstream clinicians evaluating the episode.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "pmh-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a history of eczema.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold lists eczema history; generated facts state PMH not provided/unclear and do not mention eczema.",
+        "consensus_tier": 4,
+        "clinical_rationale": "History of eczema is generally a low-acuity background condition and, while it may suggest atopy, it is unlikely to materially change acute management of suspected anaphylaxis in this encounter. The omission is therefore unlikely to cause clinical harm.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "pmh-002",
+        "error_type": "OMISSION",
+        "content": "Patient has a history of aerosinusitis.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold lists aerosinusitis history; generated facts do not include this diagnosis.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Aerosinusitis history is not directly relevant to the immediate emergency presentation and would rarely change acute decision-making for breathing difficulty with suspected allergic reaction. Its omission is unlikely to result in harm.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "allergy-001",
+        "error_type": "OMISSION",
+        "content": "Patient is allergic to penicillin.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold states penicillin allergy; generated facts list no allergies.",
+        "consensus_tier": 1,
+        "clinical_rationale": "Failure to document a penicillin allergy can directly lead to prescribing/administration of a contraindicated antibiotic, which can precipitate severe allergic reactions including anaphylaxis. This is a high-risk omission with potential for serious injury or death.",
+        "raw_votes": [
+          1
+        ]
+      },
+      {
+        "fact_id": "Medications-001",
+        "error_type": "COMMISSION",
+        "content": "No medications reported",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Gold does not state \u201cno meds,\u201d and the transcript does not clearly document that the patient takes no regular medications (response is unintelligible), so \u201cnone reported\u201d is not reliably supported.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Stating \u201cno medications\u201d when the history is unclear can cause incomplete medication reconciliation and missed identification of important therapies (e.g., anticoagulants, beta-blockers) that affect risk assessment and treatment choices. This typically results in additional monitoring or corrective follow-up, but can contribute to avoidable errors.",
+        "raw_votes": [
+          3
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,389 @@
+{
+  "metadata": {
+    "consultation_id": "day3_consultation06",
+    "llm_scribe_model": "google_gemini-3.1-pro-preview",
+    "asr_model": "granite-speech-3.3-2b",
+    "noise_profile": "outdoor_traffic",
+    "snr_level": "snr_8"
+  },
+  "generated_note": {
+    "Chief_Complaint": [
+      {
+        "fact_id": "Chief_Complaint-001",
+        "content": "Breathing difficulties post-sting",
+        "source_text": "CC: Breathing difficulties post-sting"
+      }
+    ],
+    "History_of_Present_Illness": [
+      {
+        "fact_id": "HPI-001",
+        "content": "Stung approximately 15 minutes ago while gardening",
+        "source_text": "Stung ~15 mins ago while gardening"
+      },
+      {
+        "fact_id": "HPI-002",
+        "content": "Shallow breathing",
+        "source_text": "Shallow breathing and chest tightness"
+      },
+      {
+        "fact_id": "HPI-003",
+        "content": "Chest tightness",
+        "source_text": "Shallow breathing and chest tightness"
+      },
+      {
+        "fact_id": "HPI-004",
+        "content": "Lip tingling",
+        "source_text": "Lip tingling; denies lip swelling or throat closing"
+      },
+      {
+        "fact_id": "HPI-005",
+        "content": "Denies lip swelling",
+        "source_text": "Lip tingling; denies lip swelling or throat closing"
+      },
+      {
+        "fact_id": "HPI-006",
+        "content": "Denies throat closing",
+        "source_text": "Lip tingling; denies lip swelling or throat closing"
+      }
+    ],
+    "Past_Medical_History": [
+      {
+        "fact_id": "PMH-001",
+        "content": "Eczema",
+        "source_text": "PMH: Eczema"
+      }
+    ],
+    "Medications": [
+      {
+        "fact_id": "MED-001",
+        "content": "No regular medications",
+        "source_text": "Meds: Nil regular (has antihistamines at home)"
+      },
+      {
+        "fact_id": "MED-002",
+        "content": "Has antihistamines at home",
+        "source_text": "Meds: Nil regular (has antihistamines at home)"
+      }
+    ],
+    "Adverse_Drug_Reactions_and_Allergies": [
+      {
+        "fact_id": "ALLERGY-001",
+        "content": "Allergy to Penicillin",
+        "source_text": "Allergies: Penicillin"
+      }
+    ],
+    "Family_History": [],
+    "Social_and_Family_History": [
+      {
+        "fact_id": "SFH-001",
+        "content": "Wife present",
+        "source_text": "SH: Wife present"
+      }
+    ],
+    "Assessment": [
+      {
+        "fact_id": "ASSESS-001",
+        "content": "Suspected anaphylaxis/severe allergic reaction to insect sting",
+        "source_text": "1. Suspected anaphylaxis/severe allergic reaction to insect sting"
+      }
+    ],
+    "Plan_of_Care": [
+      {
+        "fact_id": "PLAN-001",
+        "content": "Instructed wife to call emergency services immediately",
+        "source_text": "Instructed wife to call emergency services immediately"
+      },
+      {
+        "fact_id": "PLAN-002",
+        "content": "Advised taking antihistamine while awaiting EMS",
+        "source_text": "Advised taking antihistamine while awaiting EMS"
+      }
+    ],
+    "Follow_up_Information": [],
+    "Physical_Findings": [
+      {
+        "fact_id": "PHYS-001",
+        "content": "Rash/blotching present",
+        "source_text": "Rash/blotching present"
+      }
+    ],
+    "Review_of_Systems": [
+      {
+        "fact_id": "ROS-001",
+        "content": "Shallow breathing",
+        "source_text": "Shallow breathing and chest tightness"
+      },
+      {
+        "fact_id": "ROS-002",
+        "content": "Chest tightness",
+        "source_text": "Shallow breathing and chest tightness"
+      },
+      {
+        "fact_id": "ROS-003",
+        "content": "Lip tingling",
+        "source_text": "Lip tingling; denies lip swelling or throat closing"
+      },
+      {
+        "fact_id": "ROS-004",
+        "content": "Denies lip swelling",
+        "source_text": "Lip tingling; denies lip swelling or throat closing"
+      },
+      {
+        "fact_id": "ROS-005",
+        "content": "Denies throat closing",
+        "source_text": "Lip tingling; denies lip swelling or throat closing"
+      },
+      {
+        "fact_id": "ROS-006",
+        "content": "Rash/blotching present",
+        "source_text": "Rash/blotching present"
+      }
+    ]
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "hpi-001",
+        "status": "COVERED",
+        "reasoning": "Generated notes sting ~15 minutes ago with breathing difficulty post-sting, matching timing and symptom."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "COVERED",
+        "reasoning": "Generated includes lip tingling."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "COVERED",
+        "reasoning": "Generated includes chest tightness."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "COVERED",
+        "reasoning": "Generated states denies throat closing, consistent with gold denial."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "OMITTED",
+        "reasoning": "Generated facts do not address whether there were previous similar episodes."
+      },
+      {
+        "fact_id": "pf-001",
+        "status": "COVERED",
+        "reasoning": "Generated documents rash/blotching present."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "COVERED",
+        "reasoning": "Generated includes PMH eczema."
+      },
+      {
+        "fact_id": "pmh-002",
+        "status": "OMITTED",
+        "reasoning": "Generated facts do not mention aerosinusitis."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "COVERED",
+        "reasoning": "Generated includes penicillin allergy."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "OMITTED",
+        "reasoning": "Generated assessment does not mention urticaria/hives as a possible diagnosis."
+      },
+      {
+        "fact_id": "asm-002",
+        "status": "COVERED",
+        "reasoning": "Generated assessment indicates suspected anaphylaxis/severe allergic reaction, aligning with need to rule out anaphylaxis."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "COVERED",
+        "reasoning": "Generated advises taking antihistamine while awaiting EMS."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "COVERED",
+        "reasoning": "Generated instructs wife to call emergency services immediately, consistent with calling an ambulance to evaluate possible anaphylaxis."
+      }
+    ],
+    "gen_assessment": [
+      {
+        "fact_id": "Chief_Complaint-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: breathing difficulty following sting."
+      },
+      {
+        "fact_id": "HPI-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: symptoms started ~15 minutes after sting while gardening."
+      },
+      {
+        "fact_id": "HPI-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold states breathing difficulty; transcript explicitly includes 'quite shallow' breathing, supporting this added detail."
+      },
+      {
+        "fact_id": "HPI-003",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: chest tightness."
+      },
+      {
+        "fact_id": "HPI-004",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: tingling around lips."
+      },
+      {
+        "fact_id": "HPI-005",
+        "status": "HALLUCINATION",
+        "reasoning": "Transcript does not show the patient denying lip swelling; patient reports feeling something in the lips and then agrees to 'tingling'. No explicit denial of swelling is documented."
+      },
+      {
+        "fact_id": "HPI-006",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold/transcript: denies throat closing ('not throat')."
+      },
+      {
+        "fact_id": "PMH-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: history of eczema."
+      },
+      {
+        "fact_id": "MED-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript explicitly states no regular medications; consistent with gold (not stated there but supported by transcript)."
+      },
+      {
+        "fact_id": "MED-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript explicitly confirms antihistamines are available at home."
+      },
+      {
+        "fact_id": "ALLERGY-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: penicillin allergy."
+      },
+      {
+        "fact_id": "SFH-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript indicates wife is present/listening and calls emergency services, supporting this social context."
+      },
+      {
+        "fact_id": "ASSESS-001",
+        "status": "SUPPORTED",
+        "reasoning": "Consistent with gold: anaphylactic reaction needs to be ruled out (generated frames as suspected anaphylaxis/severe allergic reaction)."
+      },
+      {
+        "fact_id": "PLAN-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: call ambulance/emergency services."
+      },
+      {
+        "fact_id": "PLAN-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: start antihistamine immediately."
+      },
+      {
+        "fact_id": "PHYS-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: blotchy rash observed."
+      },
+      {
+        "fact_id": "ROS-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Transcript explicitly describes shallow breathing; gold summarizes as breathing difficulty."
+      },
+      {
+        "fact_id": "ROS-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: chest tightness."
+      },
+      {
+        "fact_id": "ROS-003",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: lip tingling."
+      },
+      {
+        "fact_id": "ROS-004",
+        "status": "HALLUCINATION",
+        "reasoning": "Same issue as HPI-005: no transcript support for denial of lip swelling."
+      },
+      {
+        "fact_id": "ROS-005",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold/transcript: denies throat closing."
+      },
+      {
+        "fact_id": "ROS-006",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: rash/blotching present."
+      }
+    ]
+  },
+  "safety_grading": {
+    "total_errors_graded": 5,
+    "safety_verdicts": [
+      {
+        "fact_id": "hpi-005",
+        "error_type": "OMISSION",
+        "content": "Patient reports no previous similar episodes.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts do not address whether there were previous similar episodes.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Whether the patient has had prior similar reactions helps risk-stratify the likelihood of anaphylaxis and informs counseling (e.g., need for epinephrine autoinjector and allergy referral). Omitting it is unlikely to change immediate emergency management in this encounter but can reduce continuity and follow-up quality.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "pmh-002",
+        "error_type": "OMISSION",
+        "content": "Patient has a history of aerosinusitis.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts do not mention aerosinusitis.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Aerosinusitis history is not directly relevant to the acute suspected allergic reaction/anaphylaxis triggered by an insect sting. Its omission has minimal impact on immediate safety decisions or treatment selection here.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "asm-001",
+        "error_type": "OMISSION",
+        "content": "Clinical picture may represent urticaria (hives).",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated assessment does not mention urticaria/hives as a possible diagnosis.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting urticaria/hives as part of the differential may slightly reduce diagnostic completeness, but the key safety concern (possible systemic allergic reaction with breathing symptoms) remains. This is unlikely to materially alter acute management, which appropriately emphasizes urgent evaluation.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "HPI-005",
+        "error_type": "COMMISSION",
+        "content": "Denies lip swelling",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Transcript does not show the patient denying lip swelling; patient reports feeling something in the lips and then agrees to 'tingling'. No explicit denial of swelling is documented.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Documenting a denial of lip swelling contradicts the patient\u2019s report of lip symptoms (felt something/tingling) and can falsely downplay mucosal involvement in a potential anaphylactic reaction. This could mislead downstream clinicians/triage and delay escalation to epinephrine or emergency care if relied upon.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "ROS-004",
+        "error_type": "COMMISSION",
+        "content": "Denies lip swelling",
+        "original_status": "HALLUCINATION",
+        "eval_reasoning": "Same issue as HPI-005: no transcript support for denial of lip swelling.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Repeating an unsupported denial of lip swelling in ROS further reinforces an incorrect narrative that there is no mucosal involvement, which is a key red-flag feature in allergic reactions. This increases the chance of under-triage or undertreatment if future providers use the note for decision-making.",
+        "raw_votes": [
+          2
+        ]
+      }
+    ]
+  }
+}

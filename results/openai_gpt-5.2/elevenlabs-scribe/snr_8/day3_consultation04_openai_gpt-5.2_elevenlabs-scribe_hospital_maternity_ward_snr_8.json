@@ -1,0 +1,481 @@
+{
+  "metadata": {
+    "consultation_id": "day3_consultation04",
+    "llm_scribe_model": "openai_gpt-5.2",
+    "asr_model": "elevenlabs-scribe",
+    "noise_profile": "hospital_maternity_ward",
+    "snr_level": "snr_8"
+  },
+  "generated_note": {
+    "Chief_Complaint": [],
+    "History_of_Present_Illness": [
+      {
+        "fact_id": "History_of_Present_Illness-001",
+        "content": "No clinical content was included in the transcript (`<<< >>>`).",
+        "source_text": "No clinical content was included in the transcript (`<<< >>>`)."
+      }
+    ],
+    "Past_Medical_History": [],
+    "Medications": [],
+    "Adverse_Drug_Reactions_and_Allergies": [],
+    "Family_History": [],
+    "Social_and_Family_History": [],
+    "Assessment": [
+      {
+        "fact_id": "Assessment-001",
+        "content": "Unable to generate a SOAP note without consult details.",
+        "source_text": "Unable to generate a SOAP note without consult details."
+      }
+    ],
+    "Plan_of_Care": [],
+    "Follow_up_Information": [],
+    "Physical_Findings": [],
+    "Review_of_Systems": []
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "cc-001",
+        "status": "OMITTED",
+        "reasoning": "Generated facts do not mention breathlessness for 2\u20133 days (or any chief complaint)."
+      },
+      {
+        "fact_id": "hpi-001",
+        "status": "OMITTED",
+        "reasoning": "Generated facts do not include breathlessness duration or any HPI clinical details."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "OMITTED",
+        "reasoning": "No mention of shortness of breath while running in the generated facts."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "OMITTED",
+        "reasoning": "No mention of increased blue inhaler use (twice daily) in the generated facts."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "OMITTED",
+        "reasoning": "No mention that blue inhaler is normally used PRN/as needed."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "OMITTED",
+        "reasoning": "No mention of Clenil daily dosing (2 puffs twice daily)."
+      },
+      {
+        "fact_id": "hpi-006",
+        "status": "OMITTED",
+        "reasoning": "No mention of cough or absence of sputum."
+      },
+      {
+        "fact_id": "hpi-007",
+        "status": "OMITTED",
+        "reasoning": "No mention of wheeze/wheezing in the generated facts."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "OMITTED",
+        "reasoning": "No past history of asthma since childhood included in the generated facts."
+      },
+      {
+        "fact_id": "pmh-002",
+        "status": "OMITTED",
+        "reasoning": "No mention of eczema in the generated facts."
+      },
+      {
+        "fact_id": "pmh-003",
+        "status": "OMITTED",
+        "reasoning": "No mention that last asthma attack was 3 years ago."
+      },
+      {
+        "fact_id": "pmh-004",
+        "status": "OMITTED",
+        "reasoning": "No mention of never needing antibiotics or steroids for asthma."
+      },
+      {
+        "fact_id": "pmh-005",
+        "status": "OMITTED",
+        "reasoning": "No mention of never being hospitalized for asthma."
+      },
+      {
+        "fact_id": "pmh-006",
+        "status": "OMITTED",
+        "reasoning": "No mention of normal peak flow of 380 L/min."
+      },
+      {
+        "fact_id": "pmh-007",
+        "status": "OMITTED",
+        "reasoning": "No mention of not having an asthma check in the last 2 years."
+      },
+      {
+        "fact_id": "pmh-008",
+        "status": "OMITTED",
+        "reasoning": "No mention of hayfever in the generated facts."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "OMITTED",
+        "reasoning": "No mention of routine Clenil (2 puffs twice daily)."
+      },
+      {
+        "fact_id": "med-002",
+        "status": "OMITTED",
+        "reasoning": "No mention of blue reliever use up to twice daily."
+      },
+      {
+        "fact_id": "med-003",
+        "status": "OMITTED",
+        "reasoning": "No mention of hydrocortisone use for eczema."
+      },
+      {
+        "fact_id": "med-004",
+        "status": "OMITTED",
+        "reasoning": "No mention of Cetraban use for eczema."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "OMITTED",
+        "reasoning": "Generated facts do not state diagnosis of mild asthma exacerbation."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "OMITTED",
+        "reasoning": "No plan included to increase brown inhaler to 4 puffs twice daily."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "OMITTED",
+        "reasoning": "No plan included regarding blue inhaler use up to every 2\u20134 hours as needed."
+      },
+      {
+        "fact_id": "fu-001",
+        "status": "OMITTED",
+        "reasoning": "No follow-up instruction about chest review within the next 2 days."
+      },
+      {
+        "fact_id": "fu-002",
+        "status": "OMITTED",
+        "reasoning": "No safety-net advice to attend A&E if worsening before seeing a doctor."
+      }
+    ],
+    "gen_assessment": [
+      {
+        "fact_id": "History_of_Present_Illness-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not present in the Gold Summary, but consistent with the provided transcript section being empty (no clinical dialogue/content shown). This is a meta-observation about missing input rather than a clinical claim."
+      },
+      {
+        "fact_id": "Assessment-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not present in the Gold Summary, but supported by the absence of transcript content; inability to generate a SOAP note is a reasonable consequence of missing consult details (meta statement, not a clinical assertion)."
+      }
+    ]
+  },
+  "safety_grading": {
+    "total_errors_graded": 25,
+    "safety_verdicts": [
+      {
+        "fact_id": "cc-001",
+        "error_type": "OMISSION",
+        "content": "Patient presents with breathlessness for 2\u20133 days.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts do not mention breathlessness for 2\u20133 days (or any chief complaint).",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting the chief complaint of breathlessness (2\u20133 days) removes a potentially urgent cardiopulmonary red-flag symptom from the record, which can delay appropriate triage, assessment, and escalation if symptoms worsen. This documentation gap could contribute to under-recognition of an acute asthma exacerbation or other serious causes of dyspnea.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-001",
+        "error_type": "OMISSION",
+        "content": "Patient has experienced breathlessness for 2\u20133 days.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts do not include breathlessness duration or any HPI clinical details.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Not documenting the duration of breathlessness (2\u20133 days) impairs assessment of acuity and trajectory, which informs differential diagnosis and treatment urgency. This can lead to suboptimal monitoring/follow-up instructions or delayed escalation if an acute process is evolving.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-002",
+        "error_type": "OMISSION",
+        "content": "Patient reports shortness of breath while running.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of shortness of breath while running in the generated facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Missing exertional shortness of breath (while running) removes a key symptom severity/functional limitation indicator used to gauge asthma control and exacerbation severity. This can affect decisions about stepping up therapy, activity advice, and safety-netting.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-003",
+        "error_type": "OMISSION",
+        "content": "Patient has needed to use the blue inhaler twice a day.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of increased blue inhaler use (twice daily) in the generated facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting increased blue inhaler use (twice daily) can obscure worsening asthma control and a possible exacerbation, which may lead to undertreatment or inadequate action planning. Increased reliever use is a clinically important risk marker for deterioration.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-004",
+        "error_type": "OMISSION",
+        "content": "Patient normally uses the blue inhaler only as needed.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention that blue inhaler is normally used PRN/as needed.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not noting that the blue inhaler is normally PRN removes baseline context needed to interpret the significance of current reliever use. While less critical than the current increased use itself, it still impacts assessment of change from baseline control.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-005",
+        "error_type": "OMISSION",
+        "content": "Patient is taking the Clenil inhaler every day, 2 puffs twice daily.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of Clenil daily dosing (2 puffs twice daily).",
+        "consensus_tier": 2,
+        "clinical_rationale": "Failure to document daily controller (Clenil) dosing obscures adherence and prescribed intensity of maintenance therapy, which is central to asthma management and step-up/step-down decisions. This can lead to inappropriate medication changes or missed opportunities to correct technique/adherence.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "hpi-006",
+        "error_type": "OMISSION",
+        "content": "Patient has a cough without sputum production.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of cough or absence of sputum.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting cough and lack of sputum removes information that helps distinguish asthma exacerbation/viral illness from bacterial infection and guides antibiotic stewardship. This may lead to less accurate assessment, though it is typically not immediately dangerous alone.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-007",
+        "error_type": "OMISSION",
+        "content": "Patient notes some wheezing.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of wheeze/wheezing in the generated facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Not documenting wheeze removes a key symptom supporting bronchospasm/asthma activity and can affect severity grading and treatment decisions (e.g., bronchodilator escalation). This omission may contribute to under-recognition of an exacerbation.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "pmh-001",
+        "error_type": "OMISSION",
+        "content": "Patient has had asthma since childhood.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No past history of asthma since childhood included in the generated facts.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting longstanding asthma history (since childhood) can impair clinical context, risk stratification, and appropriate diagnostic framing for dyspnea/wheeze. This may lead to inefficient workup or less appropriate treatment planning.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "pmh-002",
+        "error_type": "OMISSION",
+        "content": "Patient suffers from eczema.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of eczema in the generated facts.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Missing eczema history removes atopic context that supports an asthma/atopy phenotype but rarely changes acute management directly. The clinical impact is generally limited to longer-term risk profiling and counseling.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "pmh-003",
+        "error_type": "OMISSION",
+        "content": "The last asthma attack occurred 3 years ago.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention that last asthma attack was 3 years ago.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not recording that the last asthma attack was 3 years ago reduces understanding of historical exacerbation frequency and baseline control. This can affect risk assessment and follow-up planning but is unlikely to cause immediate harm on its own.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "pmh-004",
+        "error_type": "OMISSION",
+        "content": "Patient has never needed antibiotics or steroids for asthma.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of never needing antibiotics or steroids for asthma.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting the fact that the patient has never needed antibiotics or steroids for asthma removes a marker of historically milder disease and may bias clinicians toward assuming a more severe past course. This can influence treatment intensity decisions, though typically with limited direct harm.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "pmh-005",
+        "error_type": "OMISSION",
+        "content": "Patient has never been hospitalized because of asthma.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of never being hospitalized for asthma.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting no prior asthma hospitalizations removes an important severity/risk indicator used to assess future exacerbation risk. While it may affect risk stratification and counseling, it is less likely to directly cause acute harm compared with missing current symptoms.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "pmh-006",
+        "error_type": "OMISSION",
+        "content": "Patient's normal peak flow reading is 380 L/min.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of normal peak flow of 380 L/min.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting the patient\u2019s normal peak flow (380 L/min) reduces the ability to compare current lung function to baseline, which is useful for grading exacerbation severity and guiding action plans. This can lead to less precise monitoring and safety-netting.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "pmh-007",
+        "error_type": "OMISSION",
+        "content": "Patient has not had an asthma check in the last 2 years.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of not having an asthma check in the last 2 years.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not noting the lack of an asthma check in 2 years may miss an opportunity for preventive review (control assessment, inhaler technique, action plan, trigger management). The harm is generally indirect and related to longer-term management rather than immediate safety.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "pmh-008",
+        "error_type": "OMISSION",
+        "content": "Patient has hayfever.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of hayfever in the generated facts.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Omitting hayfever from past medical history is unlikely to change acute decision-making in this context and typically has limited impact unless it drives specific trigger avoidance or medication choices. The main effect is reduced chart completeness rather than a likely patient safety event.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "med-001",
+        "error_type": "OMISSION",
+        "content": "Patient routinely uses the Clenil inhaler, 2 puffs twice daily.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of routine Clenil (2 puffs twice daily).",
+        "consensus_tier": 3,
+        "clinical_rationale": "Failure to document routine Clenil (inhaled corticosteroid) can lead to an inaccurate assessment of baseline asthma therapy and control, potentially resulting in inappropriate step-up/step-down decisions. This increases risk of suboptimal asthma management and need for additional treatment/monitoring.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "med-002",
+        "error_type": "OMISSION",
+        "content": "Patient uses the blue reliever inhaler, currently up to twice daily.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of blue reliever use up to twice daily.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting current blue reliever use (up to twice daily) can misrepresent symptom burden and asthma control, which can directly affect severity assessment and treatment planning. This may contribute to under-recognition of worsening control and additional healthcare utilization.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "med-003",
+        "error_type": "OMISSION",
+        "content": "Patient uses hydrocortisone for eczema.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of hydrocortisone use for eczema.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Not recording hydrocortisone use for eczema is generally low risk and unlikely to affect acute respiratory management. The main consequence is incomplete medication reconciliation and potential minor downstream confusion.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "med-004",
+        "error_type": "OMISSION",
+        "content": "Patient uses Cetraban for eczema.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No mention of Cetraban use for eczema.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Omission of Cetraban (emollient) is typically clinically benign and unlikely to impact safety in the current presentation. Impact is mainly documentation completeness rather than meaningful harm.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "asm-001",
+        "error_type": "OMISSION",
+        "content": "Diagnosis is mild asthma exacerbation.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated facts do not state diagnosis of mild asthma exacerbation.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Not documenting the diagnosis of mild asthma exacerbation can impair continuity of care and may lead to insufficient treatment intensity or follow-up if subsequent clinicians do not recognize the episode. Asthma exacerbations carry meaningful risk if not clearly identified and managed.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "plan-001",
+        "error_type": "OMISSION",
+        "content": "Increase brown inhaler dose to 4 puffs twice daily.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No plan included to increase brown inhaler to 4 puffs twice daily.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting the plan to increase the brown inhaler dose (controller escalation) risks undertreatment of the exacerbation and poorer symptom control, which can lead to worsening respiratory status. This can adversely affect function and may prompt urgent re-attendance.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "plan-002",
+        "error_type": "OMISSION",
+        "content": "Patient may use the blue inhaler up to every 2\u20134 hours as needed.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No plan included regarding blue inhaler use up to every 2\u20134 hours as needed.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Missing instructions that the blue inhaler may be used every 2\u20134 hours PRN can result in inadequate symptom relief or unsafe self-management (either underuse with persistent breathlessness or uncontrolled use without guidance). This omission can worsen patient outcomes and increase likelihood of escalation of care.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "fu-001",
+        "error_type": "OMISSION",
+        "content": "Patient should have chest reviewed by a doctor within the next 2 days.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No follow-up instruction about chest review within the next 2 days.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Failure to document the instruction for doctor review within 2 days may delay reassessment of respiratory status and response to treatment, risking progression of an exacerbation without timely intervention. Delayed follow-up can materially affect symptom burden and safety.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "fu-002",
+        "error_type": "OMISSION",
+        "content": "If breathlessness worsens before seeing a doctor, patient should attend A&E.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No safety-net advice to attend A&E if worsening before seeing a doctor.",
+        "consensus_tier": 1,
+        "clinical_rationale": "Omitting safety-net advice to attend A&E if breathlessness worsens is a high-risk error because it can delay emergency evaluation during potentially life-threatening deterioration. In asthma, delayed escalation can lead to severe respiratory compromise and death.",
+        "raw_votes": [
+          1
+        ]
+      }
+    ]
+  }
+}

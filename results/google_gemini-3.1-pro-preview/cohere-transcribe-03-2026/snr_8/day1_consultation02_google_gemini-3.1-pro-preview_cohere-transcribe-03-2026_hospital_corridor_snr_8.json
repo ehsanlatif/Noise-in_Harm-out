@@ -1,0 +1,356 @@
+{
+  "metadata": {
+    "consultation_id": "day1_consultation02",
+    "llm_scribe_model": "google_gemini-3.1-pro-preview",
+    "asr_model": "cohere-transcribe-03-2026",
+    "noise_profile": "hospital_corridor",
+    "snr_level": "snr_8"
+  },
+  "generated_note": {
+    "Chief_Complaint": [],
+    "History_of_Present_Illness": [],
+    "Past_Medical_History": [],
+    "Medications": [],
+    "Adverse_Drug_Reactions_and_Allergies": [],
+    "Family_History": [],
+    "Social_and_Family_History": [],
+    "Assessment": [],
+    "Plan_of_Care": [],
+    "Follow_up_Information": [],
+    "Physical_Findings": [],
+    "Review_of_Systems": []
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "hpi-001",
+        "status": "OMITTED",
+        "reasoning": "Generated Facts contain no HPI details; no mention of 4-day dry/itchy skin or location (chest/back)."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "OMITTED",
+        "reasoning": "No generated content describing sore or cracked skin."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "OMITTED",
+        "reasoning": "No generated content addressing bleeding/discharge or rash spread/localization."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "OMITTED",
+        "reasoning": "No generated content about triggers or lack thereof."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "OMITTED",
+        "reasoning": "No generated content about OTC steroid cream or antihistamine trial and minimal effect."
+      },
+      {
+        "fact_id": "hpi-006",
+        "status": "OMITTED",
+        "reasoning": "No generated content documenting systemic review/denials (fever, vomiting, SOB, cough, bowel symptoms)."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "OMITTED",
+        "reasoning": "No generated content listing past medical history of eczema or asthma."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "OMITTED",
+        "reasoning": "No generated content stating the patient takes no regular medications."
+      },
+      {
+        "fact_id": "allergy-001",
+        "status": "OMITTED",
+        "reasoning": "No generated content stating NKDA/no known drug allergies."
+      },
+      {
+        "fact_id": "sh-001",
+        "status": "OMITTED",
+        "reasoning": "No generated content documenting living situation (flatmates) or occupation (pharmaceutical manager)."
+      },
+      {
+        "fact_id": "sh-002",
+        "status": "OMITTED",
+        "reasoning": "No generated content about smoking status or social alcohol use."
+      },
+      {
+        "fact_id": "sh-003",
+        "status": "OMITTED",
+        "reasoning": "No generated content capturing patient belief that symptoms relate to eczema and no other concerns."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "OMITTED",
+        "reasoning": "No generated content providing impression/assessment of eczema flare."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "OMITTED",
+        "reasoning": "No generated content about prescribing Betnovate steroid cream twice daily."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "OMITTED",
+        "reasoning": "No generated content about prescribing Cetraben emollients."
+      },
+      {
+        "fact_id": "plan-003",
+        "status": "OMITTED",
+        "reasoning": "No generated content advising trial of antihistamines."
+      },
+      {
+        "fact_id": "plan-004",
+        "status": "OMITTED",
+        "reasoning": "No generated content advising to keep a trigger diary."
+      },
+      {
+        "fact_id": "fu-001",
+        "status": "OMITTED",
+        "reasoning": "No generated content about review in 10\u201314 days if not improving."
+      },
+      {
+        "fact_id": "fu-002",
+        "status": "OMITTED",
+        "reasoning": "No generated content advising earlier review for concerns/worsening symptoms."
+      }
+    ],
+    "gen_assessment": []
+  },
+  "safety_grading": {
+    "total_errors_graded": 19,
+    "safety_verdicts": [
+      {
+        "fact_id": "hpi-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a 4-day history of dry, itchy skin, located mainly on the chest and back.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated Facts contain no HPI details; no mention of 4-day dry/itchy skin or location (chest/back).",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting duration and primary distribution of the rash removes key diagnostic context (acute vs chronic, localized vs generalized), which can affect differential diagnosis and appropriateness of treatment. This is most likely to cause delayed or less-targeted management rather than immediate danger.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-002",
+        "error_type": "OMISSION",
+        "content": "The skin is also described as sore and cracked.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content describing sore or cracked skin.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Soreness and fissuring/cracking suggest skin barrier breakdown and higher risk of secondary infection and significant symptom burden. Failure to document this may lead to under-treatment (e.g., inadequate anti-inflammatory therapy or skin care advice).",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-003",
+        "error_type": "OMISSION",
+        "content": "There has been no bleeding, discharge, or spread of the rash.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content addressing bleeding/discharge or rash spread/localization.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not documenting absence of bleeding/discharge/spread removes important negatives that help assess for infection, worsening dermatitis, or alternative diagnoses. This may lead to unnecessary escalation (e.g., antibiotics) or missed monitoring needs.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-004",
+        "error_type": "OMISSION",
+        "content": "Patient is not aware of any specific triggers.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content about triggers or lack thereof.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Lack of documentation that no triggers were identified has limited direct safety impact and mainly affects completeness of counseling and prevention planning. It is unlikely to change urgent management.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "hpi-005",
+        "error_type": "OMISSION",
+        "content": "Patient has tried an over-the-counter steroid cream and antihistamines with minimal effect.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content about OTC steroid cream or antihistamine trial and minimal effect.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Prior trial of OTC steroid cream and antihistamines with minimal effect is important for assessing severity and guiding escalation. Omitting this can result in repeating ineffective therapy and prolonging symptoms and functional impairment (sleep/work).",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-006",
+        "error_type": "OMISSION",
+        "content": "Patient is systemically well, denying any fevers, vomiting, shortness of breath, cough, or bowel symptoms.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content documenting systemic review/denials (fever, vomiting, SOB, cough, bowel symptoms).",
+        "consensus_tier": 2,
+        "clinical_rationale": "Documentation that the patient is systemically well and denies fever, vomiting, respiratory symptoms, and bowel symptoms helps rule out red-flag systemic illness or significant infection requiring urgent evaluation. Omission can impair triage decisions and increase the chance of missing a more serious condition.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "pmh-001",
+        "error_type": "OMISSION",
+        "content": "Patient has a past medical history of Eczema and Asthma.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content listing past medical history of eczema or asthma.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Past eczema strongly supports the working diagnosis and informs appropriate topical therapy; asthma history can be relevant to atopy context and medication considerations. Omission may reduce diagnostic accuracy and continuity of care but is unlikely to be immediately dangerous alone.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "med-001",
+        "error_type": "OMISSION",
+        "content": "Patient takes no regular medications.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content stating the patient takes no regular medications.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not recording that the patient takes no regular medications weakens medication reconciliation and can complicate safe prescribing and follow-up documentation. The likely harm is limited to additional clarification steps or small risk of interaction oversight.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "allergy-001",
+        "error_type": "OMISSION",
+        "content": "Patient has no known drug allergies.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content stating NKDA/no known drug allergies.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Allergy status is critical for safe prescribing; omitting NKDA can lead to uncertainty, delays, or incomplete safety checks before issuing medications. While the true status is no allergies, the documentation gap can still introduce prescribing risk/workflow errors.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "sh-001",
+        "error_type": "OMISSION",
+        "content": "Patient lives with flatmates and works as a pharmaceutical manager.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content documenting living situation (flatmates) or occupation (pharmaceutical manager).",
+        "consensus_tier": 4,
+        "clinical_rationale": "Living situation and occupation are generally low-impact for an uncomplicated dermatitis/eczema visit unless exposure risks are specifically relevant. This omission is primarily administrative/contextual.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "sh-002",
+        "error_type": "OMISSION",
+        "content": "Patient is a non-smoker and consumes alcohol socially.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content about smoking status or social alcohol use.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Smoking and alcohol history are not central to acute eczema management in most cases and mainly affect general health documentation. Omission is unlikely to cause clinical harm in this context.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "sh-003",
+        "error_type": "OMISSION",
+        "content": "Patient believes the symptoms may be related to their eczema and has no other concerns.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content capturing patient belief that symptoms relate to eczema and no other concerns.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Patient\u2019s attribution to eczema and lack of other concerns provides context but does not substantially change medical decision-making or safety planning. Omission is mostly a documentation completeness issue.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "asm-001",
+        "error_type": "OMISSION",
+        "content": "The impression is a flare-up of eczema.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content providing impression/assessment of eczema flare.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Failure to document the assessment/impression (eczema flare) can lead to downstream miscommunication, incorrect coding, and potentially inappropriate or inconsistent management by other clinicians. This can meaningfully affect treatment decisions and follow-up planning.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "plan-001",
+        "error_type": "OMISSION",
+        "content": "Prescribed Betnovate steroid cream to be used twice daily (BD).",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content about prescribing Betnovate steroid cream twice daily.",
+        "consensus_tier": 2,
+        "clinical_rationale": "Omitting the prescription and dosing for a potent topical steroid (Betnovate BD) risks the patient not receiving the intended therapy or using an incorrect regimen, prolonging significant symptoms and potentially leading to complications (excoriations/infection). This is a clinically important treatment omission.",
+        "raw_votes": [
+          2
+        ]
+      },
+      {
+        "fact_id": "plan-002",
+        "error_type": "OMISSION",
+        "content": "Prescribed Cetraben emollients.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content about prescribing Cetraben emollients.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Emollients (Cetraben) are foundational for eczema control and barrier repair; omission can reduce adherence and symptom improvement. The likely harm is mainly prolonged discomfort and need for additional visits rather than acute danger.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "plan-003",
+        "error_type": "OMISSION",
+        "content": "Advised to trial antihistamines.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content advising trial of antihistamines.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting advice to trial antihistamines could delay symptomatic itch control, worsening sleep disturbance and day-to-day functioning in an eczema flare. While unlikely to be dangerous, it can prolong significant discomfort and lead to additional unplanned care seeking.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "plan-004",
+        "error_type": "OMISSION",
+        "content": "Advised to keep a trigger diary.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content advising to keep a trigger diary.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Not advising a trigger diary mainly reduces self-management/education and may make it harder to identify and avoid precipitating factors for recurrent flares. This is unlikely to cause direct clinical harm in the short term.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "fu-001",
+        "error_type": "OMISSION",
+        "content": "Patient to have a review in 10-14 days if symptoms do not improve.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content about review in 10\u201314 days if not improving.",
+        "consensus_tier": 3,
+        "clinical_rationale": "If follow-up timing is omitted, the patient may not re-present appropriately if symptoms persist, delaying reassessment for alternative diagnoses (e.g., contact dermatitis, scabies) or complications such as secondary infection. The likely impact is prolonged symptoms and potentially extra visits rather than serious harm.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "fu-002",
+        "error_type": "OMISSION",
+        "content": "Advised to seek review earlier if there are any concerns or worsening symptoms.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "No generated content advising earlier review for concerns/worsening symptoms.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not advising earlier review for worsening symptoms or concerns can delay escalation if red flags develop (e.g., spreading rash, signs of infection, systemic symptoms), increasing the chance of progression before reassessment. Most outcomes would be additional treatment/monitoring, but delay can meaningfully increase morbidity in some cases.",
+        "raw_votes": [
+          3
+        ]
+      }
+    ]
+  }
+}

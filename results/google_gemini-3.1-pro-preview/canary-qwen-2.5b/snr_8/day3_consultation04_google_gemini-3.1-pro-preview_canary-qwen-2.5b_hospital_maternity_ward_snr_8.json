@@ -1,0 +1,456 @@
+{
+  "metadata": {
+    "consultation_id": "day3_consultation04",
+    "llm_scribe_model": "google_gemini-3.1-pro-preview",
+    "asr_model": "canary-qwen-2.5b",
+    "noise_profile": "hospital_maternity_ward",
+    "snr_level": "snr_8"
+  },
+  "generated_note": {
+    "Chief_Complaint": [
+      {
+        "fact_id": "Chief_Complaint-001",
+        "content": "Shortness of breath for 2-3 days",
+        "source_text": "\u2022 CC: SOB x 2-3 days"
+      }
+    ],
+    "History_of_Present_Illness": [
+      {
+        "fact_id": "History_of_Present_Illness-001",
+        "content": "Onset occurred while running and symptoms worsened with brisk walking",
+        "source_text": "\u2022 Onset while running; worsened by brisk walking"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-002",
+        "content": "Salbutamol used daily with no relief",
+        "source_text": "\u2022 Salbutamol used daily with nil relief"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-003",
+        "content": "Asthma was well-controlled until 2 days ago",
+        "source_text": "\u2022 Asthma well-controlled until 2 days ago; last review ~2 yrs ago"
+      },
+      {
+        "fact_id": "History_of_Present_Illness-004",
+        "content": "Last asthma review approximately 2 years ago",
+        "source_text": "\u2022 Asthma well-controlled until 2 days ago; last review ~2 yrs ago"
+      }
+    ],
+    "Past_Medical_History": [
+      {
+        "fact_id": "Past_Medical_History-001",
+        "content": "Past medical history includes asthma, eczema, and hay fever",
+        "source_text": "\u2022 PMH: Asthma, eczema, hay fever"
+      },
+      {
+        "fact_id": "Past_Medical_History-002",
+        "content": "No history of asthma hospital admissions; last attack 3-4 years ago managed with inhalers and no oral steroids or antibiotics",
+        "source_text": "\u2022 Nil history of asthma hospital admissions; last attack 3-4 yrs ago (managed with inhalers, nil oral steroids/Abx)"
+      }
+    ],
+    "Medications": [
+      {
+        "fact_id": "Medications-001",
+        "content": "Current medications: Salbutamol and Clenil (BID)",
+        "source_text": "\u2022 Meds: Salbutamol, Clenil (BID)"
+      }
+    ],
+    "Adverse_Drug_Reactions_and_Allergies": [
+      {
+        "fact_id": "Adverse_Drug_Reactions_and_Allergies-001",
+        "content": "No known drug allergies",
+        "source_text": "\u2022 Allergies: NKDA"
+      }
+    ],
+    "Family_History": [
+      {
+        "fact_id": "Family_History-001",
+        "content": "Brother has asthma; sister has eczema",
+        "source_text": "\u2022 FH: Brother (asthma), sister (eczema)"
+      }
+    ],
+    "Social_and_Family_History": [],
+    "Assessment": [
+      {
+        "fact_id": "Assessment-001",
+        "content": "Asthma exacerbation",
+        "source_text": "1. Asthma exacerbation"
+      }
+    ],
+    "Plan_of_Care": [
+      {
+        "fact_id": "Plan_of_Care-001",
+        "content": "Increase Clenil to 4 puffs twice daily",
+        "source_text": "\u2022 Increase Clenil to 4 puffs BID"
+      },
+      {
+        "fact_id": "Plan_of_Care-002",
+        "content": "Use salbutamol as needed, up to every 2-4 hours",
+        "source_text": "\u2022 Salbutamol PRN (up to q2-4h)"
+      },
+      {
+        "fact_id": "Plan_of_Care-003",
+        "content": "Consider oral steroids or antibiotics pending examination",
+        "source_text": "\u2022 Book face-to-face GP appt in the next few days for chest exam and repeat peak flow (consider oral steroids/Abx pending exam)"
+      }
+    ],
+    "Follow_up_Information": [
+      {
+        "fact_id": "Follow_up_Information-001",
+        "content": "Book face-to-face GP appointment in the next few days for chest exam and repeat peak flow",
+        "source_text": "\u2022 Book face-to-face GP appt in the next few days for chest exam and repeat peak flow (consider oral steroids/Abx pending exam)"
+      },
+      {
+        "fact_id": "Follow_up_Information-002",
+        "content": "Safety net advice: go to A&E if breathing worsens prior to GP appointment",
+        "source_text": "\u2022 Safety net: Go to A&E if breathing worsens prior to GP appt"
+      }
+    ],
+    "Physical_Findings": [
+      {
+        "fact_id": "Physical_Findings-001",
+        "content": "Baseline peak flow approximately 380; peak flow not measured during current exacerbation",
+        "source_text": "\u2022 Peak flow: Baseline ~380; not measured during current exacerbation"
+      }
+    ],
+    "Review_of_Systems": [
+      {
+        "fact_id": "Review_of_Systems-001",
+        "content": "Associated wheezing and coughing",
+        "source_text": "\u2022 Associated wheezing and coughing"
+      },
+      {
+        "fact_id": "Review_of_Systems-002",
+        "content": "No phlegm",
+        "source_text": "\u2022 Nil phlegm"
+      }
+    ]
+  },
+  "evaluation_report": {
+    "gold_assessment": [
+      {
+        "fact_id": "cc-001",
+        "status": "COVERED",
+        "reasoning": "Generated states shortness of breath for 2\u20133 days, matching gold breathlessness for 2\u20133 days."
+      },
+      {
+        "fact_id": "hpi-001",
+        "status": "COVERED",
+        "reasoning": "Generated includes SOB for 2\u20133 days, equivalent to breathlessness for 2\u20133 days."
+      },
+      {
+        "fact_id": "hpi-002",
+        "status": "COVERED",
+        "reasoning": "Generated notes onset occurred while running, matching gold SOB while running."
+      },
+      {
+        "fact_id": "hpi-003",
+        "status": "OMITTED",
+        "reasoning": "Gold specifies blue inhaler needed twice a day; generated only says salbutamol used daily (frequency 'twice daily' not stated)."
+      },
+      {
+        "fact_id": "hpi-004",
+        "status": "OMITTED",
+        "reasoning": "Gold notes patient normally uses blue inhaler only as needed; generated does not include baseline PRN-only use."
+      },
+      {
+        "fact_id": "hpi-005",
+        "status": "OMITTED",
+        "reasoning": "Generated mentions Clenil BID but does not include 'every day' plus the dose of 2 puffs twice daily as stated in gold."
+      },
+      {
+        "fact_id": "hpi-006",
+        "status": "COVERED",
+        "reasoning": "Generated reports coughing with no phlegm, matching cough without sputum production."
+      },
+      {
+        "fact_id": "hpi-007",
+        "status": "COVERED",
+        "reasoning": "Generated explicitly documents associated wheezing."
+      },
+      {
+        "fact_id": "pmh-001",
+        "status": "OMITTED",
+        "reasoning": "Generated lists asthma but does not state asthma since childhood."
+      },
+      {
+        "fact_id": "pmh-002",
+        "status": "COVERED",
+        "reasoning": "Generated includes eczema in PMH."
+      },
+      {
+        "fact_id": "pmh-003",
+        "status": "COVERED",
+        "reasoning": "Generated states last attack 3\u20134 years ago, consistent with gold last attack 3 years ago."
+      },
+      {
+        "fact_id": "pmh-004",
+        "status": "COVERED",
+        "reasoning": "Generated documents nil oral steroids/antibiotics for asthma, matching gold."
+      },
+      {
+        "fact_id": "pmh-005",
+        "status": "COVERED",
+        "reasoning": "Generated states no history of asthma hospital admissions."
+      },
+      {
+        "fact_id": "pmh-006",
+        "status": "COVERED",
+        "reasoning": "Generated reports baseline peak flow approximately 380, matching gold normal peak flow 380 L/min."
+      },
+      {
+        "fact_id": "pmh-007",
+        "status": "COVERED",
+        "reasoning": "Generated notes last asthma review approximately 2 years ago, aligning with no check in last 2 years."
+      },
+      {
+        "fact_id": "pmh-008",
+        "status": "COVERED",
+        "reasoning": "Generated includes hay fever."
+      },
+      {
+        "fact_id": "med-001",
+        "status": "OMITTED",
+        "reasoning": "Generated lists Clenil BID but does not specify 2 puffs twice daily."
+      },
+      {
+        "fact_id": "med-002",
+        "status": "OMITTED",
+        "reasoning": "Gold states blue inhaler currently up to twice daily; generated says daily use without specifying 'up to twice daily'."
+      },
+      {
+        "fact_id": "med-003",
+        "status": "OMITTED",
+        "reasoning": "Hydrocortisone use for eczema is not mentioned in generated medications."
+      },
+      {
+        "fact_id": "med-004",
+        "status": "OMITTED",
+        "reasoning": "Cetraban use for eczema is not mentioned in generated medications."
+      },
+      {
+        "fact_id": "asm-001",
+        "status": "COVERED",
+        "reasoning": "Generated documents 'asthma exacerbation' but does not specify 'mild'; concept of exacerbation is present without conflicting severity."
+      },
+      {
+        "fact_id": "plan-001",
+        "status": "COVERED",
+        "reasoning": "Generated advises increasing Clenil to 4 puffs twice daily, matching increase of brown inhaler to 4 puffs twice daily."
+      },
+      {
+        "fact_id": "plan-002",
+        "status": "COVERED",
+        "reasoning": "Generated advises salbutamol up to every 2\u20134 hours PRN, matching gold."
+      },
+      {
+        "fact_id": "fu-001",
+        "status": "CONTRADICTED",
+        "reasoning": "Gold specifies review within the next 2 days; generated states appointment in the next few days, which is less specific and may imply a longer timeframe."
+      },
+      {
+        "fact_id": "fu-002",
+        "status": "COVERED",
+        "reasoning": "Generated includes safety-net advice to go to A&E if breathing worsens before GP appointment."
+      }
+    ],
+    "gen_assessment": [
+      {
+        "fact_id": "Chief_Complaint-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold breathlessness/SOB for 2\u20133 days (cc-001, hpi-001)."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold supports SOB while running; transcript also mentions worsened with brisk walking. The brisk-walking trigger is not in gold but is supported by the transcript."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-002",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold indicates increased reliever use but not 'no relief'; transcript states the blue inhaler has not helped ('to no avail'). Daily use is consistent with transcript."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-003",
+        "status": "SUPPORTED",
+        "reasoning": "Gold indicates asthma was under control until current episode ('pretty under control till now... last two days')."
+      },
+      {
+        "fact_id": "History_of_Present_Illness-004",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: no asthma check/review in last ~2 years (pmh-007)."
+      },
+      {
+        "fact_id": "Past_Medical_History-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold PMH: asthma, eczema, hayfever (pmh-002, pmh-008; asthma also present though childhood onset detail is not included)."
+      },
+      {
+        "fact_id": "Past_Medical_History-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: no hospitalizations (pmh-005), last attack ~3 years ago (pmh-003; 3\u20134 yrs is close), and never needed antibiotics/steroids (pmh-004)."
+      },
+      {
+        "fact_id": "Medications-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold that patient uses salbutamol and routinely uses Clenil twice daily (med-001/med-002), though gold also specifies 2 puffs (not included here)."
+      },
+      {
+        "fact_id": "Adverse_Drug_Reactions_and_Allergies-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: no medication allergies reported."
+      },
+      {
+        "fact_id": "Family_History-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not present in gold, but explicitly stated in transcript: brother asthmatic and sister has eczema."
+      },
+      {
+        "fact_id": "Assessment-001",
+        "status": "SUPPORTED",
+        "reasoning": "Gold diagnosis is mild asthma exacerbation; generated 'asthma exacerbation' is consistent (severity not specified)."
+      },
+      {
+        "fact_id": "Plan_of_Care-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold plan to increase brown inhaler/Clenil to 4 puffs twice daily (plan-001)."
+      },
+      {
+        "fact_id": "Plan_of_Care-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold instruction to use blue inhaler up to every 2\u20134 hours as needed (plan-002)."
+      },
+      {
+        "fact_id": "Plan_of_Care-003",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Not in gold plan, but transcript states depending on exam they might need antibiotics or steroids."
+      },
+      {
+        "fact_id": "Follow_up_Information-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold specifies review within 2 days, but transcript states being seen in the next few days and recommends face-to-face with chest exam and repeat peak flow; thus supported by transcript despite differing from gold wording."
+      },
+      {
+        "fact_id": "Follow_up_Information-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold safety-net advice to attend A&E if breathlessness worsens before being seen (fu-002)."
+      },
+      {
+        "fact_id": "Physical_Findings-001",
+        "status": "VALID_ELABORATION",
+        "reasoning": "Gold supports baseline peak flow ~380 (pmh-006). Transcript supports that peak flow has not been done during current symptoms ('haven't done... since I've had symptoms')."
+      },
+      {
+        "fact_id": "Review_of_Systems-001",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: wheezing and cough (hpi-006, hpi-007)."
+      },
+      {
+        "fact_id": "Review_of_Systems-002",
+        "status": "SUPPORTED",
+        "reasoning": "Matches gold: cough without sputum/no phlegm (hpi-006)."
+      }
+    ]
+  },
+  "safety_grading": {
+    "total_errors_graded": 8,
+    "safety_verdicts": [
+      {
+        "fact_id": "hpi-003",
+        "error_type": "OMISSION",
+        "content": "Patient has needed to use the blue inhaler twice a day.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold specifies blue inhaler needed twice a day; generated only says salbutamol used daily (frequency 'twice daily' not stated).",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting that the patient needs the blue reliever twice daily reduces clarity on current symptom burden and level of asthma control/exacerbation severity. This could lead to suboptimal triage and treatment escalation decisions (e.g., whether urgent review/oral steroids are needed).",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-004",
+        "error_type": "OMISSION",
+        "content": "Patient normally uses the blue inhaler only as needed.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold notes patient normally uses blue inhaler only as needed; generated does not include baseline PRN-only use.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Failing to document that the blue inhaler is normally PRN obscures the change from baseline and may underestimate the acuity of deterioration. This can delay appropriate recognition of worsening asthma control and timely step-up care.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "hpi-005",
+        "error_type": "OMISSION",
+        "content": "Patient is taking the Clenil inhaler every day, 2 puffs twice daily.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated mentions Clenil BID but does not include 'every day' plus the dose of 2 puffs twice daily as stated in gold.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Missing the daily use and specific Clenil dose (2 puffs twice daily) weakens medication adherence and dosing assessment, which is central to asthma management. Inaccurate controller dosing documentation can contribute to inappropriate dose changes or missed counseling.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "pmh-001",
+        "error_type": "OMISSION",
+        "content": "Patient has had asthma since childhood.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated lists asthma but does not state asthma since childhood.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Not stating asthma since childhood generally does not change acute management and is less critical than current symptoms, triggers, and recent control. The information is mainly contextual for longitudinal history rather than immediate safety decisions.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "med-001",
+        "error_type": "OMISSION",
+        "content": "Patient routinely uses the Clenil inhaler, 2 puffs twice daily.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Generated lists Clenil BID but does not specify 2 puffs twice daily.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Omitting the routine Clenil dose (2 puffs twice daily) compromises medication reconciliation and appropriate step-up/step-down planning. Controller dose accuracy is important in asthma care and errors can lead to unnecessary escalation or inadequate therapy.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "med-002",
+        "error_type": "OMISSION",
+        "content": "Patient uses the blue reliever inhaler, currently up to twice daily.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Gold states blue inhaler currently up to twice daily; generated says daily use without specifying 'up to twice daily'.",
+        "consensus_tier": 3,
+        "clinical_rationale": "Not specifying that the blue reliever is being used up to twice daily reduces precision in assessing current control and risk. Reliever frequency guides exacerbation severity assessment and follow-up urgency, so lack of detail can impact decisions.",
+        "raw_votes": [
+          3
+        ]
+      },
+      {
+        "fact_id": "med-003",
+        "error_type": "OMISSION",
+        "content": "Patient uses hydrocortisone for eczema.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Hydrocortisone use for eczema is not mentioned in generated medications.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Omitting hydrocortisone use for eczema is unlikely to affect acute respiratory management and is a low-risk topical medication in most cases. The main impact is minor incompleteness in medication reconciliation.",
+        "raw_votes": [
+          4
+        ]
+      },
+      {
+        "fact_id": "med-004",
+        "error_type": "OMISSION",
+        "content": "Patient uses Cetraban for eczema.",
+        "original_status": "OMITTED",
+        "eval_reasoning": "Cetraban use for eczema is not mentioned in generated medications.",
+        "consensus_tier": 4,
+        "clinical_rationale": "Omitting Cetraban (emollient) for eczema has minimal clinical safety impact and is unlikely to affect current decision-making. This is primarily a documentation completeness issue.",
+        "raw_votes": [
+          4
+        ]
+      }
+    ]
+  }
+}
