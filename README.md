@@ -11,7 +11,7 @@ to de-anonymize it.
 
 ---
 
-## Paper in one paragraph
+## Overview
 
 Ambient AI scribes transcribe a doctor–patient conversation with an automatic
 speech recognition (ASR) model and draft a clinical (SOAP) note with a large
