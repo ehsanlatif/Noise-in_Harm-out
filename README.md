@@ -27,9 +27,11 @@ the added errors are **omissions** of clinically actionable content that bypass
 clinician review, and ASR/LLM rankings depend on the acoustic environment.
 
 This repository covers the **audio-corruption** and **multi-model ASR
-transcription** stages, and includes the **generated transcripts** and the
-**per-condition evaluation result files**. The SOAP-note generation and
-LLM-as-judge prompts are reproduced in the paper's appendix.
+transcription** stages, includes the **generated transcripts** and the
+**per-condition evaluation result files**, and provides the **analysis code**
+(`experiments/`) that reproduces the paper's statistics, robustness checks, and
+judge-reliability experiments. The SOAP-note generation and LLM-as-judge prompts
+are reproduced in the paper's appendix.
 
 ---
 
@@ -49,6 +51,9 @@ generated_transcripts/
   noisy_transcripts/<model>/<environment>/snr_<value>/dayX_consultationYY.txt
 results/                  # per (LLM scribe × ASR × environment × SNR) evaluation outputs (JSON),
                           # plus derived CSV summaries and diarization RTTMs
+experiments/              # analysis + robustness checks (cluster/FDR stats, bootstrap
+                          # rank-stability, weight-sensitivity, cross-family judge,
+                          # prompt-sensitivity, DER) — see experiments/README.md
 ```
 
 ASR model scripts in `asr/models/`: `whisper_large_v3_turbo.py`,
@@ -131,6 +136,25 @@ LLM-as-judge (atomic-fact extraction → semantic alignment → severity grading
 the four-tier clinical-harm taxonomy) are specified in the paper, with full
 prompts in the appendix. The resulting per-condition judgements are provided
 under `results/`.
+
+### 5. Reproduce the analysis, robustness checks, and judge reliability
+
+All analysis code is in [`experiments/`](experiments) with its own
+[README](experiments/README.md). Run from the repository root. The core
+statistics need no API key:
+
+```bash
+pip install numpy pandas scipy statsmodels
+python experiments/reviewer_analysis.py     # writes experiments/out/results.txt
+```
+
+This regenerates the FDR-controlled clean-vs-noise contrasts, bootstrap
+rank-stability, the tier-weight sensitivity of the clean→severe doubling, the
+speech-environment exclusion, leave-one-consultation-out, and the
+21-consultation replication. The cross-family judge and prompt-sensitivity
+experiments (API key required) and the diarization-DER script are documented in
+`experiments/README.md`. The human clinician validation is reported in the
+paper; the raw annotations are not released here for privacy.
 
 ---
 

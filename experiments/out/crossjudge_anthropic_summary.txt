@@ -1,0 +1,18 @@
+Cross-family judge (Claude Opus) vs primary GPT-5.2 judge
+============================================================
+errors graded: 25246 of 28347 detected (3101 in failed API batches, skipped)
+weighted Cohen's kappa (Claude vs GPT-5.2 tiers) = 0.655
+exact tier agreement = 0.649   within-one-tier = 0.990
+
+Per-scribe mean severity-weighted burden on PAIRED errors (rank 1 = lowest/best):
+  under GPT-5.2 judge (primary):
+    openai_gpt-5.2                      10.90
+    anthropic_claude-sonnet-4.6         12.92
+    google_gemini-3.1-pro-preview       12.96
+  under Claude Opus judge (cross-family):
+    openai_gpt-5.2                      10.62
+    anthropic_claude-sonnet-4.6         12.98
+    google_gemini-3.1-pro-preview       13.15
+
+Conclusion: the scribe ordering (GPT-5.2 < Claude Sonnet < Gemini) is PRESERVED
+across judge families, so it is not a self-preference artifact of a GPT-family judge.

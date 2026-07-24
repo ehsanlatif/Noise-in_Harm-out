@@ -1,0 +1,83 @@
+==============================================================================
+E1. CLUSTERED RE-ANALYSIS (cluster-level exact tests) + BH-FDR
+==============================================================================
+snr             metric  n  mean_delta           ci  p_perm  q_FDR sig_FDR
+ 13  severity-weighted 11      1.6136 [0.81, 2.35]  0.0049 0.0092     yes
+ 13          omissions 11      0.3232 [0.00, 0.58]  0.0723 0.0723      NO
+ 13        commissions 11      0.2879 [0.14, 0.44]  0.0068 0.0114     yes
+ 13       total errors 11      0.6111 [0.23, 0.95]  0.0156 0.0195     yes
+ 13 high-severity T1+2 11      0.2357 [0.08, 0.40]  0.0195 0.0209     yes
+  8  severity-weighted 11      2.4285 [1.50, 3.27]  0.0020 0.0049     yes
+  8          omissions 11      0.7247 [0.34, 1.04]  0.0088 0.0120     yes
+  8        commissions 11      0.2761 [0.09, 0.46]  0.0176 0.0203     yes
+  8       total errors 11      1.0008 [0.57, 1.40]  0.0039 0.0084     yes
+  8 high-severity T1+2 11      0.3316 [0.13, 0.53]  0.0088 0.0120     yes
+ -2  severity-weighted 11      7.8712 [6.18, 9.53]  0.0010 0.0037     yes
+ -2          omissions 11      2.9293 [2.12, 3.72]  0.0010 0.0037     yes
+ -2        commissions 11      0.8485 [0.61, 1.12]  0.0010 0.0037     yes
+ -2       total errors 11      3.7778 [2.80, 4.80]  0.0010 0.0037     yes
+ -2 high-severity T1+2 11      0.9167 [0.61, 1.22]  0.0020 0.0049     yes
+
+MILD-NOISE (13 dB) check: [{'p_perm': 0.072265625, 'q_FDR': 0.072265625, 'sig_FDR': 'NO'}]
+
+==============================================================================
+   GEE (Poisson, cluster-robust, groups=consultation) — omissions ~ SNR
+==============================================================================
+================================================================================
+                   coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------
+Intercept        1.2542      0.119     10.538      0.000       1.021       1.487
+C(snr)[T.13]     0.0882      0.042      2.076      0.038       0.005       0.171
+C(snr)[T.8]      0.1879      0.046      4.127      0.000       0.099       0.277
+C(snr)[T.-2]     0.6074      0.093      6.536      0.000       0.425       0.790
+================================================================================
+
+==============================================================================
+E2. BOOTSTRAP RANK-STABILITY (cluster bootstrap over consultations)
+==============================================================================
+
+-- LLM scribes (by mean severity-weighted burden; rank 1 = lowest/best) --
+  anthropic_claude-sonnet-4.6         meanS=11.62  P(rank1)=0.02  P(rank2)=0.98  P(rank3)=0.00
+  google_gemini-3.1-pro-preview       meanS=12.51  P(rank1)=0.00  P(rank2)=0.00  P(rank3)=1.00
+  openai_gpt-5.2                      meanS=10.53  P(rank1)=0.98  P(rank2)=0.02  P(rank3)=0.00
+
+-- ASR systems by environment: stable best/worst vs volatile mid-field --
+  outdoor_traffic          best=deepgram-nova3           P(best=rank1)=0.50 | worst=granite-speech-3.3-2b P(worst=last)=1.00
+  hospital_corridor        best=parakeet-tdt-0.6b-v3     P(best=rank1)=0.47 | worst=granite-speech-3.3-2b P(worst=last)=0.99
+  hospital_reception       best=assemblyai-universal2    P(best=rank1)=0.56 | worst=granite-speech-3.3-2b P(worst=last)=1.00
+  hospital_maternity_ward  best=assemblyai-universal2    P(best=rank1)=0.68 | worst=granite-speech-3.3-2b P(worst=last)=0.70
+
+==============================================================================
+E3a. WEIGHT-SENSITIVITY of the clean->severe 'doubling'
+==============================================================================
+  linear (4,3,2,1) [paper]         clean=  7.89  severe= 15.76  ratio=2.00x
+  convex (8,4,2,1)                 clean=  8.53  severe= 17.62  ratio=2.07x
+  steep (10,5,2,1)                 clean=  9.16  severe= 19.27  ratio=2.10x
+  unweighted count (1,1,1,1)       clean=  4.47  severe=  8.24  ratio=1.84x
+  high-severity only (1,1,0,0)     clean=  0.62  severe=  1.54  ratio=2.47x
+
+==============================================================================
+E3b. SPEECH-BEARING ENVIRONMENT EXCLUSION (omission dominance robustness)
+==============================================================================
+  ALL 4 environments                           excess_om=2.93 excess_com=0.85 omission_share=77.5%
+  EXCL speech-bearing (reception+maternity)    excess_om=1.73 excess_com=0.60 omission_share=74.1%
+  ONLY speech-bearing                          excess_om=4.13 excess_com=1.09 omission_share=79.1%
+
+==============================================================================
+E3c. LEAVE-CLUSTER-OUT robustness (clean->severe S doubling & omission share)
+==============================================================================
+  consultations contributing any Tier-1 event: 10 of 11
+  ALL 11 consultations:            doubling=2.00x  omission_share=77.5%
+  DROP Tier-1 consultations:       doubling=1.84x  omission_share=79.5%  (n=1)
+  leave-one-out severe mean S: range [15.27, 16.32] (full=15.76)
+
+==============================================================================
+E4. REPLICATION ON FULL 21-CONSULTATION DATA (within-noise dose-response)
+==============================================================================
+  consultations available (noisy): 21
+  severity-weighted    13dB=9.44  8dB=10.27  -2dB=15.62
+  omissions            13dB=3.69  8dB=4.09  -2dB=6.18
+  commissions          13dB=1.37  8dB=1.35  -2dB=1.99
+  omissions -2dB vs 8dB across 21 consultations: mean delta=1.92, exact p=0.0000
+
+DONE.
